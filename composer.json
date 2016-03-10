@@ -1,12 +1,8 @@
 {
+  "name": "plentymarkets/plugin-hack-api",
+  "description": "API for plentymarkets plugin development with Hack",
   "require": {
     "php": ">=5.5.9",
     "laravel/framework": "5.2.*"
   }
-
-
-
-
-
-
 }
