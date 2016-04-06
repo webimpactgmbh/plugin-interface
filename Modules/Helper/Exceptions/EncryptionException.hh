@@ -1,9 +1,14 @@
 <?hh
 namespace Plenty\Modules\Helper\Exceptions;
+
+
 /**
  * Class EncryptionException
  */
-abstract class EncryptionException extends \Exception{
+abstract class EncryptionException extends \Exception 
+
+{
+
 	/**
 	 * data is empty
 	 */

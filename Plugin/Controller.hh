@@ -1,6 +1,11 @@
 <?hh
 namespace Plenty\Plugin;
+
+
 /**
  * Controller
  */
-abstract class Controller{}
+abstract class Controller 
+{
+
+}

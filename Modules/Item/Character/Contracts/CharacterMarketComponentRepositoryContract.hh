@@ -1,14 +1,18 @@
 <?hh
-namespace Plenty\Modules\Character\Contracts;
+namespace Plenty\Modules\Item\Character\Contracts;
+
 use Illuminate\Database\Eloquent\Collection;
-use Plenty\Modules\Character\Models\CharacterMarketComponent;
+use Plenty\Modules\Item\Character\Models\CharacterMarketComponent;
 
 /**
  * Repository for CharacterMarketComponent
  */
-interface CharacterMarketComponentRepositoryContract{
+interface CharacterMarketComponentRepositoryContract 
+{
+
 	public function getCharacterMarketComponents(
-		float $referrerId,
+		float $referrerId, 
 		?int $componentId = NULL
 	):array<CharacterMarketComponent>;
+
 }

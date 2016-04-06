@@ -1,14 +1,18 @@
 <?hh
 namespace Plenty\Modules\Helper\Services;
+
 use Plenty\Modules\Helper\Models\KeyValue;
 
 /**
  * helper class for arrays
  */
-abstract class ArrayHelper{
+abstract class ArrayHelper 
+{
+
 	abstract public function buildMapFromObjectList(
-		mixed $list,
-		string $keyField,
+		mixed $list, 
+		string $keyField, 
 		string $valueField
 	):KeyValue;
+
 }

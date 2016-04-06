@@ -1,5 +1,6 @@
 <?hh
 namespace Plenty\Plugin\Templates\Factories;
+
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Extensions\Twig_SimpleFilter;
 use Plenty\Plugin\Templates\Extensions\Twig_SimpleFunction;
@@ -7,15 +8,20 @@ use Plenty\Plugin\Templates\Extensions\Twig_SimpleFunction;
 /**
  * Twig Factory
  */
-abstract class TwigFactory{
+abstract class TwigFactory 
+{
+
 	abstract public function register(
 	):void;
+
 	abstract public function createSimpleFunction(
-		string $name,
+		string $name, 
 		mixed $callable
 	):Twig_SimpleFunction;
+
 	abstract public function createSimpleFilter(
-		string $name,
+		string $name, 
 		mixed $callable
 	):Twig_SimpleFilter;
+
 }

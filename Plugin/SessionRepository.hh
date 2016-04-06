@@ -1,11 +1,14 @@
 <?hh
 namespace Plenty\Plugin;
+
+
 /**
  * session repository
  */
-abstract class SessionRepository{
-	const string PLUGIN_CONFIG_PREFIX = 'plugins';
+abstract class SessionRepository 
+{
 
+	const string PLUGIN_CONFIG_PREFIX = 'plugins';
 
 	/**
 	 * Determine if the given session value exists.
@@ -13,32 +16,37 @@ abstract class SessionRepository{
 	abstract public function has(
 		string $key
 	):bool;
+
 	/**
 	 * Get the specified session value.
 	 */
 	abstract public function get(
-		string $key,
+		string $key, 
 		mixed $default = NULL
 	):mixed;
+
 	/**
 	 * Set a given session value.
 	 */
 	abstract public function set(
-		string $key,
+		string $key, 
 		mixed $value = NULL
 	):void;
+
 	/**
 	 * Prepend a value onto an array session value.
 	 */
 	abstract public function prepend(
-		string $key,
+		string $key, 
 		mixed $value
 	):void;
+
 	/**
 	 * Push a value onto an array session value.
 	 */
 	abstract public function push(
-		string $key,
+		string $key, 
 		mixed $value
 	):void;
+
 }

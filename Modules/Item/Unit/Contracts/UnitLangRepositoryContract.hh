@@ -1,16 +1,21 @@
 <?hh
-namespace Plenty\Modules\Unit\Contracts;
-use Plenty\Modules\Unit\Models\UnitLang;
+namespace Plenty\Modules\Item\Unit\Contracts;
+
+use Plenty\Modules\Item\Unit\Models\UnitLang;
 
 /**
  * Repository for Unit
  */
-interface UnitLangRepositoryContract{
+interface UnitLangRepositoryContract 
+{
+
 	public function findUnit(
-		int $unitId,
+		int $unitId, 
 		?string $lang = "de"
 	):?UnitLang;
+
 	public function all(
 		?string $lang = "de"
 	):?array<UnitLang>;
+
 }
