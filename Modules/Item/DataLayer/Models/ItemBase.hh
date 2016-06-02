@@ -77,6 +77,8 @@ abstract class ItemBase
 	public string $lastUpdateTimestamp;
 	public int $type;
 	public int $votes;
+	public int $variationCount;
+	public int $tradoriaCategory;
 	
 	/**
 	 * returns this model as an array

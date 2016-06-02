@@ -37,7 +37,7 @@ interface ProducerRepositoryContract
 	 */
 	public function search(
 		?array<string, string> $params = [], 
-		array<string> $columns = ["*"]
+		array<string> $columns = []
 	):Pagination;
 
 	/**
@@ -48,7 +48,7 @@ interface ProducerRepositoryContract
 	):Producer;
 
 	public function all(
-		array<string> $columns = ["*"]
+		array<string> $columns = []
 	):mixed;
 
 }

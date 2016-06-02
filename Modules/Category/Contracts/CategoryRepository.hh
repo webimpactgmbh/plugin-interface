@@ -69,7 +69,8 @@ interface CategoryRepository
 	 */
 	public function getUrl(
 		int $categoryId, 
-		?string $lang = "de"
+		?string $lang = "de", 
+		bool $onlySitemaps = false
 	):string;
 
 	/**

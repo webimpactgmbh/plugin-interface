@@ -2,7 +2,7 @@
 namespace Plenty\Modules\Order\Payment\Method\Models;
 
 use Plenty\Modules\System\Models\Webstore;
-use Plenty\Modules\Countries\Models\Country;
+use Plenty\Modules\Shipping\Countries\Models\Country;
 
 /**
  * The payment method model

@@ -11,6 +11,7 @@ abstract class Record
 	public array<\Plenty\Modules\Item\DataLayer\Models\ItemCharacter> $itemCharacterList;
 	public array<\Plenty\Modules\Item\DataLayer\Models\ItemCrossSelling> $itemCrossSellingList;
 	public \Plenty\Modules\Item\DataLayer\Models\ItemDescription $itemDescription;
+	public array<\Plenty\Modules\Item\DataLayer\Models\ItemShippingProfiles> $itemShippingProfilesList;
 	public array<\Plenty\Modules\Item\DataLayer\Models\VariationAttributeValue> $variationAttributeValueList;
 	public \Plenty\Modules\Item\DataLayer\Models\VariationBarcode $variationBarcode;
 	public array<\Plenty\Modules\Item\DataLayer\Models\VariationBarcode> $variationBarcodeList;
@@ -32,6 +33,8 @@ abstract class Record
 	public array<\Plenty\Modules\Item\DataLayer\Models\VariationSupplier> $variationSupplierList;
 	public \Plenty\Modules\Item\DataLayer\Models\VariationWarehouse $variationWarehouse;
 	public array<\Plenty\Modules\Item\DataLayer\Models\VariationWarehouse> $variationWarehouseList;
+	public \Plenty\Modules\Item\DataLayer\Models\VariationSpecialOfferRetailPrice $variationSpecialOfferRetailPrice;
+	public array<\Plenty\Modules\Item\DataLayer\Models\VariationSpecialOfferRetailPrice> $variationSpecialOfferRetailPriceList;
 	
 	/**
 	 * returns this model as an array

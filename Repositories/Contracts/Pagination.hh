@@ -1,10 +1,11 @@
 <?hh
 namespace Plenty\Repositories\Contracts;
 
-use Illuminate\Contracts\Support\Arrayable;
-use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Contracts\Support\Jsonable;
+use Illuminate\Contracts\Support\Arrayable;
 
 /**
  * Pagination interface
@@ -20,12 +21,6 @@ interface Pagination
 		array<Model> $result
 	):void;
 
-	public function applyPagination(
-		Model $model, 
-		int $itemsPerPage, 
-		array<string> $columns = ["*"]
-	):void;
-
 	public function getPage(
 	):int;
 
@@ -33,6 +28,6 @@ interface Pagination
 	):int;
 
 	public function getResult(
-	):array<Model>;
+	):Collection;
 
 }
