@@ -72,6 +72,15 @@ abstract class ApiRouter
 	):\Plenty\Plugin\Routing\Route;
 
 	/**
+	 * Route a resource to a controller.
+	 */
+	abstract public function resource(
+		string $name, 
+		string $controller, 
+		array<string> $options = []
+	):void;
+
+	/**
 	 * Register a new route with the given verbs.
 	 */
 	abstract public function match(
