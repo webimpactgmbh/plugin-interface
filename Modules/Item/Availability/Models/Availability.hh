@@ -7,11 +7,10 @@ namespace Plenty\Modules\Item\Availability\Models;
  */
 abstract class Availability 
 {
-	public string $name;
 	public int $id;
 	public string $icon;
 	public int $averageDays;
-	public array<\Plenty\Modules\Item\Availability\Models\AvailabilityLang> $langs;
+	public array<\Plenty\Modules\Item\Availability\Models\AvailabilityLanguage> $languages;
 	
 	/**
 	 * returns this model as an array

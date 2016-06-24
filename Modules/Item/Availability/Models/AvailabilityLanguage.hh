@@ -5,10 +5,10 @@ namespace Plenty\Modules\Item\Availability\Models;
 /**
  * The item availability lang model
  */
-abstract class AvailabilityLang 
+abstract class AvailabilityLanguage 
 {
 	public int $availabilityId;
-	public string $lang;
+	public string $language;
 	public string $name;
 	
 	/**
