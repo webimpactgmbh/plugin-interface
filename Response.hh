@@ -8,11 +8,11 @@ use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Contracts\Support\Renderable;
 use Symfony\Component\HttpFoundation\Response as BaseResponse;
 
-class Response extends Symfony\Component\HttpFoundation\Response 
+abstract class Response extends Symfony\Component\HttpFoundation\Response 
 
 {
 	public mixed $original;
-	public ?\Exception $exception;
+	public \Exception $exception;
 	
 	/**
 	 * Set the content on the response.
