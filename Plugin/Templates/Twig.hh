@@ -14,7 +14,7 @@ abstract class Twig
 	 */
 	abstract public function render(
 		string $name, 
-		array<string, mixed> $context = []
+		?array<string, mixed> $context = []
 	):string;
 
 	/**
