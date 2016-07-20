@@ -20,7 +20,7 @@ abstract class ResultFields
 	}
 
 	protected function setOrderByList(
-		array<string> $orderByList
+		array<string, string> $orderByList
 	):void
 	{
 	}
