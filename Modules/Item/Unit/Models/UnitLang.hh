@@ -7,9 +7,9 @@ namespace Plenty\Modules\Item\Unit\Models;
  */
 abstract class UnitLang 
 {
-	public int $plenty_unit_lang_unit_id;
-	public string $plenty_unit_lang_lang;
-	public string $plenty_unit_lang_name;
+	public int $id;
+	public string $lang;
+	public string $name;
 	public \Plenty\Modules\Item\Unit\Models\Unit $unit;
 	
 	/**

@@ -12,7 +12,7 @@ abstract class ApiRouter
 	abstract public function version(
 		array<string> $version, 
 		mixed $second, 
-		mixed $third = NULL
+		mixed $third = null
 	):void;
 
 	/**

@@ -47,7 +47,7 @@ abstract class StringEncodingService
 	 */
 	abstract public function toWebshop(
 		string $sString, 
-		string $sTargetEncoding = \Plenty\Modules\Helper\Services\StringEncodingService::WEBSHOP_ENCODING
+		string $sTargetEncoding = self::WEBSHOP_ENCODING
 	):string;
 
 	/**
@@ -55,7 +55,7 @@ abstract class StringEncodingService
 	 */
 	abstract public function toAdmin(
 		string $sString, 
-		string $sTargetEncoding = \Plenty\Modules\Helper\Services\StringEncodingService::ADMIN_ENCODING
+		string $sTargetEncoding = self::ADMIN_ENCODING
 	):string;
 
 	/**
@@ -70,7 +70,7 @@ abstract class StringEncodingService
 	 */
 	abstract public function toExport(
 		string $sString, 
-		string $sTargetEncoding = \Plenty\Modules\Helper\Services\StringEncodingService::EXPORT_ENCODING
+		string $sTargetEncoding = self::EXPORT_ENCODING
 	):string;
 
 	/**
@@ -85,7 +85,7 @@ abstract class StringEncodingService
 	 */
 	abstract public function toPDF(
 		string $sString, 
-		string $sTargetEncoding = \Plenty\Modules\Helper\Services\StringEncodingService::PDF_ENCODING
+		string $sTargetEncoding = self::PDF_ENCODING
 	):string;
 
 	/**
@@ -93,7 +93,7 @@ abstract class StringEncodingService
 	 */
 	abstract public function toXML(
 		string $string, 
-		string $targetEncoding = \Plenty\Modules\Helper\Services\StringEncodingService::XML_ENCODING
+		string $targetEncoding = self::XML_ENCODING
 	):string;
 
 	/**
@@ -108,7 +108,7 @@ abstract class StringEncodingService
 	 */
 	abstract public function convertArray(
 		array<string> $array, 
-		string $sTargetEncoding = \Plenty\Modules\Helper\Services\StringEncodingService::UTF8_ENCODING, 
+		string $sTargetEncoding = self::UTF8_ENCODING, 
 		bool $convertKey = false
 	):array<string>;
 

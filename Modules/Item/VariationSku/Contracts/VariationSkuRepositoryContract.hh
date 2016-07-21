@@ -13,7 +13,7 @@ interface VariationSkuRepositoryContract
 		int $variationId, 
 		int $marketId, 
 		int $accountId, 
-		mixed $sku = NULL, 
+		mixed $sku = null, 
 		bool $setLastExportedTimestamp = true
 	):mixed;
 

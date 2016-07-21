@@ -31,7 +31,7 @@ abstract class Request
 
 	abstract public function get(
 		string $key, 
-		mixed $default = NULL, 
+		mixed $default = null, 
 		bool $deep = false
 	):mixed;
 

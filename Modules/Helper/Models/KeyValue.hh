@@ -10,7 +10,7 @@ abstract class KeyValue
 
 	abstract public function get<T>(
 		string $key, 
-		mixed $default = NULL
+		mixed $default = null
 	):T;
 
 }

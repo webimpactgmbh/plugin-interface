@@ -10,9 +10,9 @@ interface BasketRepositoryContract
 {
 
 	/**
-	 * Search basket by session
+	 * Load basket from current customer session
 	 */
-	public function findBySession(
+	public function load(
 	):Basket;
 
 }

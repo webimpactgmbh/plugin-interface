@@ -34,22 +34,6 @@ abstract class RulesCollection
 		return new DummyAttribute();
 	}
 
-	public function addNumeric(
-		string $attributeName, 
-		bool $required = false
-	):Attribute
-	{
-		return new DummyAttribute();
-	}
-
-	public function addDate(
-		string $attributeName, 
-		bool $required = false
-	):Attribute
-	{
-		return new DummyAttribute();
-	}
-
 	public function addBool(
 		string $attributeName, 
 		bool $required = false
@@ -59,6 +43,22 @@ abstract class RulesCollection
 	}
 
 	public function addString(
+		string $attributeName, 
+		bool $required = false
+	):Attribute
+	{
+		return new DummyAttribute();
+	}
+
+	public function addNumeric(
+		string $attributeName, 
+		bool $required = false
+	):Attribute
+	{
+		return new DummyAttribute();
+	}
+
+	public function addDate(
 		string $attributeName, 
 		bool $required = false
 	):Attribute

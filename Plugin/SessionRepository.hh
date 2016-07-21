@@ -22,7 +22,7 @@ abstract class SessionRepository
 	 */
 	abstract public function get(
 		string $key, 
-		mixed $default = NULL
+		mixed $default = null
 	):mixed;
 
 	/**
@@ -30,7 +30,7 @@ abstract class SessionRepository
 	 */
 	abstract public function set(
 		string $key, 
-		mixed $value = NULL
+		mixed $value = null
 	):void;
 
 	/**

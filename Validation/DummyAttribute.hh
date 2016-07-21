@@ -317,7 +317,7 @@ The value is null.
 	 */
 	public function requiredIf(
 		string $fieldName, 
-		string $value
+		array<string> $value
 	):DummyAttribute
 	{
 		return $this;
@@ -418,8 +418,8 @@ The value is null.
 	public function unique(
 		string $table, 
 		string $column, 
-		?string $except = NULL, 
-		?string $idColumn = NULL
+		?string $except = null, 
+		?string $idColumn = null
 	):DummyAttribute
 	{
 		return $this;

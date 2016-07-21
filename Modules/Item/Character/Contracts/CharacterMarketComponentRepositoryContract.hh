@@ -12,7 +12,7 @@ interface CharacterMarketComponentRepositoryContract
 
 	public function getCharacterMarketComponents(
 		float $referrerId, 
-		?int $componentId = NULL
+		?int $componentId = null
 	):array<CharacterMarketComponent>;
 
 }

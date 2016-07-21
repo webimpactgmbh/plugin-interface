@@ -11,7 +11,7 @@ interface PaymentMethodRepositoryContract
 
 	public function getPaymentMethods(
 		int $countryId, 
-		?int $plentyId = NULL, 
+		?int $plentyId = null, 
 		?string $lang = "de"
 	):array<PaymentMethod>;
 

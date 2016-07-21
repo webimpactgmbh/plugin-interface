@@ -41,7 +41,7 @@ abstract class XMLGenerator
 	 */
 	protected function createElement(
 		string $name, 
-		mixed $value = NULL
+		mixed $value = null
 	):\DOMElement
 	{
 		return new DOMElement();
@@ -62,7 +62,7 @@ abstract class XMLGenerator
 	 */
 	protected function createAttribute(
 		string $name, 
-		mixed $value = NULL
+		mixed $value = null
 	):\DOMAttr
 	{
 		return new DOMAttr();

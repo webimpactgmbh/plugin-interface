@@ -217,7 +217,7 @@ interface Attribute
 	 */
 	public function requiredIf(
 		string $fieldName, 
-		string $value
+		array<string> $value
 	):Attribute;
 
 	/**
@@ -288,8 +288,8 @@ interface Attribute
 	public function unique(
 		string $table, 
 		string $column, 
-		?string $except = NULL, 
-		?string $idColumn = NULL
+		?string $except = null, 
+		?string $idColumn = null
 	):Attribute;
 
 	/**

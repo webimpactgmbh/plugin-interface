@@ -1,8 +1,8 @@
 <?hh
 namespace Plenty\Repositories\Models;
 
-use Plenty\Repositories\Contracts\Pagination;
 use Illuminate\Database\Eloquent\Collection;
+use Plenty\Repositories\Contracts\Pagination;
 
 /**
  * PaginationByRequest

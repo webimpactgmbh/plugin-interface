@@ -1,6 +1,7 @@
 <?hh
 namespace Plenty\Modules\Basket\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The basket model
@@ -29,10 +30,12 @@ abstract class Basket
 	public float $couponDiscount;
 	public bool $shippingDeleteByCoupon;
 	public float $basketRebate;
+	public int $basketRebateType;
 	public int $maxFsk;
 	public int $orderTimestamp;
 	public string $createdAt;
 	public string $updatedAt;
+	public array<\Plenty\Modules\Basket\Models\BasketItem> $basketItems;
 	
 	/**
 	 * returns this model as an array

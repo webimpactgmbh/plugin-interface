@@ -78,11 +78,11 @@ interface CategoryRepository
 	 */
 	public function findCategoryByUrl(
 		string $level1, 
-		?string $level2 = NULL, 
-		?string $level3 = NULL, 
-		?string $level4 = NULL, 
-		?string $level5 = NULL, 
-		?string $level6 = NULL
+		?string $level2 = null, 
+		?string $level3 = null, 
+		?string $level4 = null, 
+		?string $level5 = null, 
+		?string $level6 = null
 	):?Category;
 
 	/**

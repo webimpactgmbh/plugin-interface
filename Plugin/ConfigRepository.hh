@@ -22,7 +22,7 @@ abstract class ConfigRepository
 	 */
 	abstract public function get<T>(
 		string $key, 
-		mixed $default = NULL
+		mixed $default = null
 	):T;
 
 	/**
@@ -30,7 +30,7 @@ abstract class ConfigRepository
 	 */
 	abstract public function set(
 		string $key, 
-		mixed $value = NULL
+		mixed $value = null
 	):void;
 
 	/**

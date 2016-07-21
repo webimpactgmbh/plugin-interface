@@ -20,7 +20,7 @@ abstract class Application
 	 */
 	abstract public function bind(
 		string $abstract, 
-		?string $concrete = NULL
+		?string $concrete = null
 	):void;
 
 	/**
@@ -28,7 +28,7 @@ abstract class Application
 	 */
 	abstract public function singleton(
 		string $abstract, 
-		?string $concrete = NULL
+		?string $concrete = null
 	):void;
 
 	/**
