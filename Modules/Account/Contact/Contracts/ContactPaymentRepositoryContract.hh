@@ -18,20 +18,20 @@ interface ContactPaymentRepositoryContract
 		int $contactId, 
 		array<string> $columns = [], 
 		int $perPage = 50
-	):Collection;
+	):array<ContactBank>;
 
 	/**
 	 * Creates a new bank account for a contact and returns it.
 	 */
 	public function createContactBank(
-		array<mixed> $data
+		array<string, mixed> $data
 	):ContactBank;
 
 	/**
 	 * Updates an existing bank account.
 	 */
 	public function updateContactBank(
-		array<mixed> $data, 
+		array<string, mixed> $data, 
 		int $contactBankId
 	):ContactBank;
 

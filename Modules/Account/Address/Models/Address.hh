@@ -2,7 +2,7 @@
 namespace Plenty\Modules\Account\Address\Models;
 
 use Illuminate\Database\Eloquent\Collection;
-use Plenty\Modules\Shipping\Countries\Models\Country;
+use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
 /**
  * The address model
@@ -40,6 +40,7 @@ abstract class Address
 	public string $email;
 	public string $postident;
 	public string $fsk;
+	public string $birthday;
 	public string $personalNumber;
 	public string $packstationNo;
 	public bool $isPackstation;

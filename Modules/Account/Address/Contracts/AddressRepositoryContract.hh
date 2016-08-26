@@ -24,7 +24,7 @@ interface AddressRepositoryContract
 	 * Updates an existing address.
 	 */
 	public function updateAddress(
-		array<mixed> $data, 
+		array<string, mixed> $data, 
 		int $addressId
 	):Address;
 
@@ -32,7 +32,7 @@ interface AddressRepositoryContract
 	 * Creates a new address.
 	 */
 	public function createAddress(
-		array<mixed> $data
+		array<string, mixed> $data
 	):Address;
 
 	/**
@@ -56,7 +56,7 @@ interface AddressRepositoryContract
 	 * Creates a new address and immediately associates it with a warehouse.
 	 */
 	public function createAddressOfWarehouse(
-		array<string> $data
+		array<string, mixed> $data
 	):Address;
 
 	/**
@@ -71,7 +71,7 @@ interface AddressRepositoryContract
 	 * Creates new address options for an existing address and returns all options of the address.
 	 */
 	public function createAddressOptions(
-		array<string> $addressData, 
+		array<string, mixed> $addressData, 
 		int $addressId
 	):Collection;
 
@@ -79,7 +79,7 @@ interface AddressRepositoryContract
 	 * Updates address options for an existing address and returns all options of the address.
 	 */
 	public function updateAddressOptions(
-		array<string> $addressData, 
+		array<string, mixed> $addressData, 
 		int $addressId
 	):Collection;
 
@@ -101,7 +101,7 @@ interface AddressRepositoryContract
 	 * Updates a single address option.
 	 */
 	public function updateAddressOption(
-		array<string> $optionData, 
+		array<string, mixed> $optionData, 
 		int $optionId
 	):AddressOption;
 

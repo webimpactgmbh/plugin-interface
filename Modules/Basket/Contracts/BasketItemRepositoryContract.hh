@@ -17,7 +17,7 @@ interface BasketItemRepositoryContract
 	):?BasketItem;
 
 	public function findExistingOneByData(
-		array<string, string> $data
+		array<string, mixed> $data
 	):?BasketItem;
 
 	/**

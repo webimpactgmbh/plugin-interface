@@ -23,7 +23,7 @@ interface ContactAccountRepositoryContract
 	 * Creates new account and associates it immediately with the given contact (id)
 	 */
 	public function createAccount(
-		array<mixed> $data, 
+		array<string, mixed> $data, 
 		int $contactId
 	):Account;
 
@@ -31,7 +31,7 @@ interface ContactAccountRepositoryContract
 	 * Updates an existing account. If not already associated, it will associate the account with the given contact id.
 	 */
 	public function updateAccount(
-		array<mixed> $data, 
+		array<string, mixed> $data, 
 		int $accountId, 
 		int $contactId
 	):Account;

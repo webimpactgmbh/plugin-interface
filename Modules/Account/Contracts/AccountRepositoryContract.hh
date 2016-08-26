@@ -59,7 +59,7 @@ interface AccountRepositoryContract
 	 * Creates a new or updates an existing account.
 	 */
 	public function saveAccount(
-		array<string> $data = []
+		array<string, mixed> $data = []
 	):mixed;
 
 }

@@ -3,28 +3,32 @@ namespace Plenty\Modules\Order\Models;
 
 use Plenty\Modules\Account\Address\Models\Address;
 use Illuminate\Database\Eloquent\Collection;
-use Plenty\Modules\Account\Contact\Models\Contact;
 use Plenty\Modules\Account\Address\Models\AddressRelationType;
+use Carbon\Carbon;
+use Plenty\Modules\Authentication\Models\User;
 
 /**
- * The legacy order model
+ * The order model.
  */
 abstract class Order 
 {
 	public int $id;
-	public string $orderType;
-	public int $contactId;
-	public float $referrerId;
-	public float $status;
-	public int $userId;
-	public string $entryDate;
-	public int $webstoreId;
-	public int $warehouseId;
-	public string $sellerAccount;
-	public Address $deliveryAddress;
+	public int $typeId;
+	public int $methodOfPaymentId;
+	public int $shippingProfileId;
+	public int $statusId;
+	public int $ownerId;
+	public Carbon $createdAt;
+	public Carbon $updatedAt;
+	public int $plentyId;
 	public Address $billingAddress;
+	public Address $deliveryAddress;
+	public User $owner;
 	public Collection $addresses;
-	public Collection $addressRelations;
+	public Collection $orderItems;
+	public Collection $properties;
+	public Collection $relations;
+	public Collection $amounts;
 	
 	/**
 	 * returns this model as an array

@@ -37,7 +37,8 @@ interface CategoryRepository
 	 */
 	public function hasChildren(
 		int $categoryId, 
-		bool $onlySitemaps = false
+		bool $onlySiteMapped = false, 
+		bool $onlyLinkListed = false
 	):bool;
 
 	/**
@@ -60,6 +61,22 @@ interface CategoryRepository
 	 * Returns all sitemap categories as tree.
 	 */
 	public function getSitemapTree(
+		?string $type = "all", 
+		?string $lang = "de"
+	):array<Category>;
+
+	/**
+	 * Returns all linklist categories as list.
+	 */
+	public function getLinklistList(
+		?string $type = "all", 
+		?string $lang = "de"
+	):array<Category>;
+
+	/**
+	 * Returns all linklist categories as tree.
+	 */
+	public function getLinklistTree(
 		?string $type = "all", 
 		?string $lang = "de"
 	):array<Category>;

@@ -27,7 +27,7 @@ interface ContactOptionRepositoryContract
 	public function createContactOptions(
 		array<mixed> $optionData, 
 		int $contactId
-	):Collection;
+	):array<ContactOption>;
 
 	/**
 	 * Updates options of the given contact and returns them.
@@ -35,7 +35,7 @@ interface ContactOptionRepositoryContract
 	public function updateContactOptions(
 		array<mixed> $optionData, 
 		int $contactId
-	):Collection;
+	):array<ContactOption>;
 
 	/**
 	 * Deletes all options of the given contact. Returns `true` if deletion was successful, otherwise `false`.
@@ -55,7 +55,7 @@ interface ContactOptionRepositoryContract
 	 * Updates an option with the given id and returns it.
 	 */
 	public function updateContactOption(
-		array<string> $optionData, 
+		array<string, mixed> $optionData, 
 		int $optionId
 	):ContactOption;
 

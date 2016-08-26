@@ -1,9 +1,10 @@
 <?hh
 namespace Plenty\Modules\Item\Attribute\Models;
 
+use Plenty\Modules\Item\Attribute\Models\AttributeName;
 
 /**
- * The Attribute model including AttributeLang
+ * The Attribute model including AttributeName
  */
 abstract class Attribute 
 {
@@ -28,6 +29,7 @@ abstract class Attribute
 	public int $la_redoute_variation;
 	public string $plenty_attribute2_group_attribute;
 	public \Plenty\Modules\Item\Attribute\Models\Attribute $attribute;
+	public array<AttributeName> $attributeNames;
 	
 	/**
 	 * returns this model as an array

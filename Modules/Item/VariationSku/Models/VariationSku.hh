@@ -11,8 +11,8 @@ abstract class VariationSku
 	public int $variationId;
 	public float $marketId;
 	public int $accountId;
-	public mixed $initialSku;
-	public mixed $variationSku;
+	public string $initialSku;
+	public string $variationSku;
 	public int $active;
 	public string $createdTimestamp;
 	public string $lastExportTimestamp;

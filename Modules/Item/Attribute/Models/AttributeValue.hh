@@ -1,9 +1,11 @@
 <?hh
 namespace Plenty\Modules\Item\Attribute\Models;
 
+use Plenty\Modules\Item\Attribute\Models\Attribute;
+use Plenty\Modules\Item\Attribute\Models\AttributeValueName;
 
 /**
- * The AttributeValue model including Attribute and AttributeValueLang
+ * The AttributeValue model including Attribute and AttributeValueName
  */
 abstract class AttributeValue 
 {
@@ -25,7 +27,8 @@ abstract class AttributeValue
 	public string $la_redoute_map;
 	public string $tracdelight_map;
 	public int $plenty_attribute_value_percentage_distribution;
-	public \Plenty\Modules\Item\Attribute\Models\Attribute $attribute;
+	public Attribute $attribute;
+	public array<AttributeValueName> $valueNames;
 	
 	/**
 	 * returns this model as an array

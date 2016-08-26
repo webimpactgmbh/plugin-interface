@@ -15,14 +15,14 @@ interface ContactRepositoryContract
 	 * Creates a new contact and returns it.
 	 */
 	public function createContact(
-		array<mixed> $data
+		array<string, mixed> $data
 	):Contact;
 
 	/**
 	 * Updates an existing contact and returns it.
 	 */
 	public function updateContact(
-		array<mixed> $data, 
+		array<string, mixed> $data, 
 		int $contactId
 	):Contact;
 

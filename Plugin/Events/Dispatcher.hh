@@ -9,7 +9,7 @@ use Plenty\Modules\Basket\Models\BasketItem;
 abstract class Dispatcher 
 {
 
-	const string PLUGIN_CONFIG_PREFIX = 'plenty';
+	const string PLUGIN_NAMESPACE_PREFIX = 'plenty';
 
 	/**
 	 * Register an event listener with the dispatcher.
@@ -33,7 +33,7 @@ abstract class Dispatcher
 	abstract public function fire(
 		string $event, 
 		mixed $payload = "[]"
-	):array<string>;
+	):void;
 
 	/**
 	 * Remove a set of listeners from the dispatcher.

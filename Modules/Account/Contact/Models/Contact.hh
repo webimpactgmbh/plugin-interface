@@ -3,7 +3,6 @@ namespace Plenty\Modules\Account\Contact\Models;
 
 use Plenty\Modules\Account\Address\Models\Address;
 use Illuminate\Database\Eloquent\Collection;
-use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Scheduler\Models\OrderScheduler;
 use Plenty\Modules\Account\Models\Account;
 use Plenty\Modules\Account\OrderSummary\Models\OrderSummary;
@@ -34,6 +33,7 @@ abstract class Contact
 	public int $userId;
 	public string $birthdayAt;
 	public string $lastLoginAt;
+	public string $lastLoginAtTimestamp;
 	public string $lastOrderAt;
 	public string $createdAt;
 	public string $updatedAt;
@@ -47,6 +47,8 @@ abstract class Contact
 	public string $dhlPostIdent;
 	public string $forumUsername;
 	public string $forumGroupId;
+	public string $singleAccess;
+	public string $contactPerson;
 	public Collection $addresses;
 	public Collection $accounts;
 	public Collection $orders;

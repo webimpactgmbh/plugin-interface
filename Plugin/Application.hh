@@ -31,6 +31,11 @@ abstract class Application
 		?string $concrete = null
 	):void;
 
+	abstract public function make(
+		string $abstract, 
+		?array<string, mixed> $parameters = []
+	):mixed;
+
 	/**
 	 * Throw an HttpException with the given data.
 	 */

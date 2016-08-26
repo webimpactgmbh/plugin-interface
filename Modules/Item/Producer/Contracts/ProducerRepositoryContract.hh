@@ -2,7 +2,7 @@
 namespace Plenty\Modules\Item\Producer\Contracts;
 
 use Plenty\Modules\Item\Producer\Models\Producer;
-use Plenty\Repositories\Contracts\Pagination;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * Repository for item producers
@@ -38,7 +38,7 @@ interface ProducerRepositoryContract
 	public function search(
 		?array<string, string> $params = [], 
 		array<string> $columns = []
-	):Pagination;
+	):PaginatedResult;
 
 	/**
 	 * Find an existing Producer

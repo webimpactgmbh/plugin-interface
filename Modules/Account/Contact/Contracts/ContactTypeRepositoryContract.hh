@@ -16,14 +16,14 @@ interface ContactTypeRepositoryContract
 	 * Creates a contact type and returns it.
 	 */
 	public function createContactType(
-		array<mixed> $data
+		array<string, mixed> $data
 	):ContactType;
 
 	/**
 	 * Updates an existing contact type and returns it.
 	 */
 	public function updateContactType(
-		array<mixed> $data, 
+		array<string, mixed> $data, 
 		int $contactTypeId
 	):ContactType;
 
@@ -46,6 +46,6 @@ interface ContactTypeRepositoryContract
 	 */
 	public function allContactTypes(
 		array<string> $columns = []
-	):Collection;
+	):array<ContactType>;
 
 }

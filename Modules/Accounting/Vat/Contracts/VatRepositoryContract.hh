@@ -17,6 +17,10 @@ interface VatRepositoryContract
 		float $vatPercentage
 	):int;
 
+	public function getVatById(
+		int $id
+	):Vat;
+
 	public function determineCountryVat(
 		bool $isRestricted, 
 		int $contactCountryId, 

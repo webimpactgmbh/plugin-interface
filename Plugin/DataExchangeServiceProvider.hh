@@ -21,4 +21,10 @@ abstract class DataExchangeServiceProvider
 		return App::make(Application::class);
 	}
 
+	public function getEventDispatcher(
+	):\Plenty\Plugin\Events\Dispatcher
+	{
+		return App::make(Dispatcher::class);
+	}
+
 }

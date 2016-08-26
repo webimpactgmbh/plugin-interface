@@ -1,6 +1,7 @@
 <?hh
 namespace Plenty\Modules\Account\Contact\Contracts;
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ModelNotEditableException;
 use Plenty\Modules\Account\Address\Models\Address;
@@ -23,7 +24,7 @@ interface ContactAddressRepositoryContract
 	 * Creates a address, associates it immediately with the given contact (id) with the given type and returns the new address.
 	 */
 	public function createAddress(
-		array<mixed> $data, 
+		array<string, mixed> $data, 
 		int $contactId, 
 		int $typeId
 	):Address;
@@ -32,7 +33,7 @@ interface ContactAddressRepositoryContract
 	 * Updates the existing address of a the given contact and type and returns it.
 	 */
 	public function updateAddress(
-		array<mixed> $data, 
+		array<string, mixed> $data, 
 		int $addressId, 
 		int $contactId, 
 		int $typeId
@@ -45,7 +46,15 @@ interface ContactAddressRepositoryContract
 		int $addressId, 
 		int $contactId, 
 		int $typeId
-	):void;
+	):Address;
+
+	/**
+	 * Get all addresses for the given contact of the given type
+	 */
+	public function getAddresses(
+		int $contactId, 
+		?int $typeId = null
+	):array<Address>;
 
 	/**
 	 * Adds the address to the given contact as the given type.
