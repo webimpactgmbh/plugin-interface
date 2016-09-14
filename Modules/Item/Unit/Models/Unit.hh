@@ -3,7 +3,7 @@ namespace Plenty\Modules\Item\Unit\Models;
 
 
 /**
- * The unit model including unitlang
+ * The unit model including unit name
  */
 abstract class Unit 
 {

@@ -7,6 +7,7 @@ namespace Plenty\Modules\Item\Property\Models;
  */
 abstract class PropertySelection 
 {
+	public int $id;
 	public int $propertyItemId;
 	public string $lang;
 	public string $name;

@@ -21,7 +21,7 @@ interface ContactAddressRepositoryContract
 	):Address;
 
 	/**
-	 * Creates a address, associates it immediately with the given contact (id) with the given type and returns the new address.
+	 * Creates an address, associates it immediately with the given contact (id) with the given type and returns the new address.
 	 */
 	public function createAddress(
 		array<string, mixed> $data, 

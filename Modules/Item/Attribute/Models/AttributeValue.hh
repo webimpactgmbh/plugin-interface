@@ -10,23 +10,22 @@ use Plenty\Modules\Item\Attribute\Models\AttributeValueName;
 abstract class AttributeValue 
 {
 	public int $id;
-	public int $attribute_id;
-	public string $backend_name;
-	public float $markup;
+	public int $attributeId;
+	public string $backendName;
+	public float $surcharge;
 	public int $position;
 	public string $image;
 	public string $comment;
-	public string $value_match;
-	public string $short_name;
-	public string $amazon_map;
-	public string $neckerman_map;
-	public string $otto_map;
-	public string $neckermann_at_ep_map;
-	public string $neckermann_at_cd_map;
-	public string $global_type;
-	public string $la_redoute_map;
-	public string $tracdelight_map;
-	public int $plenty_attribute_value_percentage_distribution;
+	public string $valueMatch;
+	public string $shortName;
+	public string $amazonMap;
+	public string $neckermannMap;
+	public string $ottoMap;
+	public string $neckermannAtEpMap;
+	public string $neckermannAtCdMap;
+	public string $laRedouteMap;
+	public string $tracdelightMap;
+	public int $percentageDistribution;
 	public Attribute $attribute;
 	public array<AttributeValueName> $valueNames;
 	

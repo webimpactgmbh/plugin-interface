@@ -25,7 +25,6 @@ abstract class Variation
 	public int $automaticClientVisibility;
 	public int $availability;
 	public string $availableUntil;
-	public string $bundleType;
 	public string $createdTimestamp;
 	public string $customNumber;
 	public float $customsPercent;
@@ -50,8 +49,8 @@ abstract class Variation
 	public string $picking;
 	public int $position;
 	public int $priceCalculationSetId;
-	public bool $isPrimary;
-	public int $primaryVariationId;
+	public bool $isMain;
+	public int $mainVariationId;
 	public float $purchasePrice;
 	public string $relatedLastUpdateTimestamp;
 	public string $releaseDate;

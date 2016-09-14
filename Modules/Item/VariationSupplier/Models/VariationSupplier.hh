@@ -18,7 +18,7 @@ abstract class VariationSupplier
 	public float $discount;
 	public string $discountable;
 	public float $packagingUnit;
-	public string $updatedAt;
+	public string $lastUpdateTimestamp;
 	public string $createdAt;
 	
 	/**

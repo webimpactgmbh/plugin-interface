@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Property\Models\PropertySelection;
 
 /**
- * Repository for PropertySelection
+ * Repository for property selection
  */
 interface PropertySelectionRepositoryContract 
 {

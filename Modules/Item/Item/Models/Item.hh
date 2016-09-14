@@ -4,24 +4,22 @@ namespace Plenty\Modules\Item\Item\Models;
 use Plenty\Modules\Item\Variation\Models\Variation;
 
 /**
- * The item producer model
+ * The item manufacturer model
  */
 abstract class Item 
 {
-	public int $primaryVariationId;
+	public int $mainVariationId;
 	public int $id;
-	public int $abo;
+	public int $subscription;
 	public string $addCmsPage;
 	public string $amazonFba;
-	public string $amazonProductType;
+	public string $amazonProductstockType;
 	public string $apiCondition;
 	public string $storeSpecial;
-	public float $bestofferAutoDeclinePrice;
 	public int $condition;
-	public string $crossSellingCharacter;
 	public string $customsTariffNumber;
 	public float $defaultShippingCost;
-	public string $directCrossArticle;
+	public string $directCrossItem;
 	public string $ebayCategory;
 	public string $ebayCategory2;
 	public string $ebayPreset;
@@ -29,8 +27,8 @@ abstract class Item
 	public string $ebayStoreCategory2;
 	public string $epid;
 	public string $fedas;
-	public int $markingOne;
-	public int $markingTwo;
+	public int $flagOne;
+	public int $flagTwo;
 	public string $flashFile;
 	public string $flashHeight;
 	public string $flashWidth;
@@ -54,34 +52,31 @@ abstract class Item
 	public string $free18;
 	public string $free19;
 	public string $free20;
-	public string $ageRestriction;
+	public string $ageRating;
 	public string $hasAttribute;
 	public bool $isActive;
 	public string $createDate;
-	public bool $isPacket;
+	public bool $isShippingPackage;
 	public string $marketStockBuffer;
 	public string $noCoupon;
 	public int $producingCountryId;
 	public int $position;
-	public string $producer;
-	public int $producerId;
+	public string $manufacturer;
+	public int $manufacturerId;
 	public int $rating;
 	public int $ratingCount;
 	public string $revenueAccount;
-	public string $scoActive;
 	public float $scoMinPrice;
-	public float $scoMinStockNet;
 	public string $serialNumber;
 	public string $shippingWithAmazonFba;
 	public string $sitemapPublished;
 	public string $sortingPrice;
-	public string $storingPosition;
 	public string $lastUpdateTimestamp;
-	public string $type;
-	public string $votes;
+	public string $stockType;
+	public string $feedback;
 	public int $variationCount;
 	public int $variationWithAttributeCount;
-	public Variation $primaryVariation;
+	public Variation $mainVariation;
 	public array<Variation> $variations;
 	
 	/**

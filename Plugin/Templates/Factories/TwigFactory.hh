@@ -16,12 +16,14 @@ abstract class TwigFactory
 
 	abstract public function createSimpleFunction(
 		string $name, 
-		mixed $callable
+		mixed $callable, 
+		?array<string, mixed> $params = []
 	):Twig_SimpleFunction;
 
 	abstract public function createSimpleFilter(
 		string $name, 
-		mixed $callable
+		mixed $callable, 
+		?array<string, mixed> $params = []
 	):Twig_SimpleFilter;
 
 }

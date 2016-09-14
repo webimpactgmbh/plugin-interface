@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Property\Models\PropertyMarketComponent;
 
 /**
- * Repository for PropertyMarketComponent
+ * Repository for property market component
  */
 interface PropertyMarketComponentRepositoryContract 
 {

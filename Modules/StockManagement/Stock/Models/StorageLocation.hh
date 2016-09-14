@@ -3,7 +3,7 @@ namespace Plenty\Modules\StockManagement\Stock\Models;
 
 
 /**
- * The storage location model
+ * The storage location model. A storage location is the smallest unit of a warehouse. The storage location is the place where variations are actually stored.
  */
 abstract class StorageLocation 
 {

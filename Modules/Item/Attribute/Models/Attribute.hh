@@ -2,34 +2,33 @@
 namespace Plenty\Modules\Item\Attribute\Models;
 
 use Plenty\Modules\Item\Attribute\Models\AttributeName;
+use Plenty\Modules\Item\Attribute\Models\AttributeValue;
 
 /**
- * The Attribute model including AttributeName
+ * The Attribute model including AttributeName and AttributeValue
  */
 abstract class Attribute 
 {
 	public int $id;
-	public string $backend_name;
-	public int $contentpage;
+	public string $backendName;
 	public int $position;
-	public string $markup_percental;
-	public string $image_attribute;
-	public string $filter_attribute;
-	public string $amazon_variation;
-	public string $fruugo_attribute;
-	public int $pixmania_attribute;
-	public int $neckermann_attribute;
-	public string $shopperella_variation;
-	public string $otto_variation;
-	public string $googleproducts_variation;
-	public int $neckermann_at_ep_variation;
-	public int $neckermann_at_cd_variation;
-	public string $global_type;
-	public string $view_webshop;
-	public int $la_redoute_variation;
-	public string $plenty_attribute2_group_attribute;
-	public \Plenty\Modules\Item\Attribute\Models\Attribute $attribute;
-	public array<AttributeName> $attributeNames;
+	public string $surchargePercental;
+	public string $imageAttribute;
+	public string $filterAttribute;
+	public string $amazonVariation;
+	public string $fruugoAttribute;
+	public int $pixmaniaAttribute;
+	public int $neckermannAttribute;
+	public string $shopperellaVariation;
+	public string $ottoVariation;
+	public string $googleproductsVariation;
+	public int $neckermannAtEpVariation;
+	public int $neckermannAtCdVariation;
+	public string $viewOnlineStore;
+	public int $laRedouteVariation;
+	public string $groupAttribute;
+	public array<AttributeName> $langs;
+	public array<AttributeValue> $values;
 	
 	/**
 	 * returns this model as an array

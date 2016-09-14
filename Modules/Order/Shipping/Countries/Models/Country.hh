@@ -10,14 +10,12 @@ abstract class Country
 	public int $id;
 	public string $name;
 	public int $shippingDestinationId;
-	public bool $active;
+	public int $active;
 	public int $storehouseId;
 	public string $isoCode2;
 	public string $isoCode3;
 	public string $lang;
-	public string $kfz;
-	public int $visibility;
-	public int $plentyShippingCountryStateMandatory;
+	public bool $isCountryStateMandatory;
 	public array<\Plenty\Modules\Order\Shipping\Countries\Models\CountryState> $states;
 	public array<\Plenty\Modules\Order\Shipping\Countries\Models\CountryName> $names;
 	

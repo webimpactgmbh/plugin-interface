@@ -7,7 +7,7 @@ namespace Plenty\Modules\Item\Property\Models;
  */
 abstract class PropertyItemName 
 {
-	public int $character_item_id;
+	public int $propertyItemId;
 	public string $lang;
 	public string $name;
 	public string $description;

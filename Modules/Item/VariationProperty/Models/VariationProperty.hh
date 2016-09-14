@@ -8,8 +8,8 @@ use Plenty\Modules\Item\Property\Models\PropertyItem;
  */
 abstract class VariationProperty 
 {
-	public int $article_id;
-	public int $character_item_id;
+	public int $variationId;
+	public int $propertyItemId;
 	public PropertyItem $propertyItem;
 	
 	/**

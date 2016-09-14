@@ -21,6 +21,14 @@ interface ContactPaymentRepositoryContract
 	):array<ContactBank>;
 
 	/**
+	 * Returns bank details of an order.
+	 */
+	public function getBankByOrderId(
+		int $orderId, 
+		array<string> $columns = []
+	):ContactBank;
+
+	/**
 	 * Creates a new bank account for a contact and returns it.
 	 */
 	public function createContactBank(

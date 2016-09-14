@@ -7,8 +7,9 @@ namespace Plenty\Modules\System\Models;
  */
 abstract class Webstore 
 {
-	public int $plenty_webstore_id;
-	public string $plenty_webstore_name;
+	public int $id;
+	public string $name;
+	public string $storeIdentifier;
 	
 	/**
 	 * returns this model as an array

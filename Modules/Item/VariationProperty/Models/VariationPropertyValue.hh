@@ -1,8 +1,8 @@
 <?hh
 namespace Plenty\Modules\Item\VariationProperty\Models;
 
-use Plenty\Modules\Item\Property\Models\PropertySelection;
 use Plenty\Modules\Item\Property\Models\PropertyItem;
+use Plenty\Modules\Item\Property\Models\PropertySelection;
 
 /**
  * The VariationPropertyValue
@@ -10,13 +10,13 @@ use Plenty\Modules\Item\Property\Models\PropertyItem;
 abstract class VariationPropertyValue 
 {
 	public int $id;
-	public int $article_id;
-	public int $character_item_id;
-	public int $character_selection_id;
-	public int $value_int;
-	public float $value_float;
-	public string $value_file;
-	public float $markup;
+	public int $variationId;
+	public int $propertyItemId;
+	public int $propertySelectionId;
+	public int $valueInt;
+	public float $valueFloat;
+	public string $valueFile;
+	public float $surcharge;
 	public PropertyItem $propertyItem;
 	public PropertySelection $propertySelection;
 	

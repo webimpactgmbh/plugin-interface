@@ -19,7 +19,9 @@ interface CountryRepositoryContract
 		int $countryId
 	):Country;
 
-	public function getActiveCountriesList(
+	public function getCountriesList(
+		int $active, 
+		array<string> $with
 	):?array<Country>;
 
 	public function getActiveCountryNameMap(

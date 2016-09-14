@@ -8,11 +8,11 @@ namespace Plenty\Modules\Order\Referrer\Models;
 abstract class OrderReferrer 
 {
 	public float $id;
-	public int $editable;
+	public bool $editable;
 	public string $backendName;
 	public string $name;
 	public int $orderOwnerId;
-	public string $isFilterable;
+	public bool $isFilterable;
 	
 	/**
 	 * returns this model as an array

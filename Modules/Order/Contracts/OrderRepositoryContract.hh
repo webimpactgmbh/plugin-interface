@@ -1,11 +1,12 @@
 <?hh
 namespace Plenty\Modules\Order\Contracts;
 
+use Plenty\Modules\Order\Models\Order;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Collection;
 use Plenty\Exceptions\ValidationException;
-use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Scheduler\Models\OrderScheduler;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * The OrderRepositoryContract is the interface for the order repository. This interface allows you to find, create and update orders. There are many different order types and the data returned depends on the order type.
@@ -51,12 +52,22 @@ interface OrderRepositoryContract
 	):OrderScheduler;
 
 	/**
+	 * Get all orders
+	 */
+	public function allOrdersForPos(
+		array<string> $columns = [], 
+		array<string> $where = [], 
+		int $page = 1, 
+		int $perPage = 50
+	):array<Order>;
+
+	/**
 	 * Gets all orders for the specified contact ID.
 	 */
 	public function allOrdersByContact(
 		int $contactId, 
 		int $page = 1, 
-		int $perPage = 50, 
+		int $itemsPerPage = 50, 
 		?array<string> $with = []
 	):array<Order>;
 
@@ -67,5 +78,12 @@ interface OrderRepositoryContract
 		int $contactId, 
 		?array<string> $with = []
 	):Order;
+
+	public function searchOrders(
+		?array<string> $filter, 
+		int $page = 1, 
+		int $itemsPerPage = 50, 
+		?array<string> $with = []
+	):array<Order>;
 
 }

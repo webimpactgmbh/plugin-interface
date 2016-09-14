@@ -8,7 +8,7 @@ namespace Plenty\Modules\Item\DataLayer\Models;
 abstract class Record 
 {
 	public \Plenty\Modules\Item\DataLayer\Models\ItemBase $itemBase;
-	public array<\Plenty\Modules\Item\DataLayer\Models\ItemCharacter> $itemCharacterList;
+	public array<\Plenty\Modules\Item\DataLayer\Models\ItemProperty> $itemPropertyList;
 	public array<\Plenty\Modules\Item\DataLayer\Models\ItemCrossSelling> $itemCrossSellingList;
 	public \Plenty\Modules\Item\DataLayer\Models\ItemDescription $itemDescription;
 	public array<\Plenty\Modules\Item\DataLayer\Models\ItemShippingProfiles> $itemShippingProfilesList;

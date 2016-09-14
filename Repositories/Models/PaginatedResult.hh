@@ -30,7 +30,7 @@ abstract class PaginatedResult
 	 * Get the instance as an array.
 	 */
 	abstract public function toArray(
-	):array<string>;
+	):array<string, mixed>;
 
 	/**
 	 * Convert the object to its JSON representation.

@@ -14,7 +14,21 @@ interface OrderReferrerRepositoryContract
 	 * Get the list of order referrer.
 	 */
 	public function getList(
-		array<string> $columns = []
+		?array<string> $columns = []
 	):array<OrderReferrer>;
+
+	/**
+	 * Get order referrer by id
+	 */
+	public function createReferrer(
+		array<mixed> $data
+	):OrderReferrer;
+
+	/**
+	 * Get order referrer by id
+	 */
+	public function getReferrerById(
+		float $referrerId
+	):OrderReferrer;
 
 }

@@ -12,13 +12,13 @@ abstract class Warehouse
 	public int $id;
 	public string $name;
 	public string $note;
-	public int $warehouseType;
+	public int $typeId;
 	public int $onStockAvailability;
 	public int $outOfStockAvailability;
-	public bool $splitByParcel;
+	public bool $splitByShippingProfile;
 	public string $storageLocationType;
 	public int $storageLocationZone;
-	public int $warehouseRepairId;
+	public int $repairWarehouseId;
 	public bool $inventoryMod;
 	public int $logisticsType;
 	public Address $address;

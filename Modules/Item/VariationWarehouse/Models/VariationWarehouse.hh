@@ -16,7 +16,7 @@ abstract class VariationWarehouse
 	public int $stockTurnoverInDays;
 	public int $storageLocation;
 	public int $stockBuffer;
-	public string $updatedAt;
+	public string $lastUpdateTimestamp;
 	public string $createdAt;
 	
 	/**

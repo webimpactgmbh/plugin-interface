@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Attribute\Models\Attribute;
 
 /**
- * attribute respository
+ * Repository for Attribute
  */
 interface AttributeRepositoryContract 
 {

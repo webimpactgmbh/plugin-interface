@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Property\Models\PropertyItemName;
 
 /**
- * Repository for Property
+ * Repository for property item name
  */
 interface PropertyItemNameRepositoryContract 
 {

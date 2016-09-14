@@ -7,10 +7,10 @@ namespace Plenty\Modules\Item\Attribute\Models;
  */
 abstract class AttributeName 
 {
-	public int $attribute_id;
+	public int $attributeId;
 	public string $lang;
 	public string $name;
-	public \Plenty\Modules\Item\Attribute\Models\AttributeName $attributeName;
+	public \Plenty\Modules\Item\Attribute\Models\Attribute $attribute;
 	
 	/**
 	 * returns this model as an array

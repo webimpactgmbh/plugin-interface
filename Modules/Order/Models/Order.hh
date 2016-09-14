@@ -4,6 +4,7 @@ namespace Plenty\Modules\Order\Models;
 use Plenty\Modules\Account\Address\Models\Address;
 use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Account\Address\Models\AddressRelationType;
+use Plenty\Modules\Order\Models\OrderItem;
 use Carbon\Carbon;
 use Plenty\Modules\Authentication\Models\User;
 
@@ -16,6 +17,7 @@ abstract class Order
 	public int $typeId;
 	public int $methodOfPaymentId;
 	public int $shippingProfileId;
+	public string $paymentStatus;
 	public int $statusId;
 	public int $ownerId;
 	public Carbon $createdAt;
@@ -29,6 +31,7 @@ abstract class Order
 	public Collection $properties;
 	public Collection $relations;
 	public Collection $amounts;
+	public Collection $comments;
 	
 	/**
 	 * returns this model as an array

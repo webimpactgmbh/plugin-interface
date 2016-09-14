@@ -7,7 +7,7 @@ namespace Plenty\Modules\Item\Attribute\Models;
  */
 abstract class AttributeValueName 
 {
-	public int $value_id;
+	public int $valueId;
 	public string $lang;
 	public string $name;
 	public \Plenty\Modules\Item\Attribute\Models\AttributeValue $attributeValue;

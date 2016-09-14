@@ -8,7 +8,7 @@ namespace Plenty\Modules\Item\VariationMarket\Models;
 abstract class VariationMarket 
 {
 	public int $variationId;
-	public int $marketplaceId;
+	public int $marketId;
 	public string $createdAt;
 	
 	/**

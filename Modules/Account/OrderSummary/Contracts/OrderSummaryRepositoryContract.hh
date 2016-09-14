@@ -57,7 +57,7 @@ interface OrderSummaryRepositoryContract
 	):OrderSummary;
 
 	/**
-	 * Returns an order summary by a address id.
+	 * Returns an order summary by an address id.
 	 */
 	public function findOrderSummaryByAddressId(
 		int $addressId
