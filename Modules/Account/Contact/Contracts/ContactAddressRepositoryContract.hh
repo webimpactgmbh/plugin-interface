@@ -21,7 +21,7 @@ interface ContactAddressRepositoryContract
 	):Address;
 
 	/**
-	 * Creates an address, associates it immediately with the given contact (id) with the given type and returns the new address.
+	 * Creates an address, associates it immediately with the given contact id with the given type and returns the new address.
 	 */
 	public function createAddress(
 		array<string, mixed> $data, 
@@ -30,7 +30,7 @@ interface ContactAddressRepositoryContract
 	):Address;
 
 	/**
-	 * Updates the existing address of a the given contact and type and returns it.
+	 * Updates the existing address of a given contact and type and returns it.
 	 */
 	public function updateAddress(
 		array<string, mixed> $data, 
@@ -49,7 +49,7 @@ interface ContactAddressRepositoryContract
 	):Address;
 
 	/**
-	 * Get all addresses for the given contact of the given type
+	 * Gets all addresses for the given contact of the given type.
 	 */
 	public function getAddresses(
 		int $contactId, 
@@ -66,7 +66,7 @@ interface ContactAddressRepositoryContract
 	):Address;
 
 	/**
-	 * Deletes an existing address of a given contact and type. Returns `true` if deletion was successful, otherwise `false`.
+	 * Deletes an existing address of a given contact and type. Returns `true` if deletion was successful. Returns `false` if deletion was not successful.
 	 */
 	public function deleteAddress(
 		int $addressId, 

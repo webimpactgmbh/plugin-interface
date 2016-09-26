@@ -18,7 +18,7 @@ interface UrlBuilderRepositoryContract
 
 	public function getImageUrl(
 		string $path, 
-		int $plentyId, 
+		?int $plentyId = null, 
 		string $size = "", 
 		string $fileType = "", 
 		bool $isExternalImage = false

@@ -60,7 +60,8 @@ interface BarcodeRepositoryContract
 	 */
 	public function allBarcodes(
 		array<string> $columns = [], 
-		int $perPage = 50
+		int $perPage = 50, 
+		int $page = 1
 	):array<Barcode>;
 
 	/**

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ModelNotEditableException;
 use Plenty\Modules\Account\Address\Models\Address;
 use Plenty\Modules\Account\Address\Models\AddressOption;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 
 /**
  * The contract for the address repository
@@ -21,7 +22,7 @@ interface AddressRepositoryContract
 	):Address;
 
 	/**
-	 * Updates an existing address.
+	 * Updates an address.
 	 */
 	public function updateAddress(
 		array<string, mixed> $data, 
@@ -43,7 +44,7 @@ interface AddressRepositoryContract
 	):bool;
 
 	/**
-	 * Returns a Collection of addresses associated with a warehouse.
+	 * Returns a collection of addresses associated with a warehouse.
 	 */
 	public function getAddressesOfWarehouse(
 		int $warehouseId, 
@@ -106,7 +107,7 @@ interface AddressRepositoryContract
 	):AddressOption;
 
 	/**
-	 * Deletes an address option. Returns `true` if deletion ws successfull or `false` otherwise
+	 * Deletes an address option. Returns `true` if deletion was successful. Returns `false` if deletion was not successful.
 	 */
 	public function deleteAddressOption(
 		int $optionId

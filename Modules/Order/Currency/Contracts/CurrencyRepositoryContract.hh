@@ -13,7 +13,7 @@ interface CurrencyRepositoryContract
 {
 
 	/**
-	 * Get the currency instance for the given ISO 4217 code.
+	 * Get a currency
 	 */
 	public function getCurrency(
 		string $currencyIso, 
@@ -30,7 +30,7 @@ interface CurrencyRepositoryContract
 	):array<Currency>;
 
 	/**
-	 * Get all countries using the given ISO 4217 currency.
+	 * List countries for a currency
 	 */
 	public function getCurrencyCountries(
 		string $currencyIso, 
@@ -38,7 +38,7 @@ interface CurrencyRepositoryContract
 	):?array<Country>;
 
 	/**
-	 * Get the currency instance for the given country id.
+	 * Get a currency for a country
 	 */
 	public function getCountryCurrency(
 		int $countryId, 

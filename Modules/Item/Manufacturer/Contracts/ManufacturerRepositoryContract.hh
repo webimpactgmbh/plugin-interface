@@ -33,14 +33,6 @@ interface ManufacturerRepositoryContract
 	):void;
 
 	/**
-	 * Search manufacturers by Filter
-	 */
-	public function search(
-		?array<string, string> $params = [], 
-		array<string> $columns = []
-	):PaginatedResult;
-
-	/**
 	 * Find an existing Manufacturer
 	 */
 	public function findById(
@@ -48,7 +40,17 @@ interface ManufacturerRepositoryContract
 	):Manufacturer;
 
 	public function all(
+		array<string> $columns = [], 
+		int $perPage = 50, 
+		int $page = 1
+	):PaginatedResult;
+
+	/**
+	 * Search manufacturers by Filter
+	 */
+	public function search(
+		?array<string, string> $params = [], 
 		array<string> $columns = []
-	):mixed;
+	):PaginatedResult;
 
 }

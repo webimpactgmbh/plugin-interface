@@ -24,7 +24,10 @@ interface AttributeValueRepositoryContract
 	):bool;
 
 	public function findByAttributeId(
-		int $attributeId
+		int $attributeId, 
+		int $page = 1, 
+		int $perPage = 50, 
+		array<string> $columns = []
 	):array<AttributeValue>;
 
 	public function findById(

@@ -1,7 +1,7 @@
 <?hh
 namespace Plenty\Plugin\Routing;
 
-use Dingo\Api\Routing\Router;
+use Dingo\Api\Routing\Router as DingoRouter;
 
 /**
  * Api router service

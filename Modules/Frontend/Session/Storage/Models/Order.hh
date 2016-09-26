@@ -21,6 +21,7 @@ abstract class Order
 	public string $trustedShopApplicationId;
 	public string $coupon;
 	public string $couponDisplay;
+	public array<string> $activePaymentMethodsList;
 	public int $referrerId;
 	public int $referrerPriceColumn;
 	public int $referrerItemId;

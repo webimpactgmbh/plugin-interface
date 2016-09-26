@@ -3,7 +3,7 @@ namespace Plenty\Modules\Order\Referrer\Models;
 
 
 /**
- * The order referrer model.
+ * The order referrer model. An order referrer shows where a purchase was originally made.
  */
 abstract class OrderReferrer 
 {

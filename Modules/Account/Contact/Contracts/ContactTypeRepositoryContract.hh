@@ -28,7 +28,7 @@ interface ContactTypeRepositoryContract
 	):ContactType;
 
 	/**
-	 * Deletes a contact type by an id. Returns `true` if deletion was successful, otherwise `false`.
+	 * Deletes a contact type by an id. Returns `true` if deletion was successful. Returns `false` if deletion was not successful.
 	 */
 	public function deleteContactType(
 		int $contactTypeId

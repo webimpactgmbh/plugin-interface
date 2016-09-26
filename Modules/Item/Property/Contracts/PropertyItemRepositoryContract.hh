@@ -33,7 +33,8 @@ interface PropertyItemRepositoryContract
 
 	public function all(
 		array<string> $columns = [], 
-		int $perPage = 50
+		int $perPage = 50, 
+		int $page = 1
 	):array<PropertyItem>;
 
 }

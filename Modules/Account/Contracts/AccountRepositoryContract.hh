@@ -27,7 +27,7 @@ interface AccountRepositoryContract
 	):Account;
 
 	/**
-	 * Deletes an account by an id. Returns `true` if deletion was successful, otherwise `false`.
+	 * Deletes an account by an id. Returns `true` if deletion was successful. Returns `false` if deletion was not successful.
 	 */
 	public function deleteAccount(
 		int $accountId
@@ -49,7 +49,7 @@ interface AccountRepositoryContract
 	):Collection;
 
 	/**
-	 * Returns a collection of contacts which belong to the account.
+	 * Returns a collection of contacts that belong to the account.
 	 */
 	public function getContactsOfAccount(
 		int $accountId

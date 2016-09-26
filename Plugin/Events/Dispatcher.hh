@@ -32,7 +32,7 @@ abstract class Dispatcher
 	 */
 	abstract public function fire(
 		string $event, 
-		mixed $payload = "[]"
+		?array<mixed> $payload = []
 	):void;
 
 	/**

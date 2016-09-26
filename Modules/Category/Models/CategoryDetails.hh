@@ -1,6 +1,7 @@
 <?hh
 namespace Plenty\Modules\Category\Models;
 
+use Carbon\Carbon;
 use Plenty\Modules\Document\Models\Document;
 
 /**
@@ -25,7 +26,7 @@ abstract class CategoryDetails
 	public string $itemListView;
 	public string $singleItemView;
 	public string $pageView;
-	public bool $fulltext,;
+	public bool $fulltext;
 	public string $placeholderTranslation;
 	public bool $webTemplateExists;
 	public string $metaRobots;

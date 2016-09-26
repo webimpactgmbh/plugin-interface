@@ -5,27 +5,27 @@ use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Order\Referrer\Models\OrderReferrer;
 
 /**
- * Provides methods for the processing of order referrer
+ * Provides methods for processing order referrers. An order referrer indicates where a purchase was made originally.
  */
 interface OrderReferrerRepositoryContract 
 {
 
 	/**
-	 * Get the list of order referrer.
+	 * List order referrers
 	 */
 	public function getList(
 		?array<string> $columns = []
 	):array<OrderReferrer>;
 
 	/**
-	 * Get order referrer by id
+	 * Create order referrer
 	 */
 	public function createReferrer(
 		array<mixed> $data
 	):OrderReferrer;
 
 	/**
-	 * Get order referrer by id
+	 * Get order referrer
 	 */
 	public function getReferrerById(
 		float $referrerId

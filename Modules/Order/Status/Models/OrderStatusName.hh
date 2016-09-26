@@ -1,9 +1,9 @@
 <?hh
-namespace Plenty\Modules\Order\Models;
+namespace Plenty\Modules\Order\Status\Models;
 
 
 /**
- * The order status name model.
+ * The order status name model represents a status name for a given status Id. Every status can be available in many languages, which are.
  */
 abstract class OrderStatusName 
 {
@@ -13,7 +13,7 @@ abstract class OrderStatusName
 	public string $frontendName;
 	public string $lang;
 	public int $frontendVisibility;
-	public \Plenty\Modules\Order\Models\OrderStatus $status;
+	public \Plenty\Modules\Order\Status\Models\OrderStatus $status;
 	
 	/**
 	 * returns this model as an array

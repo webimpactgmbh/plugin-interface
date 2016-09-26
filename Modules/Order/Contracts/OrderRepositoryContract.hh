@@ -3,9 +3,9 @@ namespace Plenty\Modules\Order\Contracts;
 
 use Plenty\Modules\Order\Models\Order;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Illuminate\Support\Collection;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Order\Scheduler\Models\OrderScheduler;
+use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -15,7 +15,7 @@ interface OrderRepositoryContract
 {
 
 	/**
-	 * Finds the order specified by the id.
+	 * Get an order
 	 */
 	public function findOrderById(
 		int $orderId, 
@@ -23,7 +23,7 @@ interface OrderRepositoryContract
 	):Order;
 
 	/**
-	 * Creates an order.
+	 * Create an order.
 	 */
 	public function createOrder(
 		array<string, mixed> $data
@@ -38,31 +38,21 @@ interface OrderRepositoryContract
 	):Order;
 
 	/**
-	 * Deletes the order specified by the id.
+	 * Delete an order
 	 */
 	public function deleteOrder(
 		int $orderId
 	):bool;
 
 	/**
-	 * Finds the scheduler order specified by the id.
+	 * Get a scheduler order
 	 */
 	public function findSchedulerById(
 		int $schedulerId
 	):OrderScheduler;
 
 	/**
-	 * Get all orders
-	 */
-	public function allOrdersForPos(
-		array<string> $columns = [], 
-		array<string> $where = [], 
-		int $page = 1, 
-		int $perPage = 50
-	):array<Order>;
-
-	/**
-	 * Gets all orders for the specified contact ID.
+	 * List orders for a contact id
 	 */
 	public function allOrdersByContact(
 		int $contactId, 
@@ -72,7 +62,7 @@ interface OrderRepositoryContract
 	):array<Order>;
 
 	/**
-	 * Returns the latest order for a specified contact id.
+	 * Get latest order for a contact id
 	 */
 	public function getLatestOrderByContactId(
 		int $contactId, 
@@ -80,10 +70,22 @@ interface OrderRepositoryContract
 	):Order;
 
 	public function searchOrders(
-		?array<string> $filter, 
 		int $page = 1, 
 		int $itemsPerPage = 50, 
 		?array<string> $with = []
 	):array<Order>;
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array<string> $filters = []
+	):void;
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	):mixed;
 
 }

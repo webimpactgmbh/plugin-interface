@@ -44,7 +44,7 @@ interface InternalContactPaymentRepositoryContract
 	):ContactBank;
 
 	/**
-	 * Deletes a bank account. Returns `true` if deletion was successful, otherwise `false`.
+	 * Deletes a bank account. Returns `true` if deletion was successful. Returns `false` if deletion was not successful.
 	 */
 	public function deleteContactBank(
 		int $contactBankId

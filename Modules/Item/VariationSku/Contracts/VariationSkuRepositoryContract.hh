@@ -54,7 +54,7 @@ interface VariationSkuRepositoryContract
 	 * Search sku´s
 	 */
 	public function search(
-		array<string> $filter
+		array<string, mixed> $filter
 	):array<VariationSku>;
 
 	/**

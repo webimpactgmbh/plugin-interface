@@ -40,7 +40,7 @@ class OrderCreatedTypeService
 	}
 
 	/**
-	 * Remove an event class for the given custom order type id.
+	 * Removes an event class for the given custom order type id.
 	 */
 	public static function removeEventForType(
 		int $typeId, 

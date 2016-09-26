@@ -20,7 +20,7 @@ interface ContactAccountRepositoryContract
 	):?Account;
 
 	/**
-	 * Creates new account and associates it immediately with the given contact (id)
+	 * Creates new account and associates it immediately with the given id of the contact.
 	 */
 	public function createAccount(
 		array<string, mixed> $data, 

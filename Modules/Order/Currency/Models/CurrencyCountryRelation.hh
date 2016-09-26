@@ -4,7 +4,7 @@ namespace Plenty\Modules\Order\Currency\Models;
 use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
 /**
- * The model with the currency to country relation.
+ * The CurrencyCountryRelation model indicates which currency is related to which country.
  */
 abstract class CurrencyCountryRelation 
 {

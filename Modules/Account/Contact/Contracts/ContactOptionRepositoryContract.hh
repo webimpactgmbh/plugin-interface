@@ -38,7 +38,7 @@ interface ContactOptionRepositoryContract
 	):array<ContactOption>;
 
 	/**
-	 * Deletes all options of the given contact. Returns `true` if deletion was successful, otherwise `false`.
+	 * Deletes all options of the given contact. Returns `true` if deletion was successful. Returns `false` if deletion was not successful.
 	 */
 	public function deleteContactOptionsByContactId(
 		int $contactId
