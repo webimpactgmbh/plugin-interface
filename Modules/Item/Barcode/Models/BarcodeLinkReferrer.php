@@ -1,0 +1,25 @@
+<?php
+namespace Plenty\Modules\Item\Barcode\Models;
+
+
+/**
+ * The barcode link referrer model including the barcode
+ */
+abstract class BarcodeLinkReferrer 
+{
+	public		$barcodeId;
+	public		$referrerId;
+	public		$createdAt;
+	public		$updatedAt;
+	public		$barcode;
+	
+	/**
+	 * returns this model as an array
+	 */
+	public function toArray(
+	):array
+	{
+		return [];
+	}
+
+}
