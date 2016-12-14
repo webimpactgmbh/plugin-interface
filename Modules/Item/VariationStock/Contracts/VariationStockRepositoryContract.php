@@ -17,7 +17,6 @@ interface VariationStockRepositoryContract
 	 * List stock per warehouse
 	 */
 	public function listStockByWarehouse(
-		int $itemId, 
 		int $variationId, 
 		array $columns
 	):array;
@@ -26,7 +25,6 @@ interface VariationStockRepositoryContract
 	 * List stock movements for a variation
 	 */
 	public function listStockMovements(
-		int $itemId, 
 		int $variationId, 
 		array $columns, 
 		int $page, 
@@ -37,7 +35,6 @@ interface VariationStockRepositoryContract
 	 * Book incoming stock
 	 */
 	public function bookIncomingItems(
-		int $itemId, 
 		int $variationId, 
 		array $data
 	):array;
@@ -46,7 +43,6 @@ interface VariationStockRepositoryContract
 	 * Correct stock
 	 */
 	public function correctStock(
-		int $itemId, 
 		int $variationId, 
 		array $data
 	):array;
@@ -55,7 +51,6 @@ interface VariationStockRepositoryContract
 	 * Redistribute stock
 	 */
 	public function redistributeStock(
-		int $itemId, 
 		int $variationId, 
 		array $data
 	):PaginatedResult;

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Frontend\Session\Storage\Models;
 
 
 /**
- * session storage model for customer data
+ * The session storage model for customer data.
  */
 abstract class Customer 
 {
@@ -17,7 +17,7 @@ abstract class Customer
 	public		$salesAgent;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

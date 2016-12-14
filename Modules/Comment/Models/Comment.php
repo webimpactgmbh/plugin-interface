@@ -7,9 +7,10 @@ namespace Plenty\Modules\Comment\Models;
  */
 abstract class Comment 
 {
-
+	public		$text;
+	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

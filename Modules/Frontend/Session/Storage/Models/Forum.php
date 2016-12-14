@@ -3,7 +3,7 @@ namespace Plenty\Modules\Frontend\Session\Storage\Models;
 
 
 /**
- * session storage model for forum data
+ * The session storage model for forum data.
  */
 abstract class Forum 
 {
@@ -14,7 +14,7 @@ abstract class Forum
 	public		$forumLastVisitTime;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

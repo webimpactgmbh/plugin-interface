@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\VariationDefaultCategory\Models;
 
+use Plenty\Modules\Category\Models\Category;
 
 /**
  * Variation Default Category
@@ -13,7 +14,7 @@ abstract class VariationDefaultCategory
 	public		$manually;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

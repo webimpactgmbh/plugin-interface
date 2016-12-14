@@ -3,7 +3,7 @@ namespace Plenty\Modules\Frontend\Session\Storage\Models;
 
 
 /**
- * session storage model for order data
+ * The session storage model for order data.
  */
 abstract class Order 
 {
@@ -31,7 +31,7 @@ abstract class Order
 	public		$schedulerFirstDeliveryDate;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

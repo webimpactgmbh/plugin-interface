@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\VariationCategory\Models;
 
+use Plenty\Modules\Category\Models\Category;
 
 /**
  * Variation Category
@@ -13,7 +14,7 @@ abstract class VariationCategory
 	public		$isNeckermannPrimary;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

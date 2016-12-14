@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Item\Variation\Models;
 
 use Plenty\Modules\Item\VariationDefaultCategory\Models\VariationDefaultCategory;
+use Plenty\Modules\Item\Item\Models\Item;
 
 /**
  * Variation
@@ -74,9 +75,10 @@ abstract class Variation
 	public		$images;
 	public		$variationAttributeValues;
 	public		$parent;
+	public		$item;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array
