@@ -1,22 +1,21 @@
 <?php
-namespace Plenty\Modules\Order\Models;
+namespace Plenty\Modules\Order\Property\Models;
 
+use Plenty\Modules\Order\Models\Order;
 use Carbon\Carbon;
-use Plenty\Modules\Order\Property\Models\OrderPropertyType;
 
 /**
- * The order item property model.
+ * The order properties model. Each order property has a type.
  */
-abstract class OrderItemProperty 
+abstract class OrderProperty 
 {
 	public		$id;
-	public		$orderItemId;
+	public		$orderId;
 	public		$typeId;
 	public		$value;
 	public		$createdAt;
 	public		$updatedAt;
-	public		$orderItem;
-	public		$type;
+	public		$order;
 	
 	/**
 	 * Returns this model as an array.

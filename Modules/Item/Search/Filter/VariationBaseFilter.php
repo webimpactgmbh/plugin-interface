@@ -6,6 +6,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchAutoCompl
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchExactFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchFuzzyFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 
@@ -30,8 +31,22 @@ abstract class VariationBaseFilter
 		int $id
 	);
 
+	abstract public function hasIds(
+		array $ids
+	);
+
 	abstract public function hasItemId(
 		int $itemId
+	);
+
+	abstract public function hasItemIds(
+		array $itemIds
+	);
+
+	abstract public function isMain(
+	);
+
+	abstract public function isChild(
 	);
 
 	abstract public function toArray(

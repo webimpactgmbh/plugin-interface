@@ -5,6 +5,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SortingInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\Processor\ProcessorInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 
 /**
@@ -31,6 +32,10 @@ interface ElasticSearchSearchRepositoryContract
 
 	public function addMutator(
 		MutatorInterface $mutator
+	);
+
+	public function addPostProcessor(
+		ProcessorInterface $processor
 	);
 
 	public function setPage(

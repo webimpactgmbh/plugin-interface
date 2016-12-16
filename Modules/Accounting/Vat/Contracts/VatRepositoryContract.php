@@ -23,14 +23,14 @@ interface VatRepositoryContract
 	const FILTER_STARTED_AT = 'startedAt';
 
 	/**
-	 * Get the VAT configuration with the given ID.
+	 * Get a VAT configuration
 	 */
 	public function findById(
 		int $id
 	):Vat;
 
 	/**
-	 * Get the standard VAT configuration for a plenty ID.
+	 * Get the standard VAT configuration for a plenty ID
 	 */
 	public function getStandardVat(
 		int $plentyId = null, 
@@ -38,7 +38,7 @@ interface VatRepositoryContract
 	):Vat;
 
 	/**
-	 * List VAT configurations.
+	 * List VAT configurations
 	 */
 	public function findVat(
 		int $page = 1, 

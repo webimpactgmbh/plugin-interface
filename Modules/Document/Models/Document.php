@@ -15,14 +15,12 @@ abstract class Document
 	public		$type;
 	public		$number;
 	public		$numberWithPrefix;
-	public		$directoryId;
 	public		$path;
 	public		$userId;
 	public		$source;
 	public		$displayDate;
 	public		$createdAt;
 	public		$updatedAt;
-	public		$directory;
 	public		$contacts;
 	public		$orders;
 	public		$webstores;
