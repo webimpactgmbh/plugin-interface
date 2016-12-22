@@ -8,6 +8,12 @@ use Plenty\Modules\Category\Models\Category;
  */
 abstract class VariationDefaultCategory 
 {
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$variationId;
 	public		$branchId;
 	public		$plentyId;

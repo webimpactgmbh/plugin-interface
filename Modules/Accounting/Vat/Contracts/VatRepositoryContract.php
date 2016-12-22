@@ -42,7 +42,7 @@ interface VatRepositoryContract
 	 */
 	public function findVat(
 		int $page = 1, 
-		int $itemsPerPage = Plenty\Modules\Accounting\Vat\Models\Vat::ITEMS_PER_PAGE, 
+		int $itemsPerPage = \Plenty\Modules\Accounting\Vat\Models\Vat::ITEMS_PER_PAGE, 
 		array $relations = [], 
 		array $columns = []
 	):array;

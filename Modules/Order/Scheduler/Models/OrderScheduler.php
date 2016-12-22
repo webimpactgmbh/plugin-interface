@@ -12,6 +12,10 @@ use Carbon\Carbon;
  */
 abstract class OrderScheduler 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$contactId;
 	public		$methodOfPayment;

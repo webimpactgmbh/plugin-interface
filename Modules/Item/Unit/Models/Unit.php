@@ -7,6 +7,12 @@ namespace Plenty\Modules\Item\Unit\Models;
  */
 abstract class Unit 
 {
+
+	const UPDATED_AT = 'plenty_unit_update_timestamp';
+
+	const CREATED_AT = 'plenty_unit_created_timestamp';
+
+	const ITEMS_PER_PAGE = 50;
 	public		$id;
 	public		$position;
 	public		$unitOfMeasurement;

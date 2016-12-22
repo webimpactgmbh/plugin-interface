@@ -9,6 +9,10 @@ use Plenty\Modules\Order\Property\Models\OrderPropertyType;
  */
 abstract class OrderItemProperty 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$orderItemId;
 	public		$typeId;

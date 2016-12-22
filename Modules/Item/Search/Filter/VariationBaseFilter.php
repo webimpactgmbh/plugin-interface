@@ -49,6 +49,22 @@ abstract class VariationBaseFilter
 	abstract public function isChild(
 	);
 
+	abstract public function isSalable(
+	);
+
+	abstract public function hasDescriptionInLanguage(
+		string $language
+	);
+
+	abstract public function hasImage(
+	);
+
+	abstract public function hasVariationImage(
+	);
+
+	abstract public function hasItemImage(
+	);
+
 	abstract public function toArray(
 	):array;
 

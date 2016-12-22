@@ -1,10 +1,15 @@
 <?php
 namespace Plenty\Modules\Item\VariationImage\Models;
 
+use Plenty\Modules\Item\ItemImage\Models\ItemImage;
 use Plenty\Modules\Item\Variation\Models\Variation;
 
 abstract class VariationImage 
 {
+
+	const CREATED_AT = 'plenty_item_variation_link_image_created';
+
+	const UPDATED_AT = 'plenty_item_variation_link_image_updated';
 	public		$id;
 	public		$itemId;
 	public		$variationId;

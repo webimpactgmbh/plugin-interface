@@ -7,6 +7,10 @@ namespace Plenty\Modules\Comment\Models;
  */
 abstract class Comment 
 {
+
+	const CREATED_AT = 'plenty_comment_entry_datetime';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$text;
 	
 	/**

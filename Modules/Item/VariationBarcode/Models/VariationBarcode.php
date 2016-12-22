@@ -8,6 +8,12 @@ use Plenty\Modules\Item\Barcode\Models\Barcode;
  */
 abstract class VariationBarcode 
 {
+
+	const CREATED_AT = 'plenty_item_variation_barcode_created_timestamp';
+
+	const ITEMS_PER_PAGE = 50;
+
+	const UPDATED_AT = 'updatedAt';
 	public		$code;
 	public		$barcodeId;
 	public		$variationId;

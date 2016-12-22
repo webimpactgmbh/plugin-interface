@@ -8,6 +8,10 @@ use Plenty\Modules\Item\Item\Models\Item;
  */
 abstract class VariationDescription 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$itemId;
 	public		$lang;

@@ -16,7 +16,7 @@ abstract class SearchFilter
 
 	abstract public function setSearchString(
 		string $value, 
-		string $precision = Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::SEARCH_TYPE_FUZZY
+		string $precision = "fuzzy"
 	);
 
 	abstract public function getPath(

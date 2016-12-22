@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\Variation\Models;
 
+use Plenty\Modules\Item\ItemImage\Models\ItemImage;
 use Plenty\Modules\Item\VariationDefaultCategory\Models\VariationDefaultCategory;
 use Plenty\Modules\Item\Item\Models\Item;
 
@@ -9,6 +10,12 @@ use Plenty\Modules\Item\Item\Models\Item;
  */
 abstract class Variation 
 {
+
+	const MAX_ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$isMain;
 	public		$mainVariationId;

@@ -3,11 +3,17 @@ namespace Plenty\Modules\Item\Property\Models;
 
 
 /**
- * The PropertyItemName including PropertyItem
+ * The PropertyName including Property
  */
-abstract class PropertyItemName 
+abstract class PropertyName 
 {
-	public		$propertyItemId;
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
+	public		$propertyId;
 	public		$lang;
 	public		$name;
 	public		$description;

@@ -3,13 +3,19 @@ namespace Plenty\Modules\Item\Property\Models;
 
 
 /**
- * The PropertyMarketComponent including PropertyItem
+ * The PropertyMarketReference including Property
  */
-abstract class PropertyMarketComponent 
+abstract class PropertyMarketReference 
 {
-	public		$propertyItemId;
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
+	public		$propertyId;
 	public		$componentId;
-	public		$marketReference;
+	public		$marketId;
 	public		$externalComponent;
 	public		$property;
 	

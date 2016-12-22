@@ -9,6 +9,10 @@ use Carbon\Carbon;
  */
 abstract class OrderProperty 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$orderId;
 	public		$typeId;
