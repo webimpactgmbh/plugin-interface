@@ -1,5 +1,5 @@
 <?php
-namespace Plenty\Modules\Export\Pos\Idea\Models;
+namespace Plenty\Modules\Order\Export\Pos\Idea\Models;
 
 use Illuminate\Database\Eloquent\Collection;
 use Carbon\Carbon;

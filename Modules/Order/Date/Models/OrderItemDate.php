@@ -1,13 +1,13 @@
 <?php
-namespace Plenty\Modules\Order\Models;
+namespace Plenty\Modules\Order\Date\Models;
 
+use Plenty\Modules\Order\Models\Order;
 use Carbon\Carbon;
-use Plenty\Modules\Order\Property\Models\OrderPropertyType;
 
 /**
- * The order item property model.
+ * The OrderItemDate model.
  */
-abstract class OrderItemProperty 
+abstract class OrderItemDate 
 {
 
 	const CREATED_AT = 'createdAt';
@@ -16,10 +16,9 @@ abstract class OrderItemProperty
 	public		$id;
 	public		$orderItemId;
 	public		$typeId;
-	public		$value;
+	public		$date;
 	public		$createdAt;
 	public		$updatedAt;
-	public		$orderItem;
 	public		$type;
 	
 	/**
