@@ -68,6 +68,8 @@ abstract class OrderPropertyType
 
 	const LOCATION_RESERVED = 30;
 
+	const EXTERNAL_ITEM_SHIPMENT_ID = 31;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
