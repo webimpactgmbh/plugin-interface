@@ -39,6 +39,8 @@ abstract class Order
 	public		$amounts;
 	public		$comments;
 	public		$dates;
+	public		$originOrder;
+	public		$parentOrder;
 	
 	/**
 	 * Returns this model as an array.

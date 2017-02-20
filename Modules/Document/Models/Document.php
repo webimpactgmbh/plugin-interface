@@ -68,6 +68,8 @@ abstract class Document
 
 	const SETTLEMENT_REPORT = 'settlement_report';
 
+	const REVERSAL_DOCUMENT = 'reversal_document';
+
 	const UPDATED_AT = 'plenty_document_updated';
 
 	const CREATED_AT = 'plenty_document_created';
