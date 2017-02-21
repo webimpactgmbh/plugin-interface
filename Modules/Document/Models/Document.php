@@ -1,11 +1,11 @@
 <?php
 namespace Plenty\Modules\Document\Models;
 
-use Plenty\Modules\System\Models\Webstore;
-use Plenty\Modules\Account\Contact\Models\Contact;
 use Carbon\Carbon;
-use Plenty\Modules\Order\Models\Order;
 use Illuminate\Support\Collection;
+use Plenty\Modules\Account\Contact\Models\Contact;
+use Plenty\Modules\Order\Models\Order;
+use Plenty\Modules\System\Models\Webstore;
 
 /**
  * Document
