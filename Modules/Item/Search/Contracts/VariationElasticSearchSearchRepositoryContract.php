@@ -11,6 +11,9 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\SearchInterface;
 interface VariationElasticSearchSearchRepositoryContract 
 {
 
+	public function execute(
+	):array;
+
 	public function setIndex(
 		IndexInterface $index
 	):ElasticSearchSearchRepositoryContract;
@@ -18,8 +21,5 @@ interface VariationElasticSearchSearchRepositoryContract
 	public function addSearch(
 		SearchInterface $search
 	):ElasticSearchSearchRepositoryContract;
-
-	public function execute(
-	):array;
 
 }
