@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Ticket\Contracts;
 
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Ticket\Models\Ticket;
 use Plenty\Modules\Ticket\Models\TicketMessage;
