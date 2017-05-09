@@ -1,9 +1,9 @@
 <?php
 namespace Plenty\Log\Search\Contracts;
 
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Log\Models\Log;
 use Plenty\Repositories\Models\FilteredPaginatedResult;
-use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * Contract for logs.
@@ -21,5 +21,12 @@ interface LogRepositoryContract
 		string $sortBy = "createdAt", 
 		string $sortOrder = "desc"
 	):FilteredPaginatedResult;
+
+	/**
+	 * Get log entry by id.
+	 */
+	public function get(
+		 $id
+	):Log;
 
 }
