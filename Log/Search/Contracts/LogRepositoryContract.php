@@ -19,7 +19,8 @@ interface LogRepositoryContract
 		int $itemsPerPage = 50, 
 		array $filters = [], 
 		string $sortBy = "createdAt", 
-		string $sortOrder = "desc"
+		string $sortOrder = "desc", 
+		array $with = []
 	):FilteredPaginatedResult;
 
 	/**
