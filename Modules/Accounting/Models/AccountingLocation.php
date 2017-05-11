@@ -3,7 +3,7 @@ namespace Plenty\Modules\Accounting\Models;
 
 
 /**
- * The Accounting Location model it is always associated with a client and country and contains the vat configuration, which is displayed in the Vat model.
+ * The accounting location model. An accounting location always has a country and belongs to a client. An accounting location contains the VAT configurations. The VAT model contains the VAT configuration.
  */
 abstract class AccountingLocation 
 {
