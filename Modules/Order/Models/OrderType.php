@@ -36,6 +36,8 @@ abstract class OrderType
 
 	const TYPE_SUBSCRIPTION = 14;
 
+	const TYPE_REDISTRIBUTION = 15;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
