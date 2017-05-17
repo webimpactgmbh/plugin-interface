@@ -18,6 +18,7 @@ abstract class AccountingLocation
 	public		$plentyId;
 	public		$vats;
 	public		$country;
+	public		$client;
 	
 	/**
 	 * Returns this model as an array.
