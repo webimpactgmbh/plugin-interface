@@ -22,7 +22,7 @@ interface ParcelServicePresetRepositoryContract
 		string $with = null, 
 		string $parcelServiceName = null, 
 		array $filters = []
-	):array;
+	);
 
 	/**
 	 * Gets a shipping profile. The ID of the shipping profile must be specified.
