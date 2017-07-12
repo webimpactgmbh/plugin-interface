@@ -17,20 +17,20 @@ interface StockStorageLocationRepositoryContract
 	 */
 	public function listStockStorageLocationsByWarehouseId(
 		int $warehouseId, 
-		array $columns, 
-		int $page, 
-		int $itemsPerPage
-	):array;
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50
+	):PaginatedResult;
 
 	/**
 	 * List stock of a variation per storage location
 	 */
 	public function listStockStorageLocationsByVariationId(
 		int $variationId, 
-		array $columns, 
-		int $page, 
-		int $itemsPerPage
-	):array;
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50
+	):PaginatedResult;
 
 	/**
 	 * Sets the filter array.
