@@ -143,6 +143,12 @@ interface OrderRepositoryContract
 	);
 
 	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
+	);
+
+	/**
 	 * Clears the filter array.
 	 */
 	public function clearFilters(
