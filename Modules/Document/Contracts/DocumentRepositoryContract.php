@@ -41,18 +41,27 @@ interface DocumentRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * Upload one document
+	 * Upload order documents
 	 */
-	public function upload(
+	public function uploadOrderDocuments(
+		int $orderId, 
+		string $type, 
 		array $data
-	):Document;
+	):array;
 
 	/**
-	 * Deletes a document. The ID of the document must be specified.
+	 * Upload category documents
 	 */
-	public function delete(
-		int $referenceType, 
-		int $referenceValue, 
+	public function uploadCategoryDocuments(
+		int $categoryId, 
+		array $data
+	):array;
+
+	/**
+	 * Delete a category document.
+	 */
+	public function deleteCategoryDocument(
+		int $categoryId, 
 		int $documentId
 	):bool;
 
