@@ -19,4 +19,16 @@ interface MailerContract
 		array $bcc = []
 	);
 
+	/**
+	 * Send an email that will get rendered by twig
+	 */
+	public function sendFromTwig(
+		string $twigPath, 
+		array $data, 
+		 $recipients, 
+		string $subject = "", 
+		array $cc = [], 
+		array $bcc = []
+	);
+
 }
