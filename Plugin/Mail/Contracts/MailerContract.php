@@ -27,6 +27,7 @@ interface MailerContract
 		array $data, 
 		 $recipients, 
 		string $subject = "", 
+		array $altConfig = [], 
 		array $cc = [], 
 		array $bcc = []
 	);
