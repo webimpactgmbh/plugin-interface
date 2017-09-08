@@ -80,6 +80,10 @@ abstract class OrderPropertyType
 
 	const RETURNS_ITEM_STATUS = 36;
 
+	const FULFILLMENT_CENTER_ID = 37;
+
+	const FULFILLMENT_CENTER_COUNTRY_ISO = 38;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
