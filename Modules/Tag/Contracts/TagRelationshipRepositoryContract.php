@@ -37,10 +37,19 @@ interface TagRelationshipRepositoryContract
 	):array;
 
 	/**
+	 * Get a specific tag relationship or return null
+	 */
+	public function findRelationship(
+		int $tagId, 
+		int $relationshipValue, 
+		string $relationshipType
+	):TagRelationship;
+
+	/**
 	 * Delete tags by reference value and relationship type
 	 */
 	public function delete(
-		int $referenceValue, 
+		int $relationshipValue, 
 		string $relationshipType
 	):DeleteResponse;
 
