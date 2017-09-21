@@ -14,6 +14,7 @@ abstract class TagName
 	public		$id;
 	public		$tagId;
 	public		$tagLang;
+	public		$tagName;
 	
 	/**
 	 * Returns this model as an array.

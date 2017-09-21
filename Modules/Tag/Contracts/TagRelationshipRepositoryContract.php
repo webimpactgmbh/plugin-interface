@@ -4,6 +4,7 @@ namespace Plenty\Modules\Tag\Contracts;
 use Plenty\Modules\Tag\Models\TagRelationship;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
+use Plenty\Repositories\Models\DeleteResponse;
 
 /**
  * Repository for TagRelationship
@@ -34,6 +35,14 @@ interface TagRelationshipRepositoryContract
 	public function findByTagId(
 		int $tagId
 	):array;
+
+	/**
+	 * Delete tags by reference value and relationship type
+	 */
+	public function delete(
+		int $referenceValue, 
+		string $relationshipType
+	):DeleteResponse;
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
