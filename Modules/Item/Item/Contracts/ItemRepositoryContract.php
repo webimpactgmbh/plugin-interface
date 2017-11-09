@@ -6,6 +6,7 @@ use Plenty\Modules\Item\Item\Models\Item;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
+use Plenty\Repositories\Models\DeleteResponse;
 
 /**
  * The contract for the attribute value repository
@@ -45,6 +46,13 @@ interface ItemRepositoryContract
 		array $data, 
 		int $itemId
 	):Item;
+
+	/**
+	 * Delete a item. The ID of the item must be specified.
+	 */
+	public function delete(
+		int $itemId
+	):DeleteResponse;
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
