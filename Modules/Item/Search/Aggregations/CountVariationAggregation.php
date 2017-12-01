@@ -7,7 +7,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 /**
  * To be written
  */
-abstract class CountItemAggregation implements AggregationInterface
+abstract class CountVariationAggregation implements AggregationInterface
 
 {
 
