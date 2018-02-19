@@ -9,7 +9,9 @@ interface Migrate
 {
 
 	public function createTable(
-		string $modelClassName
+		string $modelClassName, 
+		int $readCapacityUnits = 10, 
+		int $writeCapacityUnits = 20
 	):bool;
 
 	public function updateTable(
