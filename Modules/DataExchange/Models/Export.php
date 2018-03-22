@@ -20,6 +20,8 @@ abstract class Export
 
 	const DATA_TYPE_CONTACT = 'contact';
 
+	const DATA_TYPE_WAREHOUSE = 'warehouse';
+
 	const OUTPUT_TYPE_ADMIN = 'admin';
 
 	const OUTPUT_TYPE_DOWNLOAD = 'download';
