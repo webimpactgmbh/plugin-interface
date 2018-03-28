@@ -98,6 +98,8 @@ abstract class OrderPropertyType
 
 	const PAYMENT_TRANSACTION_ID = 45;
 
+	const SOLD_COUPON_CODE = 46;
+
 	const EXTERNAL_TAX_SERVICE = 47;
 
 	const INTERVAL_TYP = 27;

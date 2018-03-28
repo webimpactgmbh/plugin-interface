@@ -22,6 +22,12 @@ abstract class Export
 
 	const DATA_TYPE_WAREHOUSE = 'warehouse';
 
+	const DATA_TYPE_ATTRIBUTE = 'attribute';
+
+	const DATA_TYPE_CATEGORY = 'category';
+
+	const DATA_TYPE_PROPERTY = 'property';
+
 	const OUTPUT_TYPE_ADMIN = 'admin';
 
 	const OUTPUT_TYPE_DOWNLOAD = 'download';
