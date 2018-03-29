@@ -12,8 +12,8 @@ abstract class VariationPropertyGroupMutator implements MutatorInterface
 {
 
 	abstract public function mutate(
-		 $data
-	);
+		array $data
+	):array;
 
 	abstract public function getDependencies(
 	);
