@@ -1,7 +1,12 @@
 <?php
 namespace Plenty\Plugin\Routing;
 
-use Dingo\Api\Routing\Router as DingoRouter;
+use Illuminate\Routing\PendingResourceRegistration;
+use Illuminate\Support\Str;
+use Plenty\Plugin\Routing\Exceptions\RouteReservedException;
+use Plenty\Plugin\Routing\ResourceRegistration as PluginResourceRegistration;
+use Plenty\Plugin\Routing\Route as PluginRoute;
+use Route;
 
 /**
  * Api router service
@@ -21,7 +26,7 @@ abstract class ApiRouter
 	abstract public function get(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new POST route with the router.
@@ -29,7 +34,7 @@ abstract class ApiRouter
 	abstract public function post(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new PUT route with the router.
@@ -37,7 +42,7 @@ abstract class ApiRouter
 	abstract public function put(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new PATCH route with the router.
@@ -45,7 +50,7 @@ abstract class ApiRouter
 	abstract public function patch(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new DELETE route with the router.
@@ -53,7 +58,7 @@ abstract class ApiRouter
 	abstract public function delete(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new OPTIONS route with the router.
@@ -61,7 +66,7 @@ abstract class ApiRouter
 	abstract public function options(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new route responding to all verbs.
@@ -69,7 +74,7 @@ abstract class ApiRouter
 	abstract public function any(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Route a resource to a controller.
@@ -87,6 +92,6 @@ abstract class ApiRouter
 		array $methods, 
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 }
