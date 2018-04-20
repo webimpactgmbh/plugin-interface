@@ -5,7 +5,7 @@ use Plenty\Plugin\Http\Request;
 use Plenty\Plugin\Http\Response;
 use Plenty\Plugin\Routing\Exceptions\RouteReservedException;
 use Plenty\Plugin\Routing\Route as PluginRoute;
-use Route;
+use Route as BaseRoute;
 
 /**
  * Router service

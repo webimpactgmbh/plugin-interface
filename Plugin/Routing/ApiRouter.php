@@ -1,12 +1,10 @@
 <?php
 namespace Plenty\Plugin\Routing;
 
-use Illuminate\Routing\PendingResourceRegistration;
 use Illuminate\Support\Str;
 use Plenty\Plugin\Routing\Exceptions\RouteReservedException;
-use Plenty\Plugin\Routing\ResourceRegistration as PluginResourceRegistration;
 use Plenty\Plugin\Routing\Route as PluginRoute;
-use Route;
+use Route as BaseRoute;
 
 /**
  * Api router service
