@@ -42,7 +42,7 @@ interface ItemShippingProfilesRepositoryContract
 	):array;
 
 	/**
-	 * Lists all shipping profiles
+	 * Lists all shipping profiles of all items
 	 */
 	public function getItemShippingProfiles(
 		int $itemsPerPage, 
