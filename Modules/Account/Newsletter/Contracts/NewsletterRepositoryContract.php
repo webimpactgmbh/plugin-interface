@@ -5,7 +5,6 @@ use Plenty\Modules\Account\Newsletter\Exceptions\NewsletterException;
 use Plenty\Modules\Account\Newsletter\Models\Entry;
 use Plenty\Modules\Account\Newsletter\Models\Folder;
 use Plenty\Modules\Account\Newsletter\Models\Recipient;
-use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * The NewsletterRepositoryContract is the interface for the newsletter repository. This interface allows to assign email addresses of recipients to email folders. Depending on the settings selected for each email folder, different newsletters can be sent to different target groups.
@@ -85,20 +84,12 @@ interface NewsletterRepositoryContract
 	public function listAllFolders(
 	):array;
 
+	/**
+	 * Lists all recipients
+	 */
 	public function listAllRecipients(
 		array $data = []
 	):array;
-
-	/**
-	 * Lists recipients
-	 */
-	public function listRecipients(
-		array $columns, 
-		int $page, 
-		int $itemsPerPage, 
-		array $filter, 
-		array $with
-	):PaginatedResult;
 
 	/**
 	 * Shows details from entry
