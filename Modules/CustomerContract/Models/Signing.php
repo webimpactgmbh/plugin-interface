@@ -14,6 +14,7 @@ abstract class Signing
 	public		$contractId;
 	public		$contactId;
 	public		$signerName;
+	public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.

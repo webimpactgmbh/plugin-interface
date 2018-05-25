@@ -25,4 +25,11 @@ interface ContractSigningRepositoryContract
 		string $contractId
 	):Signing;
 
+	/**
+	 * Download the signed contract document
+	 */
+	public function signedDocument(
+		string $contractId
+	);
+
 }
