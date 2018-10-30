@@ -11,12 +11,12 @@ abstract class ParcelServiceConstraint
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$;
-	public		$;
-	public		$;
-	public		$;
+	public		$parcelServiceRegionId;
+	public		$constraintType;
+	public		$subConstraintType;
+	public		$constraintLimit;
 	public		$cost;
-	public		$;
+	public		$startValue;
 	
 	/**
 	 * Returns this model as an array.
