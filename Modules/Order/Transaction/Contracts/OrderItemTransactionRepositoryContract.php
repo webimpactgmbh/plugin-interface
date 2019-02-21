@@ -31,6 +31,21 @@ interface OrderItemTransactionRepositoryContract
 	):OrderItemTransaction;
 
 	/**
+	 * Update a transaction
+	 */
+	public function update(
+		int $transactionId, 
+		array $data
+	):OrderItemTransaction;
+
+	/**
+	 * Delete a transaction
+	 */
+	public function delete(
+		int $transactionId
+	):bool;
+
+	/**
 	 * Search transactions
 	 */
 	public function search(
