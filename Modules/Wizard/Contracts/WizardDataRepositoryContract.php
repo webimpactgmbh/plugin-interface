@@ -43,6 +43,19 @@ interface WizardDataRepositoryContract
 		string $optionId = "default"
 	);
 
+	public function findByWizardKey(
+		string $wizardKey
+	);
+
+	/**
+	 * List all WizardData for current plenty ID.
+	 */
+	public function list(
+		int $page = 1, 
+		int $itemsPerPage = 50, 
+		array $filters = []
+	):array;
+
 	/**
 	 * Update data for a WizardData
 	 */
