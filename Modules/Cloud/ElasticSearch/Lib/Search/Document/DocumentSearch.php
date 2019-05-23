@@ -97,7 +97,7 @@ abstract class DocumentSearch implements SearchInterface
 	):self;
 
 	abstract public function setMaxResultWindow(
-		 $maxResults = 10000
+		int $maxResults = 10000
 	);
 
 }
