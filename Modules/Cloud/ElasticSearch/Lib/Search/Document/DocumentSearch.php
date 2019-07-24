@@ -100,4 +100,16 @@ abstract class DocumentSearch implements SearchInterface
 		int $maxResults = 10000
 	);
 
+	abstract public function getFilterRaw(
+	);
+
+	abstract public function getQueriesRaw(
+	);
+
+	abstract public function getAggregationsRaw(
+	):array;
+
+	abstract public function getSorting(
+	);
+
 }
