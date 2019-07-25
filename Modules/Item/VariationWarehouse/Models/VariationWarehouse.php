@@ -12,7 +12,7 @@ abstract class VariationWarehouse
 
 	const UPDATED_AT = 'plenty_item_variation_warehouse_created_timestamp';
 
-	const STORAGE_LOCATION_TYPE = none,small,medium,large,europallet;
+	const STORAGE_LOCATION_TYPE = ['none','small','medium','large','europallet'];
 
 	const ITEMS_PER_PAGE = 50;
 	public		$variationId;

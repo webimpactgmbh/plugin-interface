@@ -10,7 +10,7 @@ abstract class PropertyGroup
 
 	const UPDATED_AT = 'plenty_character_group_last_update_timestamp';
 
-	const ORDER_GROUPING_TYPES = none,single,multi;
+	const ORDER_GROUPING_TYPES = ['none','single','multi'];
 
 	const ITEMS_PER_PAGE = 50;
 

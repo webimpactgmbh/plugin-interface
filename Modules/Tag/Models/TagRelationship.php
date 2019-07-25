@@ -20,7 +20,7 @@ abstract class TagRelationship
 
 	const TAG_TYPE_ORDER = 'order';
 
-	const AVAILABLE_TYPES = category,ticket,variation,board,contact,order;
+	const AVAILABLE_TYPES = ['category','ticket','variation','board','contact','order'];
 
 	const RELATIONSHIP_AVAILABILITY_RELATION = 'availability';
 

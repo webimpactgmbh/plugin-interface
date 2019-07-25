@@ -8,7 +8,7 @@ namespace Plenty\Modules\Item\Availability\Models;
 abstract class Availability 
 {
 
-	const ALLOWED_IDS = 1,2,3,4,5,6,7,8,9,10;
+	const ALLOWED_IDS = [1,2,3,4,5,6,7,8,9,10];
 
 	const CREATED_AT = 'createdAt';
 
