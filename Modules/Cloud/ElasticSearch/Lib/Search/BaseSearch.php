@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Search;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Collapse\CollapseInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\ScoreModifier\ScoreModifierInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
@@ -69,6 +70,10 @@ abstract class BaseSearch implements SearchInterface
 
 	abstract public function setMaxResultWindow(
 		int $maxResults = 10000
+	);
+
+	abstract public function setIndex(
+		 $index
 	);
 
 	abstract public function getFilterRaw(
