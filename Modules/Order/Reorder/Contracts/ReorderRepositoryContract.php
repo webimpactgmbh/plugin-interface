@@ -25,10 +25,16 @@ interface ReorderRepositoryContract
 	):Order;
 
 	/**
+	 * Delete a reorder
+	 */
+	public function delete(
+		int $orderId
+	);
+
+	/**
 	 * Delete an order item from a reorder
 	 */
 	public function deleteOrderItem(
-		int $orderId, 
 		int $orderItemId
 	):bool;
 
