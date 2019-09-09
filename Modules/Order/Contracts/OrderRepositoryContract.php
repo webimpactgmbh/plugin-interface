@@ -177,14 +177,6 @@ interface OrderRepositoryContract
 	):Order;
 
 	/**
-	 * Should the most important relations of an order be eager loaded?
-Used for REST, defaults to false.
-	 */
-	public function setEagerLoading(
-		bool $useEagerLoading
-	);
-
-	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
