@@ -16,7 +16,8 @@ abstract class KeyFigureResult
 	public		$dataGroup;
 	public		$interval;
 	public		$plentyIdHash;
-	public		$resultData;
+	public		$primaryResult;
+	public		$furtherResult;
 	public		$updatedAt;
 	
 	/**
