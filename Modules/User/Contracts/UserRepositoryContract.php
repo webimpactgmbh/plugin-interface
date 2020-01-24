@@ -47,6 +47,6 @@ interface UserRepositoryContract
 	 */
 	public function getBackendPluginSet(
 		int $userId
-	);
+	):PluginSet;
 
 }
