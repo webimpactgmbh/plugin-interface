@@ -306,6 +306,12 @@ abstract class FacetSearchFactory
 	abstract public function withTags(
 	):self;
 
+	abstract public function withCategories(
+	):self;
+
+	abstract public function withSuggestions(
+	):self;
+
 	/**
 	 * Create a new factory instance based on properties of an existing factory.
 	 */
