@@ -42,6 +42,8 @@ abstract class OrderDateType
 
 	const ORDER_FINISH_DATE = 17;
 
+	const LATEST_SHIPPING_DATE = 18;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
