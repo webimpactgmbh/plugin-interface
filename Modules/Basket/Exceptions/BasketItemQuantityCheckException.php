@@ -50,6 +50,8 @@ abstract class BasketItemQuantityCheckException extends BasketItemCheckException
 	 */
 	const COUPON_REQUIRED = 4;
 
+	const NOT_ENOUGH_STOCK_FOR_VARIATIONS = 5;
+
 	/**
 	 * BasketItemQuantityCheckException constructor.
 	 */

@@ -27,9 +27,11 @@ abstract class BasketItemCheckException extends HTTPException
 	const NOT_ENOUGH_STOCK_FOR_VARIATION = 3;
 
 	/**
-	 * promotion coupon is required
+	 * not enough stock for variations
 	 */
 	const COUPON_REQUIRED = 4;
+
+	const NOT_ENOUGH_STOCK_FOR_VARIATIONS = 5;
 
 	/**
 	 * BasketItemCheckException constructor.
@@ -40,7 +42,8 @@ abstract class BasketItemCheckException extends HTTPException
 		\Exception $previous = null, 
 		int $itemId = 0, 
 		int $variationId = 0, 
-		float $stockNet = 0.0
+		float $stockNet = 0.0, 
+		array $additionalData = []
 	);
 
 	abstract public function getItemId(
@@ -51,5 +54,8 @@ abstract class BasketItemCheckException extends HTTPException
 
 	abstract public function getStockNet(
 	):float;
+
+	abstract public function getAdditionalData(
+	):array;
 
 }
