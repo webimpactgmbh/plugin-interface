@@ -8,6 +8,7 @@ namespace Plenty\Modules\Report\KeyFigure\Models;
 abstract class KeyFigureFilter 
 {
 	public		$filterQuery;
+	public		$dataFilters;
 	public		$calculation;
 	
 	/**
