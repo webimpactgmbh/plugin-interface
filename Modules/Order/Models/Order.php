@@ -27,6 +27,7 @@ abstract class Order
 	public		$roundTotalsOnly;
 	public		$numberOfDecimals;
 	public		$lockStatus;
+	public		$hasTaxRelevantDocuments;
 	public		$billingAddress;
 	public		$deliveryAddress;
 	public		$owner;
