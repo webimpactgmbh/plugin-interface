@@ -52,6 +52,16 @@ abstract class BasketItemQuantityCheckException extends BasketItemCheckException
 
 	const NOT_ENOUGH_STOCK_FOR_VARIATIONS = 5;
 
+	const UPDATE_SET_FAILED = 20;
+
+	const REMOVE_SET_COMPONENT_FAILED = 21;
+
+	const UPDATE_SET_COMPONENT_FAILED = 22;
+
+	const ITEM_SET_COMPONENT_MISMATCH = 23;
+
+	const SET_PRICE_IS_MISSING = 24;
+
 	/**
 	 * BasketItemQuantityCheckException constructor.
 	 */

@@ -26,6 +26,7 @@ abstract class Record
 	public		$variationRecommendedRetailPriceList;
 	public		$variationRetailPrice;
 	public		$variationRetailPriceList;
+	public		$variationSetRetailPrice;
 	public		$variationStandardCategory;
 	public		$variationStock;
 	public		$variationStockBuffer;

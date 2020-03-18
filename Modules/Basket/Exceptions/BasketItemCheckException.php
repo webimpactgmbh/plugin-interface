@@ -27,11 +27,36 @@ abstract class BasketItemCheckException extends HTTPException
 	const NOT_ENOUGH_STOCK_FOR_VARIATION = 3;
 
 	/**
-	 * not enough stock for variations
+	 * promotion coupon is required
 	 */
 	const COUPON_REQUIRED = 4;
 
+	/**
+	 * not enough stock for variations
+	 */
 	const NOT_ENOUGH_STOCK_FOR_VARIATIONS = 5;
+
+	/**
+	 * Set cant be udpated
+	 */
+	const UPDATE_SET_FAILED = 20;
+
+	/**
+	 * Set Component cant be removed
+	 */
+	const REMOVE_SET_COMPONENT_FAILED = 21;
+
+	/**
+	 * Set Component cant be updated
+	 */
+	const UPDATE_SET_COMPONENT_FAILED = 22;
+
+	/**
+	 * Set includes invalid components
+	 */
+	const ITEM_SET_COMPONENT_MISMATCH = 23;
+
+	const SET_PRICE_IS_MISSING = 24;
 
 	/**
 	 * BasketItemCheckException constructor.

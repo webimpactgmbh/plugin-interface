@@ -11,6 +11,16 @@ abstract class BasketItem
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
+
+	const BASKET_ITEM_TYPE_VARIATION = 0;
+
+	const BASKET_ITEM_TYPE_BUNDLE = 1;
+
+	const BASKET_ITEM_TYPE_BUNDLE_COMPONENT = 2;
+
+	const BASKET_ITEM_TYPE_ITEM_SET = 3;
+
+	const BASKET_ITEM_TYPE_ITEM_SET_COMPONENT = 4;
 	public		$id;
 	public		$basketId;
 	public		$sessionId;

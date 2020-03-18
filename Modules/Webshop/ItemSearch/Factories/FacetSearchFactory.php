@@ -291,6 +291,9 @@ abstract class FacetSearchFactory
 	abstract public function withBundleComponents(
 	):self;
 
+	abstract public function withSetComponents(
+	);
+
 	abstract public function withLinkToContent(
 	):self;
 

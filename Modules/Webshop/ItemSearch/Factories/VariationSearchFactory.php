@@ -39,6 +39,7 @@ use Plenty\Modules\Webshop\ItemSearch\Extensions\ItemDefaultImage;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ItemUrlExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\PriceSearchExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ReduceDataExtension;
+use Plenty\Modules\Webshop\ItemSearch\Extensions\SetComponentExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\TagExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationAttributeMapExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationPropertyExtension;
@@ -315,6 +316,9 @@ abstract class VariationSearchFactory
 
 	abstract public function withBundleComponents(
 	):self;
+
+	abstract public function withSetComponents(
+	);
 
 	abstract public function withLinkToContent(
 	):self;
