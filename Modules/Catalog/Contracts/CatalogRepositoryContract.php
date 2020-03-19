@@ -23,10 +23,19 @@ interface CatalogRepositoryContract
 		string $id
 	):bool;
 
+	public function copy(
+		array $data
+	):array;
+
 	public function all(
 		int $page = 1, 
 		int $perPage = 25
 	):PaginatedResult;
+
+	public function activate(
+		string $id, 
+		bool $active
+	):array;
 
 	/**
 	 * Sets the filter array.

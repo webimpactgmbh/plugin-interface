@@ -15,6 +15,8 @@ abstract class Catalog
 	public		$name;
 	public		$template;
 	public		$id;
+	public		$active;
+	public		$showMandatoryFields;
 	
 	/**
 	 * Returns this model as an array.
