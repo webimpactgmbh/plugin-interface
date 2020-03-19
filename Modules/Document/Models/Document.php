@@ -78,6 +78,8 @@ abstract class Document
 
 	const REFUND_REVERSAL_DOCUMENT = 'reversal_refund';
 
+	const REVERSAL_DUNNING_LETTER = 'reversal_dunning_letter';
+
 	const PRO_FORMA_INVOICE = 'pro_forma_invoice';
 
 	const PO_DELIVERY_NOTE = 'po_delivery_note';
