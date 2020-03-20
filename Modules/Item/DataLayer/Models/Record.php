@@ -36,6 +36,7 @@ abstract class Record
 	public		$variationWarehouseList;
 	public		$variationSpecialOfferRetailPrice;
 	public		$variationSpecialOfferRetailPriceList;
+	public		$itemSetConfig;
 	
 	/**
 	 * Returns this model as an array.
