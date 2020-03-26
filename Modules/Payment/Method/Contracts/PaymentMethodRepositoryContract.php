@@ -73,4 +73,32 @@ interface PaymentMethodRepositoryContract
 		int $orderId
 	):array;
 
+	/**
+	 * List all payment methods which are searchable for the backend
+	 */
+	public function listBackendSearchable(
+		string $lang
+	):array;
+
+	/**
+	 * List all payment methods which are active for the backend
+	 */
+	public function listBackendActive(
+		string $lang
+	):array;
+
+	/**
+	 * List all payment methods which can handle subscriptions
+	 */
+	public function listCanHandleSubscriptions(
+		string $lang
+	):array;
+
+	/**
+	 * List all payment methods which are active
+	 */
+	public function listAllActive(
+		string $lang
+	):array;
+
 }
