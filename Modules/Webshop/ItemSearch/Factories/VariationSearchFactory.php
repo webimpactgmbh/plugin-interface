@@ -4,6 +4,7 @@ namespace Plenty\Modules\Webshop\ItemSearch\Factories;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Suggestion\SuggestionInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\BuiltIn\LanguageMutator;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 use Plenty\Modules\Item\Search\Mutators\ImageDomainMutator;
@@ -25,6 +26,8 @@ use Plenty\Modules\Pim\SearchService\Filter\VariationBaseFilter;
 use Plenty\Modules\Pim\SearchService\Helper\FacetHelper;
 use Plenty\Modules\Pim\SearchService\Query\ManagedSearchQuery;
 use Plenty\Modules\Pim\SearchService\Query\NameAutoCompleteQuery;
+use Plenty\Modules\Pim\SearchService\Suggestions\DidYouMeanSuggestion;
+use Plenty\Modules\Pim\SearchService\Suggestions\DidYouMeanSuggestionProcessor;
 use Plenty\Modules\Webshop\Contracts\LocalizationRepositoryContract;
 use Plenty\Modules\Webshop\Contracts\PriceDetectRepositoryContract;
 use Plenty\Modules\Webshop\Helpers\CurrencyConverter;
@@ -343,6 +346,10 @@ abstract class VariationSearchFactory
 		string $query = ""
 	):self;
 
+	abstract public function withDidYouMeanSuggestions(
+		 $query
+	);
+
 	/**
 	 * Create a new factory instance based on properties of an existing factory.
 	 */
@@ -410,6 +417,13 @@ abstract class VariationSearchFactory
 	):self;
 
 	/**
+	 * Add a suggestion
+	 */
+	abstract public function withSuggestion(
+		SuggestionInterface $suggestion
+	):self;
+
+	/**
 	 * Set pagination parameters.
 	 */
 	abstract public function setPage(
@@ -440,7 +454,8 @@ abstract class VariationSearchFactory
 	 * Group results by field
 	 */
 	abstract public function groupBy(
-		string $field
+		string $field, 
+		array $sortings = []
 	):self;
 
 }

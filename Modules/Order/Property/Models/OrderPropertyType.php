@@ -162,6 +162,8 @@ abstract class OrderPropertyType
 
 	const PROCUREMENT_COSTS_OTHER_CHARGES = 78;
 
+	const AMAZON_TRANSACTION_ID = 79;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;

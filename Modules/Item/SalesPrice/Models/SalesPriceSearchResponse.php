@@ -3,7 +3,7 @@ namespace Plenty\Modules\Item\SalesPrice\Models;
 
 
 /**
- * foo
+ * SalesPriceSearchResponse
  */
 abstract class SalesPriceSearchResponse 
 {
@@ -27,6 +27,7 @@ abstract class SalesPriceSearchResponse
 	public		$conversionFactor;
 	public		$minimumOrderQuantity;
 	public		$updatedAt;
+	public		$type;
 	
 	/**
 	 * Returns this model as an array.

@@ -16,6 +16,8 @@ abstract class DetectSalesPriceService
 
 	const PRICE_TYPE_SUBSCRIPTION = 'subscription';
 
+	const PRICE_TYPE_SET = 'set';
+
 	abstract public function getQuantity(
 	);
 

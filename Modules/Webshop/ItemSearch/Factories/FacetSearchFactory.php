@@ -3,6 +3,7 @@ namespace Plenty\Modules\Webshop\ItemSearch\Factories;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Suggestion\SuggestionInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 use Plenty\Modules\Pim\SearchService\Helper\FacetHelper;
 use Plenty\Modules\Webshop\Contracts\LocalizationRepositoryContract;
@@ -317,6 +318,10 @@ abstract class FacetSearchFactory
 		string $query = ""
 	):self;
 
+	abstract public function withDidYouMeanSuggestions(
+		 $query
+	);
+
 	/**
 	 * Create a new factory instance based on properties of an existing factory.
 	 */
@@ -384,6 +389,13 @@ abstract class FacetSearchFactory
 	):self;
 
 	/**
+	 * Add a suggestion
+	 */
+	abstract public function withSuggestion(
+		SuggestionInterface $suggestion
+	):self;
+
+	/**
 	 * Set pagination parameters.
 	 */
 	abstract public function setPage(
@@ -414,7 +426,8 @@ abstract class FacetSearchFactory
 	 * Group results by field
 	 */
 	abstract public function groupBy(
-		string $field
+		string $field, 
+		array $sortings = []
 	):self;
 
 }

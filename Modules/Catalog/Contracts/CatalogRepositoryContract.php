@@ -15,6 +15,11 @@ interface CatalogRepositoryContract
 		array $data
 	):Catalog;
 
+	public function update(
+		string $id, 
+		array $data
+	):Catalog;
+
 	public function get(
 		string $id
 	):Catalog;

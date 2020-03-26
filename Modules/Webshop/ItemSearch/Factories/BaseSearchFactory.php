@@ -6,6 +6,8 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Collapse\CollapseInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\ScoreModifier\RandomScore;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Suggestion\SuggestionInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Suggestion\TermSuggestion;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\MultipleSorting;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SingleNestedSorting;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SingleSorting;
@@ -95,6 +97,13 @@ abstract class BaseSearchFactory
 	):self;
 
 	/**
+	 * Add a suggestion
+	 */
+	abstract public function withSuggestion(
+		SuggestionInterface $suggestion
+	):self;
+
+	/**
 	 * Set pagination parameters.
 	 */
 	abstract public function setPage(
@@ -125,7 +134,8 @@ abstract class BaseSearchFactory
 	 * Group results by field
 	 */
 	abstract public function groupBy(
-		string $field
+		string $field, 
+		array $sortings = []
 	):self;
 
 }
