@@ -86,6 +86,8 @@ abstract class Document
 
 	const CREDIT_NOTE_EXTERNAL = 'credit_note_external';
 
+	const UPLOADED = 'uploaded';
+
 	const SHIPPING_LABEL = 'shipping_label';
 
 	const SHIPPING_EXPORT_LABEL = 'shipping_export_label';
