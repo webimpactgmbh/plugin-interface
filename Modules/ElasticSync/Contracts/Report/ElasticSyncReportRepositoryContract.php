@@ -21,6 +21,13 @@ interface ElasticSyncReportRepositoryContract
 	):RunReport;
 
 	/**
+	 * Gets a run report log
+	 */
+	public function getRunReportLog(
+		int $id
+	);
+
+	/**
 	 * Lists run reports
 	 */
 	public function listRunReports(
