@@ -12,4 +12,8 @@ interface OrderRepositoryContract
 	public function placeOrder(
 	):Order;
 
+	public function createReturnOrder(
+		array $returnOrderData
+	):Order;
+
 }
