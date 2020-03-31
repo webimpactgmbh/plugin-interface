@@ -55,6 +55,7 @@ abstract class Contact
 	public		$primaryBillingAddress;
 	public		$accounts;
 	public		$orders;
+	public		$contactOrders;
 	public		$banks;
 	public		$reorders;
 	public		$orderSchedulers;
