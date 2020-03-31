@@ -11,7 +11,9 @@ use Plenty\Modules\Item\Search\Mutators\ImageDomainMutator;
 use Plenty\Modules\Item\Search\Mutators\ImageMutator;
 use Plenty\Modules\Item\Search\Mutators\VariationPropertyGroupMutator;
 use Plenty\Modules\Pim\SearchService\Aggregations\CategoryAllTermsAggregation;
+use Plenty\Modules\Pim\SearchService\Aggregations\ItemIdTermsAggregation;
 use Plenty\Modules\Pim\SearchService\Aggregations\Processors\CategoryAllTermsAggregationProcessor;
+use Plenty\Modules\Pim\SearchService\Aggregations\Processors\ItemIdTermsAggregationProcessor;
 use Plenty\Modules\Pim\SearchService\Aggregations\Processors\SearchSuggestionsTermsAggregationProcessor;
 use Plenty\Modules\Pim\SearchService\Aggregations\SearchSuggestions\SearchSuggestionsTermsAggregation;
 use Plenty\Modules\Pim\SearchService\Filter\CategoryFilter;
@@ -40,11 +42,13 @@ use Plenty\Modules\Webshop\ItemSearch\Extensions\CurrentCategoryExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\GroupedAttributeValuesExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ItemDefaultImage;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ItemUrlExtension;
+use Plenty\Modules\Webshop\ItemSearch\Extensions\ItemVariationCountExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\PriceSearchExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ReduceDataExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\SetComponentExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\TagExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationAttributeMapExtension;
+use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationCountExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationPropertyExtension;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\FacetExtensionContainer;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\OrderPropertySelectionValueMutator;
@@ -75,6 +79,10 @@ abstract class VariationSearchFactory
 	const INHERIT_RESULT_FIELDS = 'resultFields';
 
 	const INHERIT_SORTING = 'sorting';
+
+	abstract public static function default(
+		 $options = []
+	);
 
 	abstract public function setAdminPreview(
 		bool $isAdminPreview
@@ -302,7 +310,8 @@ abstract class VariationSearchFactory
 	 * Append prices to result.
 	 */
 	abstract public function withPrices(
-		array $quantities = []
+		array $quantities = [], 
+		bool $setPriceOnly = false
 	):self;
 
 	/**
@@ -347,8 +356,11 @@ abstract class VariationSearchFactory
 	):self;
 
 	abstract public function withDidYouMeanSuggestions(
-		 $query
-	);
+		string $query
+	):self;
+
+	abstract public function withSalableVariationCount(
+	):VariationSearchFactory;
 
 	/**
 	 * Create a new factory instance based on properties of an existing factory.

@@ -48,6 +48,10 @@ abstract class FacetSearchFactory
 	abstract public function withMinimumCount(
 	):self;
 
+	abstract public static function default(
+		 $options = []
+	);
+
 	abstract public function setAdminPreview(
 		bool $isAdminPreview
 	):self;
@@ -274,7 +278,8 @@ abstract class FacetSearchFactory
 	 * Append prices to result.
 	 */
 	abstract public function withPrices(
-		array $quantities = []
+		array $quantities = [], 
+		bool $setPriceOnly = false
 	):self;
 
 	/**
@@ -319,8 +324,11 @@ abstract class FacetSearchFactory
 	):self;
 
 	abstract public function withDidYouMeanSuggestions(
-		 $query
-	);
+		string $query
+	):self;
+
+	abstract public function withSalableVariationCount(
+	):VariationSearchFactory;
 
 	/**
 	 * Create a new factory instance based on properties of an existing factory.

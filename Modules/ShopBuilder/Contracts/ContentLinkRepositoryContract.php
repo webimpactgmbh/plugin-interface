@@ -53,7 +53,8 @@ interface ContentLinkRepositoryContract
 		string $containerName, 
 		int $pluginSetId = null, 
 		string $lang = null, 
-		string $contentType = null
+		string $contentType = null, 
+		bool $filterResults = true
 	);
 
 }
