@@ -42,15 +42,6 @@ abstract class Model
 	):string;
 
 	/**
-	 * Return a timestamp as DateTime object with time set to 00:00:00.
-	 */
-	protected function asDate(
-		 $value
-	):\Carbon\Carbon
-	{
-	}
-
-	/**
 	 * Convert the model's attributes to an array.
 	 */
 	abstract public function attributesToArray(
