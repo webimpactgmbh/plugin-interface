@@ -164,6 +164,8 @@ abstract class OrderPropertyType
 
 	const AMAZON_TRANSACTION_ID = 79;
 
+	const EXTERNAL_RETURN_ID = 80;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
