@@ -13,9 +13,6 @@ abstract class ItemSetConfig
 	const UPDATED_AT = 'updatedAt';
 	public		$setId;
 	public		$rebate;
-	public		$minPrice;
-	public		$maxPrice;
-	public		$isPurchasable;
 	
 	/**
 	 * Returns this model as an array.

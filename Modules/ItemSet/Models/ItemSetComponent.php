@@ -14,8 +14,9 @@ abstract class ItemSetComponent
 	public		$id;
 	public		$setId;
 	public		$itemId;
-	public		$quantity;
-	public		$isPurchasable;
+	public		$minimalOrderQuantity;
+	public		$maximumOrderQuantity;
+	public		$orderQuantityPossible;
 	
 	/**
 	 * Returns this model as an array.
