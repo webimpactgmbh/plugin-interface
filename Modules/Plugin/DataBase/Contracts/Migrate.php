@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Plugin\DataBase\Contracts;
 
-use Plenty\Modules\Plugin\Exceptions\MySQLMigrateException;
 
 /**
  * Migrate models
