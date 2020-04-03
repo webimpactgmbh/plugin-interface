@@ -12,15 +12,15 @@ abstract class BasketItem
 
 	const UPDATED_AT = 'updatedAt';
 
-	const BASKET_ITEM_TYPE_VARIATION = 0;
+	const BASKET_ITEM_TYPE_VARIATION = 10;
 
-	const BASKET_ITEM_TYPE_BUNDLE = 1;
+	const BASKET_ITEM_TYPE_BUNDLE = 11;
 
-	const BASKET_ITEM_TYPE_BUNDLE_COMPONENT = 2;
+	const BASKET_ITEM_TYPE_BUNDLE_COMPONENT = 12;
 
-	const BASKET_ITEM_TYPE_ITEM_SET = 3;
+	const BASKET_ITEM_TYPE_ITEM_SET = 13;
 
-	const BASKET_ITEM_TYPE_ITEM_SET_COMPONENT = 4;
+	const BASKET_ITEM_TYPE_ITEM_SET_COMPONENT = 14;
 	public		$id;
 	public		$basketId;
 	public		$sessionId;
