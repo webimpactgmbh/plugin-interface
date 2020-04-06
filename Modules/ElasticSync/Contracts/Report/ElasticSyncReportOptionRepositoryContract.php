@@ -1,57 +1,74 @@
 <?php
 namespace Plenty\Modules\ElasticSync\Contracts\Report;
 
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\ElasticSync\Models\Report\RunReport;
+use Plenty\Modules\ElasticSync\Models\Report\RunReportOption;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * This interface provides methods to list reports
+ * This interface provides methods to CRUD report options
  */
-interface ElasticSyncReportRepositoryContract 
+interface ElasticSyncReportOptionRepositoryContract 
 {
 
 	/**
-	 * Gets a run report
+	 * Creates a run report option
 	 */
-	public function getRunReport(
-		int $id
-	):RunReport;
+	public function create(
+		array $data
+	):RunReportOption;
 
 	/**
-	 * Gets a run report log
+	 * Gets a run report option
 	 */
-	public function getRunReportLog(
+	public function get(
+		int $id
+	):RunReportOption;
+
+	/**
+	 * Updates a run report option
+	 */
+	public function update(
+		int $id, 
+		array $data
+	):RunReportOption;
+
+	/**
+	 * Deletes a run report option
+	 */
+	public function delete(
 		int $id
 	);
 
 	/**
-	 * Cancels a run
+	 * Sets a run report option
 	 */
-	public function cancelRun(
-		int $id
+	public function set(
+		 $report, 
+		string $name, 
+		string $value = null, 
+		string $type = "string"
 	);
 
 	/**
-	 * Lists run reports
+	 * Gets the option of a report by name
 	 */
-	public function listRunReports(
-		int $page = 1, 
-		int $itemsPerPage = 50, 
-		array $filters = []
-	):PaginatedResult;
+	public function getOptionByName(
+		 $report, 
+		string $name
+	);
 
 	/**
-	 * Lists job reports for a specific run
+	 * Gets the value of a report option
 	 */
-	public function listJobReports(
-		int $reportId, 
-		int $page = 1, 
-		int $itemsPerPage = 50, 
-		array $filters = []
-	):array;
+	public function getValueByName(
+		 $report, 
+		string $name
+	);
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
