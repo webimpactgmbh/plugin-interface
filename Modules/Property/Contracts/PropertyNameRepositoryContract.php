@@ -49,6 +49,13 @@ interface PropertyNameRepositoryContract
 	):array;
 
 	/**
+	 * Get a property name by name
+	 */
+	public function getPropertyByName(
+		string $name
+	):PropertyName;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(
