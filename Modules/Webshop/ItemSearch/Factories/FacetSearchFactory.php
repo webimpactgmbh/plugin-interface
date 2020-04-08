@@ -307,7 +307,6 @@ abstract class FacetSearchFactory
 	):self;
 
 	abstract public function withReducedResults(
-		 $removeProperties = false
 	):self;
 
 	abstract public function withAvailability(

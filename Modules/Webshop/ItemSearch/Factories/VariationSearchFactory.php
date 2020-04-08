@@ -339,7 +339,6 @@ abstract class VariationSearchFactory
 	):self;
 
 	abstract public function withReducedResults(
-		 $removeProperties = false
 	):self;
 
 	abstract public function withAvailability(
