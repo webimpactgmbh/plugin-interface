@@ -10,6 +10,8 @@ abstract class RunReportOption
 
 	const STATUS = 'status';
 
+	const SOURCE_FILENAME = 'source_filename';
+
 	const STATUS_STARTING = 'starting';
 
 	const STATUS_RUNNING = 'running';
