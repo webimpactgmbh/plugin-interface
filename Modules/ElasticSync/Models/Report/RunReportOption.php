@@ -22,6 +22,8 @@ abstract class RunReportOption
 
 	const STATUS_COMPLETED = 'completed';
 
+	const STATUS_VALIDATION = 'validation';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
