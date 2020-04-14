@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Webshop\Contracts;
 
 use Plenty\Modules\Frontend\Session\Storage\Models\Customer;
+use Plenty\Modules\Frontend\Session\Storage\Models\Order;
 
 /**
  * Repository for webshop session information
@@ -65,5 +66,11 @@ interface SessionStorageRepositoryContract
 	 */
 	public function getCustomer(
 	):Customer;
+
+	/**
+	 * Get the order session model
+	 */
+	public function getOrder(
+	):Order;
 
 }

@@ -25,4 +25,18 @@ interface GiftCardRepositoryContract
 		int $orderItemId
 	):array;
 
+	/**
+	 * Return true if its not a gift card or the codes are not redeemed
+	 */
+	public function isReturnable(
+		int $orderItemId
+	):bool;
+
+	/**
+	 * Returnable quantity for giftCard
+	 */
+	public function getReturnQuantity(
+		int $orderItemId
+	):int;
+
 }

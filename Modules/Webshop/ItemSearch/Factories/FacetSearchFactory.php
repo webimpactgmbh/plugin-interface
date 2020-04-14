@@ -253,9 +253,12 @@ abstract class FacetSearchFactory
 	):self;
 
 	/**
-	 * Includes VariatonAttributeMap for variation select
+	 * Includes VariationAttributeMap for variation select
 	 */
-	abstract public function withAttributes(
+	abstract public function withVariationAttributeMap(
+		int $itemId = 0, 
+		int $initialVariationId = 0, 
+		array $afterKey = []
 	):self;
 
 	abstract public function withPropertyGroups(

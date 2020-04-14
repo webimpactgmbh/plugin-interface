@@ -8,6 +8,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Suggestion\SuggestionInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Suggestion\TermSuggestion;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\BaseSorting;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\MultipleSorting;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SingleNestedSorting;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SingleSorting;

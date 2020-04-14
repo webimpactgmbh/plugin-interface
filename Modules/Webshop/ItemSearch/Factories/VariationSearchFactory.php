@@ -10,12 +10,14 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 use Plenty\Modules\Item\Search\Mutators\ImageDomainMutator;
 use Plenty\Modules\Item\Search\Mutators\ImageMutator;
 use Plenty\Modules\Item\Search\Mutators\VariationPropertyGroupMutator;
+use Plenty\Modules\Pim\SearchService\Aggregations\AttributeValueAggregation;
 use Plenty\Modules\Pim\SearchService\Aggregations\CategoryAllTermsAggregation;
-use Plenty\Modules\Pim\SearchService\Aggregations\ItemIdTermsAggregation;
+use Plenty\Modules\Pim\SearchService\Aggregations\Processors\AttributeValueAggregationProcessor;
 use Plenty\Modules\Pim\SearchService\Aggregations\Processors\CategoryAllTermsAggregationProcessor;
-use Plenty\Modules\Pim\SearchService\Aggregations\Processors\ItemIdTermsAggregationProcessor;
 use Plenty\Modules\Pim\SearchService\Aggregations\Processors\SearchSuggestionsTermsAggregationProcessor;
+use Plenty\Modules\Pim\SearchService\Aggregations\Processors\VariationCombinationAggregationProcessor;
 use Plenty\Modules\Pim\SearchService\Aggregations\SearchSuggestions\SearchSuggestionsTermsAggregation;
+use Plenty\Modules\Pim\SearchService\Aggregations\VariationCombinationAggregation;
 use Plenty\Modules\Pim\SearchService\Filter\CategoryFilter;
 use Plenty\Modules\Pim\SearchService\Filter\ClientFilter;
 use Plenty\Modules\Pim\SearchService\Filter\CrossSellingFilter;
@@ -35,6 +37,7 @@ use Plenty\Modules\Webshop\Contracts\PriceDetectRepositoryContract;
 use Plenty\Modules\Webshop\Helpers\CurrencyConverter;
 use Plenty\Modules\Webshop\Helpers\VatConverter;
 use Plenty\Modules\Webshop\ItemSearch\Contracts\FacetExtension;
+use Plenty\Modules\Webshop\ItemSearch\Extensions\AttributeExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\AvailabilityExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\BundleComponentExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ContentCacheVariationLinkExtension;
@@ -48,6 +51,7 @@ use Plenty\Modules\Webshop\ItemSearch\Extensions\ReduceDataExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\SetComponentExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\TagExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationAttributeMapExtension;
+use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationCombinationExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationCountExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationPropertyExtension;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\FacetExtensionContainer;
@@ -285,9 +289,12 @@ abstract class VariationSearchFactory
 	):self;
 
 	/**
-	 * Includes VariatonAttributeMap for variation select
+	 * Includes VariationAttributeMap for variation select
 	 */
-	abstract public function withAttributes(
+	abstract public function withVariationAttributeMap(
+		int $itemId = 0, 
+		int $initialVariationId = 0, 
+		array $afterKey = []
 	):self;
 
 	abstract public function withPropertyGroups(

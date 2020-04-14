@@ -14,6 +14,8 @@ abstract class SortingHelper
 
 	const SORTING_MAP = ['filter.itemId','analyzed.multilingual.{{lang}}.name1.sorting','analyzed.multilingual.{{lang}}.name2.sorting','analyzed.multilingual.{{lang}}.name3.sorting','filter.timestamps.createdAt','filter.timestamps.updatedAt','variationId','analyzed.number.sorting','filter.availabilityAverageDays','filter.position','analyzed.externalManufacturer.sorting','analyzed.manufacturer.sorting','filter.stock.net','filter.prices.price'];
 
+	const OUTTA_TO_INNER_SORT = ['filter.prices.price_asc','filter.prices.price_desc','filter.position_asc','filter.position_desc','filter.availabilityAverageDays_desc','filter.availabilityAverageDays_desc','analyzed.number.sorting_asc','analyzed.number.sorting_desc'];
+
 	/**
 	 * Get sorting values from plugin configuration
 	 */
@@ -40,6 +42,10 @@ abstract class SortingHelper
 	):string;
 
 	abstract public function splitPathAndOrder(
+		 $sorting
+	);
+
+	abstract public function mapToInnerSorting(
 		 $sorting
 	);
 
