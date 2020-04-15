@@ -35,6 +35,8 @@ abstract class FacetSearchFactory
 
 	const INHERIT_SORTING = 'sorting';
 
+	const INHERIT_GROUP_BY = 'groupBy';
+
 	/**
 	 * Create a factory instance depending on a given set of facet values.
 	 */

@@ -84,6 +84,8 @@ abstract class VariationSearchFactory
 
 	const INHERIT_SORTING = 'sorting';
 
+	const INHERIT_GROUP_BY = 'groupBy';
+
 	abstract public static function default(
 		 $options = []
 	);
