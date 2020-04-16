@@ -61,4 +61,16 @@ interface VariationExportServiceContract
 		int $variationId
 	);
 
+	/**
+	 * Resets the pre loaded data
+	 */
+	public function resetPreLoadedData(
+	);
+
+	/**
+	 * Resets the current pre load types
+	 */
+	public function resetPreloadTypes(
+	);
+
 }
