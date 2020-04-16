@@ -18,6 +18,8 @@ abstract class FacetValueReference
 
 	const TYPE_PROPERTY = 'property';
 
+	const TYPE_PROPERTY_SELECTION = 'property-selection';
+
 	const TYPE_PRODUCER = 'producer';
 
 	const TYPE_AVAILABILITY = 'availability';
