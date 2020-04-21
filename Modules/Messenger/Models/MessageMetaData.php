@@ -12,6 +12,7 @@ abstract class MessageMetaData
 	public		$notDoneByBackend;
 	public		$controls;
 	public		$timeCapture;
+	public		$plentyId;
 	
 	/**
 	 * Returns this model as an array.
