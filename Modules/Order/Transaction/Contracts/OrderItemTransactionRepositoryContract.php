@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Order\Transaction\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Order\Transaction\Models\OrderItemTransaction;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
