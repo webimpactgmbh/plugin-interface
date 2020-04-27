@@ -36,14 +36,16 @@ abstract class ResultFieldTemplate
 	 */
 	abstract public function setTemplate(
 		string $event, 
-		string $template
+		string $template, 
+		bool $overwriteExistingData = true
 	);
 
 	/**
 	 * Set multiple templates to read result fields from.
 	 */
 	abstract public function setTemplates(
-		array $templateMap
+		array $templateMap, 
+		bool $overwriteExistingData = true
 	);
 
 	/**
