@@ -10,6 +10,8 @@ abstract class KeyFigureResultSearchResult
 	public		$keyFigureResults;
 	public		$interval;
 	public		$searchId;
+	public		$keyFigure;
+	public		$error;
 	
 	/**
 	 * Returns this model as an array.
