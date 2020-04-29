@@ -75,6 +75,7 @@ abstract class Variation
 	public		$parentVariationId;
 	public		$parentVariationQuantity;
 	public		$singleItemCount;
+	public		$customsTariffNumber;
 	public		$categoryVariationId;
 	public		$marketVariationId;
 	public		$clientVariationId;

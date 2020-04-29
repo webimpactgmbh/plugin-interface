@@ -22,7 +22,6 @@ abstract class Item
 	public		$manufacturerId;
 	public		$producingCountryId;
 	public		$mainVariationId;
-	public		$customsTariffNumber;
 	public		$revenueAccount;
 	public		$couponRestriction;
 	public		$condition;
@@ -74,6 +73,7 @@ abstract class Item
 	public		$itemCrossSelling;
 	public		$variations;
 	public		$itemImages;
+	public		$customsTariffNumber;
 	
 	/**
 	 * Returns this model as an array.
