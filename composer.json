@@ -3,7 +3,7 @@
   "description": "Interface for plentymarkets plugin development with PHP 7",
   "license": "AGPL-3.0",
   "require": {
-    "php": ">=7.0.0",
-    "laravel/framework": "5.2.*"
+    "php": ">=7.3.0",
+    "laravel/framework": "^6.0"
   }
 }
