@@ -76,6 +76,8 @@ abstract class PaymentProperty
 
 	const TYPE_TRANSACTION_ENDURANCE = 34;
 
+	const TYPE_ADDRESS_VALIDATION = 35;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
