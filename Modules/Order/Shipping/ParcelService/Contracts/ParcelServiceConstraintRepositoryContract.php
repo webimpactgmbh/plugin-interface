@@ -12,4 +12,12 @@ interface ParcelServiceConstraintRepositoryContract
 		 $data
 	);
 
+	public function getById(
+		 $id
+	);
+
+	public function delete(
+		 $id
+	);
+
 }

@@ -67,6 +67,13 @@ interface ParcelServicePresetRepositoryContract
 	):ParcelServicePreset;
 
 	/**
+	 * Delete a parcel service preset
+	 */
+	public function delete(
+		int $id
+	):ParcelServicePreset;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(
