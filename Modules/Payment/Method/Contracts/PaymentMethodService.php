@@ -9,6 +9,12 @@ abstract class PaymentMethodService
 {
 
 	/**
+	 * Determine if the payment method is active for the webshop
+	 */
+	abstract public function isActive(
+	):bool;
+
+	/**
 	 * Is this payment method searchable in the backend?
 	 */
 	abstract public function isBackendSearchable(
