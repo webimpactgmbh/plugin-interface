@@ -27,7 +27,8 @@ interface ReturnsServiceProviderRepositoryContract
 	):array;
 
 	public function saveReturnsServiceProvider(
-		string $pluginName
+		string $pluginName, 
+		string $returnProviderAlias = null
 	):ReturnsServiceProvider;
 
 	public function getReturnsServiceProvider(
