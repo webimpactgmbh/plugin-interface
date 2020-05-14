@@ -54,4 +54,18 @@ interface CurrencyRepositoryContract
 		string $currencyIso
 	):CurrencyExchangeRate;
 
+	/**
+	 * List exchange rates from a currency
+	 */
+	public function getExchangeRatesFrom(
+		string $currencyIso
+	):array;
+
+	/**
+	 * List exchange rates to a currency
+	 */
+	public function getExchangeRatesTo(
+		string $currencyIso
+	):array;
+
 }
