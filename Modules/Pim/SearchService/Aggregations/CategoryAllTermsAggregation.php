@@ -8,7 +8,8 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 /**
  * To be written...
  */
-abstract class CategoryAllTermsAggregation 
+abstract class CategoryAllTermsAggregation implements AggregationInterface
+
 {
 
 	const NAME = 'categories.all';

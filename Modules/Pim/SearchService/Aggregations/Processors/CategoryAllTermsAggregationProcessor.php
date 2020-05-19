@@ -10,7 +10,8 @@ use Plenty\Modules\Pim\SearchService\Aggregations\CategoryAllTermsAggregation;
 /**
  * To be written...
  */
-abstract class CategoryAllTermsAggregationProcessor 
+abstract class CategoryAllTermsAggregationProcessor implements ProcessorInterface
+
 {
 
 	abstract public function process(
