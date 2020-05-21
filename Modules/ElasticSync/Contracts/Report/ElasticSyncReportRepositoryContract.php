@@ -53,6 +53,15 @@ interface ElasticSyncReportRepositoryContract
 		array $filters = []
 	):array;
 
+	public function listJobs(
+		int $reportId
+	):array;
+
+	public function listOutcomes(
+		int $reportId, 
+		string $job
+	):array;
+
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
