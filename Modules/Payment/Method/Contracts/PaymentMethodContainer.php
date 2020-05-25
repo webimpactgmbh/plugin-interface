@@ -10,7 +10,7 @@ interface PaymentMethodContainer
 
 	public function register(
 		string $paymentKey, 
-		string $paymentMethodServiceClass, 
+		 $paymentMethodServiceClass, 
 		array $rebuildEventClassesList
 	);
 
