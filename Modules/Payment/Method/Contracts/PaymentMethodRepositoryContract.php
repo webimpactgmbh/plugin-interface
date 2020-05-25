@@ -88,6 +88,12 @@ interface PaymentMethodRepositoryContract
 	):array;
 
 	/**
+	 * List all payment methods backend icon
+	 */
+	public function listBackendIcon(
+	):array;
+
+	/**
 	 * List all payment methods which can handle subscriptions
 	 */
 	public function listCanHandleSubscriptions(
