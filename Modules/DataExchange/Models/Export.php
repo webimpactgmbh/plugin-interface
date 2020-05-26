@@ -44,6 +44,10 @@ abstract class Export
 
 	const DATA_TYPE_FACET_VALUE_REFERENCE = 'facetValueReference';
 
+	const DATA_TYPE_LISTING = 'listing';
+
+	const DATA_TYPE_LISTING_MARKET_HISTORY = 'listingMarketHistory';
+
 	const OUTPUT_TYPE_ADMIN = 'admin';
 
 	const OUTPUT_TYPE_DOWNLOAD = 'download';

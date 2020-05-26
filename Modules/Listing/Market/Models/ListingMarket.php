@@ -30,6 +30,9 @@ abstract class ListingMarket
 	public		$prices;
 	public		$dates;
 	public		$texts;
+	public		$infos;
+	public		$lister;
+	public		$histories;
 	
 	/**
 	 * Returns this model as an array.
