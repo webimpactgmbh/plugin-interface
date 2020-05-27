@@ -46,6 +46,14 @@ abstract class Dispatcher
 	);
 
 	/**
+	 * Fire an event and call the listeners.
+	 */
+	abstract public function dispatch(
+		 $event, 
+		array $payload = []
+	);
+
+	/**
 	 * Remove a set of listeners from the dispatcher.
 	 */
 	abstract public function forget(

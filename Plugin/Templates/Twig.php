@@ -4,6 +4,7 @@ namespace Plenty\Plugin\Templates;
 use App;
 use Plenty\Log\Traits\Loggable;
 use Plenty\View\Bridge;
+use Twig\Error\LoaderError;
 
 /**
  * Twig engine

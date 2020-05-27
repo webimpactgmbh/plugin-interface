@@ -3,9 +3,9 @@ namespace Plenty\Plugin\Templates\Extensions;
 
 
 /**
- * Twig SimpleFunction
+ * TwigFilter
  */
-abstract class Twig_SimpleFunction 
+abstract class TwigFilter 
 {
 
 }

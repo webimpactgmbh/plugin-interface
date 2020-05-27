@@ -3,41 +3,12 @@ namespace Illuminate\Support;
 
 use ArrayAccess;
 use ArrayIterator;
-use CachingIterator;
-use Countable;
-use Exception;
-use Illuminate\Contracts\Support\Arrayable;
-use Illuminate\Contracts\Support\Jsonable;
-use Illuminate\Support\Debug\Dumper;
+use Illuminate\Support\Traits\EnumeratesValues;
 use Illuminate\Support\Traits\Macroable;
-use IteratorAggregate;
-use JsonSerializable;
-use Traversable;
 use stdClass;
 
 abstract class Collection 
 {
-
-	/**
-	 * Create a new collection instance if the value isn't one already.
-	 */
-	abstract public static function make(
-		 $items = []
-	):Collection;
-
-	/**
-	 * Wrap the given value in a collection if applicable.
-	 */
-	abstract public static function wrap(
-		 $value
-	):Collection;
-
-	/**
-	 * Get the underlying items from the given collection if applicable.
-	 */
-	abstract public static function unwrap(
-		 $value
-	):array;
 
 	/**
 	 * Create a new collection by invoking the callback a given amount of times.
@@ -61,13 +32,6 @@ abstract class Collection
 	);
 
 	/**
-	 * Alias for the "avg" method.
-	 */
-	abstract public function average(
-		 $callback = null
-	);
-
-	/**
 	 * Get the mode of a given key.
 	 */
 	abstract public function mode(
@@ -86,14 +50,6 @@ abstract class Collection
 	abstract public function contains(
 		 $key, 
 		 $operator = null, 
-		 $value = null
-	):bool;
-
-	/**
-	 * Determine if an item exists in the collection using strict comparison.
-	 */
-	abstract public function containsStrict(
-		 $key, 
 		 $value = null
 	):bool;
 
@@ -126,29 +82,6 @@ abstract class Collection
 	):Collection;
 
 	/**
-	 * Execute a callback over each item.
-	 */
-	abstract public function each(
-		callable $callback
-	):Collection;
-
-	/**
-	 * Execute a callback over each nested chunk of items.
-	 */
-	abstract public function eachSpread(
-		callable $callback
-	):Collection;
-
-	/**
-	 * Determine if all items in the collection pass the given test.
-	 */
-	abstract public function every(
-		 $key, 
-		 $operator = null, 
-		 $value = null
-	):bool;
-
-	/**
 	 * Get all items except for those with the specified keys.
 	 */
 	abstract public function except(
@@ -163,90 +96,12 @@ abstract class Collection
 	):Collection;
 
 	/**
-	 * Apply the callback if the value is truthy.
-	 */
-	abstract public function when(
-		bool $value, 
-		callable $callback, 
-		callable $default = null
-	);
-
-	/**
-	 * Apply the callback if the value is falsy.
-	 */
-	abstract public function unless(
-		bool $value, 
-		callable $callback, 
-		callable $default = null
-	);
-
-	/**
-	 * Filter items by the given key value pair.
-	 */
-	abstract public function where(
-		string $key, 
-		 $operator, 
-		 $value = null
-	):Collection;
-
-	/**
-	 * Filter items by the given key value pair using strict comparison.
-	 */
-	abstract public function whereStrict(
-		string $key, 
-		 $value
-	):Collection;
-
-	/**
-	 * Filter items by the given key value pair.
-	 */
-	abstract public function whereIn(
-		string $key, 
-		 $values, 
-		bool $strict = false
-	):Collection;
-
-	/**
-	 * Filter items by the given key value pair using strict comparison.
-	 */
-	abstract public function whereInStrict(
-		string $key, 
-		 $values
-	):Collection;
-
-	/**
-	 * Filter items by the given key value pair.
-	 */
-	abstract public function whereNotIn(
-		string $key, 
-		 $values, 
-		bool $strict = false
-	):Collection;
-
-	/**
-	 * Filter items by the given key value pair using strict comparison.
-	 */
-	abstract public function whereNotInStrict(
-		string $key, 
-		 $values
-	):Collection;
-
-	/**
-	 * Get the first item from the collection.
+	 * Get the first item from the collection passing the given truth test.
 	 */
 	abstract public function first(
 		callable $callback = null, 
 		 $default = null
 	);
-
-	/**
-	 * Get the first item by the given key value pair.
-	 */
-	abstract public function firstWhere(
-		string $key, 
-		 $operator, 
-		 $value = null
-	):Collection;
 
 	/**
 	 * Flip the items in the collection.
@@ -320,12 +175,6 @@ abstract class Collection
 	):bool;
 
 	/**
-	 * Determine if the collection is not empty.
-	 */
-	abstract public function isNotEmpty(
-	):bool;
-
-	/**
 	 * Get the keys of the collection items.
 	 */
 	abstract public function keys(
@@ -355,23 +204,9 @@ abstract class Collection
 	):Collection;
 
 	/**
-	 * Run a map over each nested chunk of items.
-	 */
-	abstract public function mapSpread(
-		callable $callback
-	):Collection;
-
-	/**
 	 * Run a dictionary map over the items.
 	 */
 	abstract public function mapToDictionary(
-		callable $callback
-	):Collection;
-
-	/**
-	 * Run a grouping map over the items.
-	 */
-	abstract public function mapToGroups(
 		callable $callback
 	):Collection;
 
@@ -381,27 +216,6 @@ abstract class Collection
 	abstract public function mapWithKeys(
 		callable $callback
 	):Collection;
-
-	/**
-	 * Map a collection and flatten the result by a single level.
-	 */
-	abstract public function flatMap(
-		callable $callback
-	):Collection;
-
-	/**
-	 * Map the values into a new class.
-	 */
-	abstract public function mapInto(
-		string $class
-	):Collection;
-
-	/**
-	 * Get the max value of a given key.
-	 */
-	abstract public function max(
-		 $callback = null
-	);
 
 	/**
 	 * Merge the collection with the given items.
@@ -425,13 +239,6 @@ abstract class Collection
 	):Collection;
 
 	/**
-	 * Get the min value of a given key.
-	 */
-	abstract public function min(
-		 $callback = null
-	);
-
-	/**
 	 * Create a new collection consisting of every n-th element.
 	 */
 	abstract public function nth(
@@ -445,28 +252,6 @@ abstract class Collection
 	abstract public function only(
 		 $keys
 	):Collection;
-
-	/**
-	 * "Paginate" the collection by slicing it into a smaller collection.
-	 */
-	abstract public function forPage(
-		int $page, 
-		int $perPage
-	):Collection;
-
-	/**
-	 * Partition the collection into two arrays using the given callback or key.
-	 */
-	abstract public function partition(
-		 $callback
-	):Collection;
-
-	/**
-	 * Pass the collection to the given callback and return the result.
-	 */
-	abstract public function pipe(
-		callable $callback
-	);
 
 	/**
 	 * Get and remove the last item from the collection.
@@ -521,13 +306,6 @@ abstract class Collection
 	);
 
 	/**
-	 * Create a collection of all elements that do not pass a given truth test.
-	 */
-	abstract public function reject(
-		 $callback
-	):Collection;
-
-	/**
 	 * Reverse items order.
 	 */
 	abstract public function reverse(
@@ -570,7 +348,7 @@ abstract class Collection
 	):Collection;
 
 	/**
-	 * Chunk the underlying collection array.
+	 * Chunk the collection into chunks of the given size.
 	 */
 	abstract public function chunk(
 		int $size
@@ -593,13 +371,6 @@ abstract class Collection
 	):Collection;
 
 	/**
-	 * Get the sum of the given values.
-	 */
-	abstract public function sum(
-		 $callback = null
-	);
-
-	/**
 	 * Take the first or last {$limit} items.
 	 */
 	abstract public function take(
@@ -607,32 +378,10 @@ abstract class Collection
 	):Collection;
 
 	/**
-	 * Pass the collection to the given callback and then return it.
-	 */
-	abstract public function tap(
-		callable $callback
-	):Collection;
-
-	/**
 	 * Transform each item in the collection using a callback.
 	 */
 	abstract public function transform(
 		callable $callback
-	):Collection;
-
-	/**
-	 * Return only unique items from the collection array.
-	 */
-	abstract public function unique(
-		 $key = null, 
-		bool $strict = false
-	):Collection;
-
-	/**
-	 * Return only unique items from the collection array using strict comparison.
-	 */
-	abstract public function uniqueStrict(
-		 $key = null
 	):Collection;
 
 	/**
@@ -655,25 +404,6 @@ abstract class Collection
 		int $size, 
 		 $value
 	):Collection;
-
-	/**
-	 * Get the collection of items as a plain array.
-	 */
-	abstract public function toArray(
-	):array;
-
-	/**
-	 * Convert the object into something JSON serializable.
-	 */
-	abstract public function jsonSerialize(
-	):array;
-
-	/**
-	 * Get the collection of items as JSON.
-	 */
-	abstract public function toJson(
-		int $options = 0
-	):string;
 
 	/**
 	 * Count the number of items in the collection.
@@ -709,6 +439,270 @@ abstract class Collection
 	abstract public function offsetUnset(
 		string $key
 	);
+
+	/**
+	 * Create a new collection instance if the value isn't one already.
+	 */
+	abstract public static function make(
+		 $items = []
+	):Collection;
+
+	/**
+	 * Wrap the given value in a collection if applicable.
+	 */
+	abstract public static function wrap(
+		 $value
+	):Collection;
+
+	/**
+	 * Get the underlying items from the given collection if applicable.
+	 */
+	abstract public static function unwrap(
+		 $value
+	):array;
+
+	/**
+	 * Alias for the "avg" method.
+	 */
+	abstract public function average(
+		 $callback = null
+	);
+
+	/**
+	 * Determine if an item exists, using strict comparison.
+	 */
+	abstract public function containsStrict(
+		 $key, 
+		 $value = null
+	):bool;
+
+	/**
+	 * Execute a callback over each item.
+	 */
+	abstract public function each(
+		callable $callback
+	):Collection;
+
+	/**
+	 * Execute a callback over each nested chunk of items.
+	 */
+	abstract public function eachSpread(
+		callable $callback
+	):Collection;
+
+	/**
+	 * Determine if all items pass the given truth test.
+	 */
+	abstract public function every(
+		 $key, 
+		 $operator = null, 
+		 $value = null
+	):bool;
+
+	/**
+	 * Get the first item by the given key value pair.
+	 */
+	abstract public function firstWhere(
+		string $key, 
+		 $operator = null, 
+		 $value = null
+	);
+
+	/**
+	 * Determine if the collection is not empty.
+	 */
+	abstract public function isNotEmpty(
+	):bool;
+
+	/**
+	 * Run a map over each nested chunk of items.
+	 */
+	abstract public function mapSpread(
+		callable $callback
+	):Collection;
+
+	/**
+	 * Run a grouping map over the items.
+	 */
+	abstract public function mapToGroups(
+		callable $callback
+	):Collection;
+
+	/**
+	 * Map a collection and flatten the result by a single level.
+	 */
+	abstract public function flatMap(
+		callable $callback
+	):Collection;
+
+	/**
+	 * Map the values into a new class.
+	 */
+	abstract public function mapInto(
+		string $class
+	):Collection;
+
+	/**
+	 * Get the min value of a given key.
+	 */
+	abstract public function min(
+		 $callback = null
+	);
+
+	/**
+	 * Get the max value of a given key.
+	 */
+	abstract public function max(
+		 $callback = null
+	);
+
+	/**
+	 * "Paginate" the collection by slicing it into a smaller collection.
+	 */
+	abstract public function forPage(
+		int $page, 
+		int $perPage
+	):Collection;
+
+	/**
+	 * Partition the collection into two arrays using the given callback or key.
+	 */
+	abstract public function partition(
+		 $key, 
+		 $operator = null, 
+		 $value = null
+	):Collection;
+
+	/**
+	 * Get the sum of the given values.
+	 */
+	abstract public function sum(
+		 $callback = null
+	);
+
+	/**
+	 * Apply the callback if the value is truthy.
+	 */
+	abstract public function when(
+		 $value, 
+		callable $callback, 
+		callable $default = null
+	);
+
+	/**
+	 * Apply the callback if the value is falsy.
+	 */
+	abstract public function unless(
+		bool $value, 
+		callable $callback, 
+		callable $default = null
+	);
+
+	/**
+	 * Filter items by the given key value pair.
+	 */
+	abstract public function where(
+		string $key, 
+		 $operator = null, 
+		 $value = null
+	):Collection;
+
+	/**
+	 * Filter items by the given key value pair using strict comparison.
+	 */
+	abstract public function whereStrict(
+		string $key, 
+		 $value
+	):Collection;
+
+	/**
+	 * Filter items by the given key value pair.
+	 */
+	abstract public function whereIn(
+		string $key, 
+		 $values, 
+		bool $strict = false
+	):Collection;
+
+	/**
+	 * Filter items by the given key value pair using strict comparison.
+	 */
+	abstract public function whereInStrict(
+		string $key, 
+		 $values
+	):Collection;
+
+	/**
+	 * Filter items by the given key value pair.
+	 */
+	abstract public function whereNotIn(
+		string $key, 
+		 $values, 
+		bool $strict = false
+	):Collection;
+
+	/**
+	 * Filter items by the given key value pair using strict comparison.
+	 */
+	abstract public function whereNotInStrict(
+		string $key, 
+		 $values
+	):Collection;
+
+	/**
+	 * Pass the collection to the given callback and return the result.
+	 */
+	abstract public function pipe(
+		callable $callback
+	);
+
+	/**
+	 * Pass the collection to the given callback and then return it.
+	 */
+	abstract public function tap(
+		callable $callback
+	):Collection;
+
+	/**
+	 * Create a collection of all elements that do not pass a given truth test.
+	 */
+	abstract public function reject(
+		 $callback = true
+	):Collection;
+
+	/**
+	 * Return only unique items from the collection array.
+	 */
+	abstract public function unique(
+		 $key = null, 
+		bool $strict = false
+	):Collection;
+
+	/**
+	 * Return only unique items from the collection array using strict comparison.
+	 */
+	abstract public function uniqueStrict(
+		 $key = null
+	):Collection;
+
+	/**
+	 * Get the collection of items as a plain array.
+	 */
+	abstract public function toArray(
+	):array;
+
+	/**
+	 * Convert the object into something JSON serializable.
+	 */
+	abstract public function jsonSerialize(
+	):array;
+
+	/**
+	 * Get the collection of items as JSON.
+	 */
+	abstract public function toJson(
+		int $options = 0
+	):string;
 
 	/**
 	 * Add a method to the list of proxied methods.

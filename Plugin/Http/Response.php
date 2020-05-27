@@ -16,6 +16,8 @@ abstract class Response extends \Symfony\Component\HttpFoundation\Response
 
 	const HTTP_PROCESSING = 102;
 
+	const HTTP_EARLY_HINTS = 103;
+
 	const HTTP_OK = 200;
 
 	const HTTP_CREATED = 201;
@@ -101,6 +103,8 @@ abstract class Response extends \Symfony\Component\HttpFoundation\Response
 	const HTTP_FAILED_DEPENDENCY = 424;
 
 	const HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL = 425;
+
+	const HTTP_TOO_EARLY = 425;
 
 	const HTTP_UPGRADE_REQUIRED = 426;
 

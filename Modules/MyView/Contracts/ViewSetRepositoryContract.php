@@ -44,4 +44,12 @@ interface ViewSetRepositoryContract
 		int $id
 	);
 
+	/**
+	 * Set the given view set active by user id
+	 */
+	public function setActive(
+		int $userId, 
+		int $viewSetId
+	);
+
 }

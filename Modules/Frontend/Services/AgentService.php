@@ -21,7 +21,7 @@ abstract class AgentService
 
 	const MOBILE_GRADE_C = 'C';
 
-	const VERSION = '2.8.31';
+	const VERSION = '2.8.34';
 
 	const VERSION_TYPE_STRING = 'text';
 
