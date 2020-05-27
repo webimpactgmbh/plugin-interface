@@ -35,7 +35,7 @@ interface PluginSetRepositoryContract
 	public function update(
 		int $id, 
 		array $data
-	):bool;
+	):PluginSet;
 
 	/**
 	 * Delete a set.
