@@ -44,6 +44,7 @@ abstract class Order
 	public		$orderReferences;
 	public		$reverseOrderReferences;
 	public		$originOrderReferences;
+	public		$shippingPackages;
 	public		$documents;
 	public		$dates;
 	public		$originOrder;
