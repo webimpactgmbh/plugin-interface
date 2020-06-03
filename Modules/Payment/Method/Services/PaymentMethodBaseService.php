@@ -18,7 +18,7 @@ abstract class PaymentMethodBaseService
 	 * Return the frontend name of the payment method according to the language
 	 */
 	abstract public function getName(
-		string $lang
+		string $lang = ""
 	):string;
 
 	/**
@@ -31,21 +31,21 @@ abstract class PaymentMethodBaseService
 	 * Return the frontend icon of the payment method according to the language
 	 */
 	abstract public function getIcon(
-		string $lang
+		string $lang = ""
 	):string;
 
 	/**
 	 * Return the frontend description of the payment method according to the language
 	 */
 	abstract public function getDescription(
-		string $lang
+		string $lang = ""
 	):string;
 
 	/**
 	 * Return an url with additional information shown in the frontend about the payment method according to the language
 	 */
 	abstract public function getSourceUrl(
-		string $lang
+		string $lang = ""
 	):string;
 
 	/**
@@ -76,7 +76,7 @@ abstract class PaymentMethodBaseService
 	 * Get the backend name of the payment method according to the language
 	 */
 	abstract public function getBackendName(
-		string $lang
+		string $lang = ""
 	):string;
 
 	/**
