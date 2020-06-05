@@ -113,7 +113,7 @@ class Carbon extends \DateTime
 	):int;
 
 	abstract public static function setWeekStartsAt(
-		int $day
+		 $day
 	);
 
 	/**
@@ -123,7 +123,7 @@ class Carbon extends \DateTime
 	):int;
 
 	abstract public static function setWeekEndsAt(
-		int $day
+		 $day
 	);
 
 	/**
