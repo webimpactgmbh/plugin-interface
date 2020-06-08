@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Tag\Contracts;
 
+use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Support\Collection;
 use Plenty\Exceptions\ValidationException;
@@ -80,6 +81,13 @@ interface TagRelationshipRepositoryContract
 		string $relationshipValue, 
 		string $relationshipType
 	):DeleteResponse;
+
+	/**
+	 * Deletes a list of tag relationships. The tag ID, tag type and relation value must be specified.
+	 */
+	public function deleteBulk(
+		array $data
+	):Collection;
 
 	/**
 	 * Returns all tag relationships.
