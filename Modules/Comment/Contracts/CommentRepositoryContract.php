@@ -30,7 +30,8 @@ interface CommentRepositoryContract
 	 * Create a comment
 	 */
 	public function createComment(
-		array $data
+		array $data, 
+		bool $suppressEvent = false
 	):Comment;
 
 	/**
