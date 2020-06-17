@@ -11,32 +11,61 @@ use Plenty\Repositories\Models\PaginatedResult;
 interface CatalogRepositoryContract 
 {
 
+	/**
+	 * Create a catalog
+	 */
 	public function create(
 		array $data
 	):Catalog;
 
+	/**
+	 * Update a catalog
+	 */
 	public function update(
 		string $id, 
 		array $data
 	):Catalog;
 
+	/**
+	 * Get a catalog
+	 */
 	public function get(
 		string $id
 	):Catalog;
 
+	/**
+	 * Delete a catalog
+	 */
 	public function delete(
 		string $id
 	):bool;
 
+	/**
+	 * Copy a catalog or multiple catalogs
+	 */
 	public function copy(
 		array $data
 	):array;
 
+	/**
+	 * Copy a catalog format
+	 */
+	public function copyCatalogFormat(
+		string $catalogId, 
+		array $data
+	):array;
+
+	/**
+	 * Get list of all catalogs
+	 */
 	public function all(
 		int $page = 1, 
 		int $perPage = 25
 	):PaginatedResult;
 
+	/**
+	 * Activate a catalog
+	 */
 	public function activate(
 		string $id, 
 		bool $active

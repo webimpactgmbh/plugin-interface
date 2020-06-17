@@ -8,39 +8,63 @@ namespace Plenty\Modules\Catalog\Contracts;
 interface TemplateRepositoryContract 
 {
 
+	/**
+	 * Get list of templates
+	 */
 	public function getTemplates(
 	):array;
 
+	/**
+	 * Get template
+	 */
 	public function getTemplate(
 		string $id, 
 		string $data
 	):array;
 
+	/**
+	 * Get list of mappings
+	 */
 	public function getMappings(
 		string $id
 	):array;
 
+	/**
+	 * Get mapping
+	 */
 	public function getMapping(
 		string $id, 
 		string $mappingId
 	):array;
 
+	/**
+	 * Get mapping data
+	 */
 	public function getMappingData(
 		string $id, 
 		string $mappingId, 
-		string $parentId
+		string $parentId = null
 	):array;
 
+	/**
+	 * Get mapping data by id
+	 */
 	public function getMappingDataById(
 		string $id, 
 		string $mappingId, 
 		string $dataId
 	):array;
 
+	/**
+	 * Test export of a catalog
+	 */
 	public function test(
 		string $id
 	);
 
+	/**
+	 * Get all mappings
+	 */
 	public function getAllMappings(
 		string $id
 	):array;
