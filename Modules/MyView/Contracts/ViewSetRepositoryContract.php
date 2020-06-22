@@ -49,7 +49,8 @@ interface ViewSetRepositoryContract
 	 */
 	public function setActive(
 		int $userId, 
-		int $viewSetId
+		int $viewSetId, 
+		string $viewSetKey
 	);
 
 }
