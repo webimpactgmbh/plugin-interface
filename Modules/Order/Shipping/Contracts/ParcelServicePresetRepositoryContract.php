@@ -35,6 +35,13 @@ interface ParcelServicePresetRepositoryContract
 	):ParcelServicePreset;
 
 	/**
+	 * Gets a shipping profile names in all langauges. The ID of the shipping profile must be specified.
+	 */
+	public function getPresetNamesById(
+		int $presetId
+	):array;
+
+	/**
 	 * Calculate shipping costs and list last weighted preset combinations.
 	 */
 	public function getLastWeightedPresetCombinations(
