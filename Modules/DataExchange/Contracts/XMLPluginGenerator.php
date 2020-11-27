@@ -12,10 +12,14 @@ use \DOMText;
  */
 abstract class XMLPluginGenerator 
 {
-	protected		$version = "1.0";
-	protected		$encoding = "UTF-8";
-	protected		$formatOutput = true;
-	protected		$preserveWhiteSpace = true;
+	
+protected		$version = "1.0";
+	
+protected		$encoding = "UTF-8";
+	
+protected		$formatOutput = true;
+	
+protected		$preserveWhiteSpace = true;
 	
 	/**
 	 * Initializes the xml document and the root element.

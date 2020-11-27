@@ -7,8 +7,10 @@ namespace Plenty\Modules\Wizard\Services\DataSources;
  */
 abstract class BaseWizardDataSource 
 {
-	protected		$wizardKey = null;
-	protected		$dataStructure;
+	
+protected		$wizardKey = null;
+	
+protected		$dataStructure;
 	
 	/**
 	 * Sets the wizard key for this data source

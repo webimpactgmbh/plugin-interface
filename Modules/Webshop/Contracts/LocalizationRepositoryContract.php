@@ -21,8 +21,7 @@ interface LocalizationRepositoryContract
 	):string;
 
 	/**
-	 * Get a language code
-Get a language code by given country code
+	 * Get a ISO language code by given country code.
 	 */
 	public function getLanguageCode(
 		string $countryCode = null

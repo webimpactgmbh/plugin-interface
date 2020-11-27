@@ -5,13 +5,16 @@ use Plenty\Modules\Webshop\ItemSearch\Factories\VariationSearchFactory;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\SortingHelper;
 
 /**
- * SearchSuggestions preset
+ * Query items to display search suggestions
  */
 abstract class SearchSuggestions 
 {
 
+	/**
+	 * Get preset search factory.
+	 */
 	abstract public static function getSearchFactory(
-		 $options
-	);
+		array $options
+	):VariationSearchFactory;
 
 }

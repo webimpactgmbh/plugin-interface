@@ -11,14 +11,22 @@ abstract class PropertyName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$propertyId;
-	public		$lang;
-	public		$name;
-	public		$description;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$propertyRelation;
+	
+public		$id;
+	
+public		$propertyId;
+	
+public		$lang;
+	
+public		$name;
+	
+public		$description;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$propertyRelation;
 	
 	/**
 	 * Returns this model as an array.

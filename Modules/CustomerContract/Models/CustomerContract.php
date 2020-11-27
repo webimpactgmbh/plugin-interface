@@ -11,10 +11,14 @@ abstract class CustomerContract
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$contractLang;
-	public		$contractName;
-	public		$contractVisible;
+	
+public		$id;
+	
+public		$contractLang;
+	
+public		$contractName;
+	
+public		$contractVisible;
 	
 	/**
 	 * Returns this model as an array.

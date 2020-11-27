@@ -7,9 +7,12 @@ namespace Plenty\Plugin\Mail\Models;
  */
 abstract class AwsSesCredentials 
 {
-	public		$region;
-	public		$accessKeyId;
-	public		$secretAccessKey;
+	
+public		$region;
+	
+public		$accessKeyId;
+	
+public		$secretAccessKey;
 	
 	/**
 	 * Returns this model as an array.

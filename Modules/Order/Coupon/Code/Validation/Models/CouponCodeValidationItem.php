@@ -11,12 +11,18 @@ abstract class CouponCodeValidationItem
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$amount;
-	public		$noCoupon;
-	public		$quantity;
-	public		$singlePrice;
-	public		$itemId;
-	public		$vatField;
+	
+public		$amount;
+	
+public		$noCoupon;
+	
+public		$quantity;
+	
+public		$singlePrice;
+	
+public		$itemId;
+	
+public		$vatField;
 	
 	/**
 	 * Returns this model as an array.

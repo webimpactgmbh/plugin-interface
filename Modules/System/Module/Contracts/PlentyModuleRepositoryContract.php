@@ -3,7 +3,7 @@ namespace Plenty\Modules\System\Module\Contracts;
 
 
 /**
- * PlentyModuleRepositoryContract
+ * Repository for PlentyModule
  */
 interface PlentyModuleRepositoryContract 
 {

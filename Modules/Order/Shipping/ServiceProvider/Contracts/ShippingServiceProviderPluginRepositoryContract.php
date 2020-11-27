@@ -8,9 +8,15 @@ namespace Plenty\Modules\Order\Shipping\ServiceProvider\Contracts;
 interface ShippingServiceProviderPluginRepositoryContract 
 {
 
+	/**
+	 * Return list of shipping service provider plugins
+	 */
 	public function plugins(
 	);
 
+	/**
+	 * Return list of shipping service provider plugins using a filter
+	 */
 	public function filteredPluginList(
 		string $filter
 	);

@@ -11,11 +11,16 @@ abstract class AddressSchedulerRelation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$schedulerId;
-	public		$typeId;
-	public		$addressId;
-	public		$scheduler;
+	
+public		$id;
+	
+public		$schedulerId;
+	
+public		$typeId;
+	
+public		$addressId;
+	
+public		$scheduler;
 	
 	/**
 	 * Returns this model as an array.

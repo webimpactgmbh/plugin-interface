@@ -35,4 +35,19 @@ interface PaymentOrderRelationRepositoryContract
 		Payment $payment
 	);
 
+	/**
+	 * Assign a payment to an order ID if order ID is valid and order ID doesn't have a payment assigned.
+	 */
+	public function createOrderRelationWithValidation(
+		int $paymentId, 
+		int $orderId
+	):PaymentOrderRelation;
+
+	/**
+	 * Bulk auto assign payments
+	 */
+	public function autoAssignPayments(
+		array $paymentIds
+	):array;
+
 }

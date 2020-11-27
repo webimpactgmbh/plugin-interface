@@ -11,11 +11,16 @@ abstract class CurrencyCountryRelation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$currency;
-	public		$countryId;
-	public		$country;
-	public		$currencyInstance;
+	
+public		$id;
+	
+public		$currency;
+	
+public		$countryId;
+	
+public		$country;
+	
+public		$currencyInstance;
 	
 	/**
 	 * Returns this model as an array.

@@ -11,11 +11,16 @@ abstract class ElasticSyncMatching
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$syncId;
-	public		$target;
-	public		$source;
-	public		$additionalValue;
+	
+public		$id;
+	
+public		$syncId;
+	
+public		$target;
+	
+public		$source;
+	
+public		$additionalValue;
 	
 	/**
 	 * Returns this model as an array.

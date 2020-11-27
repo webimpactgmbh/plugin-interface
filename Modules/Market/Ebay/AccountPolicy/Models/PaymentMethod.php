@@ -7,9 +7,12 @@ namespace Plenty\Modules\Market\Ebay\AccountPolicy\Models;
  */
 abstract class PaymentMethod 
 {
-	public		$brands;
-	public		$paymentMethodType;
-	public		$recipientAccountReference;
+	
+public		$brands;
+	
+public		$paymentMethodType;
+	
+public		$recipientAccountReference;
 	
 	/**
 	 * Returns this model as an array.

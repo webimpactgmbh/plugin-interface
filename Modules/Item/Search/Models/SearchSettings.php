@@ -9,7 +9,8 @@ abstract class SearchSettings
 {
 
 	const KEY = 'ElasticSearch_settings';
-	public		$fields;
+	
+public		$fields;
 	
 	/**
 	 * Returns this model as an array.

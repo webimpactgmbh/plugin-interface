@@ -7,9 +7,12 @@ namespace Plenty\Modules\Frontend\Session\Storage\Models;
  */
 abstract class LocaleSettings 
 {
-	public		$currency;
-	public		$currencyExchange;
-	public		$language;
+	
+public		$currency;
+	
+public		$currencyExchange;
+	
+public		$language;
 	
 	/**
 	 * Returns this model as an array.

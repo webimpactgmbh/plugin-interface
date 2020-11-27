@@ -7,10 +7,14 @@ namespace Plenty\Modules\Item\DataLayer\Models;
  */
 abstract class ItemShippingProfiles 
 {
-	public		$id;
-	public		$name;
-	public		$backendName;
-	public		$tags;
+	
+public		$id;
+	
+public		$name;
+	
+public		$backendName;
+	
+public		$tags;
 	
 	/**
 	 * Returns this model as an array.

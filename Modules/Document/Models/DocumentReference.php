@@ -36,12 +36,17 @@ abstract class DocumentReference
 
 	const ORDER_RETURNS = 'order_returns';
 
+	const ORDER_ARCHIVED = 'order_archived';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$documentId;
-	public		$type;
-	public		$value;
+	
+public		$documentId;
+	
+public		$type;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

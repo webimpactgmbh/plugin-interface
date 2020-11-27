@@ -7,17 +7,28 @@ namespace Plenty\Modules\Market\Ebay\AccountPolicy\Models;
  */
 abstract class ShippingService 
 {
-	public		$additionalShippingCost;
-	public		$buyerResponsibleForPickup;
-	public		$buyerResponsibleForShipping;
-	public		$cashOnDeliveryFee;
-	public		$freeShipping;
-	public		$shippingCarrierCode;
-	public		$shippingCost;
-	public		$shippingServiceCode;
-	public		$shipToLocations;
-	public		$sortOrder;
-	public		$surcharge;
+	
+public		$additionalShippingCost;
+	
+public		$buyerResponsibleForPickup;
+	
+public		$buyerResponsibleForShipping;
+	
+public		$cashOnDeliveryFee;
+	
+public		$freeShipping;
+	
+public		$shippingCarrierCode;
+	
+public		$shippingCost;
+	
+public		$shippingServiceCode;
+	
+public		$shipToLocations;
+	
+public		$sortOrder;
+	
+public		$surcharge;
 	
 	/**
 	 * Returns this model as an array.

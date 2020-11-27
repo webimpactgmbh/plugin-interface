@@ -11,12 +11,18 @@ abstract class TicketDocument
 	const CREATED_AT = 'inserted';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$ticketId;
-	public		$userId;
-	public		$type;
-	public		$name;
-	public		$internal;
+	
+public		$id;
+	
+public		$ticketId;
+	
+public		$userId;
+	
+public		$type;
+	
+public		$name;
+	
+public		$internal;
 	
 	/**
 	 * Returns this model as an array.

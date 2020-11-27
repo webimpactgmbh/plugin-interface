@@ -7,9 +7,12 @@ namespace Plenty\Modules\Messenger\Models;
  */
 abstract class MessageFrom 
 {
-	public		$type;
-	public		$value;
-	public		$name;
+	
+public		$type;
+	
+public		$value;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

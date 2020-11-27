@@ -7,11 +7,16 @@ namespace Plenty\Modules\Wizard\Models;
  */
 abstract class WizardFormOption 
 {
-	public		$name;
-	public		$placeholder;
-	public		$caption;
-	public		$label;
-	public		$tooltip;
+	
+public		$name;
+	
+public		$placeholder;
+	
+public		$caption;
+	
+public		$label;
+	
+public		$tooltip;
 	
 	/**
 	 * Returns this model as an array.

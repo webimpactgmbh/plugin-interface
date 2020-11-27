@@ -11,12 +11,18 @@ abstract class PropertyOption
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$propertyId;
-	public		$typeOptionIdentifier;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$propertyOptionValues;
+	
+public		$id;
+	
+public		$propertyId;
+	
+public		$typeOptionIdentifier;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$propertyOptionValues;
 	
 	/**
 	 * Returns this model as an array.

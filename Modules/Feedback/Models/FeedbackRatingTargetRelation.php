@@ -11,9 +11,12 @@ abstract class FeedbackRatingTargetRelation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$ratingId;
-	public		$ratingRelationType;
-	public		$ratingRelationTargetId;
+	
+public		$ratingId;
+	
+public		$ratingRelationType;
+	
+public		$ratingRelationTargetId;
 	
 	/**
 	 * Returns this model as an array.

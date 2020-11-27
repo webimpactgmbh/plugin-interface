@@ -13,10 +13,14 @@ abstract class VariationCategory
 	const CREATED_AT = 'plenty_item_variation_category_link_created_timestamp';
 
 	const ITEMS_PER_PAGE = 50;
-	public		$variationId;
-	public		$categoryId;
-	public		$position;
-	public		$isNeckermannPrimary;
+	
+public		$variationId;
+	
+public		$categoryId;
+	
+public		$position;
+	
+public		$isNeckermannPrimary;
 	
 	/**
 	 * Returns this model as an array.

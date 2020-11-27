@@ -13,10 +13,14 @@ abstract class ListingMarketItemSpecific
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$listingMarketId;
-	public		$name;
-	public		$value;
+	
+public		$id;
+	
+public		$listingMarketId;
+	
+public		$name;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

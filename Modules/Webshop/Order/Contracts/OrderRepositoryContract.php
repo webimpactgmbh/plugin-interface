@@ -9,11 +9,18 @@ use Plenty\Modules\Order\Models\Order;
 interface OrderRepositoryContract 
 {
 
+	/**
+	 * Generate order data from current basket and place the order.
+	 */
 	public function placeOrder(
 	):Order;
 
+	/**
+	 * Create a return order for some items of an existing order.
+	 */
 	public function createReturnOrder(
-		array $returnOrderData
+		array $returnOrderData, 
+		int $orderId = null
 	):Order;
 
 }

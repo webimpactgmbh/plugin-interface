@@ -11,11 +11,16 @@ abstract class OrderShippingPackageItems
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$packageId;
-	public		$itemId;
-	public		$variationId;
-	public		$itemQuantity;
+	
+public		$id;
+	
+public		$packageId;
+	
+public		$itemId;
+	
+public		$variationId;
+	
+public		$itemQuantity;
 	
 	/**
 	 * Returns this model as an array.

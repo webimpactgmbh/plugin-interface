@@ -11,7 +11,8 @@ abstract class CurrencyExchangeRate
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$exchangeRate;
+	
+public		$exchangeRate;
 	
 	/**
 	 * Returns this model as an array.

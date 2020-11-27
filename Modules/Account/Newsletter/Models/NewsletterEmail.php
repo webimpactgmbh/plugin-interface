@@ -13,19 +13,32 @@ abstract class NewsletterEmail
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$directory;
-	public		$customerId;
-	public		$forename;
-	public		$surname;
-	public		$email;
-	public		$gender;
-	public		$birthday;
-	public		$timestamp;
-	public		$templateLang;
-	public		$confirmedTimestamp;
-	public		$confirmAuthString;
-	public		$ipAddress;
+	
+public		$id;
+	
+public		$directory;
+	
+public		$customerId;
+	
+public		$forename;
+	
+public		$surname;
+	
+public		$email;
+	
+public		$gender;
+	
+public		$birthday;
+	
+public		$timestamp;
+	
+public		$templateLang;
+	
+public		$confirmedTimestamp;
+	
+public		$confirmAuthString;
+	
+public		$ipAddress;
 	
 	/**
 	 * Returns this model as an array.

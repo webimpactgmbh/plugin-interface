@@ -13,15 +13,24 @@ abstract class Settings
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$marketplaceId;
-	public		$type;
-	public		$settings;
-	public		$category;
-	public		$parcelServicePreset;
-	public		$attribute;
-	public		$property;
-	public		$attributeValue;
+	
+public		$id;
+	
+public		$marketplaceId;
+	
+public		$type;
+	
+public		$settings;
+	
+public		$category;
+	
+public		$parcelServicePreset;
+	
+public		$attribute;
+	
+public		$property;
+	
+public		$attributeValue;
 	
 	/**
 	 * Returns this model as an array.

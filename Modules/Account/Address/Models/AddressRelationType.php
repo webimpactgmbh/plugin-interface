@@ -27,11 +27,16 @@ abstract class AddressRelationType
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$position;
-	public		$nonErasable;
-	public		$names;
-	public		$application;
+	
+public		$id;
+	
+public		$position;
+	
+public		$nonErasable;
+	
+public		$names;
+	
+public		$application;
 	
 	/**
 	 * Returns this model as an array.

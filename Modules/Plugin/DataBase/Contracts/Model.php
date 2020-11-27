@@ -26,17 +26,28 @@ abstract class Model
 	const FIELD_TYPE_TEXT = 'text';
 
 	const FIELD_TYPES = ['int','decimal','string','bool','array','text'];
-	protected		$primaryKeyFieldName = "id";
-	protected		$primaryKeyFieldType = "int";
-	protected		$autoIncrementPrimaryKey = true;
-	protected		$textFields;
-	protected		$attributes;
-	protected		$original;
-	protected		$changes;
-	protected		$casts;
-	protected		$dates;
-	protected		$dateFormat = null;
-	protected static 		$mutatorCache;
+	
+protected		$primaryKeyFieldName = "id";
+	
+protected		$primaryKeyFieldType = "int";
+	
+protected		$autoIncrementPrimaryKey = true;
+	
+protected		$textFields;
+	
+protected		$attributes;
+	
+protected		$original;
+	
+protected		$changes;
+	
+protected		$casts;
+	
+protected		$dates;
+	
+protected		$dateFormat = null;
+	
+protected static 		$mutatorCache;
 	
 	abstract public function getTableName(
 	):string;

@@ -10,7 +10,7 @@ use Plenty\Modules\Webshop\Contracts\LocalizationRepositoryContract;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\FacetFilterExtension;
 
 /**
- * FacetSearchFactory
+ * Prepare and build search requests to query facets
  */
 abstract class FacetSearchFactory 
 {
@@ -50,10 +50,16 @@ abstract class FacetSearchFactory
 	abstract public function withMinimumCount(
 	):self;
 
+	/**
+	 * Get the default configuration of a search factory.
+	 */
 	abstract public static function default(
-		 $options = []
-	);
+		array $options = []
+	):self;
 
+	/**
+	 * Set preview mode for the search request.
+	 */
 	abstract public function setAdminPreview(
 		bool $isAdminPreview
 	):self;
@@ -299,9 +305,15 @@ abstract class FacetSearchFactory
 	abstract public function withDefaultImage(
 	):self;
 
+	/**
+	 * Add bundle component variations.
+	 */
 	abstract public function withBundleComponents(
 	):self;
 
+	/**
+	 * Add set component variations to item set entries.
+	 */
 	abstract public function withSetComponents(
 	);
 
@@ -324,7 +336,8 @@ abstract class FacetSearchFactory
 	):self;
 
 	abstract public function withSuggestions(
-		string $query = ""
+		string $query = "", 
+		string $lang = null
 	):self;
 
 	abstract public function withDidYouMeanSuggestions(
@@ -342,10 +355,12 @@ abstract class FacetSearchFactory
 	):BaseSearchFactory;
 
 	/**
-	 * Add a mutator
+	 * Add a mutator to transform search results.
 	 */
 	abstract public function withMutator(
-		MutatorInterface $mutator
+		MutatorInterface $mutator, 
+		bool $excludeDependencies = false, 
+		int $position = 1000
 	):self;
 
 	/**
@@ -370,7 +385,23 @@ abstract class FacetSearchFactory
 		 $fields
 	):self;
 
+	/**
+	 * Get the requested result fields for this search request.
+	 */
 	abstract public function getResultFields(
+	):array;
+
+	/**
+	 * Check if result field is already included in the source of the search.
+	 */
+	abstract public function hasResultField(
+		string $field
+	):bool;
+
+	/**
+	 * Get additional result fields required by webshop mutators.
+	 */
+	abstract public function getAdditionalResultFields(
 	):array;
 
 	/**
@@ -430,9 +461,12 @@ abstract class FacetSearchFactory
 		array $sortingList
 	):self;
 
+	/**
+	 * Set the order of the search results by ids.
+	 */
 	abstract public function setOrder(
-		 $idList
-	);
+		array $idList
+	):self;
 
 	/**
 	 * Group results by field

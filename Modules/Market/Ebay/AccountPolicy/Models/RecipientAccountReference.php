@@ -7,8 +7,10 @@ namespace Plenty\Modules\Market\Ebay\AccountPolicy\Models;
  */
 abstract class RecipientAccountReference 
 {
-	public		$referenceId;
-	public		$referenceType;
+	
+public		$referenceId;
+	
+public		$referenceType;
 	
 	/**
 	 * Returns this model as an array.

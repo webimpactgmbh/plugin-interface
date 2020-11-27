@@ -7,16 +7,28 @@ namespace Plenty\Modules\Item\SalesPrice\Models;
  */
 abstract class SalesPriceSearchRequest 
 {
-	public		$variationId;
-	public		$type;
-	public		$plentyId;
-	public		$customerClassId;
-	public		$countryId;
-	public		$currency;
-	public		$accountId;
-	public		$accountType;
-	public		$referrerId;
-	public		$quantity;
+	
+public		$variationId;
+	
+public		$type;
+	
+public		$plentyId;
+	
+public		$customerClassId;
+	
+public		$countryId;
+	
+public		$currency;
+	
+public		$accountId;
+	
+public		$accountType;
+	
+public		$referrerId;
+	
+public		$quantity;
+	
+public		$ignoreType;
 	
 	/**
 	 * Returns this model as an array.

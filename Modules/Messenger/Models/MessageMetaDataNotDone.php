@@ -7,8 +7,10 @@ namespace Plenty\Modules\Messenger\Models;
  */
 abstract class MessageMetaDataNotDone 
 {
-	public		$deactivated;
-	public		$tooltips;
+	
+public		$deactivated;
+	
+public		$tooltips;
 	
 	/**
 	 * Returns this model as an array.

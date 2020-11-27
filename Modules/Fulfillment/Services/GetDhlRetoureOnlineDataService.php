@@ -11,6 +11,9 @@ use Plenty\Modules\Order\Contracts\OrderRepositoryContract;
 abstract class GetDhlRetoureOnlineDataService 
 {
 
+	/**
+	 * Get all DHL Retoure Online configurations
+	 */
 	abstract public function getDhlRetoureOnlineData(
 	);
 

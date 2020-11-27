@@ -13,11 +13,16 @@ abstract class VariationBarcode
 	const ITEMS_PER_PAGE = 50;
 
 	const UPDATED_AT = 'updatedAt';
-	public		$code;
-	public		$barcodeId;
-	public		$variationId;
-	public		$createdAt;
-	public		$barcode;
+	
+public		$code;
+	
+public		$barcodeId;
+	
+public		$variationId;
+	
+public		$createdAt;
+	
+public		$barcode;
 	
 	/**
 	 * Returns this model as an array.

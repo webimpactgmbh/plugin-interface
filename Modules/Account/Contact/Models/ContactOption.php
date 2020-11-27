@@ -67,17 +67,28 @@ abstract class ContactOption
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$contactId;
-	public		$typeId;
-	public		$subTypeId;
-	public		$value;
-	public		$priority;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$contact;
-	public		$type;
-	public		$subType;
+	
+public		$id;
+	
+public		$contactId;
+	
+public		$typeId;
+	
+public		$subTypeId;
+	
+public		$value;
+	
+public		$priority;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$contact;
+	
+public		$type;
+	
+public		$subType;
 	
 	/**
 	 * Returns this model as an array.

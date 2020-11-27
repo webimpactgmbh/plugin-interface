@@ -11,14 +11,22 @@ abstract class AccountingLocation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$countryId;
-	public		$name;
-	public		$clientId;
-	public		$plentyId;
-	public		$vats;
-	public		$country;
-	public		$client;
+	
+public		$id;
+	
+public		$countryId;
+	
+public		$name;
+	
+public		$clientId;
+	
+public		$plentyId;
+	
+public		$vats;
+	
+public		$country;
+	
+public		$client;
 	
 	/**
 	 * Returns this model as an array.

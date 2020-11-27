@@ -7,8 +7,10 @@ namespace Plenty\Modules\Item\DataLayer\Models;
  */
 abstract class VariationLinkMarketplace 
 {
-	public		$created;
-	public		$marketplaceId;
+	
+public		$created;
+	
+public		$marketplaceId;
 	
 	/**
 	 * Returns this model as an array.

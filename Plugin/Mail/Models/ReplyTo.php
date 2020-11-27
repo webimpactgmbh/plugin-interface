@@ -7,8 +7,10 @@ namespace Plenty\Plugin\Mail\Models;
  */
 abstract class ReplyTo 
 {
-	public		$mailAddress;
-	public		$name;
+	
+public		$mailAddress;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

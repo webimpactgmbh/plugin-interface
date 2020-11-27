@@ -7,9 +7,12 @@ namespace Plenty\Modules\Market\Ebay\AccountPolicy\Models;
  */
 abstract class Deposit 
 {
-	public		$amount;
-	public		$dueIn;
-	public		$paymentMethods;
+	
+public		$amount;
+	
+public		$dueIn;
+	
+public		$paymentMethods;
 	
 	/**
 	 * Returns this model as an array.

@@ -9,7 +9,8 @@ abstract class SuggestSettings
 {
 
 	const KEY = 'ElasticSearch_suggest_settings';
-	public		$fields;
+	
+public		$fields;
 	
 	/**
 	 * Returns this model as an array.

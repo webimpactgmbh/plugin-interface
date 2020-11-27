@@ -59,6 +59,14 @@ interface DocumentRepositoryContract
 	):bool;
 
 	/**
+	 * Archive order document
+	 */
+	public function archiveOrderDocument(
+		int $orderId, 
+		int $documentId
+	);
+
+	/**
 	 * Upload category documents
 	 */
 	public function uploadCategoryDocuments(
@@ -74,40 +82,64 @@ interface DocumentRepositoryContract
 		int $documentId
 	):bool;
 
+	/**
+	 * Uploads documents
+	 */
 	public function uploadOrderShippingPackageDocuments(
 		int $packageId, 
 		string $type, 
 		string $document
 	):array;
 
+	/**
+	 * Find documents
+	 */
 	public function findOrderShippingPackageDocuments(
 		int $packageId, 
 		string $type
 	):array;
 
+	/**
+	 * Finds the current order document
+	 */
 	public function findCurrentOrderDocument(
 		int $orderId, 
 		string $type
 	):Document;
 
+	/**
+	 * Finds order document.
+	 */
 	public function findRecentOrderDocument(
 		int $orderId, 
 		string $type
 	):Document;
 
+	/**
+	 * Delets a document.
+	 */
 	public function deleteOrderShippingPackageDocuments(
 		int $packageId
 	):bool;
 
+	/**
+	 * Gets a document storage object.
+	 */
 	public function getDocumentStorageObject(
 		 $key
 	);
 
+	/**
+	 * Uploads a specific document.
+	 */
 	public function uploadOrderReturnsDocuments(
 		int $returnsId, 
 		string $document
 	):Document;
 
+	/**
+	 * Finds a document.
+	 */
 	public function getOrderReturnsDocumentById(
 		int $returnsId, 
 		bool $withLabel = false

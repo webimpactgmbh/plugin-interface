@@ -13,9 +13,12 @@ abstract class VariationMarket
 	const ITEMS_PER_PAGE = 50;
 
 	const UPDATED_AT = 'updatedAt';
-	public		$variationId;
-	public		$marketId;
-	public		$createdAt;
+	
+public		$variationId;
+	
+public		$marketId;
+	
+public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.

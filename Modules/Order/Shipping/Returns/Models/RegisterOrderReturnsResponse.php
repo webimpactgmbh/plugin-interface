@@ -9,10 +9,16 @@ use Plenty\Repositories\Models\DataModel;
 abstract class RegisterOrderReturnsResponse 
 {
 
+	/**
+	 * Add successfully registered order returns
+	 */
 	abstract public function addSuccessfullyRegisteredReturns(
 		SuccessfullyRegisteredOrderReturns $successfullyRegisteredReturn
 	);
 
+	/**
+	 * Add failed registered order returns
+	 */
 	abstract public function addFailedRegisterOrderReturns(
 		FailedRegisterOrderReturns $failedRegisterOrderReturn
 	);

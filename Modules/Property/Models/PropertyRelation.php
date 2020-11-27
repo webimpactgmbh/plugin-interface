@@ -13,15 +13,24 @@ abstract class PropertyRelation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$propertyId;
-	public		$relationTypeIdentifier;
-	public		$relationTargetId;
-	public		$selectionRelationId;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$relationValues;
-	public		$propertyRelation;
+	
+public		$id;
+	
+public		$propertyId;
+	
+public		$relationTypeIdentifier;
+	
+public		$relationTargetId;
+	
+public		$selectionRelationId;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$relationValues;
+	
+public		$propertyRelation;
 	
 	/**
 	 * Returns this model as an array.

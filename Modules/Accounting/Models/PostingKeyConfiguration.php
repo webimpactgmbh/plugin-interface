@@ -13,9 +13,12 @@ abstract class PostingKeyConfiguration
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$locationId;
-	public		$postingKeys;
-	public		$location;
+	
+public		$locationId;
+	
+public		$postingKeys;
+	
+public		$location;
 	
 	/**
 	 * Returns this model as an array.

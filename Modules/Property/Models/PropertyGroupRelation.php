@@ -11,8 +11,10 @@ abstract class PropertyGroupRelation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$propertyId;
-	public		$propertyGroupId;
+	
+public		$propertyId;
+	
+public		$propertyGroupId;
 	
 	/**
 	 * Returns this model as an array.

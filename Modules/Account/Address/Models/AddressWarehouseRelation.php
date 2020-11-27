@@ -11,11 +11,16 @@ abstract class AddressWarehouseRelation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$warehouseId;
-	public		$typeId;
-	public		$addressId;
-	public		$address;
+	
+public		$id;
+	
+public		$warehouseId;
+	
+public		$typeId;
+	
+public		$addressId;
+	
+public		$address;
 	
 	/**
 	 * Returns this model as an array.

@@ -7,10 +7,14 @@ namespace Plenty\Modules\Listing\Property\Models;
  */
 abstract class ListingPropertyTypeName 
 {
-	public		$id;
-	public		$typeId;
-	public		$name;
-	public		$lang;
+	
+public		$id;
+	
+public		$typeId;
+	
+public		$name;
+	
+public		$lang;
 	
 	/**
 	 * Returns this model as an array.

@@ -10,14 +10,23 @@ use Plenty\Repositories\Models\DataModel;
 abstract class FailedRegisterOrderReturns 
 {
 
+	/**
+	 * Add a new error message
+	 */
 	abstract public function addErrorMessage(
 		string $errorMessage
 	);
 
+	/**
+	 * Set the order ID variable
+	 */
 	abstract public function setOrderId(
 		int $orderId
 	);
 
+	/**
+	 * Add a new exception object
+	 */
 	abstract public function addException(
 		\Exception $exception
 	);

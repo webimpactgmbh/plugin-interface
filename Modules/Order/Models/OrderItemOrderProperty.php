@@ -11,11 +11,18 @@ abstract class OrderItemOrderProperty
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$propertyId;
-	public		$value;
-	public		$fileUrl;
-	public		$name;
-	public		$type;
+	
+public		$propertyId;
+	
+public		$orderItemId;
+	
+public		$value;
+	
+public		$fileUrl;
+	
+public		$name;
+	
+public		$type;
 	
 	/**
 	 * Returns this model as an array.

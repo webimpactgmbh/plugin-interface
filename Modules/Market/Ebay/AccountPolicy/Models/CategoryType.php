@@ -7,8 +7,10 @@ namespace Plenty\Modules\Market\Ebay\AccountPolicy\Models;
  */
 abstract class CategoryType 
 {
-	public		$default;
-	public		$name;
+	
+public		$default;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

@@ -11,10 +11,14 @@ abstract class ContactDepartmentName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$departmentId;
-	public		$lang;
-	public		$name;
+	
+public		$id;
+	
+public		$departmentId;
+	
+public		$lang;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

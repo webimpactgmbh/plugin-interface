@@ -23,11 +23,16 @@ abstract class ContactType
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$position;
-	public		$nonErasable;
-	public		$names;
-	public		$contacts;
+	
+public		$id;
+	
+public		$position;
+	
+public		$nonErasable;
+	
+public		$names;
+	
+public		$contacts;
 	
 	/**
 	 * Returns this model as an array.

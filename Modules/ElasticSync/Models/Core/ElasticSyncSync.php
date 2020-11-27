@@ -15,18 +15,30 @@ abstract class ElasticSyncSync
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$name;
-	public		$syncType;
-	public		$sourceType;
-	public		$sourceDataType;
-	public		$lastRun;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$matching;
-	public		$options;
-	public		$mappings;
-	public		$reports;
+	
+public		$id;
+	
+public		$name;
+	
+public		$syncType;
+	
+public		$sourceType;
+	
+public		$sourceDataType;
+	
+public		$lastRun;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$matching;
+	
+public		$options;
+	
+public		$mappings;
+	
+public		$reports;
 	
 	/**
 	 * Returns this model as an array.

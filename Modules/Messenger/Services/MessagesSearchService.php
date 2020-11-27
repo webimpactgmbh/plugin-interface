@@ -9,6 +9,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\ScoreModifier\ScoreModifie
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Document\DocumentSearch;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Pagination\SearchPaginationInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Suggestion\SuggestionInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\MultipleSorting;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SingleSorting;
@@ -137,6 +138,10 @@ abstract class MessagesSearchService
 		int $rowsPerPage
 	):self;
 
+	abstract public function setPagination(
+		 $pagination
+	);
+
 	abstract public function setCollapse(
 		CollapseInterface $collapse
 	);
@@ -151,6 +156,9 @@ abstract class MessagesSearchService
 
 	abstract public function setIndex(
 		 $index
+	);
+
+	abstract public function isSearchAfter(
 	);
 
 	abstract public function getFilterRaw(

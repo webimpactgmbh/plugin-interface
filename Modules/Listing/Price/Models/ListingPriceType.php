@@ -21,9 +21,12 @@ abstract class ListingPriceType
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$isErasable;
-	public		$names;
+	
+public		$id;
+	
+public		$isErasable;
+	
+public		$names;
 	
 	/**
 	 * Returns this model as an array.

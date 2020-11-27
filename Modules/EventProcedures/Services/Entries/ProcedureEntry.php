@@ -31,65 +31,65 @@ abstract class ProcedureEntry
 	const PROCEDURE_GROUP_LISTING = 'listing';
 
 	/**
-	 * Get the
+	 * Gets the module name
 	 */
 	abstract public function getModuleName(
 	):string;
 
 	/**
-	 * Set the
+	 * Sets the module name
 	 */
 	abstract public function setModuleName(
 		string $moduleName
 	):ProcedureEntry;
 
 	/**
-	 * Get the
+	 * Gets the event type
 	 */
 	abstract public function getEventType(
 	):string;
 
 	/**
-	 * Set the
+	 * Sets the event type
 	 */
 	abstract public function setEventType(
 		string $eventType
 	):ProcedureEntry;
 
 	/**
-	 * Get the
+	 * Gets the procedure names
 	 */
 	abstract public function getProcedureNames(
 	):array;
 
 	/**
-	 * Set the
+	 * Sets the procedure names
 	 */
 	abstract public function setProcedureNames(
 		array $procedureNames
 	):ProcedureEntry;
 
 	/**
-	 * Get the
+	 * Gets the procedure group
 	 */
 	abstract public function getProcedureGroup(
 	):string;
 
 	/**
-	 * Set the
+	 * Sets the procedure group
 	 */
 	abstract public function setProcedureGroup(
 		string $procedureGroup
 	):ProcedureEntry;
 
 	/**
-	 * Get the
+	 * Gets the procedure class
 	 */
 	abstract public function getProcedureClass(
 	):string;
 
 	/**
-	 * Set the
+	 * Sets the procedure class
 	 */
 	abstract public function setProcedureClass(
 		string $procedureClass

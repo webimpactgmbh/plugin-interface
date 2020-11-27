@@ -11,10 +11,14 @@ abstract class AddressPosRelation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$posBaseId;
-	public		$addressId;
-	public		$typeId;
+	
+public		$id;
+	
+public		$posBaseId;
+	
+public		$addressId;
+	
+public		$typeId;
 	
 	/**
 	 * Returns this model as an array.

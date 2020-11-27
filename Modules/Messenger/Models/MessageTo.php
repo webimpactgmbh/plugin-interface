@@ -7,10 +7,14 @@ namespace Plenty\Modules\Messenger\Models;
  */
 abstract class MessageTo 
 {
-	public		$user;
-	public		$role;
-	public		$email;
-	public		$allUsers;
+	
+public		$user;
+	
+public		$role;
+	
+public		$email;
+	
+public		$allUsers;
 	
 	/**
 	 * Returns this model as an array.

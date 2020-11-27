@@ -11,7 +11,8 @@ abstract class ContactWish
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$text;
+	
+public		$text;
 	
 	/**
 	 * Returns this model as an array.

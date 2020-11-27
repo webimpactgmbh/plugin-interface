@@ -4,7 +4,7 @@ namespace Plenty\Modules\Order\Shipping\ServiceProvider\Models;
 use Plenty\Repositories\Models\DataModel;
 
 /**
- * FailedRegisterShipment model.
+ * The FailedRegisterShipment model.
  */
 abstract class FailedRegisterShipment 
 {

@@ -7,7 +7,8 @@ namespace Plenty\Modules\Item\DataLayer\Models;
  */
 abstract class VariationStockBuffer 
 {
-	public		$stockBuffer;
+	
+public		$stockBuffer;
 	
 	/**
 	 * Returns this model as an array.

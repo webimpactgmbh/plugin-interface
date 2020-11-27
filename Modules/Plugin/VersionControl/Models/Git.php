@@ -13,17 +13,28 @@ abstract class Git
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$pluginId;
-	public		$username;
-	public		$password;
-	public		$remoteUrl;
-	public		$branch;
-	public		$autoFetch;
-	public		$webhookToken;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$plugin;
+	
+public		$id;
+	
+public		$pluginId;
+	
+public		$username;
+	
+public		$password;
+	
+public		$remoteUrl;
+	
+public		$branch;
+	
+public		$autoFetch;
+	
+public		$webhookToken;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$plugin;
 	
 	/**
 	 * Returns this model as an array.

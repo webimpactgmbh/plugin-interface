@@ -6,13 +6,16 @@ use Plenty\Modules\Webshop\ItemSearch\Helpers\ResultFieldTemplate;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\SortingHelper;
 
 /**
- * VariationList preset
+ * Search for variation lists
  */
 abstract class VariationList 
 {
 
+	/**
+	 * Get preset search factory.
+	 */
 	abstract public static function getSearchFactory(
-		 $options
-	);
+		array $options
+	):VariationSearchFactory;
 
 }

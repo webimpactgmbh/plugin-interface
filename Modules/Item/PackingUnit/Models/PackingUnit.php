@@ -11,10 +11,14 @@ abstract class PackingUnit
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$unitId;
-	public		$unitNameEN;
-	public		$unitNameDE;
+	
+public		$id;
+	
+public		$unitId;
+	
+public		$unitNameEN;
+	
+public		$unitNameDE;
 	
 	/**
 	 * Returns this model as an array.

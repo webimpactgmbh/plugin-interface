@@ -7,13 +7,20 @@ namespace Plenty\Modules\Market\Ebay\AccountPolicy\Models;
  */
 abstract class ShippingOption 
 {
-	public		$costType;
-	public		$insuranceFee;
-	public		$insuranceOffered;
-	public		$optionType;
-	public		$packageHandlingCost;
-	public		$rateTableId;
-	public		$shippingServices;
+	
+public		$costType;
+	
+public		$insuranceFee;
+	
+public		$insuranceOffered;
+	
+public		$optionType;
+	
+public		$packageHandlingCost;
+	
+public		$rateTableId;
+	
+public		$shippingServices;
 	
 	/**
 	 * Returns this model as an array.

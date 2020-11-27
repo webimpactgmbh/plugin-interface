@@ -20,6 +20,11 @@ interface VariationRepositoryContract
 		string $lang
 	):Variation;
 
+	public function showMultiple(
+		array $ids, 
+		array $with
+	):array;
+
 	/**
 	 * Creates a variation.
 	 */

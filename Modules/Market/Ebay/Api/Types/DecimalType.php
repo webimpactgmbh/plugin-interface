@@ -7,9 +7,12 @@ namespace Plenty\Modules\Market\Ebay\Api\Types;
  */
 abstract class DecimalType 
 {
-	protected static 		$properties;
-	protected static 		$xmlNamespaces;
-	protected static 		$requestXmlRootElementNames;
+	
+protected static 		$properties;
+	
+protected static 		$xmlNamespaces;
+	
+protected static 		$requestXmlRootElementNames;
 	
 	public function __construct(
 		array $values = []

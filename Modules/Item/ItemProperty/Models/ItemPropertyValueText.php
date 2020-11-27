@@ -11,9 +11,12 @@ abstract class ItemPropertyValueText
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$valueId;
-	public		$lang;
-	public		$value;
+	
+public		$valueId;
+	
+public		$lang;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

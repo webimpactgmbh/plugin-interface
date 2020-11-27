@@ -7,8 +7,10 @@ namespace Plenty\Modules\ShopBuilder\Models;
  */
 abstract class ContentPageDropzone 
 {
-	public		$container;
-	public		$type;
+	
+public		$container;
+	
+public		$type;
 	
 	/**
 	 * Returns this model as an array.

@@ -11,11 +11,16 @@ abstract class ExternalAccess
 	const UPDATED_AT = 'plenty_customer_external_access_last_update';
 
 	const CREATED_AT = 'createdAt';
-	public		$contactId;
-	public		$accessType;
-	public		$externalContactId;
-	public		$accessToken;
-	public		$lastUpdate;
+	
+public		$contactId;
+	
+public		$accessType;
+	
+public		$externalContactId;
+	
+public		$accessToken;
+	
+public		$lastUpdate;
 	
 	/**
 	 * Returns this model as an array.

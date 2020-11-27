@@ -11,10 +11,14 @@ abstract class PaymentMethod
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$pluginKey;
-	public		$paymentKey;
-	public		$name;
+	
+public		$id;
+	
+public		$pluginKey;
+	
+public		$paymentKey;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

@@ -11,13 +11,20 @@ abstract class ListingProperty
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$listingId;
-	public		$typeId;
-	public		$value;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$listing;
+	
+public		$id;
+	
+public		$listingId;
+	
+public		$typeId;
+	
+public		$value;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$listing;
 	
 	/**
 	 * Returns this model as an array.

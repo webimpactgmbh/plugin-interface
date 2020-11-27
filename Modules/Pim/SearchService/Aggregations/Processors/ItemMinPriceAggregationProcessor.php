@@ -8,16 +8,22 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 use Plenty\Modules\Pim\SearchService\Aggregations\Price\ItemMinPriceAggregation;
 
 /**
- * To be written
+ * Processor for ItemMinPriceAggregation
  */
 abstract class ItemMinPriceAggregationProcessor implements ProcessorInterface
 
 {
 
+	/**
+	 * Processes the data provided by the aggregation
+	 */
 	abstract public function process(
 		array $data
 	):array;
 
+	/**
+	 * Get the name of the aggregation
+	 */
 	abstract public function getName(
 	):string;
 

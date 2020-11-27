@@ -13,15 +13,24 @@ abstract class Listing
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$itemId;
-	public		$typeId;
-	public		$stockDependenceTypeId;
-	public		$unitCombinationId;
-	public		$properties;
-	public		$type;
-	public		$stockDependenceType;
-	public		$markets;
+	
+public		$id;
+	
+public		$itemId;
+	
+public		$typeId;
+	
+public		$stockDependenceTypeId;
+	
+public		$unitCombinationId;
+	
+public		$properties;
+	
+public		$type;
+	
+public		$stockDependenceType;
+	
+public		$markets;
 	
 	/**
 	 * Returns this model as an array.

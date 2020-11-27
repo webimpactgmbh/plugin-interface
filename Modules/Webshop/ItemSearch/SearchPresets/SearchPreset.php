@@ -3,7 +3,8 @@ namespace Plenty\Modules\Webshop\ItemSearch\SearchPresets;
 
 
 /**
- * SearchPreset interface
+ * Define a preset of search request parameters to be reused for common search requests.
+ *
  */
 interface SearchPreset 
 {

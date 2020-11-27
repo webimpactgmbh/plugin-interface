@@ -9,6 +9,9 @@ use Plenty\Validation\Contracts\Attribute;
 abstract class AttributeFactory 
 {
 
+	/**
+	 * Creates a new attribute
+	 */
 	abstract public function create(
 		string $which
 	):Attribute;

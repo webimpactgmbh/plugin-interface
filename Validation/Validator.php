@@ -13,8 +13,12 @@ use Validator as BaseValidator;
  */
 abstract class Validator 
 {
-	protected		$customMessageKey = "";
 	
+protected		$customMessageKey = "";
+	
+	/**
+	 * Validate the given data against the rules of this validtor
+	 */
 	public static function validateOrFail(
 		array $data
 	)
@@ -22,10 +26,16 @@ abstract class Validator
 		//proxy method
 	}
 
+	/**
+	 * Add conditions to each item of a list
+	 */
 	abstract public function each(
 		string $attributeName
 	):RulesCollection;
 
+	/**
+	 * Load translated custom message
+	 */
 	public function buildCustomMessages(
 	):array
 	{
@@ -41,9 +51,15 @@ abstract class Validator
 	{
 	}
 
+	/**
+	 * Must be implemented in each subclass. Define the attributes for the validator.
+	 */
 	abstract protected function defineAttributes(
 	);
 
+	/**
+	 * Add attribute without type
+	 */
 	public function add(
 		string $attributeName
 	):Attribute
@@ -51,6 +67,9 @@ abstract class Validator
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add attribute without type (with or without requirement)
+	 */
 	public function addConditional(
 		string $attributeName, 
 		bool $required
@@ -59,6 +78,9 @@ abstract class Validator
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add int attribute
+	 */
 	public function addInt(
 		string $attributeName, 
 		bool $required = false
@@ -67,6 +89,9 @@ abstract class Validator
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add numeric attribute
+	 */
 	public function addNumeric(
 		string $attributeName, 
 		bool $required = false
@@ -75,6 +100,9 @@ abstract class Validator
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add date attribute
+	 */
 	public function addDate(
 		string $attributeName, 
 		bool $required = false
@@ -83,6 +111,9 @@ abstract class Validator
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add bool attribute
+	 */
 	public function addBool(
 		string $attributeName, 
 		bool $required = false
@@ -91,6 +122,9 @@ abstract class Validator
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add string attribute
+	 */
 	public function addString(
 		string $attributeName, 
 		bool $required = false
@@ -109,5 +143,13 @@ abstract class Validator
 	{
 		return new DummyAttribute();
 	}
+
+	/**
+	 * Add condition to validate if a list contains specific keys
+	 */
+	abstract public function arrayKeysInList(
+		string $attributeName, 
+		array $acceptedKeysList
+	):Attribute;
 
 }

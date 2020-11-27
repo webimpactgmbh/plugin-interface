@@ -7,9 +7,12 @@ namespace Plenty\Modules\Item\DataLayer\Models;
  */
 abstract class VariationCategory 
 {
-	public		$categoryId;
-	public		$position;
-	public		$neckermannPrimary;
+	
+public		$categoryId;
+	
+public		$position;
+	
+public		$neckermannPrimary;
 	
 	/**
 	 * Returns this model as an array.

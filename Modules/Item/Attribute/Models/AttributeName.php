@@ -13,10 +13,14 @@ abstract class AttributeName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$attributeId;
-	public		$lang;
-	public		$name;
-	public		$attribute;
+	
+public		$attributeId;
+	
+public		$lang;
+	
+public		$name;
+	
+public		$attribute;
 	
 	/**
 	 * Returns this model as an array.

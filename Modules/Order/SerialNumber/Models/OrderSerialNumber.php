@@ -11,10 +11,16 @@ abstract class OrderSerialNumber
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$serialNumberId;
-	public		$orderId;
-	public		$orderItemId;
-	public		$serialNumber;
+	
+public		$serialNumberId;
+	
+public		$orderId;
+	
+public		$orderItemId;
+	
+public		$serialNumber;
+	
+public		$itemSerialNumber;
 	
 	/**
 	 * Returns this model as an array.

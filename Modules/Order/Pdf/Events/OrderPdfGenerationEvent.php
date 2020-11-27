@@ -6,7 +6,7 @@ use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Pdf\Models\OrderPdfGeneration;
 
 /**
- * OrderPdfGenerationEvent
+ * The OrderPdfGenerationEvent triggered before a pdf is generated for an order.
  */
 abstract class OrderPdfGenerationEvent 
 {

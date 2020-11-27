@@ -11,9 +11,12 @@ abstract class AvailabilityName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$availabilityId;
-	public		$lang;
-	public		$name;
+	
+public		$availabilityId;
+	
+public		$lang;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

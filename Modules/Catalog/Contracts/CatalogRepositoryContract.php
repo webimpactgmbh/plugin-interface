@@ -1,12 +1,16 @@
 <?php
 namespace Plenty\Modules\Catalog\Contracts;
 
+use Exception;
+use Illuminate\Http\Response;
+use Illuminate\Support\Collection;
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Catalog\Models\Catalog;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * To be written
+ * The CatalogRepositoryContract is the interface for the catalogue repository. It allows you to create, read, update and delete catalogues.
  */
 interface CatalogRepositoryContract 
 {
@@ -27,9 +31,45 @@ interface CatalogRepositoryContract
 	):Catalog;
 
 	/**
-	 * Get a catalog
+	 * Get the latest version of a catalog
 	 */
 	public function get(
+		string $id
+	):Catalog;
+
+	/**
+	 * Get a specific version of a catalog
+	 */
+	public function getByVersion(
+		string $id, 
+		string $version = ""
+	):Catalog;
+
+	/**
+	 * Restore a past version of a catalog to become latest
+	 */
+	public function restoreVersion(
+		string $id, 
+		string $version = ""
+	):Catalog;
+
+	/**
+	 * Lists catalog versions
+	 */
+	public function listVersions(
+		string $id
+	):Collection;
+
+	/**
+	 * Gets the archive
+	 */
+	public function getArchive(
+	):array;
+
+	/**
+	 * Restores an archived catalog
+	 */
+	public function restoreArchived(
 		string $id
 	):Catalog;
 
@@ -46,6 +86,14 @@ interface CatalogRepositoryContract
 	public function copy(
 		array $data
 	):array;
+
+	/**
+	 * Copy a single catalog
+	 */
+	public function copyCatalog(
+		string $id, 
+		array $modifiedAttributes
+	):Catalog;
 
 	/**
 	 * Copy a catalog format
@@ -70,6 +118,55 @@ interface CatalogRepositoryContract
 		string $id, 
 		bool $active
 	):array;
+
+	/**
+	 * Gets the preview for an export with a specific catalog
+	 */
+	public function getCatalogPreview(
+		string $id
+	):array;
+
+	/**
+	 * Migrates catalogs from Dynamo DB to S3
+	 */
+	public function migrate(
+	):bool;
+
+	/**
+	 * Generates an alphanumeric token
+	 */
+	public function generateToken(
+	):string;
+
+	/**
+	 * Builds the catalog's public download url
+	 */
+	public function buildDownloadPublicURL(
+		string $id, 
+		array $data
+	):string;
+
+	/**
+	 * Builds the catalog's private download url
+	 */
+	public function buildDownloadPrivateURL(
+		string $id, 
+		array $data
+	):string;
+
+	/**
+	 * Exports the catalog. The catalog ID is required.
+	 */
+	public function exportCatalog(
+		string $id
+	):array;
+
+	/**
+	 * Imports the catalog. The catalog ID is required.
+	 */
+	public function importCatalog(
+		string $content
+	):Catalog;
 
 	/**
 	 * Sets the filter array.

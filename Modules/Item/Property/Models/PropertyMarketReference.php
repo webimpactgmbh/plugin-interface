@@ -13,11 +13,16 @@ abstract class PropertyMarketReference
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$propertyId;
-	public		$componentId;
-	public		$marketId;
-	public		$externalComponent;
-	public		$property;
+	
+public		$propertyId;
+	
+public		$componentId;
+	
+public		$marketId;
+	
+public		$externalComponent;
+	
+public		$property;
 	
 	/**
 	 * Returns this model as an array.

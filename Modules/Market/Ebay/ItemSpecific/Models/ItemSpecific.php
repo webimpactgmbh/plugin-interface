@@ -7,17 +7,28 @@ namespace Plenty\Modules\Market\Ebay\ItemSpecific\Models;
  */
 abstract class ItemSpecific 
 {
-	public		$name;
-	public		$minValues;
-	public		$maxValues;
-	public		$selectionMode;
-	public		$valueType;
-	public		$valueFormat;
-	public		$helpText;
-	public		$helpUrl;
-	public		$variationPicture;
-	public		$variationSpecifics;
-	public		$values;
+	
+public		$name;
+	
+public		$minValues;
+	
+public		$maxValues;
+	
+public		$selectionMode;
+	
+public		$valueType;
+	
+public		$valueFormat;
+	
+public		$helpText;
+	
+public		$helpUrl;
+	
+public		$variationPicture;
+	
+public		$variationSpecifics;
+	
+public		$values;
 	
 	/**
 	 * Returns this model as an array.

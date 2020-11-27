@@ -11,14 +11,22 @@ abstract class OrderSummary
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$addressId;
-	public		$contactId;
-	public		$unpaidOrdersCount;
-	public		$unpaidOrderTotalAmount;
-	public		$orderCount;
-	public		$createdAt;
-	public		$updatedAt;
+	
+public		$id;
+	
+public		$addressId;
+	
+public		$contactId;
+	
+public		$unpaidOrdersCount;
+	
+public		$unpaidOrderTotalAmount;
+	
+public		$orderCount;
+	
+public		$createdAt;
+	
+public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.

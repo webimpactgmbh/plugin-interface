@@ -6,13 +6,16 @@ use Plenty\Modules\Webshop\ItemSearch\Helpers\ResultFieldTemplate;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\SortingHelper;
 
 /**
- * ManufacturerItems preset
+ * Query items by manufacturer.
  */
 abstract class ManufacturerItems 
 {
 
+	/**
+	 * Get preset search factory.
+	 */
 	abstract public static function getSearchFactory(
-		 $options
-	);
+		array $options
+	):VariationSearchFactory;
 
 }

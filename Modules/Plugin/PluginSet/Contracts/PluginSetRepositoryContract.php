@@ -16,6 +16,12 @@ interface PluginSetRepositoryContract
 {
 
 	/**
+	 * Count current plugin sets.
+	 */
+	public function count(
+	):int;
+
+	/**
 	 * Create a plugin set. The data array has to contain a 'name' field. Throws a 'TooManyPluginSetsException' if the maximum number of sets is exceeded.
 	 */
 	public function create(

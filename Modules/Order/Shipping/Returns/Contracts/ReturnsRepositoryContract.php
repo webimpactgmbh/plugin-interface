@@ -13,21 +13,33 @@ use Plenty\Repositories\Models\PaginatedResult;
 interface ReturnsRepositoryContract 
 {
 
+	/**
+	 * Register a new return
+	 */
 	public function registerReturns(
 		string $pluginName, 
 		array $orderIds
 	):RegisterReturnsResult;
 
+	/**
+	 * Get return label by ID
+	 */
 	public function getReturnsLabelById(
 		int $labelId, 
 		array $with
 	):PaginatedResult;
 
+	/**
+	 * Assign return label to order
+	 */
 	public function assignLabel2Return(
 		int $orderId, 
 		int $returnsId
 	):OrderReturns;
 
+	/**
+	 * Get a paginated list of all order returns
+	 */
 	public function getOrderReturns(
 		int $orderId, 
 		array $with = [], 

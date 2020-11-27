@@ -13,8 +13,10 @@ abstract class ItemLabel
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$labelId;
-	public		$itemId;
+	
+public		$labelId;
+	
+public		$itemId;
 	
 	/**
 	 * Returns this model as an array.

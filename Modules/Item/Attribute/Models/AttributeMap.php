@@ -13,11 +13,16 @@ abstract class AttributeMap
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$marketId;
-	public		$attributeId;
-	public		$name;
-	public		$marketInformation1;
-	public		$marketInformation2;
+	
+public		$marketId;
+	
+public		$attributeId;
+	
+public		$name;
+	
+public		$marketInformation1;
+	
+public		$marketInformation2;
 	
 	/**
 	 * Returns this model as an array.

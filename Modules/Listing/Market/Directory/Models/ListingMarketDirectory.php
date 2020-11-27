@@ -11,10 +11,14 @@ abstract class ListingMarketDirectory
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$name;
-	public		$parentId;
-	public		$level;
+	
+public		$id;
+	
+public		$name;
+	
+public		$parentId;
+	
+public		$level;
 	
 	/**
 	 * Returns this model as an array.

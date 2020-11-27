@@ -13,10 +13,14 @@ abstract class PropertyGroup
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$position;
-	public		$createdAt;
-	public		$updatedAt;
+	
+public		$id;
+	
+public		$position;
+	
+public		$createdAt;
+	
+public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.

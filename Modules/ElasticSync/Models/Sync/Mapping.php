@@ -15,11 +15,16 @@ abstract class Mapping
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$data;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$mapping;
+	
+public		$id;
+	
+public		$data;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$mapping;
 	
 	/**
 	 * Returns this model as an array.

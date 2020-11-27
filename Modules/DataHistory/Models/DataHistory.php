@@ -11,16 +11,26 @@ abstract class DataHistory
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$referenceType;
-	public		$referenceId;
-	public		$userId;
-	public		$userName;
-	public		$reference;
-	public		$uuid;
-	public		$dataChangeList;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$ttl;
+	
+public		$referenceType;
+	
+public		$referenceId;
+	
+public		$userId;
+	
+public		$userName;
+	
+public		$reference;
+	
+public		$uuid;
+	
+public		$dataChangeList;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$ttl;
 	
 	/**
 	 * Returns this model as an array.

@@ -11,19 +11,32 @@ abstract class ListingMarketHistoryVariation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$historyId;
-	public		$variationId;
-	public		$attributeName;
-	public		$sku;
-	public		$quantity;
-	public		$quantitySold;
-	public		$quantitySoldDelta;
-	public		$quantityRemain;
-	public		$price;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$history;
+	
+public		$id;
+	
+public		$historyId;
+	
+public		$variationId;
+	
+public		$attributeName;
+	
+public		$sku;
+	
+public		$quantity;
+	
+public		$quantitySold;
+	
+public		$quantitySoldDelta;
+	
+public		$quantityRemain;
+	
+public		$price;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$history;
 	
 	/**
 	 * Returns this model as an array.

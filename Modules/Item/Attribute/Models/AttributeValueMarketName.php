@@ -15,13 +15,20 @@ abstract class AttributeValueMarketName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$valueId;
-	public		$lang;
-	public		$name;
-	public		$name2;
-	public		$attributeId;
-	public		$referenceType;
-	public		$attributeValue;
+	
+public		$valueId;
+	
+public		$lang;
+	
+public		$name;
+	
+public		$name2;
+	
+public		$attributeId;
+	
+public		$referenceType;
+	
+public		$attributeValue;
 	
 	/**
 	 * Returns this model as an array.

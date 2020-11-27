@@ -23,13 +23,20 @@ abstract class Credentials
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$environment;
-	public		$status;
-	public		$data;
-	public		$market;
-	public		$createdAt;
-	public		$updatedAt;
+	
+public		$id;
+	
+public		$environment;
+	
+public		$status;
+	
+public		$data;
+	
+public		$market;
+	
+public		$createdAt;
+	
+public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.

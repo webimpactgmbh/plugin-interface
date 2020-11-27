@@ -11,11 +11,16 @@ abstract class FeedbackTargetRelation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$feedbackId;
-	public		$feedbackRelationType;
-	public		$feedbackRelationSourceId;
-	public		$targetRelationLabel;
-	public		$targetRelationName;
+	
+public		$feedbackId;
+	
+public		$feedbackRelationType;
+	
+public		$feedbackRelationSourceId;
+	
+public		$targetRelationLabel;
+	
+public		$targetRelationName;
 	
 	/**
 	 * Returns this model as an array.

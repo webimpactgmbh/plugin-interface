@@ -11,10 +11,14 @@ abstract class Signing
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$contractId;
-	public		$contactId;
-	public		$signerName;
-	public		$createdAt;
+	
+public		$contractId;
+	
+public		$contactId;
+	
+public		$signerName;
+	
+public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.

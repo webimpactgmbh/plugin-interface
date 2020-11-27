@@ -19,21 +19,36 @@ abstract class OrderItemTransaction
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$orderItemId;
-	public		$quantity;
-	public		$userId;
-	public		$identification;
-	public		$direction;
-	public		$status;
-	public		$receiptId;
-	public		$warehouseLocationId;
-	public		$batch;
-	public		$bestBeforeDate;
-	public		$batchBestBeforeDateId;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$orderItem;
+	
+public		$id;
+	
+public		$orderItemId;
+	
+public		$quantity;
+	
+public		$userId;
+	
+public		$identification;
+	
+public		$direction;
+	
+public		$status;
+	
+public		$receiptId;
+	
+public		$warehouseLocationId;
+	
+public		$batch;
+	
+public		$bestBeforeDate;
+	
+public		$batchBestBeforeDateId;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$orderItem;
 	
 	/**
 	 * Returns this model as an array.

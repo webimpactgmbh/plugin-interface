@@ -7,9 +7,12 @@ namespace Plenty\Modules\ShopBuilder\Models;
  */
 abstract class ContentPage 
 {
-	public		$identifier;
-	public		$caption;
-	public		$dropzones;
+	
+public		$identifier;
+	
+public		$caption;
+	
+public		$dropzones;
 	
 	/**
 	 * Returns this model as an array.

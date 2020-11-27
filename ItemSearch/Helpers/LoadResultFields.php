@@ -10,13 +10,16 @@ use Plenty\Plugin\Log\LoggerFactory;
  * Trait LoadResultFields
  *
  * @package Plenty\Modules\Webshop\ItemSearch\Helpers
- * @PluginTrait(description="Load result fields trait")
+ * @PluginTrait(description="Load contents of result field template files.")
  * @since 0.4.0
  */
 trait LoadResultFields
 {
     /**
-     * @param string $fullTemplateName
+     * Load the file content from a result field template.
+     *
+     * @param string $fullTemplateName The path of the template to load contents from.
+     *
      * @return array
      * @throws \Exception
      * @since 0.4.0
@@ -27,7 +30,9 @@ trait LoadResultFields
     }
 
     /**
-     * @param string $fullTemplateName
+     * Load the file content from a result field template.
+     *
+     * @param string $fullTemplateName The path of the template to load contents from.
      * @return array
      * @throws \Exception
      * @since 0.4.2

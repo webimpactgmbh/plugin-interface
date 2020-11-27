@@ -7,9 +7,12 @@ namespace Plenty\Plugin\Mail\Models;
  */
 abstract class EmailSenderResult 
 {
-	public		$messageId;
-	public		$message;
-	public		$errorCode;
+	
+public		$messageId;
+	
+public		$message;
+	
+public		$errorCode;
 	
 	/**
 	 * Returns this model as an array.

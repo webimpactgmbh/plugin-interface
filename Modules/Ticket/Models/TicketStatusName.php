@@ -11,10 +11,14 @@ abstract class TicketStatusName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$statusId;
-	public		$lang;
-	public		$name;
+	
+public		$id;
+	
+public		$statusId;
+	
+public		$lang;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

@@ -11,14 +11,22 @@ abstract class Currency
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$currency;
-	public		$htmlCode;
-	public		$unicodeSign;
-	public		$isActive;
-	public		$isErasable;
-	public		$exchangeRate;
-	public		$countries;
-	public		$names;
+	
+public		$currency;
+	
+public		$htmlCode;
+	
+public		$unicodeSign;
+	
+public		$isActive;
+	
+public		$isErasable;
+	
+public		$exchangeRate;
+	
+public		$countries;
+	
+public		$names;
 	
 	/**
 	 * Returns this model as an array.

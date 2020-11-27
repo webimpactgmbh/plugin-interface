@@ -4,7 +4,7 @@ namespace Plenty\Modules\Order\Shipping\ServiceProvider\Models;
 use Plenty\Repositories\Models\DataModel;
 
 /**
- * RegisterShipmentResponse model.
+ * The RegisterShipmentResponse model.
  */
 abstract class RegisterShipmentResponse 
 {

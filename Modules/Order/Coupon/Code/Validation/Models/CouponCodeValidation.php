@@ -55,24 +55,42 @@ abstract class CouponCodeValidation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$campaignId;
-	public		$validationType;
-	public		$items;
-	public		$contactId;
-	public		$couponCode;
-	public		$currency;
-	public		$referrer;
-	public		$salesDiscount;
-	public		$salesDiscountNet;
-	public		$itemDiscount;
-	public		$itemDiscountNet;
-	public		$shippingDiscount;
-	public		$shippingDiscountNet;
-	public		$usedVatFields;
-	public		$restCouponAmount;
-	public		$checkedItems;
-	public		$validateParams;
-	public		$couponCampaignType;
+	
+public		$campaignId;
+	
+public		$validationType;
+	
+public		$items;
+	
+public		$contactId;
+	
+public		$couponCode;
+	
+public		$currency;
+	
+public		$referrer;
+	
+public		$salesDiscount;
+	
+public		$salesDiscountNet;
+	
+public		$itemDiscount;
+	
+public		$itemDiscountNet;
+	
+public		$shippingDiscount;
+	
+public		$shippingDiscountNet;
+	
+public		$usedVatFields;
+	
+public		$restCouponAmount;
+	
+public		$checkedItems;
+	
+public		$validateParams;
+	
+public		$couponCampaignType;
 	
 	/**
 	 * Returns this model as an array.

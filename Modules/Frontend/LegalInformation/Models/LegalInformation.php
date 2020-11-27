@@ -21,11 +21,16 @@ abstract class LegalInformation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$plentyId;
-	public		$lang;
-	public		$type;
-	public		$plainText;
-	public		$htmlText;
+	
+public		$plentyId;
+	
+public		$lang;
+	
+public		$type;
+	
+public		$plainText;
+	
+public		$htmlText;
 	
 	/**
 	 * Returns this model as an array.

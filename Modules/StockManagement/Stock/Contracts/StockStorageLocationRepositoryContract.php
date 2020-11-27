@@ -32,7 +32,9 @@ interface StockStorageLocationRepositoryContract
 		array $columns = [], 
 		int $page = 1, 
 		int $itemsPerPage = 50, 
-		array $with = []
+		array $with = [], 
+		string $sortBy = "id", 
+		string $sortOrder = "asc"
 	):PaginatedResult;
 
 	/**

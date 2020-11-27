@@ -11,11 +11,16 @@ abstract class AuthorizedUser
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$realName;
-	public		$lang;
-	public		$isSupportUser;
-	public		$user;
-	public		$oauthAccessTokensId;
+	
+public		$realName;
+	
+public		$lang;
+	
+public		$isSupportUser;
+	
+public		$user;
+	
+public		$oauthAccessTokensId;
 	
 	/**
 	 * Returns this model as an array.

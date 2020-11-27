@@ -11,8 +11,10 @@ abstract class OrderBooking
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$success;
-	public		$failed;
+	
+public		$success;
+	
+public		$failed;
 	
 	/**
 	 * Returns this model as an array.

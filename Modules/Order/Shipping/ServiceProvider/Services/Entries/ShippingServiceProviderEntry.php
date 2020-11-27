@@ -10,41 +10,47 @@ abstract class ShippingServiceProviderEntry
 {
 
 	/**
-	 * Get the
+	 * Get the shipping service provider classes
 	 */
 	abstract public function getShippingServiceProviderClasses(
 	):array;
 
 	/**
-	 * Get the
+	 * Get the shipping service provider names
 	 */
 	abstract public function getShippingServiceProviderNames(
 	);
 
 	/**
-	 * Set the
+	 * Set the shipping service provider names
 	 */
 	abstract public function setShippingServiceProviderNames(
 		array $shippingServiceProviderNames
 	):ShippingServiceProviderEntry;
 
 	/**
-	 * Get the
+	 * Get the shipping service provider code
 	 */
 	abstract public function getShippingServiceProviderCode(
 	):string;
 
 	/**
-	 * Set the
+	 * Set the shipping service provider entry
 	 */
 	abstract public function setShippingServiceProviderCode(
 		string $shippingServiceProviderCode
 	):ShippingServiceProviderEntry;
 
+	/**
+	 * Get the shipping service provider class
+	 */
 	abstract public function getShippingServiceProviderClass(
 		string $methodName
 	):string;
 
+	/**
+	 * Check if method exists in shipping service provider classes
+	 */
 	abstract public function methodExists(
 		string $methodName
 	):bool;

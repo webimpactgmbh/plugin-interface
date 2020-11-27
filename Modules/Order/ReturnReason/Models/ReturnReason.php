@@ -11,8 +11,10 @@ abstract class ReturnReason
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$reason;
+	
+public		$id;
+	
+public		$reason;
 	
 	/**
 	 * Returns this model as an array.

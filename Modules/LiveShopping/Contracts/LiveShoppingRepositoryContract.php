@@ -37,4 +37,9 @@ interface LiveShoppingRepositoryContract
 		int $itemId
 	):bool;
 
+	public function increaseRealQuantity(
+		int $itemId, 
+		float $increase
+	);
+
 }

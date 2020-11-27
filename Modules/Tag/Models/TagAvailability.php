@@ -27,8 +27,10 @@ abstract class TagAvailability
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$tagId;
-	public		$tagType;
+	
+public		$tagId;
+	
+public		$tagType;
 	
 	/**
 	 * Returns this model as an array.

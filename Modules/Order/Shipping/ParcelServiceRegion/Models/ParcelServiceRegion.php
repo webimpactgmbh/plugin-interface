@@ -11,11 +11,16 @@ abstract class ParcelServiceRegion
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$shippingRegionId;
-	public		$parcelServicePresetId;
-	public		$shippingRegionName;
-	public		$serviceType;
+	
+public		$id;
+	
+public		$shippingRegionId;
+	
+public		$parcelServicePresetId;
+	
+public		$shippingRegionName;
+	
+public		$serviceType;
 	
 	/**
 	 * Returns this model as an array.

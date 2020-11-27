@@ -4,7 +4,7 @@ namespace Plenty\Modules\Webshop\ItemSearch\Extensions;
 use Plenty\Modules\Webshop\ItemSearch\Factories\BaseSearchFactory;
 
 /**
- * ItemSearchExtension interface, use to write own extensions
+ * Extend the search result by additional data or mutate raw data in search results.
  */
 interface ItemSearchExtension 
 {

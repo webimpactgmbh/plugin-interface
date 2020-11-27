@@ -132,6 +132,13 @@ interface AddressRepositoryContract
 	):Address;
 
 	/**
+	 * Find an existing address
+	 */
+	public function findExistingAddress(
+		array $addressData
+	):Address;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

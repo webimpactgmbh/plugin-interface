@@ -7,17 +7,28 @@ namespace Plenty\Modules\Wizard\Models;
  */
 abstract class Wizard 
 {
-	public		$title;
-	public		$key;
-	public		$settingsHandlerClass;
-	public		$shortDescription;
-	public		$translationKey;
-	public		$deleteConfirmationText;
-	public		$topics;
-	public		$steps;
-	public		$priority;
-	public		$relevance;
-	public		$keywords;
+	
+public		$title;
+	
+public		$key;
+	
+public		$settingsHandlerClass;
+	
+public		$shortDescription;
+	
+public		$translationKey;
+	
+public		$deleteConfirmationText;
+	
+public		$topics;
+	
+public		$steps;
+	
+public		$priority;
+	
+public		$relevance;
+	
+public		$keywords;
 	
 	/**
 	 * Returns this model as an array.

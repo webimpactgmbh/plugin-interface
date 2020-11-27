@@ -55,7 +55,8 @@ interface VariationWarehouseRepositoryContract
 	 * Lists all warehouse data of a variation with inheritance details. The ID of the variation must be specified.
 	 */
 	public function findByVariationIdWithInheritance(
-		int $variationId
+		int $variationId, 
+		array $with = []
 	):array;
 
 }

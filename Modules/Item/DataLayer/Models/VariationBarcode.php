@@ -7,10 +7,14 @@ namespace Plenty\Modules\Item\DataLayer\Models;
  */
 abstract class VariationBarcode 
 {
-	public		$code;
-	public		$createdTimestamp;
-	public		$barcodeId;
-	public		$barcodeType;
+	
+public		$code;
+	
+public		$createdTimestamp;
+	
+public		$barcodeId;
+	
+public		$barcodeType;
 	
 	/**
 	 * Returns this model as an array.

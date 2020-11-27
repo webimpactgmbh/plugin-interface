@@ -3,7 +3,7 @@ namespace Plenty\Modules\Order\Shipping\Returns\Models;
 
 
 /**
- * ReturnsServiceProvider
+ * The ReturnsServiceProvider model.
  */
 abstract class ReturnsServiceProvider 
 {
@@ -11,11 +11,16 @@ abstract class ReturnsServiceProvider
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$name;
-	public		$pluginId;
-	public		$createdAt;
-	public		$updatedAt;
+	
+public		$id;
+	
+public		$name;
+	
+public		$pluginId;
+	
+public		$createdAt;
+	
+public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.

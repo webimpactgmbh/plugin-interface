@@ -13,14 +13,22 @@ abstract class Content
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$dataProviderName;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$type;
-	public		$widgets;
-	public		$dropzones;
-	public		$link;
+	
+public		$id;
+	
+public		$dataProviderName;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$type;
+	
+public		$widgets;
+	
+public		$dropzones;
+	
+public		$link;
 	
 	/**
 	 * Returns this model as an array.

@@ -9,10 +9,16 @@ use Plenty\Modules\Webshop\Seo\Models\SitemapConfiguration;
 interface SitemapConfigurationRepositoryContract 
 {
 
+	/**
+	 * Get the sitemap configuration of a single webstore.
+	 */
 	public function findByWebstoreId(
 		int $webstoreId
 	):SitemapConfiguration;
 
+	/**
+	 * Update the sitemap configuration of a single webstore.
+	 */
 	public function updateByWebstoreId(
 		int $webstoreId, 
 		array $data = []

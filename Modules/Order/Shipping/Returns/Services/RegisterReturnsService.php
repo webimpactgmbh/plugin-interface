@@ -18,16 +18,25 @@ abstract class RegisterReturnsService
 
 	const ORDER_RETURNS = 3;
 
+	/**
+	 * Register returns for each order ID
+	 */
 	abstract public function registerReturns(
 		string $pluginName, 
 		array $orderIds
 	):RegisterReturnsResult;
 
+	/**
+	 * Save the return label in base64
+	 */
 	abstract public function persistLabel(
 		string $labelBase64, 
 		OrderReturns $returns
 	):Document;
 
+	/**
+	 * Get the return label
+	 */
 	abstract public function getLabel(
 		OrderReturns $orderReturns
 	):string;

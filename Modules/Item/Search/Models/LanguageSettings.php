@@ -11,7 +11,8 @@ abstract class LanguageSettings
 	const MAX_ACTIVE = 3;
 
 	const KEY = 'ElasticSearch_languages';
-	public		$languages;
+	
+public		$languages;
 	
 	/**
 	 * Returns this model as an array.

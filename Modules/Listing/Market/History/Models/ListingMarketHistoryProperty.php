@@ -7,13 +7,20 @@ namespace Plenty\Modules\Listing\Market\History\Models;
  */
 abstract class ListingMarketHistoryProperty 
 {
-	public		$id;
-	public		$historyId;
-	public		$typeId;
-	public		$value;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$history;
+	
+public		$id;
+	
+public		$historyId;
+	
+public		$typeId;
+	
+public		$value;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$history;
 	
 	/**
 	 * Returns this model as an array.

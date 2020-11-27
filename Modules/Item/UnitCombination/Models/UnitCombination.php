@@ -13,10 +13,14 @@ abstract class UnitCombination
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$unitId;
-	public		$content;
-	public		$unit;
+	
+public		$id;
+	
+public		$unitId;
+	
+public		$content;
+	
+public		$unit;
 	
 	/**
 	 * Returns this model as an array.

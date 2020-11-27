@@ -15,19 +15,32 @@ abstract class VariationWarehouse
 	const STORAGE_LOCATION_TYPE = ['none','small','medium','large','europallet'];
 
 	const ITEMS_PER_PAGE = 50;
-	public		$variationId;
-	public		$warehouseId;
-	public		$warehouseZoneId;
-	public		$storageLocationType;
-	public		$reorderLevel;
-	public		$maximumStock;
-	public		$stockTurnoverInDays;
-	public		$storageLocation;
-	public		$stockBuffer;
-	public		$isBatch;
-	public		$isBestBeforeDate;
-	public		$lastUpdateTimestamp;
-	public		$createdAt;
+	
+public		$variationId;
+	
+public		$warehouseId;
+	
+public		$warehouseZoneId;
+	
+public		$storageLocationType;
+	
+public		$reorderLevel;
+	
+public		$maximumStock;
+	
+public		$stockTurnoverInDays;
+	
+public		$storageLocation;
+	
+public		$stockBuffer;
+	
+public		$isBatch;
+	
+public		$isBestBeforeDate;
+	
+public		$lastUpdateTimestamp;
+	
+public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.

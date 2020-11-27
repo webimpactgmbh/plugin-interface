@@ -11,12 +11,18 @@ abstract class StatusHistoryEntry
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$orderId;
-	public		$statusId;
-	public		$createdAt;
-	public		$userId;
-	public		$procedureText;
+	
+public		$id;
+	
+public		$orderId;
+	
+public		$statusId;
+	
+public		$createdAt;
+	
+public		$userId;
+	
+public		$procedureText;
 	
 	/**
 	 * Returns this model as an array.

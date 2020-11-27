@@ -32,34 +32,33 @@ use Plenty\Modules\Pim\SearchService\Query\ManagedSearchQuery;
 use Plenty\Modules\Pim\SearchService\Query\NameAutoCompleteQuery;
 use Plenty\Modules\Pim\SearchService\Suggestions\DidYouMeanSuggestion;
 use Plenty\Modules\Pim\SearchService\Suggestions\DidYouMeanSuggestionProcessor;
+use Plenty\Modules\Plugin\FrontendPreview\Contracts\FrontendPreviewRepositoryContract;
 use Plenty\Modules\Webshop\Contracts\LocalizationRepositoryContract;
 use Plenty\Modules\Webshop\Contracts\PriceDetectRepositoryContract;
 use Plenty\Modules\Webshop\Helpers\CurrencyConverter;
 use Plenty\Modules\Webshop\Helpers\VatConverter;
 use Plenty\Modules\Webshop\ItemSearch\Contracts\FacetExtension;
-use Plenty\Modules\Webshop\ItemSearch\Extensions\AttributeExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\AvailabilityExtension;
-use Plenty\Modules\Webshop\ItemSearch\Extensions\BundleComponentExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ContentCacheVariationLinkExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\CurrentCategoryExtension;
-use Plenty\Modules\Webshop\ItemSearch\Extensions\GroupedAttributeValuesExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ItemDefaultImage;
-use Plenty\Modules\Webshop\ItemSearch\Extensions\ItemUrlExtension;
-use Plenty\Modules\Webshop\ItemSearch\Extensions\ItemVariationCountExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\PriceSearchExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ReduceDataExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\SetComponentExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\TagExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationAttributeMapExtension;
-use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationCombinationExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationCountExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationPropertyExtension;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\FacetExtensionContainer;
+use Plenty\Modules\Webshop\ItemSearch\Mutators\BundleComponentMutator;
+use Plenty\Modules\Webshop\ItemSearch\Mutators\GroupedAttributeValuesMutator;
+use Plenty\Modules\Webshop\ItemSearch\Mutators\ItemUrlMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\OrderPropertySelectionValueMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\VariationPropertyTransformMutator;
+use Plenty\Modules\Webshop\WebshopServiceProvider;
 
 /**
- * VariationSearchFactory
+ * Prepare and build search requests to query variations
  */
 abstract class VariationSearchFactory 
 {
@@ -86,10 +85,16 @@ abstract class VariationSearchFactory
 
 	const INHERIT_GROUP_BY = 'groupBy';
 
+	/**
+	 * Get the default configuration of a search factory.
+	 */
 	abstract public static function default(
-		 $options = []
-	);
+		array $options = []
+	):self;
 
+	/**
+	 * Set preview mode for the search request.
+	 */
 	abstract public function setAdminPreview(
 		bool $isAdminPreview
 	):self;
@@ -335,9 +340,15 @@ abstract class VariationSearchFactory
 	abstract public function withDefaultImage(
 	):self;
 
+	/**
+	 * Add bundle component variations.
+	 */
 	abstract public function withBundleComponents(
 	):self;
 
+	/**
+	 * Add set component variations to item set entries.
+	 */
 	abstract public function withSetComponents(
 	);
 
@@ -360,7 +371,8 @@ abstract class VariationSearchFactory
 	):self;
 
 	abstract public function withSuggestions(
-		string $query = ""
+		string $query = "", 
+		string $lang = null
 	):self;
 
 	abstract public function withDidYouMeanSuggestions(
@@ -378,10 +390,12 @@ abstract class VariationSearchFactory
 	):BaseSearchFactory;
 
 	/**
-	 * Add a mutator
+	 * Add a mutator to transform search results.
 	 */
 	abstract public function withMutator(
-		MutatorInterface $mutator
+		MutatorInterface $mutator, 
+		bool $excludeDependencies = false, 
+		int $position = 1000
 	):self;
 
 	/**
@@ -406,7 +420,23 @@ abstract class VariationSearchFactory
 		 $fields
 	):self;
 
+	/**
+	 * Get the requested result fields for this search request.
+	 */
 	abstract public function getResultFields(
+	):array;
+
+	/**
+	 * Check if result field is already included in the source of the search.
+	 */
+	abstract public function hasResultField(
+		string $field
+	):bool;
+
+	/**
+	 * Get additional result fields required by webshop mutators.
+	 */
+	abstract public function getAdditionalResultFields(
 	):array;
 
 	/**
@@ -466,9 +496,12 @@ abstract class VariationSearchFactory
 		array $sortingList
 	):self;
 
+	/**
+	 * Set the order of the search results by ids.
+	 */
 	abstract public function setOrder(
-		 $idList
-	);
+		array $idList
+	):self;
 
 	/**
 	 * Group results by field

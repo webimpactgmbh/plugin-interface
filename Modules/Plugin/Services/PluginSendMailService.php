@@ -13,6 +13,10 @@ abstract class PluginSendMailService
 
 	const FUNCTION_COLLECT_PLACEHOLDER = 'collect_placeholder';
 
+	abstract public static function getInstance(
+		 $webstoreId
+	);
+
 	abstract public function sendMail(
 		string $url, 
 		string $template = "", 

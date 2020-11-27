@@ -11,9 +11,12 @@ abstract class VariationPropertyValueName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$propertyValueId;
-	public		$lang;
-	public		$value;
+	
+public		$propertyValueId;
+	
+public		$lang;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

@@ -13,17 +13,28 @@ abstract class StockStorageLocation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$itemId;
-	public		$variationId;
-	public		$storageLocationId;
-	public		$warehouseId;
-	public		$quantity;
-	public		$bestBeforeDate;
-	public		$batch;
-	public		$updatedAt;
-	public		$storageLocation;
-	public		$warehouseLocation;
-	public		$variation;
+	
+public		$itemId;
+	
+public		$variationId;
+	
+public		$storageLocationId;
+	
+public		$warehouseId;
+	
+public		$quantity;
+	
+public		$bestBeforeDate;
+	
+public		$batch;
+	
+public		$updatedAt;
+	
+public		$storageLocation;
+	
+public		$warehouseLocation;
+	
+public		$variation;
 	
 	/**
 	 * Returns this model as an array.

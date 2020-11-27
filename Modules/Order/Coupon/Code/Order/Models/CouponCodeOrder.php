@@ -11,12 +11,18 @@ abstract class CouponCodeOrder
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$corderItemId;
-	public		$campaignId;
-	public		$code;
-	public		$type;
-	public		$amount;
-	public		$vatRate;
+	
+public		$corderItemId;
+	
+public		$campaignId;
+	
+public		$code;
+	
+public		$type;
+	
+public		$amount;
+	
+public		$vatRate;
 	
 	/**
 	 * Returns this model as an array.

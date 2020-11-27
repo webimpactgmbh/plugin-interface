@@ -7,8 +7,10 @@ namespace Plenty\Modules\Market\Ebay\AccountPolicy\Models;
  */
 abstract class AmountType 
 {
-	public		$currency;
-	public		$value;
+	
+public		$currency;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

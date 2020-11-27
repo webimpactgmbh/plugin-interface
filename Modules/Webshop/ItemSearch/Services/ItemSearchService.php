@@ -3,27 +3,29 @@ namespace Plenty\Modules\Webshop\ItemSearch\Services;
 
 use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\Webshop\ItemSearch\Factories\BaseSearchFactory;
+use Plenty\Modules\Webshop\ItemSearch\Factories\FacetSearchFactory;
 use Plenty\Modules\Webshop\ItemSearch\Factories\MultiSearchFactory;
+use Plenty\Modules\Webshop\ItemSearch\Factories\VariationSearchFactory;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\DefaultSearchResult;
 
 /**
- * Execute VDI requests
+ * Execute item searches using the variation data interface
  */
 abstract class ItemSearchService 
 {
 
 	/**
-	 * Get search results for multiple search requests.
+	 * Execute multiple item searches at once. Results will be mapped to the same keys as used in the given associative array of search factories.
 	 */
 	abstract public function getResults(
-		array $searches
+		 $searches
 	):array;
 
 	/**
-	 * Get result of a single search factory;
+	 * Get result of a single search request.
 	 */
 	abstract public function getResult(
-		BaseSearchFactory $searchFactory
+		 $searchFactory
 	):array;
 
 }

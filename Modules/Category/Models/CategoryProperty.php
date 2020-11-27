@@ -11,10 +11,14 @@ abstract class CategoryProperty
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$categoryId;
-	public		$marketId;
-	public		$plentyId;
-	public		$value;
+	
+public		$categoryId;
+	
+public		$marketId;
+	
+public		$plentyId;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

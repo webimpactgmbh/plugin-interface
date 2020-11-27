@@ -7,10 +7,14 @@ namespace Plenty\Modules\Cloud\Storage\Models;
  */
 abstract class StorageObjectList 
 {
-	public		$isTruncated;
-	public		$nextContinuationToken;
-	public		$objects;
-	public		$commonPrefixes;
+	
+public		$isTruncated;
+	
+public		$nextContinuationToken;
+	
+public		$objects;
+	
+public		$commonPrefixes;
 	
 	/**
 	 * Returns this model as an array.

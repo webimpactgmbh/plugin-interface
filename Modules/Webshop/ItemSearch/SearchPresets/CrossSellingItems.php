@@ -7,13 +7,16 @@ use Plenty\Modules\Webshop\ItemSearch\Helpers\ResultFieldTemplate;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\SortingHelper;
 
 /**
- * CrossSellingItems preset
+ * Query cross selling items related to single item.
  */
 abstract class CrossSellingItems 
 {
 
+	/**
+	 * Get preset search factory.
+	 */
 	abstract public static function getSearchFactory(
-		 $options
-	);
+		array $options
+	):VariationSearchFactory;
 
 }

@@ -15,18 +15,30 @@ abstract class CouponCampaignCode
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$code;
-	public		$campaignId;
-	public		$disable;
-	public		$consumed;
-	public		$usedCount;
-	public		$usedAmount;
-	public		$generatedAt;
-	public		$lastUsedAt;
-	public		$consumedAt;
-	public		$expiresAt;
-	public		$value;
-	public		$campaign;
+	
+public		$code;
+	
+public		$campaignId;
+	
+public		$disable;
+	
+public		$consumed;
+	
+public		$usedCount;
+	
+public		$usedAmount;
+	
+public		$generatedAt;
+	
+public		$lastUsedAt;
+	
+public		$consumedAt;
+	
+public		$expiresAt;
+	
+public		$value;
+	
+public		$campaign;
 	
 	/**
 	 * Returns this model as an array.

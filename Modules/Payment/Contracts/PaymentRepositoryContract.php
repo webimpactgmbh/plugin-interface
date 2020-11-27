@@ -3,11 +3,13 @@ namespace Plenty\Modules\Payment\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Illuminate\Validation\ValidationException;
-use Plenty\Modules\Order\Models\Order;
+use Plenty\Data\SimpleRestResponse;
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Payment\Models\Payment;
+use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * The PaymentRepositoryContract is the interface for the payment repository. List, get, create and update payments. Payments can come into plentymarkets automatically or can be booked manually. Existing payments can be filtered by payment method, by ID, by payment status, by transaction type, by order or by date. Existing payments can also be updated.
@@ -22,6 +24,15 @@ interface PaymentRepositoryContract
 		int $itemsPerPage = 50, 
 		int $page = 1
 	):array;
+
+	/**
+	 * Searches for a list of payments.
+	 */
+	public function search(
+		int $page = 1, 
+		int $itemsPerPage = \Plenty\Modules\Payment\Models\Payment::MAX_ITEMS_PER_PAGE, 
+		array $with = []
+	):PaginatedResult;
 
 	/**
 	 * Gets a payment. The ID of the payment must be specified.
@@ -114,6 +125,25 @@ interface PaymentRepositoryContract
 	public function getOriginConstants(
 	):array;
 
+	public function deletePayment(
+		int $paymentId
+	);
+
+	/**
+	 * Split and assign a payment to given order IDs
+	 */
+	public function splitAndAssignPayment(
+		int $paymentId, 
+		array $orderIds
+	):bool;
+
+	/**
+	 * Bulk delete payments.
+	 */
+	public function deletePayments(
+		array $paymentIds
+	):array;
+
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
@@ -124,6 +154,31 @@ interface PaymentRepositoryContract
 	 * Applies criteria classes to the current repository.
 	 */
 	public function applyCriteriaFromFilters(
+	);
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
+	);
+
+	/**
+	 * Clears the filter array.
+	 */
+	public function clearFilters(
 	);
 
 }

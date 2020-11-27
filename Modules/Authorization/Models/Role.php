@@ -13,13 +13,20 @@ abstract class Role
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$name;
-	public		$holdParents;
-	public		$hidden;
-	public		$users;
-	public		$permissions;
-	public		$accessControl;
+	
+public		$id;
+	
+public		$name;
+	
+public		$holdParents;
+	
+public		$hidden;
+	
+public		$users;
+	
+public		$permissions;
+	
+public		$accessControl;
 	
 	/**
 	 * Returns this model as an array.

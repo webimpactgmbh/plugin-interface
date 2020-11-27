@@ -7,12 +7,18 @@ namespace Plenty\Modules\Item\DataLayer\Models;
  */
 abstract class ItemProperty 
 {
-	public		$itemPropertyId;
-	public		$propertyId;
-	public		$propertyValue;
-	public		$propertyValueType;
-	public		$isOrderProperty;
-	public		$propertyOrderMarkup;
+	
+public		$itemPropertyId;
+	
+public		$propertyId;
+	
+public		$propertyValue;
+	
+public		$propertyValueType;
+	
+public		$isOrderProperty;
+	
+public		$propertyOrderMarkup;
 	
 	/**
 	 * Returns this model as an array.

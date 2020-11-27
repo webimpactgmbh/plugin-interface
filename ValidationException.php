@@ -6,7 +6,8 @@ use Illuminate\Support\MessageBag;
 class ValidationException extends \Exception 
 
 {
-	private		$messageBag = null;
+	
+private		$messageBag = null;
 	
 	abstract public function getMessageBag(
 	):MessageBag;

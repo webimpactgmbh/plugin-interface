@@ -9,6 +9,9 @@ use Plenty\Validation\Validator;
 abstract class ValidatorFactory 
 {
 
+	/**
+	 * Creates a new validator
+	 */
 	abstract public function create(
 		string $validatorClass
 	):Validator;

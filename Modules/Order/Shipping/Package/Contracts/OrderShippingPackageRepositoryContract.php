@@ -15,7 +15,8 @@ interface OrderShippingPackageRepositoryContract
 	 */
 	public function getOrderShippingPackage(
 		int $orderShippingPackageId, 
-		array $columns = []
+		array $columns = [], 
+		int $orderId = null
 	):OrderShippingPackage;
 
 	/**

@@ -13,19 +13,32 @@ abstract class Stock
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$itemId;
-	public		$variationId;
-	public		$warehouseId;
-	public		$stockPhysical;
-	public		$reservedStock;
-	public		$reservedEbay;
-	public		$reorderDelta;
-	public		$stockNet;
-	public		$reordered;
-	public		$warehousePriority;
-	public		$reservedBundle;
-	public		$averagePurchasePrice;
-	public		$updatedAt;
+	
+public		$itemId;
+	
+public		$variationId;
+	
+public		$warehouseId;
+	
+public		$stockPhysical;
+	
+public		$reservedStock;
+	
+public		$reservedEbay;
+	
+public		$reorderDelta;
+	
+public		$stockNet;
+	
+public		$reordered;
+	
+public		$warehousePriority;
+	
+public		$reservedBundle;
+	
+public		$averagePurchasePrice;
+	
+public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.
