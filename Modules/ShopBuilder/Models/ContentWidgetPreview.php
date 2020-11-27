@@ -7,8 +7,10 @@ namespace Plenty\Modules\ShopBuilder\Models;
  */
 abstract class ContentWidgetPreview 
 {
-	public		$identifier;
-	public		$content;
+	
+public		$identifier;
+	
+public		$content;
 	
 	/**
 	 * Returns this model as an array.

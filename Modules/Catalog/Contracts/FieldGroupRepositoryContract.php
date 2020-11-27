@@ -5,7 +5,7 @@ use Exception;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * To be written
+ * The FieldGroupRepositoryContract is the contract for the field group repository. It allows to retrieve fields of a field group. Field groups represent the different groups of available sources that can be seen in the data picker component in the catalogue UI. Each field represents a mappable source.
  */
 interface FieldGroupRepositoryContract 
 {

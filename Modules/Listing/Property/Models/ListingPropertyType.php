@@ -133,8 +133,10 @@ abstract class ListingPropertyType
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$isErasable;
+	
+public		$id;
+	
+public		$isErasable;
 	
 	/**
 	 * Returns this model as an array.

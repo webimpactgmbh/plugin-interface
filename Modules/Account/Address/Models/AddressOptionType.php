@@ -11,11 +11,16 @@ abstract class AddressOptionType
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$position;
-	public		$nonErasable;
-	public		$names;
-	public		$options;
+	
+public		$id;
+	
+public		$position;
+	
+public		$nonErasable;
+	
+public		$names;
+	
+public		$options;
 	
 	/**
 	 * Returns this model as an array.

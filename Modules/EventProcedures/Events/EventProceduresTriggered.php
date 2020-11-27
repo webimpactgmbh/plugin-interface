@@ -10,11 +10,14 @@ use Plenty\Modules\Ticket\Models\Ticket;
 abstract class EventProceduresTriggered 
 {
 
+	/**
+	 * Gets the ticket.
+	 */
 	abstract public function getTicket(
 	):Ticket;
 
 	/**
-	 * Get the order that triggered the event.
+	 * Gets the order
 	 */
 	abstract public function getOrder(
 	):Order;

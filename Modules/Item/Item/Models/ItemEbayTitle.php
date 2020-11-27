@@ -13,9 +13,12 @@ abstract class ItemEbayTitle
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$title;
-	public		$itemId;
-	public		$id;
+	
+public		$title;
+	
+public		$itemId;
+	
+public		$id;
 	
 	/**
 	 * Returns this model as an array.

@@ -21,9 +21,12 @@ abstract class CouponCampaignReference
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$campaignId;
-	public		$referenceType;
-	public		$value;
+	
+public		$campaignId;
+	
+public		$referenceType;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

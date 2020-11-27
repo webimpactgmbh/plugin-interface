@@ -11,13 +11,24 @@ abstract class ParcelService
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$backendName;
-	public		$trackingUrl;
-	public		$shippingServiceProviderId;
-	public		$shippingServiceProviderAddress;
-	public		$shippingServiceProvider;
-	public		$parcelServiceNames;
+	
+public		$id;
+	
+public		$backendName;
+	
+public		$trackingUrl;
+	
+public		$shippingServiceProviderId;
+	
+public		$shippingServiceProviderAddress;
+	
+public		$splitTrackingUrl;
+	
+public		$splitDelimiter;
+	
+public		$shippingServiceProvider;
+	
+public		$parcelServiceNames;
 	
 	/**
 	 * Returns this model as an array.

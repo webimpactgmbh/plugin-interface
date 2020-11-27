@@ -7,8 +7,10 @@ namespace Plenty\Modules\Item\DataLayer\Models;
  */
 abstract class VariationAttributeValue 
 {
-	public		$attributeId;
-	public		$attributeValueId;
+	
+public		$attributeId;
+	
+public		$attributeValueId;
 	
 	/**
 	 * Returns this model as an array.

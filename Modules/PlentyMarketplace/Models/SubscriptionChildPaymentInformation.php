@@ -7,12 +7,18 @@ namespace Plenty\Modules\PlentyMarketplace\Models;
  */
 abstract class SubscriptionChildPaymentInformation 
 {
-	public		$amount;
-	public		$status;
-	public		$unaccountable;
-	public		$currency;
-	public		$receivedAt;
-	public		$importedAt;
+	
+public		$amount;
+	
+public		$status;
+	
+public		$unaccountable;
+	
+public		$currency;
+	
+public		$receivedAt;
+	
+public		$importedAt;
 	
 	/**
 	 * Returns this model as an array.

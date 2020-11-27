@@ -7,10 +7,14 @@ namespace Plenty\Modules\Webshop\Seo\Models;
  */
 abstract class SitemapConfiguration 
 {
-	public		$contentCategory;
-	public		$itemCategory;
-	public		$item;
-	public		$blog;
+	
+public		$contentCategory;
+	
+public		$itemCategory;
+	
+public		$item;
+	
+public		$blog;
 	
 	/**
 	 * Returns this model as an array.

@@ -13,13 +13,20 @@ abstract class CategoryBranch
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$categoryId;
-	public		$category1Id;
-	public		$category2Id;
-	public		$category3Id;
-	public		$category4Id;
-	public		$category5Id;
-	public		$category6Id;
+	
+public		$categoryId;
+	
+public		$category1Id;
+	
+public		$category2Id;
+	
+public		$category3Id;
+	
+public		$category4Id;
+	
+public		$category5Id;
+	
+public		$category6Id;
 	
 	/**
 	 * Returns this model as an array.

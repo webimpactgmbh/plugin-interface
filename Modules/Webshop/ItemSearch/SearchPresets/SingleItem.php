@@ -5,13 +5,16 @@ use Plenty\Modules\Webshop\ItemSearch\Factories\VariationSearchFactory;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\ResultFieldTemplate;
 
 /**
- * SingleItem preset
+ * Get item to be displayed on single item pages
  */
 abstract class SingleItem 
 {
 
+	/**
+	 * Get preset search factory.
+	 */
 	abstract public static function getSearchFactory(
-		 $options
-	);
+		array $options
+	):VariationSearchFactory;
 
 }

@@ -13,9 +13,12 @@ abstract class VariationClient
 	const ITEMS_PER_PAGE = 50;
 
 	const UPDATED_AT = 'updatedAt';
-	public		$variationId;
-	public		$plentyId;
-	public		$createdAt;
+	
+public		$variationId;
+	
+public		$plentyId;
+	
+public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.

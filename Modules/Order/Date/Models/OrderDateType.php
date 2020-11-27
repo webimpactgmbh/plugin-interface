@@ -47,11 +47,16 @@ abstract class OrderDateType
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$isErasable;
-	public		$position;
-	public		$names;
-	public		$orderDates;
+	
+public		$id;
+	
+public		$isErasable;
+	
+public		$position;
+	
+public		$names;
+	
+public		$orderDates;
 	
 	/**
 	 * Returns this model as an array.

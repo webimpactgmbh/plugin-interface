@@ -7,10 +7,14 @@ namespace Plenty\Modules\Wizard\Models;
  */
 abstract class WizardFolder 
 {
-	public		$name;
-	public		$priority;
-	public		$shortDescription;
-	public		$parent;
+	
+public		$name;
+	
+public		$priority;
+	
+public		$shortDescription;
+	
+public		$parent;
 	
 	/**
 	 * Returns this model as an array.

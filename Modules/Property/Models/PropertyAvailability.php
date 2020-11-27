@@ -11,12 +11,18 @@ abstract class PropertyAvailability
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$propertyId;
-	public		$type;
-	public		$value;
-	public		$createdAt;
-	public		$updatedAt;
+	
+public		$id;
+	
+public		$propertyId;
+	
+public		$type;
+	
+public		$value;
+	
+public		$createdAt;
+	
+public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.

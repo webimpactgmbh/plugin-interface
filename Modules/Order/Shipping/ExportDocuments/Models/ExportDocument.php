@@ -11,10 +11,14 @@ abstract class ExportDocument
 	const CREATED_AT = 'created_at';
 
 	const UPDATED_AT = 'updated_at';
-	public		$id;
-	public		$orderId;
-	public		$packageNumber;
-	public		$base64Content;
+	
+public		$id;
+	
+public		$orderId;
+	
+public		$packageNumber;
+	
+public		$base64Content;
 	
 	/**
 	 * Returns this model as an array.

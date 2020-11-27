@@ -18,9 +18,12 @@ namespace Plenty\Modules\Messenger\Models;
  */
 abstract class MessageMetaDataControls 
 {
-	public		$replyable;
-	public		$attachable;
-	public		$linksDisabled;
+	
+public		$replyable;
+	
+public		$attachable;
+	
+public		$linksDisabled;
 	
 	/**
 	 * Returns this model as an array.

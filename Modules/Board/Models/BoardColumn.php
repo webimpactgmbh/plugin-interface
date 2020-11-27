@@ -7,11 +7,16 @@ namespace Plenty\Modules\Board\Models;
  */
 abstract class BoardColumn 
 {
-	public		$id;
-	public		$boardId;
-	public		$columnName;
-	public		$position;
-	public		$tasks;
+	
+public		$id;
+	
+public		$boardId;
+	
+public		$columnName;
+	
+public		$position;
+	
+public		$tasks;
 	
 	/**
 	 * Returns this model as an array.

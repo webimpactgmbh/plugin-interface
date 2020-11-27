@@ -11,15 +11,24 @@ abstract class LiveShopping
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$fromTime;
-	public		$toTime;
-	public		$itemId;
-	public		$quantitySold;
-	public		$quantitySoldReal;
-	public		$quantityMax;
-	public		$liveShoppingId;
-	public		$link;
+	
+public		$id;
+	
+public		$fromTime;
+	
+public		$toTime;
+	
+public		$itemId;
+	
+public		$quantitySold;
+	
+public		$quantitySoldReal;
+	
+public		$quantityMax;
+	
+public		$liveShoppingId;
+	
+public		$link;
 	
 	/**
 	 * Returns this model as an array.

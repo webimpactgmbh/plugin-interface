@@ -7,7 +7,8 @@ namespace Plenty\Repositories\Models;
  */
 abstract class DeleteResponse 
 {
-	public		$affectedRows;
+	
+public		$affectedRows;
 	
 	/**
 	 * Returns this model as an array.

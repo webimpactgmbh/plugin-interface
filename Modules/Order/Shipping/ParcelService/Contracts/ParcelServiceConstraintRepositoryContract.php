@@ -8,16 +8,25 @@ namespace Plenty\Modules\Order\Shipping\ParcelService\Contracts;
 interface ParcelServiceConstraintRepositoryContract 
 {
 
+	/**
+	 * Create a new parcel service constraint entry
+	 */
 	public function create(
-		 $data
+		array $data
 	);
 
+	/**
+	 * Fetch parcel service constraint by ID
+	 */
 	public function getById(
-		 $id
+		int $id
 	);
 
+	/**
+	 * Delete a parcel service constant by ID
+	 */
 	public function delete(
-		 $id
+		int $id
 	);
 
 }

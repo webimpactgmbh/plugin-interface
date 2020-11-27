@@ -13,20 +13,34 @@ abstract class Recipient
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$folderId;
-	public		$contactId;
-	public		$firstName;
-	public		$lastName;
-	public		$email;
-	public		$gender;
-	public		$birthday;
-	public		$timestamp;
-	public		$templateLang;
-	public		$confirmedTimestamp;
-	public		$confirmAuthString;
-	public		$ipAddress;
-	public		$confirmationURL;
+	
+public		$id;
+	
+public		$folderId;
+	
+public		$contactId;
+	
+public		$firstName;
+	
+public		$lastName;
+	
+public		$email;
+	
+public		$gender;
+	
+public		$birthday;
+	
+public		$timestamp;
+	
+public		$templateLang;
+	
+public		$confirmedTimestamp;
+	
+public		$confirmAuthString;
+	
+public		$ipAddress;
+	
+public		$confirmationURL;
 	
 	/**
 	 * Returns this model as an array.

@@ -7,14 +7,22 @@ namespace Plenty\Modules\Frontend\Session\Storage\Models;
  */
 abstract class Customer 
 {
-	public		$deliveryCountryId;
-	public		$showNetPrice;
-	public		$ebaySellerAccount;
-	public		$accountContactSign;
-	public		$accountContactClassId;
-	public		$sourceItemWishListAccountContactId;
-	public		$sourceItemWishListAccountAddressId;
-	public		$salesAgent;
+	
+public		$deliveryCountryId;
+	
+public		$showNetPrice;
+	
+public		$ebaySellerAccount;
+	
+public		$accountContactSign;
+	
+public		$accountContactClassId;
+	
+public		$sourceItemWishListAccountContactId;
+	
+public		$sourceItemWishListAccountAddressId;
+	
+public		$salesAgent;
 	
 	/**
 	 * Returns this model as an array.

@@ -7,10 +7,14 @@ namespace Plenty\Modules\Item\DataLayer\Models;
  */
 abstract class ItemCrossSelling 
 {
-	public		$itemId;
-	public		$crossItemId;
-	public		$relationship;
-	public		$dynamic;
+	
+public		$itemId;
+	
+public		$crossItemId;
+	
+public		$relationship;
+	
+public		$dynamic;
 	
 	/**
 	 * Returns this model as an array.

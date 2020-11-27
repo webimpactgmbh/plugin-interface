@@ -13,27 +13,48 @@ abstract class Manufacturer
 	const ITEMS_PER_PAGE = 50;
 
 	const CREATED_AT = 'createdAt';
-	public		$id;
-	public		$name;
-	public		$externalName;
-	public		$logo;
-	public		$url;
-	public		$street;
-	public		$houseNo;
-	public		$postcode;
-	public		$town;
-	public		$phoneNumber;
-	public		$faxNumber;
-	public		$email;
-	public		$countryId;
-	public		$pixmaniaBrandId;
-	public		$neckermannAtEpBrandId;
-	public		$laRedouteBrandId;
-	public		$position;
-	public		$comment;
-	public		$updatedAt;
-	public		$commissions;
-	public		$externals;
+	
+public		$id;
+	
+public		$name;
+	
+public		$externalName;
+	
+public		$logo;
+	
+public		$url;
+	
+public		$street;
+	
+public		$houseNo;
+	
+public		$postcode;
+	
+public		$town;
+	
+public		$phoneNumber;
+	
+public		$faxNumber;
+	
+public		$email;
+	
+public		$countryId;
+	
+public		$pixmaniaBrandId;
+	
+public		$neckermannAtEpBrandId;
+	
+public		$laRedouteBrandId;
+	
+public		$position;
+	
+public		$comment;
+	
+public		$updatedAt;
+	
+public		$commissions;
+	
+public		$externals;
 	
 	/**
 	 * Returns this model as an array.

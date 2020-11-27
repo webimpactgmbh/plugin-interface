@@ -7,15 +7,24 @@ namespace Plenty\Modules\Cloud\Storage\Models;
  */
 abstract class StorageObject 
 {
-	public		$key;
-	public		$lastModified;
-	public		$metaData;
-	public		$eTag;
-	public		$size;
-	public		$storageClass;
-	public		$body;
-	public		$contentType;
-	public		$contentLength;
+	
+public		$key;
+	
+public		$lastModified;
+	
+public		$metaData;
+	
+public		$eTag;
+	
+public		$size;
+	
+public		$storageClass;
+	
+public		$body;
+	
+public		$contentType;
+	
+public		$contentLength;
 	
 	/**
 	 * Returns this model as an array.

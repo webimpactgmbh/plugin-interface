@@ -13,10 +13,14 @@ abstract class FacetName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$facetId;
-	public		$lang;
-	public		$name;
-	public		$facet;
+	
+public		$facetId;
+	
+public		$lang;
+	
+public		$name;
+	
+public		$facet;
 	
 	/**
 	 * Returns this model as an array.

@@ -15,11 +15,16 @@ abstract class MessageMetaLink
 	const TYPE_PLUGIN = 'plugin';
 
 	const TYPE_REPLY = 'reply';
-	public		$image;
-	public		$caption;
-	public		$url;
-	public		$type;
-	public		$content;
+	
+public		$image;
+	
+public		$caption;
+	
+public		$url;
+	
+public		$type;
+	
+public		$content;
 	
 	/**
 	 * Returns this model as an array.

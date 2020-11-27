@@ -7,9 +7,12 @@ namespace Plenty\Modules\Wizard\Models;
  */
 abstract class WizardSection 
 {
-	public		$title;
-	public		$description;
-	public		$form;
+	
+public		$title;
+	
+public		$description;
+	
+public		$form;
 	
 	/**
 	 * Returns this model as an array.

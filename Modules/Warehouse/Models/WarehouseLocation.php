@@ -17,18 +17,30 @@ abstract class WarehouseLocation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$levelId;
-	public		$label;
-	public		$purposeKey;
-	public		$statusKey;
-	public		$position;
-	public		$fullLabel;
-	public		$type;
-	public		$notes;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$warehouseLocationLevel;
+	
+public		$id;
+	
+public		$levelId;
+	
+public		$label;
+	
+public		$purposeKey;
+	
+public		$statusKey;
+	
+public		$position;
+	
+public		$fullLabel;
+	
+public		$type;
+	
+public		$notes;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$warehouseLocationLevel;
 	
 	/**
 	 * Returns this model as an array.

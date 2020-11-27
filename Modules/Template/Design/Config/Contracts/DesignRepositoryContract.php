@@ -4,7 +4,7 @@ namespace Plenty\Modules\Template\Design\Config\Contracts;
 use Plenty\Modules\Template\Design\Config\Models\Design;
 
 /**
- * Design
+ * Repository for Design of the deprecated CMS
  */
 interface DesignRepositoryContract 
 {

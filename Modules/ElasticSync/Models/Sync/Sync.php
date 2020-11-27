@@ -15,11 +15,16 @@ abstract class Sync
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$data;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$sync;
+	
+public		$id;
+	
+public		$data;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$sync;
 	
 	/**
 	 * Returns this model as an array.

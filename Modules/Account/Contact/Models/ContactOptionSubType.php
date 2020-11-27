@@ -11,10 +11,14 @@ abstract class ContactOptionSubType
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$position;
-	public		$nonErasable;
-	public		$names;
+	
+public		$id;
+	
+public		$position;
+	
+public		$nonErasable;
+	
+public		$names;
 	
 	/**
 	 * Returns this model as an array.

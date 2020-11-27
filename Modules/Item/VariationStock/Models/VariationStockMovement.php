@@ -13,23 +13,40 @@ abstract class VariationStockMovement
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$itemId;
-	public		$variationId;
-	public		$warehouseId;
-	public		$reasonString;
-	public		$attributeValues;
-	public		$processRowId;
-	public		$quantity;
-	public		$reason;
-	public		$createdAt;
-	public		$processRowType;
-	public		$bestBeforeDate;
-	public		$batch;
-	public		$storageLocationName;
-	public		$warehouseName;
-	public		$purchasePrice;
-	public		$userId;
+	
+public		$id;
+	
+public		$itemId;
+	
+public		$variationId;
+	
+public		$warehouseId;
+	
+public		$reasonString;
+	
+public		$attributeValues;
+	
+public		$processRowId;
+	
+public		$quantity;
+	
+public		$reason;
+	
+public		$createdAt;
+	
+public		$processRowType;
+	
+public		$bestBeforeDate;
+	
+public		$batch;
+	
+public		$storageLocationName;
+	
+public		$warehouseName;
+	
+public		$purchasePrice;
+	
+public		$userId;
 	
 	/**
 	 * Returns this model as an array.

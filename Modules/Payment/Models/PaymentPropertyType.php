@@ -11,10 +11,14 @@ abstract class PaymentPropertyType
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$erasable;
-	public		$position;
-	public		$name;
+	
+public		$id;
+	
+public		$erasable;
+	
+public		$position;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

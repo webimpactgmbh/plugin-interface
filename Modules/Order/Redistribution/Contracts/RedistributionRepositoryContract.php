@@ -38,4 +38,12 @@ interface RedistributionRepositoryContract
 		int $orderItemId
 	):bool;
 
+	/**
+	 * Update currency
+	 */
+	public function updateCurrency(
+		int $orderId, 
+		array $data
+	):Order;
+
 }

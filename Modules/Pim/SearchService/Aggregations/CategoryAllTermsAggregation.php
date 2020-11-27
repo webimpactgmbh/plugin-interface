@@ -6,7 +6,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\Object\ObjectTerms
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 
 /**
- * To be written...
+ * Aggregate data by all category ids
  */
 abstract class CategoryAllTermsAggregation implements AggregationInterface
 
@@ -14,11 +14,17 @@ abstract class CategoryAllTermsAggregation implements AggregationInterface
 
 	const NAME = 'categories.all';
 
+	/**
+	 * Get the name of the aggregation
+	 */
 	abstract public function getName(
-	);
+	):string;
 
+	/**
+	 * Get the field of the aggregation
+	 */
 	abstract public function getField(
-	);
+	):string;
 
 	abstract public function getAggregation(
 	):array;

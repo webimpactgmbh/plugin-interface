@@ -3,7 +3,7 @@ namespace Plenty\Modules\Webshop\Helpers;
 
 
 /**
- * UnitUtils
+ * Convert plentymarkets unit keys into common unit codes.
  */
 abstract class UnitUtils 
 {
@@ -17,7 +17,7 @@ abstract class UnitUtils
 	const MILLIMETER = 4;
 
 	/**
-	 * Returns HTML code for the unit ('m','cm' o'MM')
+	 * Return common code for a unit ('m','cm' 'mm').
 	 */
 	abstract public static function getHTML4Unit(
 		string $unit = "SMM"

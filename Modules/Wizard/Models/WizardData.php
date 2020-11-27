@@ -11,11 +11,16 @@ abstract class WizardData
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$uuid;
-	public		$plentyIdHash;
-	public		$wizardKey;
-	public		$data;
-	public		$steps;
+	
+public		$uuid;
+	
+public		$plentyIdHash;
+	
+public		$wizardKey;
+	
+public		$data;
+	
+public		$steps;
 	
 	/**
 	 * Returns this model as an array.

@@ -11,8 +11,10 @@ abstract class ParcelServiceRegionName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$name;
+	
+public		$id;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

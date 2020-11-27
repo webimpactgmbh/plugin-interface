@@ -6,7 +6,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\Object\ObjectAggre
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 
 /**
- * To be written
+ * Get price range for found variations
  */
 abstract class PriceRangeAggregation implements AggregationInterface
 
@@ -14,19 +14,31 @@ abstract class PriceRangeAggregation implements AggregationInterface
 
 	const NAME = 'priceRange';
 
+	/**
+	 * Get the name of the aggregation
+	 */
 	abstract public function getName(
-	);
+	):string;
 
+	/**
+	 * Set the price ids which should be aggregated
+	 */
 	abstract public function setPriceIds(
 		array $ids
 	);
 
+	/**
+	 * Process the provided data
+	 */
 	abstract public function process(
 		array $data
 	):array;
 
+	/**
+	 * Get the aggregation as array
+	 */
 	abstract public function getAggregation(
-	);
+	):array;
 
 	abstract public function toArray(
 	):array;

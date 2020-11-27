@@ -19,13 +19,20 @@ abstract class OrderReferrer
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$isEditable;
-	public		$backendName;
-	public		$name;
-	public		$orderOwnerId;
-	public		$isFilterable;
-	public		$origin;
+	
+public		$id;
+	
+public		$isEditable;
+	
+public		$backendName;
+	
+public		$name;
+	
+public		$orderOwnerId;
+	
+public		$isFilterable;
+	
+public		$origin;
 	
 	/**
 	 * Returns this model as an array.

@@ -7,16 +7,26 @@ namespace Plenty\Modules\Market\Ebay\AccountPolicy\Models;
  */
 abstract class PaymentPolicy 
 {
-	public		$paymentPolicyId;
-	public		$categoryTypes;
-	public		$deposit;
-	public		$description;
-	public		$fullPaymentDueIn;
-	public		$immediatePay;
-	public		$marketplaceId;
-	public		$name;
-	public		$paymentInstructions;
-	public		$paymentMethods;
+	
+public		$paymentPolicyId;
+	
+public		$categoryTypes;
+	
+public		$deposit;
+	
+public		$description;
+	
+public		$fullPaymentDueIn;
+	
+public		$immediatePay;
+	
+public		$marketplaceId;
+	
+public		$name;
+	
+public		$paymentInstructions;
+	
+public		$paymentMethods;
 	
 	/**
 	 * Returns this model as an array.

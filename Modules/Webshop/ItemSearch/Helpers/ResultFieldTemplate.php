@@ -3,7 +3,7 @@ namespace Plenty\Modules\Webshop\ItemSearch\Helpers;
 
 
 /**
- * ResultFieldTemplate
+ * Collect templates to read required result fields for several views from.
  */
 abstract class ResultFieldTemplate 
 {
@@ -21,15 +21,18 @@ abstract class ResultFieldTemplate
 	const TEMPLATE_VARIATION_ATTRIBUTE_MAP = 'Webshop.ResultFields.VariationAttributeMap';
 
 	/**
-	 * Get the path to result fields file from template/ theme
+	 * Get the path to result fields file from a plugin
 	 */
 	abstract public static function get(
 		string $template
 	):string;
 
+	/**
+	 * Load result fields from a template file. Result field templates can be registered from a plugin.
+	 */
 	abstract public static function load(
-		 $template
-	);
+		string $template
+	):array;
 
 	/**
 	 * Set the path of a template to read result fields from.

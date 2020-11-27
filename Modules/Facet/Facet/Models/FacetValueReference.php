@@ -25,15 +25,24 @@ abstract class FacetValueReference
 	const TYPE_AVAILABILITY = 'availability';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$facetId;
-	public		$facetValueId;
-	public		$type;
-	public		$groupId;
-	public		$valueId;
-	public		$createdAt;
-	public		$facet;
-	public		$value;
+	
+public		$id;
+	
+public		$facetId;
+	
+public		$facetValueId;
+	
+public		$type;
+	
+public		$groupId;
+	
+public		$valueId;
+	
+public		$createdAt;
+	
+public		$facet;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

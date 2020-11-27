@@ -5,6 +5,7 @@ use Illuminate\Contracts\Support\Arrayable;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Pagination\SearchPaginationInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Suggestion\SuggestionInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SortingInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
@@ -48,6 +49,13 @@ interface SearchInterface
 
 	public function setMaxResultWindow(
 		int $maxResults = 10000
+	);
+
+	public function setPagination(
+		 $pagination
+	);
+
+	public function isSearchAfter(
 	);
 
 	/**

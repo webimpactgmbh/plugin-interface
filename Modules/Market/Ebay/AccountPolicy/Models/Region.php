@@ -7,8 +7,10 @@ namespace Plenty\Modules\Market\Ebay\AccountPolicy\Models;
  */
 abstract class Region 
 {
-	public		$regionName;
-	public		$regionType;
+	
+public		$regionName;
+	
+public		$regionType;
 	
 	/**
 	 * Returns this model as an array.

@@ -162,7 +162,7 @@ interface ElasticSyncSyncRepositoryContract
 	):array;
 
 	/**
-	 * Get Log ID
+	 * Get Log by ID
 	 */
 	public function report(
 		 $id

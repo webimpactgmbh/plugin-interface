@@ -11,8 +11,10 @@ abstract class RevenueAccount
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$account;
+	
+public		$id;
+	
+public		$account;
 	
 	/**
 	 * Returns this model as an array.

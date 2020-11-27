@@ -13,9 +13,12 @@ abstract class Permission
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$permissionKey;
-	public		$roles;
+	
+public		$id;
+	
+public		$permissionKey;
+	
+public		$roles;
 	
 	/**
 	 * Returns this model as an array.

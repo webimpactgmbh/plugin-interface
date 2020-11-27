@@ -11,23 +11,40 @@ abstract class Warehouse
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$name;
-	public		$note;
-	public		$typeId;
-	public		$allocationReferrerIds;
-	public		$onStockAvailability;
-	public		$outOfStockAvailability;
-	public		$splitByShippingProfile;
-	public		$storageLocationType;
-	public		$storageLocationZone;
-	public		$repairWarehouseId;
-	public		$isInventoryModeActive;
-	public		$logisticsType;
-	public		$address;
-	public		$repairWarehouse;
-	public		$updatedAt;
-	public		$createdAt;
+	
+public		$id;
+	
+public		$name;
+	
+public		$note;
+	
+public		$typeId;
+	
+public		$allocationReferrerIds;
+	
+public		$onStockAvailability;
+	
+public		$outOfStockAvailability;
+	
+public		$splitByShippingProfile;
+	
+public		$storageLocationType;
+	
+public		$storageLocationZone;
+	
+public		$repairWarehouseId;
+	
+public		$isInventoryModeActive;
+	
+public		$logisticsType;
+	
+public		$address;
+	
+public		$repairWarehouse;
+	
+public		$updatedAt;
+	
+public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.

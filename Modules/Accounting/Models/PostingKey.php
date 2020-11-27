@@ -11,8 +11,10 @@ abstract class PostingKey
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$value;
+	
+public		$id;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

@@ -13,12 +13,18 @@ abstract class ListingMarketText
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$listingMarketId;
-	public		$lang;
-	public		$title;
-	public		$subtitle;
-	public		$description;
+	
+public		$id;
+	
+public		$listingMarketId;
+	
+public		$lang;
+	
+public		$title;
+	
+public		$subtitle;
+	
+public		$description;
 	
 	/**
 	 * Returns this model as an array.

@@ -13,16 +13,26 @@ abstract class RunReport
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$sync_id;
-	public		$jobs_total;
-	public		$jobs_completed;
-	public		$errors;
-	public		$children_identifier;
-	public		$report_filename;
-	public		$rows;
-	public		$rows_successful;
-	public		$date;
+	
+public		$id;
+	
+public		$sync_id;
+	
+public		$jobs_total;
+	
+public		$jobs_completed;
+	
+public		$errors;
+	
+public		$children_identifier;
+	
+public		$report_filename;
+	
+public		$rows;
+	
+public		$rows_successful;
+	
+public		$date;
 	
 	/**
 	 * Returns this model as an array.

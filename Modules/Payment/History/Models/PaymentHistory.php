@@ -23,11 +23,16 @@ abstract class PaymentHistory
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$paymentId;
-	public		$typeId;
-	public		$value;
-	public		$user;
+	
+public		$id;
+	
+public		$paymentId;
+	
+public		$typeId;
+	
+public		$value;
+	
+public		$user;
 	
 	/**
 	 * Returns this model as an array.

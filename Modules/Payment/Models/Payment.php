@@ -3,7 +3,7 @@ namespace Plenty\Modules\Payment\Models;
 
 
 /**
- * The payment model
+ * The payment model representing a received payment by a payment service provider.
  */
 abstract class Payment 
 {
@@ -58,31 +58,73 @@ abstract class Payment
 
 	const PAYMENT_TYPE_CREDIT = 'credit';
 
+	const MAX_ITEMS_PER_PAGE = 100;
+
+	const PAYMENT_DETACHED = 0;
+
+	const PAYMENT_ASSIGNED = 1;
+
+	const PAYMENT_METHOD_MANUAL = 5000;
+
+	const PAYMENT_METHOD_BANK_POSTING = 5001;
+
+	const PAYMENT_METHOD_EBICS = 5002;
+
+	const PAYMENT_METHOD_HBCI = 5003;
+
+	const ACCEPTED_PAYMENT_METHODS_FOR_SPLIT = [5000,5001,5002,5003];
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$amount;
-	public		$exchangeRatio;
-	public		$parentId;
-	public		$deleted;
-	public		$unaccountable;
-	public		$currency;
-	public		$type;
-	public		$hash;
-	public		$origin;
-	public		$receivedAt;
-	public		$importedAt;
-	public		$status;
-	public		$transactionType;
-	public		$mopId;
-	public		$parent;
-	public		$method;
-	public		$histories;
-	public		$properties;
-	public		$regenerateHash;
-	public		$updateOrderPaymentStatus;
-	public		$isSystemCurrency;
+	
+public		$id;
+	
+public		$amount;
+	
+public		$exchangeRatio;
+	
+public		$parentId;
+	
+public		$deleted;
+	
+public		$unaccountable;
+	
+public		$currency;
+	
+public		$type;
+	
+public		$hash;
+	
+public		$origin;
+	
+public		$receivedAt;
+	
+public		$importedAt;
+	
+public		$status;
+	
+public		$transactionType;
+	
+public		$mopId;
+	
+public		$parent;
+	
+public		$children;
+	
+public		$method;
+	
+public		$order;
+	
+public		$histories;
+	
+public		$properties;
+	
+public		$regenerateHash;
+	
+public		$updateOrderPaymentStatus;
+	
+public		$isSystemCurrency;
 	
 	/**
 	 * Returns this model as an array.

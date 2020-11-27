@@ -18,6 +18,9 @@ interface VariationImageServiceContract
 		int $imageId = null
 	);
 
+	public function resetPreLoadedData(
+	);
+
 	public function getAll(
 	):array;
 

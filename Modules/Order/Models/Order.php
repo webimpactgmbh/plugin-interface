@@ -3,7 +3,7 @@ namespace Plenty\Modules\Order\Models;
 
 
 /**
- * The order model.
+ * The model of the order.
  */
 abstract class Order 
 {
@@ -11,54 +11,106 @@ abstract class Order
 	const CREATED_AT = 'order_main_entry_timestamp';
 
 	const UPDATED_AT = 'last_update';
-	public		$id;
-	public		$typeId;
-	public		$methodOfPaymentId;
-	public		$shippingProfileId;
-	public		$paymentStatus;
-	public		$statusId;
-	public		$statusName;
-	public		$ownerId;
-	public		$referrerId;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$plentyId;
-	public		$locationId;
-	public		$roundTotalsOnly;
-	public		$numberOfDecimals;
-	public		$lockStatus;
-	public		$hasTaxRelevantDocuments;
-	public		$billingAddress;
-	public		$deliveryAddress;
-	public		$owner;
-	public		$hasDeliveryOrders;
-	public		$addresses;
-	public		$addressRelations;
-	public		$orderItems;
-	public		$properties;
-	public		$relations;
-	public		$amounts;
-	public		$comments;
-	public		$location;
-	public		$payments;
-	public		$orderReferences;
-	public		$reverseOrderReferences;
-	public		$originOrderReferences;
-	public		$shippingPackages;
-	public		$documents;
-	public		$dates;
-	public		$originOrder;
-	public		$parentOrder;
-	public		$originOrders;
-	public		$parentOrders;
-	public		$childOrders;
-	public		$systemAmount;
-	public		$amount;
-	public		$contactSender;
-	public		$contactReceiver;
-	public		$warehouseSender;
-	public		$warehouseReceiver;
-	public		$transactionSums;
+	
+public		$id;
+	
+public		$typeId;
+	
+public		$methodOfPaymentId;
+	
+public		$shippingProfileId;
+	
+public		$paymentStatus;
+	
+public		$statusId;
+	
+public		$statusName;
+	
+public		$ownerId;
+	
+public		$referrerId;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$plentyId;
+	
+public		$locationId;
+	
+public		$roundTotalsOnly;
+	
+public		$numberOfDecimals;
+	
+public		$lockStatus;
+	
+public		$hasTaxRelevantDocuments;
+	
+public		$billingAddress;
+	
+public		$deliveryAddress;
+	
+public		$owner;
+	
+public		$hasDeliveryOrders;
+	
+public		$addresses;
+	
+public		$addressRelations;
+	
+public		$orderItems;
+	
+public		$properties;
+	
+public		$relations;
+	
+public		$amounts;
+	
+public		$comments;
+	
+public		$location;
+	
+public		$payments;
+	
+public		$orderReferences;
+	
+public		$reverseOrderReferences;
+	
+public		$originOrderReferences;
+	
+public		$shippingPackages;
+	
+public		$documents;
+	
+public		$returnLabels;
+	
+public		$dates;
+	
+public		$originOrder;
+	
+public		$parentOrder;
+	
+public		$originOrders;
+	
+public		$parentOrders;
+	
+public		$childOrders;
+	
+public		$systemAmount;
+	
+public		$amount;
+	
+public		$contactSender;
+	
+public		$contactReceiver;
+	
+public		$warehouseSender;
+	
+public		$warehouseReceiver;
+	
+public		$transactionSums;
+	
+public		$paymentTerms;
 	
 	/**
 	 * Returns this model as an array.

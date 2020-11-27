@@ -9,6 +9,9 @@ use Plenty\Modules\Order\Payment\Method\Models\PaymentMethod;
 interface PaymentMethodRepositoryContract 
 {
 
+	/**
+	 * Gets a list of payment methods
+	 */
 	public function getPaymentMethods(
 		int $countryId, 
 		int $plentyId = null, 

@@ -7,9 +7,12 @@ namespace Plenty\Modules\Frontend\Models;
  */
 abstract class TotalVat 
 {
-	public		$vatId;
-	public		$vatAmount;
-	public		$vatValue;
+	
+public		$vatId;
+	
+public		$vatAmount;
+	
+public		$vatValue;
 	
 	/**
 	 * Returns this model as an array.

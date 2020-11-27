@@ -11,9 +11,12 @@ abstract class VatRate
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$vatRate;
-	public		$name;
+	
+public		$id;
+	
+public		$vatRate;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

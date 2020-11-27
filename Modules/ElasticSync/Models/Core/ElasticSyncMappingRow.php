@@ -15,15 +15,24 @@ abstract class ElasticSyncMappingRow
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$mappingId;
-	public		$targetModel;
-	public		$targetAttribute;
-	public		$active;
-	public		$entityType;
-	public		$value;
-	public		$settings;
-	public		$identifiers;
+	
+public		$id;
+	
+public		$mappingId;
+	
+public		$targetModel;
+	
+public		$targetAttribute;
+	
+public		$active;
+	
+public		$entityType;
+	
+public		$value;
+	
+public		$settings;
+	
+public		$identifiers;
 	
 	/**
 	 * Returns this model as an array.

@@ -17,28 +17,50 @@ abstract class ContactBank
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$contactId;
-	public		$orderId;
-	public		$accountOwner;
-	public		$bankName;
-	public		$bankAddress;
-	public		$bankPostalCodeTown;
-	public		$bankCountry;
-	public		$iban;
-	public		$bic;
-	public		$accountNumber;
-	public		$sortCode;
-	public		$lastUpdateBy;
-	public		$directDebitMandateAvailable;
-	public		$directDebitMandateAt;
-	public		$directDebitMethod;
-	public		$directDebitType;
-	public		$paymentMethod;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$contact;
-	public		$order;
+	
+public		$id;
+	
+public		$contactId;
+	
+public		$orderId;
+	
+public		$accountOwner;
+	
+public		$bankName;
+	
+public		$bankAddress;
+	
+public		$bankPostalCodeTown;
+	
+public		$bankCountry;
+	
+public		$iban;
+	
+public		$bic;
+	
+public		$accountNumber;
+	
+public		$sortCode;
+	
+public		$lastUpdateBy;
+	
+public		$directDebitMandateAvailable;
+	
+public		$directDebitMandateAt;
+	
+public		$directDebitMethod;
+	
+public		$directDebitType;
+	
+public		$paymentMethod;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$contact;
+	
+public		$order;
 	
 	/**
 	 * Returns this model as an array.

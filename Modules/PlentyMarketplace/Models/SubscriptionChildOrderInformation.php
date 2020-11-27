@@ -7,8 +7,10 @@ namespace Plenty\Modules\PlentyMarketplace\Models;
  */
 abstract class SubscriptionChildOrderInformation 
 {
-	public		$paymentStatus;
-	public		$paymentInformation;
+	
+public		$paymentStatus;
+	
+public		$paymentInformation;
 	
 	/**
 	 * Returns this model as an array.

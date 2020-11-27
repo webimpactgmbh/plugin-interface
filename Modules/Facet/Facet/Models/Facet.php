@@ -31,19 +31,32 @@ abstract class Facet
 	const FILTER_RESTRICT = 'restrict';
 
 	const FILTER_MULTI = 'multi';
-	public		$id;
-	public		$cssClass;
-	public		$position;
-	public		$sort;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$type;
-	public		$minResultCount;
-	public		$maxResultCount;
-	public		$filterMethod;
-	public		$names;
-	public		$values;
-	public		$references;
+	
+public		$id;
+	
+public		$cssClass;
+	
+public		$position;
+	
+public		$sort;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$type;
+	
+public		$minResultCount;
+	
+public		$maxResultCount;
+	
+public		$filterMethod;
+	
+public		$names;
+	
+public		$values;
+	
+public		$references;
 	
 	/**
 	 * Returns this model as an array.

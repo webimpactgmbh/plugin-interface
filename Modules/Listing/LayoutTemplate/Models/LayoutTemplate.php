@@ -17,13 +17,20 @@ abstract class LayoutTemplate
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$name;
-	public		$css;
-	public		$htmlStructure;
-	public		$mainFrame;
-	public		$additionalContent;
-	public		$appendixType;
+	
+public		$id;
+	
+public		$name;
+	
+public		$css;
+	
+public		$htmlStructure;
+	
+public		$mainFrame;
+	
+public		$additionalContent;
+	
+public		$appendixType;
 	
 	/**
 	 * Returns this model as an array.

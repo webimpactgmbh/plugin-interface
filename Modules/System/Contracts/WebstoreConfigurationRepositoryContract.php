@@ -9,10 +9,16 @@ use Plenty\Modules\System\Models\WebstoreConfiguration;
 interface WebstoreConfigurationRepositoryContract 
 {
 
+	/**
+	 * Get the WebstoreConfiguration by plentyId
+	 */
 	public function findByPlentyId(
 		int $plentyId
 	):WebstoreConfiguration;
 
+	/**
+	 * Get the WebstoreConfiguration by webstoreId
+	 */
 	public function findByWebstoreId(
 		int $webstoreId
 	):WebstoreConfiguration;

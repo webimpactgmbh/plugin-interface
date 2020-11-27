@@ -3,7 +3,7 @@ namespace Plenty\Modules\Order\Shipping\Countries\Models;
 
 
 /**
- * country name
+ * The CountryName model containing a name of a country in a specified language.
  */
 abstract class CountryName 
 {
@@ -11,9 +11,12 @@ abstract class CountryName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$language;
-	public		$name;
+	
+public		$id;
+	
+public		$language;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

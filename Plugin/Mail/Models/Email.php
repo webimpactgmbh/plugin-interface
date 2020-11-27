@@ -7,15 +7,24 @@ namespace Plenty\Plugin\Mail\Models;
  */
 abstract class Email 
 {
-	public		$bccAddresses;
-	public		$ccAddresses;
-	public		$toAddresses;
-	public		$senderAddress;
-	public		$replyToAddresses;
-	public		$subject;
-	public		$htmlBody;
-	public		$plainTextBody;
-	public		$rawMessage;
+	
+public		$bccAddresses;
+	
+public		$ccAddresses;
+	
+public		$toAddresses;
+	
+public		$senderAddress;
+	
+public		$replyToAddresses;
+	
+public		$subject;
+	
+public		$htmlBody;
+	
+public		$plainTextBody;
+	
+public		$rawMessage;
 	
 	/**
 	 * Returns this model as an array.

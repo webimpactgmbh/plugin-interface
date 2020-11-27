@@ -17,11 +17,16 @@ abstract class AddressRelationTypeApplication
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$typeId;
-	public		$application;
-	public		$position;
-	public		$type;
+	
+public		$id;
+	
+public		$typeId;
+	
+public		$application;
+	
+public		$position;
+	
+public		$type;
 	
 	/**
 	 * Returns this model as an array.

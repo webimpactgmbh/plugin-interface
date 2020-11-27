@@ -13,20 +13,34 @@ abstract class Vat
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$countryId;
-	public		$taxIdNumber;
-	public		$startedAt;
-	public		$invalidFrom;
-	public		$locationId;
-	public		$marginScheme;
-	public		$isRestrictedToDigitalItems;
-	public		$isStandard;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$location;
-	public		$country;
-	public		$vatRates;
+	
+public		$id;
+	
+public		$countryId;
+	
+public		$taxIdNumber;
+	
+public		$startedAt;
+	
+public		$invalidFrom;
+	
+public		$locationId;
+	
+public		$marginScheme;
+	
+public		$isRestrictedToDigitalItems;
+	
+public		$isStandard;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$location;
+	
+public		$country;
+	
+public		$vatRates;
 	
 	/**
 	 * Returns this model as an array.

@@ -11,11 +11,16 @@ abstract class DebtorAccount
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$accountId;
-	public		$mode;
-	public		$key;
-	public		$value;
-	public		$account;
+	
+public		$accountId;
+	
+public		$mode;
+	
+public		$key;
+	
+public		$value;
+	
+public		$account;
 	
 	/**
 	 * Returns this model as an array.

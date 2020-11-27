@@ -12,12 +12,18 @@ abstract class OrderItemWarehouseLocation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$orderItemId;
-	public		$warehouseLocationId;
-	public		$quantity;
-	public		$bestBeforeDate;
-	public		$batch;
-	public		$warehouseLocation;
+	
+public		$orderItemId;
+	
+public		$warehouseLocationId;
+	
+public		$quantity;
+	
+public		$bestBeforeDate;
+	
+public		$batch;
+	
+public		$warehouseLocation;
 	
 	/**
 	 * Returns this model as an array.

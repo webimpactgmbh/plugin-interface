@@ -11,12 +11,18 @@ abstract class ManufacturerCommission
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$manufacturerId;
-	public		$plentyId;
-	public		$referrerId;
-	public		$commission;
-	public		$manufacturer;
+	
+public		$id;
+	
+public		$manufacturerId;
+	
+public		$plentyId;
+	
+public		$referrerId;
+	
+public		$commission;
+	
+public		$manufacturer;
 	
 	/**
 	 * Returns this model as an array.

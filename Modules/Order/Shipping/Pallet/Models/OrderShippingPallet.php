@@ -11,16 +11,26 @@ abstract class OrderShippingPallet
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$weight;
-	public		$individualWeight;
-	public		$width;
-	public		$height;
-	public		$length;
-	public		$isStackable;
-	public		$additionalInfo;
-	public		$barcode;
-	public		$isClosed;
+	
+public		$id;
+	
+public		$weight;
+	
+public		$individualWeight;
+	
+public		$width;
+	
+public		$height;
+	
+public		$length;
+	
+public		$isStackable;
+	
+public		$additionalInfo;
+	
+public		$barcode;
+	
+public		$isClosed;
 	
 	/**
 	 * Returns this model as an array.

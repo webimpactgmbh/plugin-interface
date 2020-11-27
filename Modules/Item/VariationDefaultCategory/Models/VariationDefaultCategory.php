@@ -13,10 +13,14 @@ abstract class VariationDefaultCategory
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$variationId;
-	public		$branchId;
-	public		$plentyId;
-	public		$manually;
+	
+public		$variationId;
+	
+public		$branchId;
+	
+public		$plentyId;
+	
+public		$manually;
 	
 	/**
 	 * Returns this model as an array.

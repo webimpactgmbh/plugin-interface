@@ -3,11 +3,12 @@ namespace Plenty\Modules\Webshop\Seo\Models;
 
 
 /**
- * The robots model
+ * Model for the configured content of the robots.txt
  */
 abstract class Robots 
 {
-	public		$value;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

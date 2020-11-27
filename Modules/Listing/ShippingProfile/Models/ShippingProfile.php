@@ -11,13 +11,20 @@ abstract class ShippingProfile
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$name;
-	public		$credentialsId;
-	public		$referrerId;
-	public		$createdBy;
-	public		$isDefault;
-	public		$extendedData;
+	
+public		$id;
+	
+public		$name;
+	
+public		$credentialsId;
+	
+public		$referrerId;
+	
+public		$createdBy;
+	
+public		$isDefault;
+	
+public		$extendedData;
 	
 	/**
 	 * Returns this model as an array.

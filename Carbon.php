@@ -10,38 +10,70 @@ use DateTimeZone;
 class Carbon extends \DateTime 
 
 {
-	public		$year;
-	public		$yearIso;
-	public		$month;
-	public		$day;
-	public		$hour;
-	public		$minute;
-	public		$second;
-	public		$micro;
-	public		$microsecond;
-	public		$timestamp;
-	public		$englishDayOfWeek;
-	public		$shortEnglishDayOfWeek;
-	public		$englishMonth;
-	public		$shortEnglishMonth;
-	public		$localeDayOfWeek;
-	public		$shortLocaleDayOfWeek;
-	public		$localeMonth;
-	public		$shortLocaleMonth;
-	public		$milliseconds;
-	public		$millisecond;
-	public		$milli;
-	public		$week;
-	public		$isoWeek;
-	public		$weekYear;
-	public		$isoWeekYear;
-	public		$dayOfYear;
-	public		$age;
-	public		$offset;
-	public		$offsetMinutes;
-	public		$offsetHours;
-	public		$timezone;
-	public		$tz;
+	
+public		$year;
+	
+public		$yearIso;
+	
+public		$month;
+	
+public		$day;
+	
+public		$hour;
+	
+public		$minute;
+	
+public		$second;
+	
+public		$micro;
+	
+public		$microsecond;
+	
+public		$timestamp;
+	
+public		$englishDayOfWeek;
+	
+public		$shortEnglishDayOfWeek;
+	
+public		$englishMonth;
+	
+public		$shortEnglishMonth;
+	
+public		$localeDayOfWeek;
+	
+public		$shortLocaleDayOfWeek;
+	
+public		$localeMonth;
+	
+public		$shortLocaleMonth;
+	
+public		$milliseconds;
+	
+public		$millisecond;
+	
+public		$milli;
+	
+public		$week;
+	
+public		$isoWeek;
+	
+public		$weekYear;
+	
+public		$isoWeekYear;
+	
+public		$dayOfYear;
+	
+public		$age;
+	
+public		$offset;
+	
+public		$offsetMinutes;
+	
+public		$offsetHours;
+	
+public		$timezone;
+	
+public		$tz;
 	
 	/**
 	 * Get a copy of the instance.

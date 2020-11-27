@@ -15,11 +15,16 @@ abstract class BasketItemParams
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$type;
-	public		$name;
-	public		$value;
-	public		$basketItemId;
-	public		$propertyId;
+	
+public		$type;
+	
+public		$name;
+	
+public		$value;
+	
+public		$basketItemId;
+	
+public		$propertyId;
 	
 	/**
 	 * Returns this model as an array.

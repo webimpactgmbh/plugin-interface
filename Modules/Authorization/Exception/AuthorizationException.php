@@ -2,7 +2,7 @@
 namespace Plenty\Modules\Authorization\Exception;
 
 use Illuminate\Support\Collection;
-use Throwable;
+use JsonSerializable;
 
 /**
  * Class AuthorizationException
@@ -43,6 +43,9 @@ abstract class AuthorizationException extends AuthorizationException
 
 	abstract public function addMissingPermission(
 		string $permissionKey
+	);
+
+	abstract public function jsonSerialize(
 	);
 
 }

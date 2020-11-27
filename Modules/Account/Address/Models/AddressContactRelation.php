@@ -11,13 +11,20 @@ abstract class AddressContactRelation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$contactId;
-	public		$typeId;
-	public		$addressId;
-	public		$isPrimary;
-	public		$address;
-	public		$contact;
+	
+public		$id;
+	
+public		$contactId;
+	
+public		$typeId;
+	
+public		$addressId;
+	
+public		$isPrimary;
+	
+public		$address;
+	
+public		$contact;
 	
 	/**
 	 * Returns this model as an array.

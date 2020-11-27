@@ -13,10 +13,14 @@ abstract class AttributeValueImage
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$imageId;
-	public		$itemId;
-	public		$attributeId;
-	public		$valueId;
+	
+public		$imageId;
+	
+public		$itemId;
+	
+public		$attributeId;
+	
+public		$valueId;
 	
 	/**
 	 * Returns this model as an array.

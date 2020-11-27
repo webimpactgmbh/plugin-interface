@@ -13,16 +13,26 @@ abstract class ItemText
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$lang;
-	public		$name1;
-	public		$name2;
-	public		$name3;
-	public		$shortDescription;
-	public		$metaDescription;
-	public		$description;
-	public		$technicalData;
-	public		$keywords;
-	public		$urlPath;
+	
+public		$lang;
+	
+public		$name1;
+	
+public		$name2;
+	
+public		$name3;
+	
+public		$shortDescription;
+	
+public		$metaDescription;
+	
+public		$description;
+	
+public		$technicalData;
+	
+public		$keywords;
+	
+public		$urlPath;
 	
 	/**
 	 * Returns this model as an array.

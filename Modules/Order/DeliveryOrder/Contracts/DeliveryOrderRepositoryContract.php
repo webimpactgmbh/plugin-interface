@@ -54,4 +54,12 @@ interface DeliveryOrderRepositoryContract
 		int $orderId
 	):Collection;
 
+	/**
+	 * Update currency
+	 */
+	public function updateCurrency(
+		int $orderId, 
+		array $data
+	):Order;
+
 }

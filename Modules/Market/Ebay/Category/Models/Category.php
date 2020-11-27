@@ -11,12 +11,18 @@ abstract class Category
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$parentId;
-	public		$name;
-	public		$isLeaf;
-	public		$children;
-	public		$path;
+	
+public		$id;
+	
+public		$parentId;
+	
+public		$name;
+	
+public		$isLeaf;
+	
+public		$children;
+	
+public		$path;
 	
 	/**
 	 * Returns this model as an array.

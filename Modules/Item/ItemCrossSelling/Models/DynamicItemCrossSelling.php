@@ -13,11 +13,16 @@ abstract class DynamicItemCrossSelling
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$itemId;
-	public		$crossItemId;
-	public		$count;
-	public		$lastUpdate;
-	public		$item;
+	
+public		$itemId;
+	
+public		$crossItemId;
+	
+public		$count;
+	
+public		$lastUpdate;
+	
+public		$item;
 	
 	/**
 	 * Returns this model as an array.

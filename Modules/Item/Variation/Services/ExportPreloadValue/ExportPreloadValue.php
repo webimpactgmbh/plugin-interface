@@ -7,8 +7,10 @@ namespace Plenty\Modules\Item\Variation\Services\ExportPreloadValue;
  */
 abstract class ExportPreloadValue 
 {
-	public		$itemId;
-	public		$variationId;
+	
+public		$itemId;
+	
+public		$variationId;
 	
 	/**
 	 * Returns this model as an array.

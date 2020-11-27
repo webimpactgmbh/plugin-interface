@@ -11,9 +11,12 @@ abstract class ItemImageAvailability
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$imageId;
-	public		$type;
-	public		$value;
+	
+public		$imageId;
+	
+public		$type;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

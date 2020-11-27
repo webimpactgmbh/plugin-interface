@@ -5,7 +5,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\ObjectMutator;
 
 /**
- * foo
+ * To be written...
  */
 abstract class ImageMutator implements MutatorInterface
 

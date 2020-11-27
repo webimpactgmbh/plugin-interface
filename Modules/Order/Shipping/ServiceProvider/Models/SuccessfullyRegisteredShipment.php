@@ -5,7 +5,7 @@ use Plenty\Modules\Order\Shipping\Package\Models\OrderShippingPackage;
 use Plenty\Repositories\Models\DataModel;
 
 /**
- * SuccessfullyRegisteredShipment model.
+ * The SuccessfullyRegisteredShipment model.
  */
 abstract class SuccessfullyRegisteredShipment 
 {

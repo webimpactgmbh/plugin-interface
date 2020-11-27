@@ -13,10 +13,14 @@ abstract class Entry
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$subject;
-	public		$body;
-	public		$kind;
-	public		$log;
+	
+public		$subject;
+	
+public		$body;
+	
+public		$kind;
+	
+public		$log;
 	
 	/**
 	 * Returns this model as an array.

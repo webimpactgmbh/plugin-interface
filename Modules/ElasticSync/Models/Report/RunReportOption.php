@@ -27,11 +27,16 @@ abstract class RunReportOption
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$run_report_id;
-	public		$name;
-	public		$value;
-	public		$type;
+	
+public		$id;
+	
+public		$run_report_id;
+	
+public		$name;
+	
+public		$value;
+	
+public		$type;
 	
 	/**
 	 * Returns this model as an array.

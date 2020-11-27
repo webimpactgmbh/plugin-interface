@@ -116,7 +116,7 @@ interface OrderRepositoryContract
 	):Order;
 
 	/**
-	 * List orders
+	 * Lists orders
 	 */
 	public function searchOrders(
 		int $page = 1, 

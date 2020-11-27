@@ -7,8 +7,10 @@ namespace Plenty\Modules\Messenger\Models;
  */
 abstract class MessageMetaDataTimeCapture 
 {
-	public		$chargeable;
-	public		$minutes;
+	
+public		$chargeable;
+	
+public		$minutes;
 	
 	/**
 	 * Returns this model as an array.

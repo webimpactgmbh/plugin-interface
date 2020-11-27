@@ -11,12 +11,18 @@ abstract class ElasticSyncMappingFilter
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$mappingId;
-	public		$type;
-	public		$operator;
-	public		$source;
-	public		$value;
+	
+public		$id;
+	
+public		$mappingId;
+	
+public		$type;
+	
+public		$operator;
+	
+public		$source;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

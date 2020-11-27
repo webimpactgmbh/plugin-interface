@@ -13,13 +13,20 @@ abstract class PluginSetEntry
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$pluginId;
-	public		$pluginSetId;
-	public		$plugin;
-	public		$branchName;
-	public		$commit;
-	public		$position;
+	
+public		$id;
+	
+public		$pluginId;
+	
+public		$pluginSetId;
+	
+public		$plugin;
+	
+public		$branchName;
+	
+public		$commit;
+	
+public		$position;
 	
 	/**
 	 * Returns this model as an array.

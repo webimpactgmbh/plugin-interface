@@ -1,7 +1,7 @@
 <?php
 namespace Plenty\Modules\Basket\Events\Basket;
 
-use Illuminate\Database\Eloquent\Collection;
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Account\Address\Models\Address;
 use Plenty\Modules\Basket\Contracts\BasketRepositoryContract;
 use Plenty\Modules\Basket\Models\Basket;
@@ -18,8 +18,12 @@ abstract class AfterBasketChanged
 	abstract public function hasValidCoupon(
 	):bool;
 
+	abstract public function getCouponValidationError(
+	);
+
 	abstract public function setHasValidCoupon(
-		bool $hasValidCoupon
+		bool $hasValidCoupon, 
+		ValidationException $couponValidationError = null
 	);
 
 	abstract public function getBasket(

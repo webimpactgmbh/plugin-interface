@@ -3,14 +3,20 @@ namespace Plenty\Validation\Contracts;
 
 
 /**
- * Attribute Interface
+ * Common interface for attribute classes
  */
 interface Attribute 
 {
 
+	/**
+	 * Returns the attribute's name
+	 */
 	public function getAttributeName(
 	):string;
 
+	/**
+	 * Sets the attribute's name
+	 */
 	public function setAttributeName(
 		string $attributeName
 	):self;
@@ -412,6 +418,13 @@ interface Attribute
 	 * The field under validation must be a valid board task reference type (e.g. {@link BoardTaskReferenceType::CONTACT}).
 	 */
 	public function validBoardTaskReferenceValue(
+	):self;
+
+	/**
+	 * The field under validation must be an array and must contain only the keys in the provided accepted list.
+	 */
+	public function arrayKeysInList(
+		 $acceptedKeysList
 	):self;
 
 }

@@ -10,12 +10,18 @@ use Plenty\Modules\Order\Shipping\ServiceProvider\Services\Entries\ShippingServi
 abstract class ShippingServiceProviderService 
 {
 
+	/**
+	 * Registers a new shipping provider
+	 */
 	abstract public function registerShippingProvider(
 		string $shippingServiceProviderCode, 
 		 $shippingServiceProviderNames, 
 		 $shippingServiceProviderClasses
 	):bool;
 
+	/**
+	 * Check if shipping service provider has specified method
+	 */
 	abstract public function hasShippingServiceProviderMethod(
 		string $shippingServiceProviderCode, 
 		string $methodName

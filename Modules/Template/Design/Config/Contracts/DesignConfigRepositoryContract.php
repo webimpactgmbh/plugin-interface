@@ -5,7 +5,7 @@ use Plenty\Modules\Template\Design\Config\Models\Design;
 use Plenty\Modules\Template\Design\Config\Models\DesignConfig;
 
 /**
- * DesignConfig
+ * Repository for DesignConfig of the deprecated CMS
  */
 interface DesignConfigRepositoryContract 
 {

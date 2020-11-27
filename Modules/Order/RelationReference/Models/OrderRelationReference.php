@@ -21,16 +21,26 @@ abstract class OrderRelationReference
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$orderId;
-	public		$referenceType;
-	public		$referenceId;
-	public		$relation;
-	public		$order;
-	public		$contactReceiver;
-	public		$contactSender;
-	public		$accountReceiver;
-	public		$accountSender;
+	
+public		$id;
+	
+public		$orderId;
+	
+public		$referenceType;
+	
+public		$referenceId;
+	
+public		$relation;
+	
+public		$order;
+	
+public		$contactReceiver;
+	
+public		$contactSender;
+	
+public		$accountReceiver;
+	
+public		$accountSender;
 	
 	/**
 	 * Returns this model as an array.

@@ -13,13 +13,20 @@ abstract class Unit
 	const CREATED_AT = 'plenty_unit_created_timestamp';
 
 	const ITEMS_PER_PAGE = 50;
-	public		$id;
-	public		$position;
-	public		$unitOfMeasurement;
-	public		$isDecimalPlacesAllowed;
-	public		$updatedAt;
-	public		$createdAt;
-	public		$names;
+	
+public		$id;
+	
+public		$position;
+	
+public		$unitOfMeasurement;
+	
+public		$isDecimalPlacesAllowed;
+	
+public		$updatedAt;
+	
+public		$createdAt;
+	
+public		$names;
 	
 	/**
 	 * Returns this model as an array.

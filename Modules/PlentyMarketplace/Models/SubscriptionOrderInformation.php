@@ -7,13 +7,20 @@ namespace Plenty\Modules\PlentyMarketplace\Models;
  */
 abstract class SubscriptionOrderInformation 
 {
-	public		$isPaid;
-	public		$intervalType;
-	public		$intervalValue;
-	public		$startDate;
-	public		$subscriptionLastRun;
-	public		$subscriptionNextRun;
-	public		$childOrders;
+	
+public		$isPaid;
+	
+public		$intervalType;
+	
+public		$intervalValue;
+	
+public		$startDate;
+	
+public		$subscriptionLastRun;
+	
+public		$subscriptionNextRun;
+	
+public		$childOrders;
 	
 	/**
 	 * Returns this model as an array.

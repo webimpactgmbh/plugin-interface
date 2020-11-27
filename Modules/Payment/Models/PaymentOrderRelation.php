@@ -11,10 +11,14 @@ abstract class PaymentOrderRelation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$paymentId;
-	public		$orderId;
-	public		$assignedAt;
+	
+public		$id;
+	
+public		$paymentId;
+	
+public		$orderId;
+	
+public		$assignedAt;
 	
 	/**
 	 * Returns this model as an array.

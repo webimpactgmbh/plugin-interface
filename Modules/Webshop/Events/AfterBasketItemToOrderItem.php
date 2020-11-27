@@ -8,9 +8,15 @@ namespace Plenty\Modules\Webshop\Events;
 abstract class AfterBasketItemToOrderItem 
 {
 
+	/**
+	 * Get order item data generated from the basket item.
+	 */
 	abstract public function getOrderItem(
 	):array;
 
+	/**
+	 * Get basket item data used to generate the order item from.
+	 */
 	abstract public function getBasketItem(
 	):array;
 

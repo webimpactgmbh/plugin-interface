@@ -11,13 +11,22 @@ abstract class OrderProperty
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$orderId;
-	public		$typeId;
-	public		$value;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$order;
+	
+public		$id;
+	
+public		$orderId;
+	
+public		$typeId;
+	
+public		$value;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$order;
+	
+public		$type;
 	
 	/**
 	 * Returns this model as an array.

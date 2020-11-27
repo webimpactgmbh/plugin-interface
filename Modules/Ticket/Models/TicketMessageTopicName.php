@@ -11,10 +11,14 @@ abstract class TicketMessageTopicName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$topicId;
-	public		$lang;
-	public		$name;
+	
+public		$id;
+	
+public		$topicId;
+	
+public		$lang;
+	
+public		$name;
 	
 	/**
 	 * Returns this model as an array.

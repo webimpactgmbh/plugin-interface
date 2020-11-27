@@ -4,13 +4,16 @@ namespace Plenty\Modules\Webshop\ItemSearch\SearchPresets;
 use Plenty\Modules\Webshop\ItemSearch\Factories\VariationSearchFactory;
 
 /**
- * TagItems preset
+ * Query items by tag id.
  */
 abstract class TagItems 
 {
 
+	/**
+	 * Get preset search factory.
+	 */
 	abstract public static function getSearchFactory(
-		 $options
-	);
+		array $options
+	):VariationSearchFactory;
 
 }

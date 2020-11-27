@@ -11,26 +11,46 @@ abstract class ListingMarketHistory
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$listingMarketId;
-	public		$referrerId;
-	public		$externalId;
-	public		$statusId;
-	public		$quantity;
-	public		$quantitySold;
-	public		$quantitySoldDelta;
-	public		$quantityRemain;
-	public		$price;
-	public		$currency;
-	public		$sku;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$listingMarket;
-	public		$variations;
-	public		$properties;
-	public		$dates;
-	public		$texts;
-	public		$status;
+	
+public		$id;
+	
+public		$listingMarketId;
+	
+public		$referrerId;
+	
+public		$externalId;
+	
+public		$statusId;
+	
+public		$quantity;
+	
+public		$quantitySold;
+	
+public		$quantitySoldDelta;
+	
+public		$quantityRemain;
+	
+public		$price;
+	
+public		$currency;
+	
+public		$sku;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$listingMarket;
+	
+public		$variations;
+	
+public		$properties;
+	
+public		$dates;
+	
+public		$texts;
+	
+public		$status;
 	
 	/**
 	 * Returns this model as an array.

@@ -5,7 +5,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Contracts\ElasticSearchScrollRepositoryCo
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
 
 /**
- * ...
+ * This interface is deprecated and will be removed in the next version.
  */
 interface OrderElasticSearchScrollRepositoryContract 
 {

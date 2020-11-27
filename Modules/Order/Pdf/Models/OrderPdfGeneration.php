@@ -3,7 +3,7 @@ namespace Plenty\Modules\Order\Pdf\Models;
 
 
 /**
- * OrderPdfGeneration Model
+ * The OrderPdfGeneration Model
  */
 abstract class OrderPdfGeneration 
 {
@@ -11,13 +11,20 @@ abstract class OrderPdfGeneration
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$language;
-	public		$advice;
-	public		$sums;
-	public		$link;
-	public		$image;
-	public		$imageHeight;
-	public		$imageWidth;
+	
+public		$language;
+	
+public		$advice;
+	
+public		$sums;
+	
+public		$link;
+	
+public		$image;
+	
+public		$imageHeight;
+	
+public		$imageWidth;
 	
 	/**
 	 * Returns this model as an array.

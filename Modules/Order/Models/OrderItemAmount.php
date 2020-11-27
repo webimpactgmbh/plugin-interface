@@ -11,22 +11,38 @@ abstract class OrderItemAmount
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$orderItemId;
-	public		$isSystemCurrency;
-	public		$currency;
-	public		$exchangeRate;
-	public		$purchasePrice;
-	public		$priceOriginalGross;
-	public		$priceOriginalNet;
-	public		$priceGross;
-	public		$priceNet;
-	public		$surcharge;
-	public		$discount;
-	public		$isPercentage;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$orderItem;
+	
+public		$id;
+	
+public		$orderItemId;
+	
+public		$isSystemCurrency;
+	
+public		$currency;
+	
+public		$exchangeRate;
+	
+public		$purchasePrice;
+	
+public		$priceOriginalGross;
+	
+public		$priceOriginalNet;
+	
+public		$priceGross;
+	
+public		$priceNet;
+	
+public		$surcharge;
+	
+public		$discount;
+	
+public		$isPercentage;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$orderItem;
 	
 	/**
 	 * Returns this model as an array.

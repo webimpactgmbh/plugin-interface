@@ -7,13 +7,20 @@ namespace Plenty\Modules\Order\Models;
  */
 abstract class PriceCalculationResultItem 
 {
-	public		$total;
-	public		$totalNet;
-	public		$totalGross;
-	public		$totalVat;
-	public		$highestVatId;
-	public		$netAmountsMap;
-	public		$vatAmountsMap;
+	
+public		$total;
+	
+public		$totalNet;
+	
+public		$totalGross;
+	
+public		$totalVat;
+	
+public		$highestVatId;
+	
+public		$netAmountsMap;
+	
+public		$vatAmountsMap;
 	
 	/**
 	 * Returns this model as an array.

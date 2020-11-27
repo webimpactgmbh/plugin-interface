@@ -13,12 +13,18 @@ abstract class PropertySelection
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$propertyId;
-	public		$position;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$relation;
+	
+public		$id;
+	
+public		$propertyId;
+	
+public		$position;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$relation;
 	
 	/**
 	 * Returns this model as an array.

@@ -7,7 +7,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\Object\ObjectAggre
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 
 /**
- * To be written
+ * Provides a list of all facet value ids of a specific facet
  */
 abstract class NestedFacetValuesAggregation implements AggregationInterface
 
@@ -15,12 +15,21 @@ abstract class NestedFacetValuesAggregation implements AggregationInterface
 
 	const NAME = 'nestedFacetValues';
 
+	/**
+	 * Get the name of the aggregation
+	 */
 	abstract public function getName(
-	);
+	):string;
 
+	/**
+	 * Get the aggregation as array
+	 */
 	abstract public function getAggregation(
-	);
+	):array;
 
+	/**
+	 * Returns the aggregation as array
+	 */
 	abstract public function toArray(
 	):array;
 

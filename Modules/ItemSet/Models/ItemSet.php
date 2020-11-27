@@ -13,9 +13,12 @@ abstract class ItemSet
 	const ITEMS_PER_PAGE = 50;
 
 	const CREATED_AT = 'createdAt';
-	public		$id;
-	public		$name;
-	public		$categories;
+	
+public		$id;
+	
+public		$name;
+	
+public		$categories;
 	
 	/**
 	 * Returns this model as an array.

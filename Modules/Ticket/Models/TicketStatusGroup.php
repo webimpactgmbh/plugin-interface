@@ -11,9 +11,12 @@ abstract class TicketStatusGroup
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$position;
-	public		$color;
+	
+public		$id;
+	
+public		$position;
+	
+public		$color;
 	
 	/**
 	 * Returns this model as an array.

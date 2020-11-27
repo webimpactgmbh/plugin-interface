@@ -7,8 +7,10 @@ namespace Plenty\Modules\Item\DataLayer\Models;
  */
 abstract class VariationLinkWebstore 
 {
-	public		$created;
-	public		$plentyId;
+	
+public		$created;
+	
+public		$plentyId;
 	
 	/**
 	 * Returns this model as an array.

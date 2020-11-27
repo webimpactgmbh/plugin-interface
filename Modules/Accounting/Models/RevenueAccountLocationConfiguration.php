@@ -11,11 +11,16 @@ abstract class RevenueAccountLocationConfiguration
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$locationId;
-	public		$accountEu;
-	public		$accountExport;
-	public		$revenueAccountCountryConfigurations;
+	
+public		$id;
+	
+public		$locationId;
+	
+public		$accountEu;
+	
+public		$accountExport;
+	
+public		$revenueAccountCountryConfigurations;
 	
 	/**
 	 * Returns this model as an array.

@@ -4,7 +4,7 @@ namespace Plenty\Modules\Order\Shipping\ExportDocuments\Contracts;
 use Plenty\Modules\Order\Shipping\ExportDocuments\Models\ExportDocument;
 
 /**
- * The ExportDocumentsContract
+ * Repository for Export Documents
  */
 interface ExportDocumentsContract 
 {

@@ -11,30 +11,51 @@ use Plenty\Repositories\Models\DataModel;
 abstract class SuccessfullyRegisteredOrderReturns 
 {
 
+	/**
+	 * Set orderId variable
+	 */
 	abstract public function setOrderId(
 		int $orderId
 	);
 
+	/**
+	 * Set fileName variable
+	 */
 	abstract public function setFileName(
 		string $fileName
 	);
 
+	/**
+	 * Set externalNumber variable
+	 */
 	abstract public function setExternalNumber(
 		string $externalNumber
 	);
 
+	/**
+	 * Set externalData variable
+	 */
 	abstract public function setExternalData(
 		array $externalData
 	);
 
+	/**
+	 * Set availableUntil variable
+	 */
 	abstract public function setAvailableUntil(
 		string $availiableUntil
 	);
 
+	/**
+	 * Set labelBase64 variable
+	 */
 	abstract public function setLabelBase64(
 		string $labelBase64
 	);
 
+	/**
+	 * Set returnsOrderId variable
+	 */
 	abstract public function setReturnsOrderId(
 		int $returnsOrderId
 	);

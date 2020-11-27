@@ -12,23 +12,40 @@ abstract class SalesPrice
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$position;
-	public		$minimumOrderQuantity;
-	public		$type;
-	public		$isCustomerPrice;
-	public		$isDisplayedByDefault;
-	public		$isLiveConversion;
-	public		$interval;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$names;
-	public		$accounts;
-	public		$countries;
-	public		$currencies;
-	public		$customerClasses;
-	public		$referrers;
-	public		$clients;
+	
+public		$id;
+	
+public		$position;
+	
+public		$minimumOrderQuantity;
+	
+public		$type;
+	
+public		$isCustomerPrice;
+	
+public		$isDisplayedByDefault;
+	
+public		$isLiveConversion;
+	
+public		$interval;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$names;
+	
+public		$accounts;
+	
+public		$countries;
+	
+public		$currencies;
+	
+public		$customerClasses;
+	
+public		$referrers;
+	
+public		$clients;
 	
 	/**
 	 * Returns this model as an array.

@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Fulfillment\Picklist\Models\PickingOrderItem;
 
 /**
- * The PickingOrderItemRepositoryContract
+ * The PickingOrderItemRepositoryContract describes methods for fetching one or multiple picking order items.
  */
 interface PickingOrderItemRepositoryContract 
 {

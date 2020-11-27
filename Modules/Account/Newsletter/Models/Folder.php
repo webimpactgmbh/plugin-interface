@@ -13,11 +13,16 @@ abstract class Folder
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$name;
-	public		$isDeletable;
-	public		$position;
-	public		$isSelectable;
+	
+public		$id;
+	
+public		$name;
+	
+public		$isDeletable;
+	
+public		$position;
+	
+public		$isSelectable;
 	
 	/**
 	 * Returns this model as an array.

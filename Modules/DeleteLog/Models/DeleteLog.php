@@ -37,11 +37,16 @@ abstract class DeleteLog
 	const UPDATED_AT = 'updatedAt';
 
 	const CREATED_AT = 'createdAt';
-	public		$referenceType;
-	public		$referenceValue;
-	public		$userRealName;
-	public		$updatedAt;
-	public		$userId;
+	
+public		$referenceType;
+	
+public		$referenceValue;
+	
+public		$userRealName;
+	
+public		$updatedAt;
+	
+public		$userId;
 	
 	/**
 	 * Returns this model as an array.

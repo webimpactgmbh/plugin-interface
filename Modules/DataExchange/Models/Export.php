@@ -61,18 +61,30 @@ abstract class Export
 	const OUTPUT_TYPE_CACHE = 'cache';
 
 	const DEFAULT_ITEMS_PER_PAGE = 50;
-	public		$id;
-	public		$name;
-	public		$type;
-	public		$limit;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$formatKey;
-	public		$outputType;
-	public		$generateCache;
-	public		$filters;
-	public		$outputParams;
-	public		$formatSettings;
+	
+public		$id;
+	
+public		$name;
+	
+public		$type;
+	
+public		$limit;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$formatKey;
+	
+public		$outputType;
+	
+public		$generateCache;
+	
+public		$filters;
+	
+public		$outputParams;
+	
+public		$formatSettings;
 	
 	/**
 	 * Returns this model as an array.

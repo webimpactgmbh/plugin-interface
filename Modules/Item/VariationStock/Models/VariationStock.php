@@ -11,18 +11,30 @@ abstract class VariationStock
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$itemId;
-	public		$variationId;
-	public		$warehouseId;
-	public		$reservedListing;
-	public		$reservedBundles;
-	public		$valueOfGoods;
-	public		$purchasePrice;
-	public		$physicalStock;
-	public		$reservedStock;
-	public		$netStock;
-	public		$reorderLevel;
-	public		$deltaReorderLevel;
+	
+public		$itemId;
+	
+public		$variationId;
+	
+public		$warehouseId;
+	
+public		$reservedListing;
+	
+public		$reservedBundles;
+	
+public		$valueOfGoods;
+	
+public		$purchasePrice;
+	
+public		$physicalStock;
+	
+public		$reservedStock;
+	
+public		$netStock;
+	
+public		$reorderLevel;
+	
+public		$deltaReorderLevel;
 	
 	/**
 	 * Returns this model as an array.

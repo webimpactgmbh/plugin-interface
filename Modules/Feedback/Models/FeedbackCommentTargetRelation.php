@@ -11,9 +11,12 @@ abstract class FeedbackCommentTargetRelation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$commentId;
-	public		$commentRelationType;
-	public		$commentRelationTargetId;
+	
+public		$commentId;
+	
+public		$commentRelationType;
+	
+public		$commentRelationTargetId;
 	
 	/**
 	 * Returns this model as an array.

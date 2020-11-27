@@ -10,12 +10,18 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 
 {
 
+	/**
+	 * Returns the attribute's name
+	 */
 	public function getAttributeName(
 	):string
 	{
 		return "DummyAttribute";
 	}
 
+	/**
+	 * Sets the attribute's name
+	 */
 	public function setAttributeName(
 		string $attributeName
 	):self
@@ -472,6 +478,9 @@ and integers that can contain null values.
 		return $this;
 	}
 
+	/**
+	 * Returns all rules connected to the attribute
+	 */
 	public function generateRulesContent(
 	)
 	{
@@ -539,30 +548,45 @@ and integers that can contain null values.
 		return $this;
 	}
 
+	/**
+	 * The field under validation must be a valid HEX color (like "#a3d" or "#a0787c").
+	 */
 	public function hexColor(
 	)
 	{
 		return $this;
 	}
 
+	/**
+	 * The field under validation must be a valid RGB or RGBA color (like "rgb(0, 200, 150)" or "rgba(0, 200, 150, 0.52)").
+	 */
 	public function rgbColor(
 	)
 	{
 		return $this;
 	}
 
+	/**
+	 * The field under validation must be a valid predefined CSS color (like "aquamarine" or "skyblue").
+	 */
 	public function cssColor(
 	)
 	{
 		return $this;
 	}
 
+	/**
+	 * The field under validation must be a valid color (HEX like "#a0787c", RGB like "rgb(0, 200, 150)" or CSS like "aquamarine")
+	 */
 	public function color(
 	)
 	{
 		return $this;
 	}
 
+	/**
+	 * The field under validation must be a valid UUID version 5.
+	 */
 	public function uuid5(
 	)
 	{
@@ -591,6 +615,26 @@ and integers that can contain null values.
 	 * The field under validation must be a valid board task reference type (e.g. {@link BoardTaskReferenceType::CONTACT}).
 	 */
 	public function validBoardTaskReferenceValue(
+	):self
+	{
+		return $this;
+	}
+
+	/**
+	 * The field under validation must be a valid phone number
+	 */
+	public function validPhoneNumber(
+		string $option
+	):self
+	{
+		return $this;
+	}
+
+	/**
+	 * The field under validation must be an array and must contain only the keys in the provided accepted list.
+	 */
+	public function arrayKeysInList(
+		 $acceptedKeysList
 	):self
 	{
 		return $this;

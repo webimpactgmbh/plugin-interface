@@ -11,11 +11,16 @@ abstract class FitmentItemProperty
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$fitmentItemId;
-	public		$name;
-	public		$value;
-	public		$fitmentItem;
+	
+public		$id;
+	
+public		$fitmentItemId;
+	
+public		$name;
+	
+public		$value;
+	
+public		$fitmentItem;
 	
 	/**
 	 * Returns this model as an array.

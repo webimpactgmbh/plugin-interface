@@ -11,7 +11,8 @@ abstract class CategoryClient
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$plentyId;
+	
+public		$plentyId;
 	
 	/**
 	 * Returns this model as an array.

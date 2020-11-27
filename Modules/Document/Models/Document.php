@@ -109,22 +109,38 @@ abstract class Document
 	const UPDATED_AT = 'plenty_document_updated';
 
 	const CREATED_AT = 'plenty_document_created';
-	public		$id;
-	public		$type;
-	public		$number;
-	public		$numberWithPrefix;
-	public		$path;
-	public		$userId;
-	public		$source;
-	public		$displayDate;
-	public		$content;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$references;
-	public		$contacts;
-	public		$orders;
-	public		$webstores;
-	public		$categories;
+	
+public		$id;
+	
+public		$type;
+	
+public		$number;
+	
+public		$numberWithPrefix;
+	
+public		$path;
+	
+public		$userId;
+	
+public		$source;
+	
+public		$displayDate;
+	
+public		$content;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$references;
+	
+public		$contacts;
+	
+public		$orders;
+	
+public		$webstores;
+	
+public		$categories;
 	
 	/**
 	 * Returns this model as an array.

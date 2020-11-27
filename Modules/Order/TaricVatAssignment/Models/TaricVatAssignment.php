@@ -13,13 +13,20 @@ abstract class TaricVatAssignment
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$taricCode;
-	public		$countryId;
-	public		$vatField;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$taricVatAssignmentUsed;
+	
+public		$id;
+	
+public		$taricCode;
+	
+public		$countryId;
+	
+public		$vatField;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$taricVatAssignmentUsed;
 	
 	/**
 	 * Returns this model as an array.

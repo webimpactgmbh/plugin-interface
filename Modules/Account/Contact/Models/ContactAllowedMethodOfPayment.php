@@ -11,13 +11,20 @@ abstract class ContactAllowedMethodOfPayment
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$contactId;
-	public		$methodOfPaymentId;
-	public		$allowed;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$isPaymentActive;
+	
+public		$id;
+	
+public		$contactId;
+	
+public		$methodOfPaymentId;
+	
+public		$allowed;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$isPaymentActive;
 	
 	/**
 	 * Returns this model as an array.

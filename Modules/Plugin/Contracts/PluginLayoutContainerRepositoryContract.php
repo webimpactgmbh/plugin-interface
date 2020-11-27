@@ -17,7 +17,8 @@ interface PluginLayoutContainerRepositoryContract
 
 	public function updateAll(
 		array $dataList, 
-		int $pluginSetId
+		int $pluginSetId, 
+		int $pluginId = null
 	);
 
 	public function getActiveLinkedLayoutContainers(

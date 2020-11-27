@@ -11,15 +11,24 @@ abstract class PluginTranslation
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$pluginSetId;
-	public		$pluginName;
-	public		$languageCode;
-	public		$fileName;
-	public		$key;
-	public		$value;
-	public		$createdAt;
-	public		$updatedAt;
+	
+public		$id;
+	
+public		$pluginSetId;
+	
+public		$pluginName;
+	
+public		$languageCode;
+	
+public		$fileName;
+	
+public		$key;
+	
+public		$value;
+	
+public		$createdAt;
+	
+public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.

@@ -166,6 +166,8 @@ abstract class OrderPropertyType
 
 	const EXTERNAL_RETURN_ID = 80;
 
+	const AUTO_FULFILLED_EBAY = 84;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
@@ -187,11 +189,16 @@ abstract class OrderPropertyType
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$isErasable;
-	public		$position;
-	public		$cast;
-	public		$names;
+	
+public		$id;
+	
+public		$isErasable;
+	
+public		$position;
+	
+public		$cast;
+	
+public		$names;
 	
 	/**
 	 * Returns this model as an array.

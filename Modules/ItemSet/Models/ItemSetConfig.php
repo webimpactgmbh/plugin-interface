@@ -11,8 +11,10 @@ abstract class ItemSetConfig
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$setId;
-	public		$rebate;
+	
+public		$setId;
+	
+public		$rebate;
 	
 	/**
 	 * Returns this model as an array.

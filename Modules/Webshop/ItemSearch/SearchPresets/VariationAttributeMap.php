@@ -5,13 +5,16 @@ use Plenty\Modules\Webshop\ItemSearch\Factories\VariationSearchFactory;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\ResultFieldTemplate;
 
 /**
- * VariationAttributeMap preset
+ * Append list of all variations for attribute selection in item views
  */
 abstract class VariationAttributeMap 
 {
 
+	/**
+	 * Get preset search factory.
+	 */
 	abstract public static function getSearchFactory(
-		 $options
-	);
+		array $options
+	):VariationSearchFactory;
 
 }

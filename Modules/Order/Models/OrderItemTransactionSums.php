@@ -11,17 +11,28 @@ abstract class OrderItemTransactionSums
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$orderItemId;
-	public		$quantityTransactionsInRegular;
-	public		$quantityTransactionsOutRegular;
-	public		$quantityTransactionsInCancelled;
-	public		$quantityTransactionsOutCancelled;
-	public		$priceTotalTransactionsInRegular;
-	public		$priceTotalTransactionsOutRegular;
-	public		$priceTotalTransactionsInCancelled;
-	public		$priceTotalTransactionsOutCancelled;
-	public		$areTransactionsInComplete;
-	public		$areTransactionsOutComplete;
+	
+public		$orderItemId;
+	
+public		$quantityTransactionsInRegular;
+	
+public		$quantityTransactionsOutRegular;
+	
+public		$quantityTransactionsInCancelled;
+	
+public		$quantityTransactionsOutCancelled;
+	
+public		$priceTotalTransactionsInRegular;
+	
+public		$priceTotalTransactionsOutRegular;
+	
+public		$priceTotalTransactionsInCancelled;
+	
+public		$priceTotalTransactionsOutCancelled;
+	
+public		$areTransactionsInComplete;
+	
+public		$areTransactionsOutComplete;
 	
 	/**
 	 * Returns this model as an array.

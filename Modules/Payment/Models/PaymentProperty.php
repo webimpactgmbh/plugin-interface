@@ -78,13 +78,23 @@ abstract class PaymentProperty
 
 	const TYPE_ADDRESS_VALIDATION = 35;
 
+	const TYPE_MATCHING_RATE = 36;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$paymentId;
-	public		$typeId;
-	public		$value;
+	
+public		$id;
+	
+public		$paymentId;
+	
+public		$typeId;
+	
+public		$value;
+	
+public		$payment;
+	
+public		$type;
 	
 	/**
 	 * Returns this model as an array.

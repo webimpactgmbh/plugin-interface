@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\System\Contracts;
 
+use DataFactoryException;
 
 /**
  * Repository for SystemInformation
@@ -8,6 +9,9 @@ namespace Plenty\Modules\System\Contracts;
 interface SystemInformationRepositoryContract 
 {
 
+	/**
+	 * Loads a system information value by key
+	 */
 	public function loadValue(
 		string $key
 	);

@@ -11,11 +11,16 @@ abstract class Fitment
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$marketId;
-	public		$name;
-	public		$categoryId;
-	public		$items;
+	
+public		$id;
+	
+public		$marketId;
+	
+public		$name;
+	
+public		$categoryId;
+	
+public		$items;
 	
 	/**
 	 * Returns this model as an array.

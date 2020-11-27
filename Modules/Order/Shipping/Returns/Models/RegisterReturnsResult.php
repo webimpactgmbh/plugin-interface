@@ -7,8 +7,10 @@ namespace Plenty\Modules\Order\Shipping\Returns\Models;
  */
 abstract class RegisterReturnsResult 
 {
-	public		$orderReturnsList;
-	public		$failedRegisterOrderReturnsList;
+	
+public		$orderReturnsList;
+	
+public		$failedRegisterOrderReturnsList;
 	
 	/**
 	 * Returns this model as an array.

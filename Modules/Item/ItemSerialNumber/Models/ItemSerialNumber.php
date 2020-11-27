@@ -10,15 +10,21 @@ abstract class ItemSerialNumber
 
 	const CREATED_AT = 'inserted';
 
-	const ITEMS_PER_PAGE = 100;
+	const UPDATED_AT = '';
 
-	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$orderId;
-	public		$orderItemId;
-	public		$itemId;
-	public		$serialNumber;
-	public		$createdAt;
+	const ITEMS_PER_PAGE = 100;
+	
+public		$id;
+	
+public		$orderId;
+	
+public		$orderItemId;
+	
+public		$itemId;
+	
+public		$serialNumber;
+	
+public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.

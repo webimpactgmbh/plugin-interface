@@ -5,11 +5,14 @@ use Plenty\Validation\Contracts\Attribute;
 use Plenty\Validation\Contracts\AttributeHelperContract;
 
 /**
- * RulesCollection
+ * RulesCollection represents a collection of rules connected to an attribute
  */
 abstract class RulesCollection 
 {
 
+	/**
+	 * Add attribute without type
+	 */
 	public function add(
 		string $attributeName
 	):Attribute
@@ -17,6 +20,9 @@ abstract class RulesCollection
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add attribute without type (with or without requirement)
+	 */
 	public function addConditional(
 		string $attributeName, 
 		bool $required
@@ -25,6 +31,9 @@ abstract class RulesCollection
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add int attribute
+	 */
 	public function addInt(
 		string $attributeName, 
 		bool $required = false
@@ -33,6 +42,9 @@ abstract class RulesCollection
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add numeric attribute
+	 */
 	public function addNumeric(
 		string $attributeName, 
 		bool $required = false
@@ -41,6 +53,9 @@ abstract class RulesCollection
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add date attribute
+	 */
 	public function addDate(
 		string $attributeName, 
 		bool $required = false
@@ -49,6 +64,9 @@ abstract class RulesCollection
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add bool attribute
+	 */
 	public function addBool(
 		string $attributeName, 
 		bool $required = false
@@ -57,6 +75,9 @@ abstract class RulesCollection
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add string attribute
+	 */
 	public function addString(
 		string $attributeName, 
 		bool $required = false
@@ -75,5 +96,13 @@ abstract class RulesCollection
 	{
 		return new DummyAttribute();
 	}
+
+	/**
+	 * Add condition to validate if a list contains specific keys
+	 */
+	abstract public function arrayKeysInList(
+		string $attributeName, 
+		array $acceptedKeysList
+	):Attribute;
 
 }

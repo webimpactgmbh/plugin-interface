@@ -7,8 +7,10 @@ namespace Plenty\Modules\Market\Ebay\AccountPolicy\Models;
  */
 abstract class TimeDuration 
 {
-	public		$unit;
-	public		$value;
+	
+public		$unit;
+	
+public		$value;
 	
 	/**
 	 * Returns this model as an array.

@@ -11,12 +11,18 @@ abstract class ItemSetComponent
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$setId;
-	public		$itemId;
-	public		$minimalOrderQuantity;
-	public		$maximumOrderQuantity;
-	public		$orderQuantityPossible;
+	
+public		$id;
+	
+public		$setId;
+	
+public		$itemId;
+	
+public		$minimalOrderQuantity;
+	
+public		$maximumOrderQuantity;
+	
+public		$orderQuantityPossible;
 	
 	/**
 	 * Returns this model as an array.

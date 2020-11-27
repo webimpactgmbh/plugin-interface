@@ -24,9 +24,10 @@ use Plenty\Modules\Webshop\ItemSearch\Extensions\SortExtension;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\LoadResultFields;
 use Plenty\Modules\Webshop\Template\Contracts\TemplateConfigRepositoryContract;
 use Plenty\Modules\Webshop\WebshopServiceProvider;
+use WebshopMutator;
 
 /**
- * BaseSearchFactory
+ * Base factory to prepare and build search requests on variation data interface
  */
 abstract class BaseSearchFactory 
 {
@@ -39,10 +40,12 @@ abstract class BaseSearchFactory
 	):BaseSearchFactory;
 
 	/**
-	 * Add a mutator
+	 * Add a mutator to transform search results.
 	 */
 	abstract public function withMutator(
-		MutatorInterface $mutator
+		MutatorInterface $mutator, 
+		bool $excludeDependencies = false, 
+		int $position = 1000
 	):self;
 
 	/**
@@ -67,7 +70,23 @@ abstract class BaseSearchFactory
 		 $fields
 	):self;
 
+	/**
+	 * Get the requested result fields for this search request.
+	 */
 	abstract public function getResultFields(
+	):array;
+
+	/**
+	 * Check if result field is already included in the source of the search.
+	 */
+	abstract public function hasResultField(
+		string $field
+	):bool;
+
+	/**
+	 * Get additional result fields required by webshop mutators.
+	 */
+	abstract public function getAdditionalResultFields(
 	):array;
 
 	/**
@@ -127,9 +146,12 @@ abstract class BaseSearchFactory
 		array $sortingList
 	):self;
 
+	/**
+	 * Set the order of the search results by ids.
+	 */
 	abstract public function setOrder(
-		 $idList
-	);
+		array $idList
+	):self;
 
 	/**
 	 * Group results by field

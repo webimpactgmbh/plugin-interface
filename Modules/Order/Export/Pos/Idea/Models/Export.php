@@ -19,16 +19,26 @@ abstract class Export
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$token;
-	public		$progress;
-	public		$currentModule;
-	public		$state;
-	public		$filename;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$modules;
-	public		$options;
+	
+public		$id;
+	
+public		$token;
+	
+public		$progress;
+	
+public		$currentModule;
+	
+public		$state;
+	
+public		$filename;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$modules;
+	
+public		$options;
 	
 	/**
 	 * Returns this model as an array.

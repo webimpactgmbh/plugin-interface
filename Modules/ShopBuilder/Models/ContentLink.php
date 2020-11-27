@@ -11,18 +11,32 @@ abstract class ContentLink
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$contentId;
-	public		$containerName;
-	public		$pluginSetId;
-	public		$language;
-	public		$active;
-	public		$relatedContentType;
-	public		$relatedContainerName;
-	public		$inherit;
-	public		$createdAt;
-	public		$updatedAt;
-	public		$content;
+	
+public		$id;
+	
+public		$contentId;
+	
+public		$containerName;
+	
+public		$pluginSetId;
+	
+public		$language;
+	
+public		$active;
+	
+public		$relatedContentType;
+	
+public		$relatedContainerName;
+	
+public		$inherit;
+	
+public		$invalid;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$content;
 	
 	/**
 	 * Returns this model as an array.

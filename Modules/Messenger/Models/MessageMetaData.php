@@ -7,12 +7,18 @@ namespace Plenty\Modules\Messenger\Models;
  */
 abstract class MessageMetaData 
 {
-	public		$readBy;
-	public		$links;
-	public		$notDoneByBackend;
-	public		$controls;
-	public		$timeCapture;
-	public		$plentyId;
+	
+public		$readBy;
+	
+public		$links;
+	
+public		$notDoneByBackend;
+	
+public		$controls;
+	
+public		$timeCapture;
+	
+public		$plentyId;
 	
 	/**
 	 * Returns this model as an array.

@@ -11,18 +11,30 @@ abstract class VariationDescription
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$itemId;
-	public		$lang;
-	public		$name;
-	public		$name2;
-	public		$name3;
-	public		$previewDescription;
-	public		$metaDescription;
-	public		$description;
-	public		$technicalData;
-	public		$urlPath;
-	public		$metaKeywords;
+	
+public		$id;
+	
+public		$itemId;
+	
+public		$lang;
+	
+public		$name;
+	
+public		$name2;
+	
+public		$name3;
+	
+public		$previewDescription;
+	
+public		$metaDescription;
+	
+public		$description;
+	
+public		$technicalData;
+	
+public		$urlPath;
+	
+public		$metaKeywords;
 	
 	/**
 	 * Returns this model as an array.

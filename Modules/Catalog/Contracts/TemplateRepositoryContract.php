@@ -3,7 +3,7 @@ namespace Plenty\Modules\Catalog\Contracts;
 
 
 /**
- * To be written
+ * The TemplateRepositoryContract is the interface for the template repository. It allows to retrieve templates and their mappings.
  */
 interface TemplateRepositoryContract 
 {

@@ -11,15 +11,24 @@ abstract class ShippingPackageType
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$name;
-	public		$width;
-	public		$height;
-	public		$length;
-	public		$unit;
-	public		$maxWeight;
-	public		$maxVolume;
-	public		$volumeType;
+	
+public		$id;
+	
+public		$name;
+	
+public		$width;
+	
+public		$height;
+	
+public		$length;
+	
+public		$unit;
+	
+public		$maxWeight;
+	
+public		$maxVolume;
+	
+public		$volumeType;
 	
 	/**
 	 * Returns this model as an array.
