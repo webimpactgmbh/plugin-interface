@@ -14,6 +14,8 @@ abstract class KeyFigureConfig
 	
 public		$id;
 	
+public		$hash;
+	
 public		$plentyIdHash;
 	
 public		$keyFigure;
@@ -29,6 +31,8 @@ public		$targets;
 public		$meta;
 	
 public		$direct;
+	
+public		$isGlobal;
 	
 public		$updatedAt;
 	
