@@ -32,6 +32,8 @@ public		$meta;
 	
 public		$direct;
 	
+public		$freeOfCharge;
+	
 public		$isGlobal;
 	
 public		$updatedAt;
