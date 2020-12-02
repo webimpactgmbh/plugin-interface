@@ -30,6 +30,8 @@ public		$relatedContainerName;
 	
 public		$inherit;
 	
+public		$invalid;
+	
 public		$createdAt;
 	
 public		$updatedAt;
