@@ -49,4 +49,11 @@ abstract class ManualOrderExecutePayment
 	abstract public function getOrderId(
 	):int;
 
+	abstract public function getAdditionalData(
+	):array;
+
+	abstract public function setAdditionalData(
+		array $additionalData
+	):ManualOrderExecutePayment;
+
 }
