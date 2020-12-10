@@ -10,6 +10,8 @@ abstract class KeyFigureResultResponse
 	
 public		$scaleBasis;
 	
+public		$scaleBasisInt;
+	
 public		$dimension;
 	
 public		$primaryResult;
