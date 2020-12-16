@@ -3,6 +3,7 @@ namespace Plenty\Modules\Webshop\ItemSearch\Factories;
 
 use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Collapse\CollapseInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\ScoreModifier\RandomScore;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
