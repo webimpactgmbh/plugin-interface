@@ -356,6 +356,10 @@ public		$urlTrailingSlash;
 	
 public		$isCookieSubdomainIndependent;
 	
+public		$itemSearchOperator;
+	
+public		$itemAutocompleteSearchOperator;
+	
 	/**
 	 * Returns this model as an array.
 	 */
