@@ -16,6 +16,10 @@ use Plenty\Modules\User\Contracts\UserRepositoryContract;
 abstract class FulfillmentShipmentService 
 {
 
+	abstract public function resetShipment(
+		int $orderId
+	):bool;
+
 	/**
 	 * Cancel the shipment of an order.
 	 */

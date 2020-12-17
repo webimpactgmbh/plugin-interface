@@ -18,4 +18,11 @@ interface PaymentMethodRepositoryContract
 		string $lang = "de"
 	):array;
 
+	/**
+	 * Activate a legacy payment method.
+	 */
+	public function activatePaymentMethod(
+		int $id
+	):PaymentMethod;
+
 }
