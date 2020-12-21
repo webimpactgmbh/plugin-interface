@@ -9,4 +9,7 @@ use Plenty\Modules\Basket\Models\BasketItem;
 abstract class AfterBasketItemRemove 
 {
 
+	abstract public function getBasketItem(
+	):BasketItem;
+
 }
