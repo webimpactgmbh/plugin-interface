@@ -168,6 +168,8 @@ abstract class OrderPropertyType
 
 	const AUTO_FULFILLED_EBAY = 84;
 
+	const REORDER_ITEM_NAME = 85;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
