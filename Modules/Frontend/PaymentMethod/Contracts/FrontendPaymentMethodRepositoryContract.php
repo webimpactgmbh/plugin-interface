@@ -73,14 +73,16 @@ interface FrontendPaymentMethodRepositoryContract
 	 * Gets the detail link of the payment method. The detail link can be entered in the config.json.
 	 */
 	public function getIsSwitchableTo(
-		PaymentMethod $paymentMethod
+		PaymentMethod $paymentMethod, 
+		int $orderId = null
 	):bool;
 
 	/**
 	 * Gets the detail link of the payment method. The detail link can be entered in the config.json.
 	 */
 	public function getIsSwitchableFrom(
-		PaymentMethod $paymentMethod
+		PaymentMethod $paymentMethod, 
+		int $orderId = null
 	):bool;
 
 	/**
