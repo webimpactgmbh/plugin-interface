@@ -43,6 +43,7 @@ use Plenty\Modules\Webshop\ItemSearch\Extensions\ContentCacheVariationLinkExtens
 use Plenty\Modules\Webshop\ItemSearch\Extensions\CurrentCategoryExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ItemDefaultImage;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\PriceSearchExtension;
+use Plenty\Modules\Webshop\ItemSearch\Extensions\ReduceDataExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\SetComponentExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\TagExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationAttributeMapExtension;
@@ -53,7 +54,6 @@ use Plenty\Modules\Webshop\ItemSearch\Mutators\BundleComponentMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\GroupedAttributeValuesMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\ItemUrlMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\OrderPropertySelectionValueMutator;
-use Plenty\Modules\Webshop\ItemSearch\Mutators\ReduceDataMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\VariationPropertyTransformMutator;
 use Plenty\Modules\Webshop\WebshopServiceProvider;
 
