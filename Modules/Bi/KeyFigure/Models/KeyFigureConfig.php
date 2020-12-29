@@ -46,6 +46,8 @@ public		$dimensions;
 	
 public		$dimensionValues;
 	
+public		$category;
+	
 	/**
 	 * Returns this model as an array.
 	 */
