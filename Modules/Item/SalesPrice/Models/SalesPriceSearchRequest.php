@@ -3,7 +3,7 @@ namespace Plenty\Modules\Item\SalesPrice\Models;
 
 
 /**
- * foo
+ * SalesPriceSearchRequest DataModel
  */
 abstract class SalesPriceSearchRequest 
 {
@@ -29,6 +29,10 @@ public		$referrerId;
 public		$quantity;
 	
 public		$ignoreType;
+	
+public		$vatId;
+	
+public		$customsTariffNumber;
 	
 	/**
 	 * Returns this model as an array.

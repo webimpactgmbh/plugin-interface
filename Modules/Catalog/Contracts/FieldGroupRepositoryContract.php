@@ -21,6 +21,14 @@ interface FieldGroupRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * Get list of fields for search
+	 */
+	public function getSearchFields(
+		string $id, 
+		array $hidden = []
+	):array;
+
+	/**
 	 * Get field by id
 	 */
 	public function getFieldById(
