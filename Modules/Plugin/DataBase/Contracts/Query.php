@@ -139,6 +139,13 @@ abstract class Query
 	):self;
 
 	/**
+	 * Add a "group by" statement to the query.
+	 */
+	abstract public function groupBy(
+		 $groups
+	):self;
+
+	/**
 	 * Add a "having" clause to the query.
 	 */
 	abstract public function having(
