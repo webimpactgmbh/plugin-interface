@@ -68,6 +68,8 @@ public		$couponCode;
 	
 public		$currency;
 	
+public		$exchangeRate;
+	
 public		$referrer;
 	
 public		$salesDiscount;
