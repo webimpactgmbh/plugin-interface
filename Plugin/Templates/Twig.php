@@ -21,7 +21,7 @@ abstract class Twig
 	):string;
 
 	/**
-	 * Renders a template from a string.
+	 * Compile and render a twig template from a string.
 	 */
 	abstract public function renderString(
 		string $templateContent, 
