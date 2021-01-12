@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Pim\SearchService\Filter;
 
+use Exception;
 use Illuminate\Contracts\Support\Arrayable;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\FieldExistsStatement;

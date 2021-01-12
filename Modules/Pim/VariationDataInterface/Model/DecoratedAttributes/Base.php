@@ -82,6 +82,11 @@ abstract class Base
 	/**
 	 * @var string
 	 */
+	public		$priceCalculationUUID;
+	
+	/**
+	 * @var string
+	 */
 	public		$picking;
 	
 	/**
