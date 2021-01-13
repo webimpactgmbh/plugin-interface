@@ -84,6 +84,8 @@ public		$warehouselocations;
 	
 public		$transactionSums;
 	
+public		$couponReferences;
+	
 	/**
 	 * Returns this model as an array.
 	 */
