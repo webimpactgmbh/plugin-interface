@@ -42,6 +42,8 @@ public		$shippingCostsGross;
 	
 public		$shippingCostsNet;
 	
+public		$taxlessAmount;
+	
 public		$createdAt;
 	
 public		$updatedAt;

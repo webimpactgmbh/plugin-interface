@@ -52,6 +52,8 @@ public		$availabilityUpdatedAt;
 	
 public		$priceCalculationId;
 	
+public		$priceCalculationUUID;
+	
 public		$picking;
 	
 public		$stockLimitation;

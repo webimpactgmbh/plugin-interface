@@ -498,6 +498,15 @@ and integers that can contain null values.
 	}
 
 	/**
+	 * The field under validation must be a w3c formated date time string that is in the MySQL timestamp range (1970 to 2037).
+	 */
+	public function inTimestampRange(
+	):self
+	{
+		return $this;
+	}
+
+	/**
 	 * Add custom Role
 	 */
 	public function customRule(
