@@ -2,6 +2,7 @@
 namespace Plenty\Plugin;
 
 use Plenty\Log\Traits\Loggable;
+use Plenty\Modules\Plugin\Services\Monitoring\PluginCounterService;
 
 /**
  * caching repository
