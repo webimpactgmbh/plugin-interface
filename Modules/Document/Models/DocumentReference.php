@@ -38,6 +38,8 @@ abstract class DocumentReference
 
 	const ORDER_ARCHIVED = 'order_archived';
 
+	const RELATED_DOCUMENT = 'related_document';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
