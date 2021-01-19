@@ -130,6 +130,8 @@ public		$timeForPaymentAllowedDays;
 	
 public		$salesRepresentativeContactId;
 	
+public		$anonymizeAt;
+	
 	/**
 	 * Returns this model as an array.
 	 */
