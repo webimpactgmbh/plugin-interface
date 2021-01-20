@@ -92,6 +92,8 @@ abstract class ListingPropertyType
 
 	const EBAY_USE_EPS = 114;
 
+	const EBAY_BEST_OFFER_TYPE = 115;
+
 	const HOOD_SHOW_ON_SHOP_STARTPAGE = 200;
 
 	const HOOD_SHIPPING_DISCOUNT = 201;
