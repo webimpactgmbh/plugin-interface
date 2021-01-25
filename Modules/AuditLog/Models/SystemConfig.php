@@ -14,6 +14,8 @@ abstract class SystemConfig
 	
 public		$entries;
 	
+public		$archiveActive;
+	
 	/**
 	 * Returns this model as an array.
 	 */
