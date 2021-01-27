@@ -1,16 +1,15 @@
 <?php
 namespace Plenty\Modules\ContentBuilder\Contracts;
 
-use Plenty\Modules\ShopBuilder\Contracts\Widget as BaseWidget;
 
 /**
- * This module is deprecated. Use module 'Shop Builder' instead.
+ * This contract is deprecated. Use `Plenty\Modules\ShopBuilder\Contracts\Widget` instead.
  */
 interface Widget 
 {
 
 	/**
-	 * Get the html representation of the widget
+	 * Render the template of the widget twice to get the final markup to be displayed in the preview of the builder.
 	 */
 	public function getPreview(
 		array $widgetSettings = [], 
@@ -18,7 +17,8 @@ interface Widget
 	):string;
 
 	/**
-	 * Render the widget
+	 * Render the template of the widget. Returns a twig-template which will be included in the frontend
+or rendered again for generating the preview.
 	 */
 	public function render(
 		array $widgetSettings = [], 
