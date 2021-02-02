@@ -16,6 +16,10 @@ public		$key;
 	
 public		$requiredForCertificate;
 	
+public		$alwaysActive;
+	
+public		$free;
+	
 	/**
 	 * Returns this model as an array.
 	 */
