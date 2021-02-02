@@ -26,7 +26,7 @@ interface AuditLogArchiveRepositoryContract
 	):int;
 
 	/**
-	 * Restore an audit log archive and make it downloadable for approximately 2 days
+	 * Restore an audit log archive and make it downloadable for approximately 2 days. There may be costs.
 	 */
 	public function restore(
 		string $key
