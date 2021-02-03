@@ -34,6 +34,8 @@ public		$states;
 	
 public		$names;
 	
+public		$vatCodes;
+	
 	/**
 	 * Returns this model as an array.
 	 */
