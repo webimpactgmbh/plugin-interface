@@ -45,7 +45,8 @@ trait LoadResultFields
         $resourcePath = explode('::', $fullTemplateName);
         $resourceName = $resourcePath[0] . '::views/' . str_replace('.', '/', $resourcePath[1]);
         if ($resource->exists($resourceName . '.fields')) {
-            return $resource->load($resourceName . '.fields')->getData();
+            // return global wildcard if json file contains invalid content to avoid white pages
+            return $resource->load($resourceName . '.fields')->getData() ?? ['*'];
         }
 
         return [];
