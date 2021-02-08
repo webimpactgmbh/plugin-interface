@@ -1,17 +1,13 @@
 <?php
 namespace Plenty\Modules\ShopBuilder\Providers;
 
-use Plenty\Modules\ShopBuilder\Contracts\DataFieldRepositoryContract;
-use Plenty\Plugin\Translation\Translator;
+use Plenty\Modules\ContentBuilder\Providers\DataFieldProvider as CoreDataFieldProvider;
 
 /**
  * Base class for data field providers.
  */
 abstract class DataFieldProvider 
 {
-
-	abstract public function register(
-	);
 
 	/**
 	 * Register a new data field.
@@ -47,5 +43,14 @@ abstract class DataFieldProvider
 	{
 		return null;
 	}
+
+	abstract public function register(
+	);
+
+	/**
+	 * Get all entries for this provider.
+	 */
+	abstract public function getEntries(
+	):array;
 
 }
