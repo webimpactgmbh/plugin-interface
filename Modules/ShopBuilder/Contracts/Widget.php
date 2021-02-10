@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\ShopBuilder\Contracts;
 
-use Plenty\Modules\ContentBuilder\Contracts\RenderableContract;
 
 /**
  * Contract for content widgets
@@ -10,7 +9,7 @@ interface Widget
 {
 
 	/**
-	 * Render the template of the widget twice to get the final markup to be displayed in the preview of the builder.
+	 * Get the html representation of the widget
 	 */
 	public function getPreview(
 		array $widgetSettings = [], 
@@ -18,7 +17,7 @@ interface Widget
 	):string;
 
 	/**
-	 * Render the template of the widget.
+	 * Render the widget
 	 */
 	public function render(
 		array $widgetSettings = [], 
