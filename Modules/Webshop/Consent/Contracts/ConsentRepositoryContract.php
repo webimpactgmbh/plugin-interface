@@ -16,7 +16,7 @@ interface ConsentRepositoryContract
 	public function registerConsentGroup(
 		string $key, 
 		string $label, 
-		array $options = []
+		 $options = []
 	);
 
 	/**
@@ -25,7 +25,7 @@ interface ConsentRepositoryContract
 	public function registerConsent(
 		string $key, 
 		string $label, 
-		array $options = []
+		 $options = []
 	);
 
 	/**
