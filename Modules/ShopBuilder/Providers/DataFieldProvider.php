@@ -10,6 +10,12 @@ abstract class DataFieldProvider
 {
 
 	/**
+	 * Register data fields and child providers.
+	 */
+	abstract public function register(
+	);
+
+	/**
 	 * Register a new data field.
 	 */
 	public function addField(
@@ -43,14 +49,5 @@ abstract class DataFieldProvider
 	{
 		return null;
 	}
-
-	abstract public function register(
-	);
-
-	/**
-	 * Get all entries for this provider.
-	 */
-	abstract public function getEntries(
-	):array;
 
 }
