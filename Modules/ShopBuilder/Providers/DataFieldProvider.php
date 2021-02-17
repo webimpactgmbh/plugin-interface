@@ -1,8 +1,7 @@
 <?php
 namespace Plenty\Modules\ShopBuilder\Providers;
 
-use Plenty\Modules\ShopBuilder\Contracts\DataFieldRepositoryContract;
-use Plenty\Plugin\Translation\Translator;
+use Plenty\Modules\ContentBuilder\Providers\DataFieldProvider as CoreDataFieldProvider;
 
 /**
  * Base class for data field providers.
@@ -10,6 +9,9 @@ use Plenty\Plugin\Translation\Translator;
 abstract class DataFieldProvider 
 {
 
+	/**
+	 * Register data fields and child providers.
+	 */
 	abstract public function register(
 	);
 
