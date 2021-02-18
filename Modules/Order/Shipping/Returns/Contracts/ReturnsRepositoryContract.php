@@ -47,4 +47,20 @@ interface ReturnsRepositoryContract
 		int $itemsPerPage = 50
 	):PaginatedResult;
 
+	/**
+	 * Create a return
+	 */
+	public function createReturnsOrder(
+		int $orderId, 
+		array $data
+	);
+
+	/**
+	 * Update existing return
+	 */
+	public function updateReturnsOrder(
+		int $returnsOrderId, 
+		array $data
+	);
+
 }
