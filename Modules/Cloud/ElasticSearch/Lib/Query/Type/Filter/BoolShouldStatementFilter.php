@@ -3,11 +3,13 @@ namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 
 /**
  * Combine multiple filters. minimum should match defines how many statements need to match
  */
-abstract class BoolShouldStatementFilter 
+abstract class BoolShouldStatementFilter implements TypeInterface
+
 {
 
 	abstract public function toArray(
