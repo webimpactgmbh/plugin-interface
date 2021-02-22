@@ -11,6 +11,11 @@ abstract class BundleComponent
 	/**
 	 * @var int
 	 */
+	public		$id;
+	
+	/**
+	 * @var int
+	 */
 	public		$componentVariationId;
 	
 	/**
