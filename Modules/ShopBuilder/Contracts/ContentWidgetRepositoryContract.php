@@ -6,13 +6,13 @@ use Plenty\Modules\ShopBuilder\Models\ContentWidgetData;
 use Plenty\Modules\ShopBuilder\Models\ContentWidgetPreview;
 
 /**
- * Register shop builder widgets.
+ * Register shopBuilder widgets.
  */
 interface ContentWidgetRepositoryContract 
 {
 
 	/**
-	 * Register a widget to be available in the shop builder.
+	 * Register a widget to be available in the shopBuilder.
 	 */
 	public function registerWidget(
 		string $widgetClass

@@ -5,19 +5,19 @@ use Plenty\Modules\ShopBuilder\Models\Content;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * Get, create, delete und update shop builder contents.
+ * Get, create, delete, und update shopBuilder contents.
  */
 interface ContentRepositoryContract 
 {
 
 	/**
-	 * Get all contents to be edited in the shop builder.
+	 * Get all contents with all their widget data.
 	 */
 	public function getContents(
 	):array;
 
 	/**
-	 * Search for contents
+	 * Search for contents. Search params are queried conjunctively while values for each params are queried disjunctively:
 	 */
 	public function searchContents(
 		int $itemsPerPage = 20, 
@@ -36,7 +36,7 @@ interface ContentRepositoryContract
 	):Content;
 
 	/**
-	 * Get a list of Versions of the specified content.
+	 * Get a list of versions of the specified content.
 	 */
 	public function listContentVersions(
 		int $contentId, 
@@ -45,7 +45,7 @@ interface ContentRepositoryContract
 	);
 
 	/**
-	 * Restore a specific content version
+	 * Restore a content to a specific version.
 	 */
 	public function restoreContentVersion(
 		int $contentId, 
@@ -64,7 +64,7 @@ interface ContentRepositoryContract
 	):Content;
 
 	/**
-	 * Update content.
+	 * Update content. Metadata, such as the user defined name of the content, will be stored separately to the data of the widgets.
 	 */
 	public function updateContent(
 		int $pluginSetId, 
@@ -74,7 +74,7 @@ interface ContentRepositoryContract
 	):Content;
 
 	/**
-	 * Delete content. Any connections to layout containers will be removed too.
+	 * Delete content. Any connections to layout containers will be removed, too.
 	 */
 	public function deleteContent(
 		int $pluginSetId, 
@@ -82,7 +82,7 @@ interface ContentRepositoryContract
 	);
 
 	/**
-	 * Duplicate a content and its link
+	 * Duplicate a content and its link.
 	 */
 	public function duplicateContent(
 		int $contentId, 
@@ -97,7 +97,7 @@ interface ContentRepositoryContract
 	 */
 	public function rebuildContents(
 		string $containerName = null, 
-		int $pluginSetId = null
+		int $pluginSetId = 0
 	):int;
 
 }

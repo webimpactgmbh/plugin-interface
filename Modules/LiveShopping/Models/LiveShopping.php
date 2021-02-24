@@ -3,7 +3,7 @@ namespace Plenty\Modules\LiveShopping\Models;
 
 
 /**
- * The LiveShopping Model
+ * The LiveShopping data model.
  */
 abstract class LiveShopping 
 {
