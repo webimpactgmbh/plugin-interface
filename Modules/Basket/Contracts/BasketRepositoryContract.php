@@ -26,4 +26,10 @@ interface BasketRepositoryContract
 	public function removeCouponCode(
 	):Basket;
 
+	/**
+	 * Delete the basket for current session
+	 */
+	public function deleteBasket(
+	):Basket;
+
 }

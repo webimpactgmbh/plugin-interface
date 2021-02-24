@@ -33,7 +33,8 @@ interface BasketItemRepositoryContract
 	 * Creates an item with the specified item data in the shopping cart.
 	 */
 	public function addBasketItem(
-		array $data
+		array $data, 
+		bool $fireEvents = true
 	):BasketItem;
 
 	/**
@@ -41,7 +42,8 @@ interface BasketItemRepositoryContract
 	 */
 	public function updateBasketItem(
 		int $basketItemId, 
-		array $data
+		array $data, 
+		bool $fireEvents = true
 	);
 
 	/**
