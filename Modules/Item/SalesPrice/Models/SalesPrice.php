@@ -2,6 +2,9 @@
 namespace Plenty\Modules\Item\SalesPrice\Models;
 
 
+/**
+ * The item sales price model.
+ */
 abstract class SalesPrice 
 {
 
