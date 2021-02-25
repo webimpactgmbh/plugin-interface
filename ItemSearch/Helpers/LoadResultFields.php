@@ -46,8 +46,15 @@ trait LoadResultFields
         $resourceName = $resourcePath[0] . '::views/' . str_replace('.', '/', $resourcePath[1]);
 
         if ($resource->exists($resourceName . '.fields')) {
-            // return global wildcard if json file contains invalid content to avoid white pages
-            return $resource->load($resourceName . '.fields')->getData() ?? ['*'];
+
+            $data = $resource->load($resourceName . '.fields')->getData();
+
+            if ($data) return $data;
+
+            // Hotfix: Return global wildcard if json file contains invalid content to avoid white pages + Log the error.
+            pluginApp(LoggerFactory::class)->getLogger('LoadResultFields', 'loadStaticResultFields')->error('Could not load .fields.json file. Fallback used.', ['template' => $fullTemplateName] );
+
+            return ['*'];
         }
 
         return [];
