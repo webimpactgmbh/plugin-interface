@@ -272,6 +272,8 @@ public		$currencySymbol;
 	
 public		$externalVatCheckInactive;
 	
+public		$externalVatCheckServiceUnavailableFallbackStatus;
+	
 public		$customerRegistrationCheck;
 	
 public		$schedulerPropertyID;
