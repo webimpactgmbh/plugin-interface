@@ -52,7 +52,7 @@ trait LoadResultFields
             if ($data) return $data;
 
             // Hotfix: Return global wildcard if json file contains invalid content to avoid white pages + Log the error.
-            pluginApp(LoggerFactory::class)->getLogger('LoadResultFields', 'loadStaticResultFields')->error('Could not load .fields.json file. Fallback used.', ['template' => $fullTemplateName] );
+            pluginApp(LoggerFactory::class)->getLogger($resourcePath[0], 'loadStaticResultFields')->error('Could not load .fields.json file. Fallback used.', ['template' => $fullTemplateName] );
 
             return ['*'];
         }
