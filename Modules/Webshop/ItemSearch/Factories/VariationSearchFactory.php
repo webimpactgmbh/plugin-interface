@@ -7,6 +7,8 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterfa
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Suggestion\SuggestionInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\BuiltIn\LanguageMutator;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
+use Plenty\Modules\Core\Data\Factories\LazyLoaderFactory;
+use Plenty\Modules\Item\SalesPrice\Models\SalesPrice;
 use Plenty\Modules\Item\Search\Mutators\ImageDomainMutator;
 use Plenty\Modules\Item\Search\Mutators\ImageMutator;
 use Plenty\Modules\Item\Search\Mutators\VariationPropertyGroupMutator;
