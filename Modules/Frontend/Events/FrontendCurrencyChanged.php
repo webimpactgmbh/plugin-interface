@@ -9,7 +9,7 @@ abstract class FrontendCurrencyChanged
 {
 
 	/**
-	 * Gets the currency.
+	 * Gets the changed currency.
 	 */
 	abstract public function getCurrency(
 	):string;

@@ -27,33 +27,63 @@ abstract class AgentService
 
 	const VERSION_TYPE_FLOAT = 'float';
 
+	/**
+	 * Get the current language.
+	 */
 	abstract public function getLanguages(
 	):array;
 
+	/**
+	 * Get the current browser.
+	 */
 	abstract public function getBrowser(
 	):string;
 
+	/**
+	 * Get the current platform.
+	 */
 	abstract public function getPlatform(
 	):string;
 
+	/**
+	 * Get the current device.
+	 */
 	abstract public function getDevice(
 	):string;
 
+	/**
+	 * Get information if the device is a desktop.
+	 */
 	abstract public function getIsDesktop(
 	):bool;
 
+	/**
+	 * Get the name of the robot.
+	 */
 	abstract public function getRobotName(
 	):string;
 
+	/**
+	 * Get information if the visitor is a robot.
+	 */
 	abstract public function getIsRobot(
 	):bool;
 
+	/**
+	 * Get the http headers of the agent.
+	 */
 	abstract public function getHttpHeaders(
 	):array;
 
+	/**
+	 * Get the information if the device is mobile.
+	 */
 	abstract public function getIsMobile(
 	):bool;
 
+	/**
+	 * Get the information if the device is a tablet.
+	 */
 	abstract public function getIsTablet(
 	):bool;
 

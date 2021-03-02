@@ -3,7 +3,7 @@ namespace Plenty\Modules\Helper\Contracts;
 
 
 /**
- * Repository Contract for UrlBuilder
+ * Repository Contract for retrieving image and item URLs
  */
 interface UrlBuilderRepositoryContract 
 {
@@ -16,6 +16,9 @@ interface UrlBuilderRepositoryContract
 
 	const SIZE_NORMAL = 'normal';
 
+	/**
+	 * Get the URL of an image.
+	 */
 	public function getImageUrl(
 		string $path, 
 		int $plentyId = null, 
@@ -24,6 +27,9 @@ interface UrlBuilderRepositoryContract
 		bool $isExternalImage = false
 	):string;
 
+	/**
+	 * Get the URL of an item.
+	 */
 	public function getItemUrl(
 		int $itemId, 
 		int $plentyId, 

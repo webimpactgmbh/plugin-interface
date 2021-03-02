@@ -123,26 +123,41 @@ interface FrontendPaymentMethodRepositoryContract
 		string $lang
 	):string;
 
+	/**
+	 * Get all payment methods to which switching is allowed for the current payment method.
+	 */
 	public function getPaymentMethodSwitchToById(
 		int $paymentMethodId, 
 		int $orderId = null
 	):bool;
 
+	/**
+	 * Get all payment methods from which switching is allowed for the current payment method.
+	 */
 	public function getPaymentMethodSwitchFromById(
 		int $paymentMethodId, 
 		int $orderId = null
 	):bool;
 
+	/**
+	 * Get information if switching to the payment method is allowed.
+	 */
 	public function getPaymentMethodSwitchableToById(
 		int $paymentMethodId, 
 		int $orderId = null
 	):bool;
 
+	/**
+	 * Get information if switching from the payment method is allowed.
+	 */
 	public function getPaymentMethodSwitchableFromById(
 		int $paymentMethodId, 
 		int $orderId = null
 	):bool;
 
+	/**
+	 * Get all allowed payment methods for the current contact.
+	 */
 	public function getAllowedPaymentMethodListForContact(
 	);
 

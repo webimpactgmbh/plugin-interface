@@ -9,6 +9,9 @@ use Plenty\Repositories\Models\DataModel;
 abstract class FileService 
 {
 
+	/**
+	 * Add a js file to the list.
+	 */
 	abstract public function addJsFile(
 		string $jsFile
 	);

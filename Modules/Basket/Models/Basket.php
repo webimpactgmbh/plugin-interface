@@ -3,7 +3,7 @@ namespace Plenty\Modules\Basket\Models;
 
 
 /**
- * The basket model
+ * The shopping cart model
  */
 abstract class Basket 
 {

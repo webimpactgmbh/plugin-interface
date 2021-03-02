@@ -22,18 +22,27 @@ use Plenty\Modules\System\Contracts\WebstoreConfigurationRepositoryContract;
 abstract class VatService 
 {
 
+	/**
+	 * Get the VAT ID of the specified country.
+	 */
 	abstract public function getCountryVatId(
 	):int;
 
+	/**
+	 * Get the current total VAT.
+	 */
 	abstract public function getCurrentTotalVats(
 	):array;
 
+	/**
+	 * Get VAT for the specified tax ID number
+	 */
 	abstract public function getVat(
 		string $taxIdNumber = ""
 	):Vat;
 
 	/**
-	 * Get the ID of the location
+	 * Get the ID of the location.
 	 */
 	abstract public function getLocationId(
 		int $countryId = null
