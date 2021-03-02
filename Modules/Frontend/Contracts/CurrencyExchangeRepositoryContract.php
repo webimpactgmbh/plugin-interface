@@ -8,6 +8,9 @@ namespace Plenty\Modules\Frontend\Contracts;
 interface CurrencyExchangeRepositoryContract 
 {
 
+	/**
+	 * Get the exchange rate for the given currency
+	 */
 	public function getExchangeRatioByCurrency(
 		string $currency
 	):float;

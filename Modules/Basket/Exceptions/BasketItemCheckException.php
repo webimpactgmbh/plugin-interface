@@ -12,7 +12,7 @@ abstract class BasketItemCheckException extends HTTPException
 {
 
 	/**
-	 * variation not found
+	 * the variation could not found
 	 */
 	const VARIATION_NOT_FOUND = 1;
 

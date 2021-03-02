@@ -9,6 +9,9 @@ use Plenty\Modules\Basket\Models\Basket;
 abstract class AfterBasketCreate 
 {
 
+	/**
+	 * Get the current shopping cart.
+	 */
 	abstract public function getBasket(
 	):Basket;
 

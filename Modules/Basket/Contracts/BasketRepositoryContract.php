@@ -15,14 +15,23 @@ interface BasketRepositoryContract
 	public function load(
 	):Basket;
 
+	/**
+	 * Save the current shopping cart data.
+	 */
 	public function save(
 		array $data
 	);
 
+	/**
+	 * Add a coupon code to the shopping cart.
+	 */
 	public function setCouponCode(
 		string $couponCode
 	):Basket;
 
+	/**
+	 * Remove a coupon code from the shopping cart.
+	 */
 	public function removeCouponCode(
 	):Basket;
 
