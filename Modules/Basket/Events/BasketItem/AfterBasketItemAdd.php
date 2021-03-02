@@ -9,6 +9,9 @@ use Plenty\Modules\Basket\Models\BasketItem;
 abstract class AfterBasketItemAdd 
 {
 
+	/**
+	 * The shopping cart item that has changed.
+	 */
 	abstract public function getBasketItem(
 	):BasketItem;
 

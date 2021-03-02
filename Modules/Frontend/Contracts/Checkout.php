@@ -88,6 +88,9 @@ interface Checkout
 		int $shippingAddressId
 	);
 
+	/**
+	 * Validate all data of the checkout
+	 */
 	public function validateCheckout(
 	):ValidateCheckoutEvent;
 

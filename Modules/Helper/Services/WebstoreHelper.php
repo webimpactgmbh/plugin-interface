@@ -10,6 +10,9 @@ use Plenty\Modules\System\Models\WebstoreConfiguration;
 abstract class WebstoreHelper 
 {
 
+	/**
+	 * Get the configuration of the current webstore.
+	 */
 	abstract public function getCurrentWebstoreConfiguration(
 	):WebstoreConfiguration;
 

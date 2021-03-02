@@ -15,7 +15,7 @@ use Plenty\Modules\Order\Contracts\InternalOrderRepositoryContract;
 use Plenty\Modules\Order\Models\Order;
 
 /**
- * Frontend-service for customer information
+ * Frontend-service for order property files
  */
 abstract class OrderPropertyFileService 
 {
@@ -28,22 +28,37 @@ abstract class OrderPropertyFileService
 
 	const ORDER_ITEM_PROPERTY_REGEX = '^[0-9a-f]{8}\/[0-9a-f]{8}\/';
 
+	/**
+	 * Upload an order property file.
+	 */
 	abstract public function uploadFile(
 		array $fileData
 	):string;
 
+	/**
+	 * Get the URL for the specified key.
+	 */
 	abstract public function getFileURL(
 		string $key
 	):string;
 
+	/**
+	 * Get the file for a specified key.
+	 */
 	abstract public function getFile(
 		string $key
 	):StorageObject;
 
+	/**
+	 * Copy the uploaded file to the order.
+	 */
 	abstract public function copyBasketFileToOrder(
 		string $filename
 	):string;
 
+	/**
+	 * Delete the specified file.
+	 */
 	abstract public function deleteFile(
 		string $filename
 	);
