@@ -20,6 +20,9 @@ interface FeedbackRepositoryContract
 		int $feedbackId
 	);
 
+	/**
+	 * Get a list of feedbacks
+	 */
 	public function listFeedbacks(
 		int $page = 1, 
 		int $itemsPerPage = 50, 

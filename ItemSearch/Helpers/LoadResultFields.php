@@ -46,7 +46,6 @@ trait LoadResultFields
         $resourceName = $resourcePath[0] . '::views/' . str_replace('.', '/', $resourcePath[1]);
 
         if ($resource->exists($resourceName . '.fields')) {
-
             $data = $resource->load($resourceName . '.fields')->getData();
 
             if ($data) return $data;
