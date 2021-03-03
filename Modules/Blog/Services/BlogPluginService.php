@@ -4,17 +4,20 @@ namespace Plenty\Modules\Blog\Services;
 use Plenty\Modules\Category\Contracts\CategoryRepositoryContract;
 
 /**
- * Blog plugin service
+ * The blog plugin service
  */
 abstract class BlogPluginService 
 {
 
 	/**
-	 * Get plugin set ID
+	 * Get the ID of the plugin set.
 	 */
 	abstract public function getPluginSetIdFromConfig(
 	);
 
+	/**
+	 * Get the category by URL.
+	 */
 	abstract public function findCategoryByUrl(
 		string $level1, 
 		string $level2 = null, 

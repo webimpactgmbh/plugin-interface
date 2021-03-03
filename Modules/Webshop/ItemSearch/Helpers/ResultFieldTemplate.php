@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Webshop\ItemSearch\Helpers;
 
+use Plenty\Log\Traits\Loggable;
 
 /**
  * Collect templates to read required result fields for several views from.
