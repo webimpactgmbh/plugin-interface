@@ -2,9 +2,10 @@
 
 namespace Plenty\Modules\Webshop\ItemSearch\Helpers;
 
-use Plenty\Modules\Plugin\Annotations\PluginTrait;
-use Plenty\Plugin\Data\Contracts\Resources;
 use Plenty\Plugin\Log\LoggerFactory;
+use Plenty\Modules\Plugin\Annotations\PluginTrait;
+use Plenty\Modules\Plugin\Repositories\BuildResultsRepository;
+use Plenty\Plugin\Data\Contracts\Resources;
 
 /**
  * Trait LoadResultFields
@@ -44,18 +45,27 @@ trait LoadResultFields
 
         $resourcePath = explode('::', $fullTemplateName);
         $resourceName = $resourcePath[0] . '::views/' . str_replace('.', '/', $resourcePath[1]);
+        $resourceFile = $resourceName . '.fields';
 
-        if ($resource->exists($resourceName . '.fields')) {
-            $data = $resource->load($resourceName . '.fields')->getData();
-
-            if ($data) return $data;
+        if ($resource->exists($resourceFile)) {
+            if ($data = $resource->load($resourceFile)->getData()) {
+                return $data;
+            }
 
             // Hotfix: Return global wildcard if json file contains invalid content to avoid white pages + Log the error.
-            pluginApp(LoggerFactory::class)->getLogger($resourcePath[0], 'loadStaticResultFields')->error('Could not load .fields.json file. Fallback used.', ['template' => $fullTemplateName] );
+            pluginApp(LoggerFactory::class)->getLogger($resourcePath[0], 'loadStaticResultFields')->error(
+                'Could not load .fields.json file. Fallback used.',
+                [
+                    'template'    => $fullTemplateName,
+                    'path'        => realpath($resource->getPathByName($resourceFile)),
+                    'data'        => file_get_contents($resource->getPathByName($resourceFile)),
+                ]
+            );
 
             return ['*'];
         }
 
         return [];
     }
+
 }
