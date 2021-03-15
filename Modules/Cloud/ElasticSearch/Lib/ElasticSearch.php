@@ -16,6 +16,8 @@ abstract class ElasticSearch
 
 	const SEARCH_TYPE_FUZZY = 'fuzzy';
 
+	const SEARCH_TYPE_LIKE = 'like';
+
 	const SEARCH_TYPE_AUTOCOMPLETE = 'autocomplete';
 
 	const RANGE_OPERATOR_LT = 'lt';
