@@ -22,6 +22,12 @@ public		$createdAt;
 	
 public		$updatedAt;
 	
+public		$options;
+	
+public		$names;
+	
+public		$properties;
+	
 	/**
 	 * Returns this model as an array.
 	 */

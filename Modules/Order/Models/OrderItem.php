@@ -66,6 +66,10 @@ public		$orderDates;
 	
 public		$dates;
 	
+public		$orderPropertyItems;
+	
+public		$referencedOrderPropertyItem;
+	
 public		$references;
 	
 public		$referencedBy;
