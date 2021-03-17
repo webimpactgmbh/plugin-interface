@@ -27,4 +27,12 @@ interface WebstoreConfigurationRepositoryContract
 	public function getDefaultShippingCountryId(
 	):int;
 
+	/**
+	 * Copy a favicon from the frontend webspace to the internal storage to be available at the frontend domain.
+	 */
+	public function setFaviconFromWebspace(
+		int $plentyId, 
+		string $faviconUrl
+	):string;
+
 }
