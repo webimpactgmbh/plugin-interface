@@ -56,7 +56,9 @@ interface VariationWarehouseRepositoryContract
 	 */
 	public function findByVariationIdWithInheritance(
 		int $variationId, 
-		array $with = []
+		array $with = [], 
+		int $warehouseId = null, 
+		int $storageLocationId = null
 	):array;
 
 }
