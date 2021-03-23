@@ -103,9 +103,6 @@ interface PluginSetRepositoryContract
 		bool $active
 	):Plugin;
 
-	/**
-	 * Remove a plugin from a set.
-	 */
 	public function removePluginFromSet(
 		int $setId, 
 		int $pluginId
