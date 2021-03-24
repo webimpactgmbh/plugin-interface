@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Pim\VariationDataInterface\Model\Attributes;
 
 use Exception;
+use Plenty\Modules\Pim\VariationDataInterface\Contracts\AttributeInterface;
 use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContext;
 use Plenty\Modules\StockManagement\Warehouse\Models\Warehouse;
 

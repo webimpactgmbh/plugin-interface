@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Catalog\Contracts;
 
-use Plenty\Modules\Catalog\Contracts\TemplateContract;
 
 /**
  * The NestedDataProviderContract is the interface for nested data providers. Nested data providers are used to provide nested options that can be selected for export. E.g. a list of categories of a specific marketplace. Whenever it is possible, use the concrete implementation Plenty\Modules\Catalog\DataProviders\NestedKeyDataProvider.

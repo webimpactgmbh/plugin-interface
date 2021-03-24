@@ -4,6 +4,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\Attributes;
 use Exception;
 use Plenty\Modules\Item\Attribute\Models\Attribute;
 use Plenty\Modules\Item\Attribute\Models\AttributeValue;
+use Plenty\Modules\Pim\VariationDataInterface\Contracts\AttributeInterface;
 use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContext;
 
 /**
