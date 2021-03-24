@@ -24,6 +24,10 @@ public		$itemId;
 	
 public		$vatField;
 	
+public		$itemHash;
+	
+public		$hashReference;
+	
 	/**
 	 * Returns this model as an array.
 	 */

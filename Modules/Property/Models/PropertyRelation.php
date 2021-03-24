@@ -24,6 +24,10 @@ public		$relationTargetId;
 	
 public		$selectionRelationId;
 	
+public		$groupId;
+	
+public		$markup;
+	
 public		$createdAt;
 	
 public		$updatedAt;
@@ -31,6 +35,8 @@ public		$updatedAt;
 public		$relationValues;
 	
 public		$propertyRelation;
+	
+public		$group;
 	
 	/**
 	 * Returns this model as an array.

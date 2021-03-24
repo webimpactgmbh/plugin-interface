@@ -36,6 +36,8 @@ abstract class OrderItemType
 
 	const TYPE_SET_COMPONENT = 14;
 
+	const TYPE_ORDER_PROPERTY = 15;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

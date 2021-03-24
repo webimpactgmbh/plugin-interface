@@ -44,6 +44,8 @@ public		$numberOfDecimals;
 	
 public		$lockStatus;
 	
+public		$isLocked;
+	
 public		$hasTaxRelevantDocuments;
 	
 public		$billingAddress;
@@ -100,11 +102,19 @@ public		$systemAmount;
 	
 public		$amount;
 	
+public		$contactSenderId;
+	
 public		$contactSender;
+	
+public		$contactReceiverId;
 	
 public		$contactReceiver;
 	
+public		$warehouseSenderId;
+	
 public		$warehouseSender;
+	
+public		$warehouseReceiverId;
 	
 public		$warehouseReceiver;
 	

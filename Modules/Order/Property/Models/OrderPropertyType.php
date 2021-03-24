@@ -166,6 +166,12 @@ abstract class OrderPropertyType
 
 	const EXTERNAL_RETURN_ID = 80;
 
+	const ORDER_PROPERTY_ID = 81;
+
+	const ORDER_PROPERTY_VALUE = 82;
+
+	const ORDER_PROPERTY_GROUP_ID = 83;
+
 	const AUTO_FULFILLED_EBAY = 84;
 
 	const REORDER_ITEM_NAME = 85;
