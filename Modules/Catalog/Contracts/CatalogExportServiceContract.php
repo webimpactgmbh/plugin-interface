@@ -40,6 +40,13 @@ interface CatalogExportServiceContract
 	);
 
 	/**
+	 * Defines the page number that will be returned
+	 */
+	public function setPage(
+		int $page
+	);
+
+	/**
 	 * Limits the results of items to only those that were updated after the given timestamp.
 	 */
 	public function setUpdatedSince(
@@ -51,6 +58,19 @@ interface CatalogExportServiceContract
 	 */
 	public function getResult(
 	):CatalogExportResult;
+
+	/**
+	 * ASYNC - Returns an instance of CatalogExportResult, which can be iterated to receive the different pages of the exported data.
+	 */
+	public function buildQueuedAsyncExport(
+	);
+
+	/**
+	 * Builds a single page of the export and uploads it to S3
+	 */
+	public function getAsyncResultPage(
+		int $page
+	):array;
 
 	public function getPreview(
 	);
