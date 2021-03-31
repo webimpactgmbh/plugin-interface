@@ -3,6 +3,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\Attributes;
 
 use Exception;
 use Plenty\Modules\Item\SalesPrice\Models\SalesPrice;
+use Plenty\Modules\Pim\VariationDataInterface\Contracts\AttributeInterface;
 use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContext;
 use Plenty\Modules\Tag\Models\Tag;
 

@@ -6,6 +6,7 @@ use Plenty\Modules\Catalog\Contracts\CatalogRuntimeConfigContract;
 use Plenty\Modules\Catalog\Contracts\CatalogTemplateProviderContract;
 use Plenty\Modules\Catalog\Contracts\TemplateContract;
 use Plenty\Modules\Catalog\Validators\FilterValidator;
+use Plenty\Modules\Catalog\Validators\GeneralFieldValidator;
 use Plenty\Modules\Catalog\Validators\MappingValidator;
 use Plenty\Modules\Catalog\Validators\SettingValidator;
 
@@ -111,6 +112,32 @@ abstract class Template implements TemplateContract
 	abstract public function getMetaInfo(
 	);
 
+	/**
+	 * Returns the custom filters of the template.
+	 */
+	abstract public function getCustomFilter(
+	):array;
+
+	/**
+	 * Adds a custom filter to the template. If possible, don't use this directly and let it be handled by the catalogue template provider.
+	 */
+	abstract public function addCustomFilter(
+		array $customFilter
+	);
+
+	/**
+	 * Returns general assignments.
+	 */
+	abstract public function getAssignments(
+	):array;
+
+	/**
+	 * Adds a general assignments to the template. If possible, don't use this directly and let it be handled by the catalogue template provider.
+	 */
+	abstract public function addAssignment(
+		array $assignment
+	);
+
 	abstract public function getName(
 	):string;
 
@@ -125,7 +152,7 @@ abstract class Template implements TemplateContract
 	):array;
 
 	abstract public function toArray(
-	);
+	):array;
 
 	abstract public function jsonSerialize(
 	);
@@ -157,10 +184,6 @@ abstract class Template implements TemplateContract
 
 	abstract public function hasResultConverter(
 	):bool;
-
-	abstract public function boot(
-		CatalogTemplateProviderContract $provider
-	);
 
 	abstract public function isBooted(
 	):bool;

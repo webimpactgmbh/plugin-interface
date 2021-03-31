@@ -5,6 +5,7 @@ use Exception;
 use Plenty\Legacy\Services\Item\Image\ImageService;
 use Plenty\Modules\Core\Data\Services\LazyLoader;
 use Plenty\Modules\Item\ItemImage\Models\ItemImage;
+use Plenty\Modules\Pim\VariationDataInterface\Contracts\AttributeInterface;
 use Plenty\Modules\Pim\VariationDataInterface\Model\Variation;
 use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContext;
 
