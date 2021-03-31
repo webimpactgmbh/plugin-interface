@@ -152,7 +152,7 @@ abstract class Template implements TemplateContract
 	):array;
 
 	abstract public function toArray(
-	);
+	):array;
 
 	abstract public function jsonSerialize(
 	);
@@ -184,10 +184,6 @@ abstract class Template implements TemplateContract
 
 	abstract public function hasResultConverter(
 	):bool;
-
-	abstract public function boot(
-		CatalogTemplateProviderContract $provider
-	);
 
 	abstract public function isBooted(
 	):bool;
