@@ -20,6 +20,16 @@ abstract class Property
 	public		$propertyId;
 	
 	/**
+	 * @var int
+	 */
+	public		$groupId;
+	
+	/**
+	 * @var float
+	 */
+	public		$markup;
+	
+	/**
 	 * @var array
 	 */
 	public		$values;

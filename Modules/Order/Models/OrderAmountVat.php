@@ -34,6 +34,8 @@ public		$updatedAt;
 	
 public		$orderAmount;
 	
+public		$countryVat;
+	
 	/**
 	 * Returns this model as an array.
 	 */

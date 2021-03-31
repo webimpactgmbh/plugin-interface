@@ -157,13 +157,6 @@ interface TemplateContract
 	):CatalogResultConverterContract;
 
 	/**
-	 * Fills the template via the given catalogue template provider. This method is called by the template container and should not be called manually.
-	 */
-	public function boot(
-		CatalogTemplateProviderContract $provider
-	);
-
-	/**
 	 * Returns the current boot state of the template.
 	 */
 	public function isBooted(

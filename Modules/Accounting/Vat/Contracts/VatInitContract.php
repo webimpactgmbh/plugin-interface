@@ -67,4 +67,10 @@ interface VatInitContract
 		string $startedAt = null
 	):Vat;
 
+	/**
+	 * Get the tax ID number used for tax determination.
+	 */
+	public function getTaxIdNumber(
+	):string;
+
 }

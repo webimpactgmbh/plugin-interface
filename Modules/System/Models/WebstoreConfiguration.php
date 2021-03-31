@@ -358,6 +358,8 @@ public		$urlTrailingSlash;
 	
 public		$isCookieSubdomainIndependent;
 	
+public		$useVariationOrderProperties;
+	
 public		$itemSearchOperator;
 	
 public		$itemAutocompleteSearchOperator;

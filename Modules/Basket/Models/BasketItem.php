@@ -21,6 +21,8 @@ abstract class BasketItem
 	const BASKET_ITEM_TYPE_ITEM_SET = 13;
 
 	const BASKET_ITEM_TYPE_ITEM_SET_COMPONENT = 14;
+
+	const BASKET_ITEM_TYPE_VARIATION_ORDER_PROPERTY = 15;
 	
 public		$id;
 	
@@ -91,6 +93,8 @@ public		$updatedAt;
 public		$attributeTotalMarkup;
 	
 public		$basketItemOrderParams;
+	
+public		$basketItemVariationProperties;
 	
 	/**
 	 * Returns this model as an array.
