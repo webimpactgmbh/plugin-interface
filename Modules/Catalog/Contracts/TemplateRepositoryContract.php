@@ -69,4 +69,11 @@ interface TemplateRepositoryContract
 		string $id
 	):array;
 
+	/**
+	 * Get assignments
+	 */
+	public function getAssignments(
+		string $id
+	):array;
+
 }

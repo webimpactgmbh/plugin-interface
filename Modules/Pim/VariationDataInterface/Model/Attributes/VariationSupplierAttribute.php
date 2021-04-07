@@ -3,6 +3,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\Attributes;
 
 use Exception;
 use Plenty\Modules\Account\Contact\Models\Contact;
+use Plenty\Modules\Pim\VariationDataInterface\Contracts\AttributeInterface;
 use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContext;
 
 /**

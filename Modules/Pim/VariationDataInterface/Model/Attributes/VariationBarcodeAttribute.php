@@ -3,6 +3,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\Attributes;
 
 use Exception;
 use Plenty\Modules\Item\Barcode\Models\Barcode;
+use Plenty\Modules\Pim\VariationDataInterface\Contracts\AttributeInterface;
 use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContext;
 
 /**

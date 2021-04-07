@@ -157,6 +157,32 @@ interface TemplateContract
 	):CatalogResultConverterContract;
 
 	/**
+	 * Returns the custom filters of the template.
+	 */
+	public function getCustomFilter(
+	):array;
+
+	/**
+	 * Adds a custom filter to the template. If possible, don't use this directly and let it be handled by the catalogue template provider.
+	 */
+	public function addCustomFilter(
+		array $customFilter
+	);
+
+	/**
+	 * Returns the general assignment of the template.
+	 */
+	public function getAssignments(
+	):array;
+
+	/**
+	 * Adds a general assignment to the template. If possible, don't use this directly and let it be handled by the catalogue template provider.
+	 */
+	public function addAssignment(
+		array $assignment
+	);
+
+	/**
 	 * Returns the current boot state of the template.
 	 */
 	public function isBooted(
