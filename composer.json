@@ -1,0 +1,14 @@
+{
+    "name": "webimpact/plentymarkets-plugin-interface",
+    "description": "The plentymarkets plugin interface",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^6.0.0 | ^7.0.0 | ^8.0.0",
+        "php": "^7.2.0 | ^8.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Plenty\\": "/"
+        }
+    }
+}
