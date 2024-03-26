@@ -1,0 +1,10 @@
+{
+  "name": "webimpact/plentymarkets-plugin-interface",
+  "description": "The plentymarkets plugin interface special for laravel application to use plenty model constants",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Plenty\\": "/"
+    }
+  }
+}
